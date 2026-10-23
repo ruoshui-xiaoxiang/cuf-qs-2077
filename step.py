@@ -51,7 +51,10 @@ def main():
     elif a.action == "hold":
         key = a.args[0] if a.args else "fwd"
         dur = float(a.args[1]) if len(a.args) > 1 else 0.8
-        ok, desc = inputs.hold_key(key, dur), "hold_key(%s,%.1fs)" % (key, dur)
+        if key in inputs.COMBOS:
+            ok, desc = inputs.hold_combo(key, dur), "hold_combo(%s,%.1fs)" % (key, dur)
+        else:
+            ok, desc = inputs.hold_key(key, dur), "hold_key(%s,%.1fs)" % (key, dur)
     elif a.action == "tap":
         key = a.args[0] if a.args else "interact"
         ok, desc = inputs.tap_key(key), "tap_key(%s)" % key

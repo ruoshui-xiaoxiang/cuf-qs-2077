@@ -6,3 +6,13 @@ runs/**/*.webm
 __pycache__/
 *.pyc
 # HUD 模板属于代码资产，放 assets/ 下正常入库
+
+# 2026-10-24：运行产物与游戏解包资产一律不入库（runs 已 994MB，extracted 55MB）
+runs/
+extracted/
+
+# 第三方工具二进制不入库，只留校验和（tools/retoc/retoc.zip.sha256）
+tools/retoc/*.exe
+tools/retoc/*.dll
+tools/retoc/*.zip
+tools/**/*.exe

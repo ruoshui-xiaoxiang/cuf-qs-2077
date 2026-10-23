@@ -50,36 +50,92 @@ VISION_SYSTEM = """你在通过屏幕截图实时操控一个第三人称动作�
 本轮目标：{goal}
 
 可用的操作（只能从这里选，其它一律无效）：
-  hold_key(t)  按住某个键走/闪，t ∈ {keys}，持续 0.6 秒
+  hold_key(t,dur) 按住某个键走/闪，t ∈ {keys}，dur 秒（默认 0.6，可给 0.1~1.5）；
+               sprint_fwd / sprint_back / sprint_left / sprint_right 是
+               「Shift+方向」的组合键（单按 sprint 不会动），用于长距离移动；
+               冲刺一次位移很大：实测 dur=0.5 后总位移约 16 米（含停步滑行），
+               近距离请给 dur=0.1~0.2，别用默认 0.6
   tap_key(t)   点一下某个键，t ∈ {keys}
   look(dx,dy)  转视角，dx/dy 为 -400..400
   click()      鼠标左键一次
   wait()       什么都不做，观察
 
 系统实测（这是事实，不是你猜的）：
-  本帧与上一帧的粗网格变化占比 cells={cells}（0..1），平均灰度差 mean={mean}，
-  上一拍实测 cells={prev_cells}。
+  像素通道：本帧与上一帧的粗网格变化占比 cells={cells}（0..1），
+  平均灰度差 mean={mean}，上一拍实测 cells={prev_cells}。
   cells=0 表示画面完全没动，也就是你的上一拍**没有产生任何可见后果**。
+{engine_block}
 
 只输出一个 JSON：
 {{"intent": {{"type": "hold_key|tap_key|look|click|wait",
-             "arg": 键名或 [dx,dy] 或 null}},
+             "arg": 键名或 [dx,dy] 或 null,
+             "dur": 数值}},
   "claim": "你认为这一拍会造成什么可见变化（一句话）",
   "reason": "你为什么这么选（一句话）",
   "goal_progress": 0.0}}
 
-纪律：不许宣称已经成功；claim 只是你的预期，系统会用帧差核对。
-若连续几拍 cells 都接近 0，说明你在原地空转——换一种操作，不要重复同一动作。"""
+纪律：不许宣称已经成功；claim 只是你的预期，系统会用像素帧差与引擎位移一起核对。
+若连续几拍 cells 接近 0 且引擎位移也是 0，说明你在原地空转——换一种操作，不要重复同一动作。"""
+
+
+def format_engine(eng, delta):
+    """把文件桥读数写成给模型看的事实块。
+
+    只报能直接量到的量：位移、朝向变化、同伴/敌人距离、附近 pawn。
+    不报原始世界坐标（对看图的模型没有意义，还容易诱导它编方向）。
+    """
+    if not eng:
+        return ("引擎真值：不可用（状态桥没在写或已过期）。"
+                "只能靠像素通道判断。")
+    lines = ["引擎真值（游戏内只读状态桥，采样约每 0.09 秒；厘米/度）："]
+    if delta:
+        lines.append("  上一拍动作后的实际位移 %.0f cm；身体朝向变化 %+.1f°"
+                     % (delta.get("moved_cm", 0.0), delta.get("dyaw", 0.0)))
+        if delta.get("dview_yaw") is not None:
+            lines.append("  镜头朝向变化 %+.1f°（正=向右转）"
+                         % delta["dview_yaw"])
+    else:
+        lines.append("  这是第一拍，没有上一拍引擎对比。")
+    comp = eng.get("companion") or {}
+    if comp:
+        lines.append("  同伴无人机距离 %.0f cm" % comp.get("dist_cm", 0))
+    enemy = eng.get("enemy") or {}
+    if enemy:
+        lines.append("  已知敌人 %s 距离 %.0f cm"
+                     % (enemy.get("name", "?"), enemy.get("dist_cm", 0)))
+    else:
+        lines.append("  桥未识别到敌人（不代表视野里没有）。")
+    near = eng.get("near_pawns") or []
+    if near:
+        parts = []
+        for n in near[:3]:
+            full = n.get("class", "?")
+            short = full.split(".")[-1].replace("_C", "")
+            # ⚠ 只能用类名判断：完整路径里无人机在 /Character/NPC/ 下，
+            #   拿路径查 "CH_NPC_" 会把同伴误标成 NPC。
+            if short.startswith("CH_M_"):
+                short += "(敌)"
+            elif short.startswith("CH_NPC_"):
+                short += "(NPC)"
+            elif short.startswith("CH_Drone"):
+                short += "(同伴)"
+            parts.append("%s @%.0fcm" % (short, n.get("dist_cm", 0)))
+        lines.append("  附近 pawn：" + "；".join(parts))
+    return "\n".join(lines)
 
 
 def build_history_block(history):
     if not history:
         return "这是第一轮，没有历史。请看图给出第一拍。"
-    lines = ["最近几拍（模型自报 claim / 系统实测帧差）："]
+    lines = ["最近几拍（模型自报 claim / 系统实测）："]
     for h in history[-4:]:
-        lines.append("- r%s %s｜claim=%s｜实测cells=%s mean=%s" % (
+        eng = ""
+        if h.get("measured_moved_cm") is not None:
+            eng = "｜引擎位移=%.0fcm 转向=%+.1f°" % (
+                h["measured_moved_cm"], h.get("measured_dyaw") or 0.0)
+        lines.append("- r%s %s｜claim=%s｜实测cells=%s mean=%s%s" % (
             h.get("round_id"), h.get("intent"), h.get("claim"),
-            h.get("measured_cells"), h.get("measured_mean")))
+            h.get("measured_cells"), h.get("measured_mean"), eng))
     return "\n".join(lines)
 
 
@@ -151,14 +207,15 @@ class Brain:
 
     # ── 视觉通道：截图 + 客观帧差 → 一个操作意图 ───────────────
     def ask_image(self, image_data_url, goal, history, frame_stats,
-                  allowed_keys):
+                  allowed_keys, engine=None, engine_delta=None):
         """返回 (intent dict, err)。intent 里模型必须自报 claim（它认为这一拍
-        会造成什么），harness 用**帧差**去对，不对它的话负责。"""
+        会造成什么），harness 用**帧差 + 引擎位移**去对，不对它的话负责。"""
         sys_txt = VISION_SYSTEM.format(
             goal=goal, keys="/".join(sorted(allowed_keys)),
             cells=frame_stats["cells_changed"],
             mean=frame_stats["mean_delta"],
-            prev_cells=frame_stats.get("prev_cells", "None"))
+            prev_cells=frame_stats.get("prev_cells", "None"),
+            engine_block=format_engine(engine, engine_delta))
         payload = {
             "model": self.model,
             "messages": [
