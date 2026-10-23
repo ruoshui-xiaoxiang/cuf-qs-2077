@@ -1,0 +1,2 @@
+{"round_id": 0, "ts": 1792757531.8883986, "obs_hash": "d20303640f43", "world_changed": true, "latency_s": 2.26, "n_entities": 7, "decision": "rejected", "stage": "parse", "note": "unparsed:{\"action_type\": \"attack\", \"target_entity_id\": \"dev_turret_040"}
+{"round_id": 1, "ts": 1792757533.9747994, "obs_hash": "d20303640f43", "world_changed": false, "latency_s": 2.09, "n_entities": 7, "decision": "rejected", "stage": "parse", "note": "unparsed:empty"}

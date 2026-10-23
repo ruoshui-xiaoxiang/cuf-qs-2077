@@ -1,0 +1,18 @@
+{"ts": 1792759430.4127522, "action": "wait", "ok": true, "cells": 0.0, "mean": 1.48, "note": "基线静置", "moved": false}
+{"ts": 1792759431.6331024, "action": "look(300,0)", "ok": true, "cells": 0.9861, "mean": 30.93, "note": "验 Raw Input 认不认注入的鼠标位移", "moved": true}
+{"ts": 1792759433.192018, "action": "hold_key(fwd,1.2s)", "ok": true, "cells": 0.5625, "mean": 21.72, "note": "验键盘注入", "moved": true}
+{"ts": 1792759434.4120412, "action": "look(600,0)", "ok": true, "cells": 0.7847, "mean": 24.35, "note": "排除一次偶然", "moved": true}
+{"ts": 1792759460.0838225, "action": "wait", "ok": true, "cells": 0.0, "mean": 1.79, "note": "取当前帧定朝向", "moved": false, "peek": "last_1792759460.png"}
+{"ts": 1792759533.1463306, "action": "look(200,0)", "ok": true, "cells": 0.6111, "mean": 17.34, "note": "右转约30度对准机械体（校准系数：900单位≈130度）", "moved": true}
+{"ts": 1792759533.7840292, "action": "wait", "ok": true, "cells": 0.0, "mean": 1.63, "note": "确认机械体是否进画面", "moved": false, "peek": "last_1792759533.png"}
+{"ts": 1792759610.8763134, "action": "look(120,0)", "ok": true, "cells": 0.6875, "mean": 16.2, "note": "把机械体移到画面中心", "moved": true}
+{"ts": 1792759612.258828, "action": "hold_key(fwd,1.0s)", "ok": true, "cells": 0.0, "mean": 9.98, "note": "接近", "moved": true}
+{"ts": 1792759613.4959736, "action": "hold_key(fwd,0.8s)", "ok": true, "cells": 0.0, "mean": 11.58, "note": "再接近一点", "moved": true}
+{"ts": 1792759614.3241093, "action": "wait", "ok": true, "cells": 0.0, "mean": 4.43, "note": "看机械体状态与自身 HP/SH 是否变化", "moved": true, "peek": "last_1792759614.png"}
+{"ts": 1792759763.8359716, "action": "wait", "ok": true, "cells": 0.1736, "mean": 2.95, "note": "静置基线（应低）", "moved": true}
+{"ts": 1792759765.1945927, "action": "hold_key(fwd,1.0s)", "ok": true, "cells": 0.5903, "mean": 12.86, "note": "前进（应高）", "moved": true}
+{"ts": 1792759766.0047834, "action": "wait", "ok": true, "cells": 0.1806, "mean": 4.26, "note": "取当前帧", "moved": true, "peek": "last_1792759766.png"}
+{"ts": 1792759843.313955, "action": "click_left()", "ok": true, "cells": 0.3472, "mean": 6.13, "note": "左键轻攻击，测游戏是否认注入点击", "floor": [0.25, 6.5], "moved": true}
+{"ts": 1792759845.0626638, "action": "click_left()", "ok": true, "cells": 0.2986, "mean": 5.29, "note": "补第二刀", "floor": [0.25, 6.5], "moved": true}
+{"ts": 1792759845.9793322, "action": "wait", "ok": true, "cells": 0.1319, "mean": 3.42, "note": "看机械体是否进入战斗、我方 SH/HP 是否变化", "floor": [0.25, 6.5], "moved": false, "peek": "last_1792759845.png"}
+{"ts": 1792760684.6432128, "action": "wait", "ok": true, "cells": 0.0972, "mean": 1.81, "note": "训练场首帧：确认场地与可用参照物", "floor": [0.25, 6.5], "moved": false, "peek": "last_1792760684.png"}

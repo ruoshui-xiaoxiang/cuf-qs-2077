@@ -1,0 +1,29 @@
+=== 对照组：什么都不按，量自然漂移 ===
+  对照1   sh+0  hp+0  BU+0  BE+1  PHP+0  PSH+0
+  对照2   sh+0  hp+0  BU+0  BE+1  PHP+0  PSH+0
+  对照3   sh+0  hp+0  BU+0  BE+2  PHP+0  PSH+0
+  漂移带: {'sh': (0, 0), 'hp': (0, 0), 'BU': (0, 0), 'BE': (1, 2), 'PHP': (0, 0), 'PSH': (0, 0)}
+
+=== 实测组 ===
+动作               超出漂移的变化                判读
+LMB 轻击           hp-1                   ★造成伤害 hp-1
+RMB 重击(点)        BU+2 BE+0 PHP-4        接住了·未命中 BU+2 BE+0 PHP-4
+RMB 蓄力(按0.5)     sh-7 hp-1 BE+0         ★造成伤害 sh-7 hp-1 BE+0
+Space            hp-1 BE+0              ★造成伤害 hp-1 BE+0
+Shift 冲刺         sh-7 hp-1 BE+0         ★造成伤害 sh-7 hp-1 BE+0
+Q                BE+0                   接住了·未命中 BE+0
+E                sh-1 hp+1              ★造成伤害 sh-1 hp+1
+R                BE-1                   接住了·未命中 BE-1
+F                BE+0                   接住了·未命中 BE+0
+V                BE-2                   接住了·未命中 BE-2
+B                BE+0                   接住了·未命中 BE+0
+C                BE-1                   接住了·未命中 BE-1
+X                hp+1 BE-3              接住了·未命中 hp+1 BE-3
+T                hp+1 BU+2 BE+0         接住了·未命中 hp+1 BU+2 BE+0
+1                sh-16 BE-4             ★造成伤害 sh-16 BE-4
+2                sh+1 BE-4              接住了·未命中 sh+1 BE-4
+3                BE-4                   接住了·未命中 BE-4
+4                sh-10 hp-1 BE-3 PHP-64 ★造成伤害 sh-10 hp-1 BE-3 PHP-64
+
+漂移带与明细存 runs/moves_result.json
+注意：重置不清 CD，靠后的候选可能被低估；「存疑」≠「无效」。
