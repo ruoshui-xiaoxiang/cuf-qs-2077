@@ -1,0 +1,1345 @@
+{
+  "group": "baseline_statistical",
+  "rounds_target": 10,
+  "completed": 10,
+  "disintegrated": false,
+  "criterion": null,
+  "virtual_lifespan": 10,
+  "score_history": [
+    0.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "accuracy_history": [
+    0.5,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "converged_final": true,
+  "criteria_applicability": {
+    "semantic_death": "not_applicable",
+    "functional_death": "applicable",
+    "over_budget": "not_applicable"
+  },
+  "model_snapshot": {
+    "combos": 4,
+    "total_observations": 40,
+    "label_history_size": 4
+  },
+  "round_details": [
+    {
+      "round_id": 0,
+      "entities_count": 4,
+      "events_count": 0,
+      "predictions": [
+        {
+          "entity_id": "EID:1",
+          "combo": [
+            "player",
+            "player"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:N1",
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:F1",
+          "combo": [
+            "npc",
+            "scavenger"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:F2",
+          "combo": [
+            "device",
+            "drone"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        }
+      ],
+      "adjudications": [
+        {
+          "entity_id": "EID:1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:N1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:F1",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W1",
+              "rule_id": "R_W1_1",
+              "reason": "entity at distance 72.34282953339904 > radius 50.0 but in scan"
+            }
+          ],
+          "predicted": false,
+          "correct": false
+        },
+        {
+          "entity_id": "EID:F2",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W1",
+              "rule_id": "R_W1_1",
+              "reason": "entity at distance 93.4619397448357 > radius 50.0 but in scan"
+            }
+          ],
+          "predicted": false,
+          "correct": false
+        }
+      ],
+      "accuracy": 0.5,
+      "alignment_score": 0.0,
+      "induction_conclusions": [
+        {
+          "combo": [
+            "device",
+            "drone"
+          ],
+          "n_observed": 1,
+          "n_anomalies": 1,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "n_observed": 1,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        },
+        {
+          "combo": [
+            "npc",
+            "scavenger"
+          ],
+          "n_observed": 1,
+          "n_anomalies": 1,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "player",
+            "player"
+          ],
+          "n_observed": 1,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        }
+      ],
+      "model_size": 4
+    },
+    {
+      "round_id": 1,
+      "entities_count": 4,
+      "events_count": 1,
+      "predictions": [
+        {
+          "entity_id": "EID:1",
+          "combo": [
+            "player",
+            "player"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:N1",
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:F1",
+          "combo": [
+            "npc",
+            "scavenger"
+          ],
+          "p_anomaly": 1.0,
+          "predicted_anomaly": true
+        },
+        {
+          "entity_id": "EID:F2",
+          "combo": [
+            "device",
+            "drone"
+          ],
+          "p_anomaly": 1.0,
+          "predicted_anomaly": true
+        }
+      ],
+      "adjudications": [
+        {
+          "entity_id": "EID:1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:N1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:F1",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W1",
+              "rule_id": "R_W1_1",
+              "reason": "entity at distance 72.34282953339904 > radius 50.0 but in scan"
+            }
+          ],
+          "predicted": true,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:F2",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W1",
+              "rule_id": "R_W1_1",
+              "reason": "entity at distance 93.4619397448357 > radius 50.0 but in scan"
+            }
+          ],
+          "predicted": true,
+          "correct": true
+        }
+      ],
+      "accuracy": 1.0,
+      "alignment_score": 1.0,
+      "induction_conclusions": [
+        {
+          "combo": [
+            "device",
+            "drone"
+          ],
+          "n_observed": 2,
+          "n_anomalies": 2,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "n_observed": 2,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        },
+        {
+          "combo": [
+            "npc",
+            "scavenger"
+          ],
+          "n_observed": 2,
+          "n_anomalies": 2,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "player",
+            "player"
+          ],
+          "n_observed": 2,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        }
+      ],
+      "model_size": 4
+    },
+    {
+      "round_id": 2,
+      "entities_count": 4,
+      "events_count": 0,
+      "predictions": [
+        {
+          "entity_id": "EID:1",
+          "combo": [
+            "player",
+            "player"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:N1",
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:F1",
+          "combo": [
+            "npc",
+            "scavenger"
+          ],
+          "p_anomaly": 1.0,
+          "predicted_anomaly": true
+        },
+        {
+          "entity_id": "EID:F2",
+          "combo": [
+            "device",
+            "drone"
+          ],
+          "p_anomaly": 1.0,
+          "predicted_anomaly": true
+        }
+      ],
+      "adjudications": [
+        {
+          "entity_id": "EID:1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:N1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:F1",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W1",
+              "rule_id": "R_W1_1",
+              "reason": "entity at distance 72.34282953339904 > radius 50.0 but in scan"
+            }
+          ],
+          "predicted": true,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:F2",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W1",
+              "rule_id": "R_W1_1",
+              "reason": "entity at distance 93.4619397448357 > radius 50.0 but in scan"
+            }
+          ],
+          "predicted": true,
+          "correct": true
+        }
+      ],
+      "accuracy": 1.0,
+      "alignment_score": 1.0,
+      "induction_conclusions": [
+        {
+          "combo": [
+            "device",
+            "drone"
+          ],
+          "n_observed": 3,
+          "n_anomalies": 3,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "n_observed": 3,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        },
+        {
+          "combo": [
+            "npc",
+            "scavenger"
+          ],
+          "n_observed": 3,
+          "n_anomalies": 3,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "player",
+            "player"
+          ],
+          "n_observed": 3,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        }
+      ],
+      "model_size": 4
+    },
+    {
+      "round_id": 3,
+      "entities_count": 4,
+      "events_count": 1,
+      "predictions": [
+        {
+          "entity_id": "EID:1",
+          "combo": [
+            "player",
+            "player"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:N1",
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:F1",
+          "combo": [
+            "npc",
+            "scavenger"
+          ],
+          "p_anomaly": 1.0,
+          "predicted_anomaly": true
+        },
+        {
+          "entity_id": "EID:F2",
+          "combo": [
+            "device",
+            "drone"
+          ],
+          "p_anomaly": 1.0,
+          "predicted_anomaly": true
+        }
+      ],
+      "adjudications": [
+        {
+          "entity_id": "EID:1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:N1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:F1",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W1",
+              "rule_id": "R_W1_1",
+              "reason": "entity at distance 66.34282953339904 > radius 50.0 but in scan"
+            }
+          ],
+          "predicted": true,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:F2",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W1",
+              "rule_id": "R_W1_1",
+              "reason": "entity at distance 87.4619397448357 > radius 50.0 but in scan"
+            }
+          ],
+          "predicted": true,
+          "correct": true
+        }
+      ],
+      "accuracy": 1.0,
+      "alignment_score": 1.0,
+      "induction_conclusions": [
+        {
+          "combo": [
+            "device",
+            "drone"
+          ],
+          "n_observed": 4,
+          "n_anomalies": 4,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "n_observed": 4,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        },
+        {
+          "combo": [
+            "npc",
+            "scavenger"
+          ],
+          "n_observed": 4,
+          "n_anomalies": 4,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "player",
+            "player"
+          ],
+          "n_observed": 4,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        }
+      ],
+      "model_size": 4
+    },
+    {
+      "round_id": 4,
+      "entities_count": 4,
+      "events_count": 0,
+      "predictions": [
+        {
+          "entity_id": "EID:1",
+          "combo": [
+            "player",
+            "player"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:N1",
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:F1",
+          "combo": [
+            "npc",
+            "scavenger"
+          ],
+          "p_anomaly": 1.0,
+          "predicted_anomaly": true
+        },
+        {
+          "entity_id": "EID:F2",
+          "combo": [
+            "device",
+            "drone"
+          ],
+          "p_anomaly": 1.0,
+          "predicted_anomaly": true
+        }
+      ],
+      "adjudications": [
+        {
+          "entity_id": "EID:1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:N1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:F1",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W1",
+              "rule_id": "R_W1_1",
+              "reason": "entity at distance 66.34282953339904 > radius 50.0 but in scan"
+            }
+          ],
+          "predicted": true,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:F2",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W1",
+              "rule_id": "R_W1_1",
+              "reason": "entity at distance 87.4619397448357 > radius 50.0 but in scan"
+            }
+          ],
+          "predicted": true,
+          "correct": true
+        }
+      ],
+      "accuracy": 1.0,
+      "alignment_score": 1.0,
+      "induction_conclusions": [
+        {
+          "combo": [
+            "device",
+            "drone"
+          ],
+          "n_observed": 5,
+          "n_anomalies": 5,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "n_observed": 5,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        },
+        {
+          "combo": [
+            "npc",
+            "scavenger"
+          ],
+          "n_observed": 5,
+          "n_anomalies": 5,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "player",
+            "player"
+          ],
+          "n_observed": 5,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        }
+      ],
+      "model_size": 4
+    },
+    {
+      "round_id": 5,
+      "entities_count": 4,
+      "events_count": 1,
+      "predictions": [
+        {
+          "entity_id": "EID:1",
+          "combo": [
+            "player",
+            "player"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:N1",
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:F1",
+          "combo": [
+            "npc",
+            "scavenger"
+          ],
+          "p_anomaly": 1.0,
+          "predicted_anomaly": true
+        },
+        {
+          "entity_id": "EID:F2",
+          "combo": [
+            "device",
+            "drone"
+          ],
+          "p_anomaly": 1.0,
+          "predicted_anomaly": true
+        }
+      ],
+      "adjudications": [
+        {
+          "entity_id": "EID:1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:N1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:F1",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W1",
+              "rule_id": "R_W1_1",
+              "reason": "entity at distance 60.34282953339904 > radius 50.0 but in scan"
+            }
+          ],
+          "predicted": true,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:F2",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W1",
+              "rule_id": "R_W1_1",
+              "reason": "entity at distance 81.4619397448357 > radius 50.0 but in scan"
+            }
+          ],
+          "predicted": true,
+          "correct": true
+        }
+      ],
+      "accuracy": 1.0,
+      "alignment_score": 1.0,
+      "induction_conclusions": [
+        {
+          "combo": [
+            "device",
+            "drone"
+          ],
+          "n_observed": 6,
+          "n_anomalies": 6,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "n_observed": 6,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        },
+        {
+          "combo": [
+            "npc",
+            "scavenger"
+          ],
+          "n_observed": 6,
+          "n_anomalies": 6,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "player",
+            "player"
+          ],
+          "n_observed": 6,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        }
+      ],
+      "model_size": 4
+    },
+    {
+      "round_id": 6,
+      "entities_count": 4,
+      "events_count": 0,
+      "predictions": [
+        {
+          "entity_id": "EID:1",
+          "combo": [
+            "player",
+            "player"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:N1",
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:F1",
+          "combo": [
+            "npc",
+            "scavenger"
+          ],
+          "p_anomaly": 1.0,
+          "predicted_anomaly": true
+        },
+        {
+          "entity_id": "EID:F2",
+          "combo": [
+            "device",
+            "drone"
+          ],
+          "p_anomaly": 1.0,
+          "predicted_anomaly": true
+        }
+      ],
+      "adjudications": [
+        {
+          "entity_id": "EID:1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:N1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:F1",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W1",
+              "rule_id": "R_W1_1",
+              "reason": "entity at distance 60.34282953339904 > radius 50.0 but in scan"
+            }
+          ],
+          "predicted": true,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:F2",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W1",
+              "rule_id": "R_W1_1",
+              "reason": "entity at distance 81.4619397448357 > radius 50.0 but in scan"
+            }
+          ],
+          "predicted": true,
+          "correct": true
+        }
+      ],
+      "accuracy": 1.0,
+      "alignment_score": 1.0,
+      "induction_conclusions": [
+        {
+          "combo": [
+            "device",
+            "drone"
+          ],
+          "n_observed": 7,
+          "n_anomalies": 7,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "n_observed": 7,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        },
+        {
+          "combo": [
+            "npc",
+            "scavenger"
+          ],
+          "n_observed": 7,
+          "n_anomalies": 7,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "player",
+            "player"
+          ],
+          "n_observed": 7,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        }
+      ],
+      "model_size": 4
+    },
+    {
+      "round_id": 7,
+      "entities_count": 4,
+      "events_count": 1,
+      "predictions": [
+        {
+          "entity_id": "EID:1",
+          "combo": [
+            "player",
+            "player"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:N1",
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:F1",
+          "combo": [
+            "npc",
+            "scavenger"
+          ],
+          "p_anomaly": 1.0,
+          "predicted_anomaly": true
+        },
+        {
+          "entity_id": "EID:F2",
+          "combo": [
+            "device",
+            "drone"
+          ],
+          "p_anomaly": 1.0,
+          "predicted_anomaly": true
+        }
+      ],
+      "adjudications": [
+        {
+          "entity_id": "EID:1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:N1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:F1",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W1",
+              "rule_id": "R_W1_1",
+              "reason": "entity at distance 69.34282953339904 > radius 50.0 but in scan"
+            }
+          ],
+          "predicted": true,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:F2",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W1",
+              "rule_id": "R_W1_1",
+              "reason": "entity at distance 90.4619397448357 > radius 50.0 but in scan"
+            }
+          ],
+          "predicted": true,
+          "correct": true
+        }
+      ],
+      "accuracy": 1.0,
+      "alignment_score": 1.0,
+      "induction_conclusions": [
+        {
+          "combo": [
+            "device",
+            "drone"
+          ],
+          "n_observed": 8,
+          "n_anomalies": 8,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "n_observed": 8,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        },
+        {
+          "combo": [
+            "npc",
+            "scavenger"
+          ],
+          "n_observed": 8,
+          "n_anomalies": 8,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "player",
+            "player"
+          ],
+          "n_observed": 8,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        }
+      ],
+      "model_size": 4
+    },
+    {
+      "round_id": 8,
+      "entities_count": 4,
+      "events_count": 0,
+      "predictions": [
+        {
+          "entity_id": "EID:1",
+          "combo": [
+            "player",
+            "player"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:N1",
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:F1",
+          "combo": [
+            "npc",
+            "scavenger"
+          ],
+          "p_anomaly": 1.0,
+          "predicted_anomaly": true
+        },
+        {
+          "entity_id": "EID:F2",
+          "combo": [
+            "device",
+            "drone"
+          ],
+          "p_anomaly": 1.0,
+          "predicted_anomaly": true
+        }
+      ],
+      "adjudications": [
+        {
+          "entity_id": "EID:1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:N1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:F1",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W1",
+              "rule_id": "R_W1_1",
+              "reason": "entity at distance 69.34282953339904 > radius 50.0 but in scan"
+            }
+          ],
+          "predicted": true,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:F2",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W1",
+              "rule_id": "R_W1_1",
+              "reason": "entity at distance 90.4619397448357 > radius 50.0 but in scan"
+            }
+          ],
+          "predicted": true,
+          "correct": true
+        }
+      ],
+      "accuracy": 1.0,
+      "alignment_score": 1.0,
+      "induction_conclusions": [
+        {
+          "combo": [
+            "device",
+            "drone"
+          ],
+          "n_observed": 9,
+          "n_anomalies": 9,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "n_observed": 9,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        },
+        {
+          "combo": [
+            "npc",
+            "scavenger"
+          ],
+          "n_observed": 9,
+          "n_anomalies": 9,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "player",
+            "player"
+          ],
+          "n_observed": 9,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        }
+      ],
+      "model_size": 4
+    },
+    {
+      "round_id": 9,
+      "entities_count": 4,
+      "events_count": 1,
+      "predictions": [
+        {
+          "entity_id": "EID:1",
+          "combo": [
+            "player",
+            "player"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:N1",
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:F1",
+          "combo": [
+            "npc",
+            "scavenger"
+          ],
+          "p_anomaly": 1.0,
+          "predicted_anomaly": true
+        },
+        {
+          "entity_id": "EID:F2",
+          "combo": [
+            "device",
+            "drone"
+          ],
+          "p_anomaly": 1.0,
+          "predicted_anomaly": true
+        }
+      ],
+      "adjudications": [
+        {
+          "entity_id": "EID:1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:N1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:F1",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W1",
+              "rule_id": "R_W1_1",
+              "reason": "entity at distance 63.34282953339904 > radius 50.0 but in scan"
+            }
+          ],
+          "predicted": true,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:F2",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W1",
+              "rule_id": "R_W1_1",
+              "reason": "entity at distance 84.4619397448357 > radius 50.0 but in scan"
+            }
+          ],
+          "predicted": true,
+          "correct": true
+        }
+      ],
+      "accuracy": 1.0,
+      "alignment_score": 1.0,
+      "induction_conclusions": [
+        {
+          "combo": [
+            "device",
+            "drone"
+          ],
+          "n_observed": 10,
+          "n_anomalies": 10,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "n_observed": 10,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        },
+        {
+          "combo": [
+            "npc",
+            "scavenger"
+          ],
+          "n_observed": 10,
+          "n_anomalies": 10,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "player",
+            "player"
+          ],
+          "n_observed": 10,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        }
+      ],
+      "model_size": 4
+    }
+  ]
+}

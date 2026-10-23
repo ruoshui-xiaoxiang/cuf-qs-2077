@@ -1,0 +1,226 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="400" viewBox="0 0 760 400">
+<rect width="760" height="400" fill="white"/>
+<text x="380" y="20" text-anchor="middle" font-size="14" font-family="sans-serif">C_H cost curve — A_W1 (heterogeneous)</text>
+<line x1="56" y1="40" x2="56" y2="356" stroke="black" stroke-width="1"/>
+<line x1="56" y1="356" x2="744" y2="356" stroke="black" stroke-width="1"/>
+<text x="400" y="392" text-anchor="middle" font-size="11" font-family="sans-serif">round</text>
+<text x="14" y="198" text-anchor="middle" font-size="11" font-family="sans-serif" transform="rotate(-90 14 198)">C_H component</text>
+<text x="50" y="44" text-anchor="end" font-size="10" font-family="sans-serif">5.240</text>
+<text x="50" y="360" text-anchor="end" font-size="10" font-family="sans-serif">0.760</text>
+<polyline points="56.000,198.000 132.444,127.464 208.889,268.536 285.333,268.536 361.778,268.536 438.222,268.536 514.667,268.536 591.111,268.536 667.556,268.536 744.000,268.536" fill="none" stroke="#1f77b4" stroke-width="1.6"/>
+<text x="64" y="54" font-size="10" fill="#1f77b4" font-family="sans-serif">exp C_struct seed=1</text>
+<polyline points="56.000,127.464 132.444,127.464 208.889,127.464 285.333,127.464 361.778,127.464 438.222,127.464 514.667,127.464 591.111,127.464 667.556,127.464 744.000,127.464" fill="none" stroke="#d62728" stroke-width="1.6"/>
+<text x="64" y="68" font-size="10" fill="#d62728" font-family="sans-serif">exp C_adapt seed=1</text>
+<polyline points="56.000,339.071 132.444,198.000 208.889,56.929 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#2ca02c" stroke-width="1.6"/>
+<text x="64" y="82" font-size="10" fill="#2ca02c" font-family="sans-serif">exp C_extend seed=1</text>
+<polyline points="56.000,198.000 132.444,127.464 208.889,268.536 285.333,268.536 361.778,268.536 438.222,268.536 514.667,268.536 591.111,268.536 667.556,268.536 744.000,268.536" fill="none" stroke="#ff7f0e" stroke-width="1.6"/>
+<text x="64" y="96" font-size="10" fill="#ff7f0e" font-family="sans-serif">exp C_struct seed=2</text>
+<polyline points="56.000,127.464 132.444,127.464 208.889,127.464 285.333,127.464 361.778,127.464 438.222,127.464 514.667,127.464 591.111,127.464 667.556,127.464 744.000,127.464" fill="none" stroke="#9467bd" stroke-width="1.6"/>
+<text x="64" y="110" font-size="10" fill="#9467bd" font-family="sans-serif">exp C_adapt seed=2</text>
+<polyline points="56.000,339.071 132.444,198.000 208.889,56.929 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#8c564b" stroke-width="1.6"/>
+<text x="64" y="124" font-size="10" fill="#8c564b" font-family="sans-serif">exp C_extend seed=2</text>
+<polyline points="56.000,198.000 132.444,127.464 208.889,268.536 285.333,268.536 361.778,268.536 438.222,268.536 514.667,268.536 591.111,268.536 667.556,268.536 744.000,268.536" fill="none" stroke="#17becf" stroke-width="1.6"/>
+<text x="64" y="138" font-size="10" fill="#17becf" font-family="sans-serif">exp C_struct seed=3</text>
+<polyline points="56.000,127.464 132.444,127.464 208.889,127.464 285.333,127.464 361.778,127.464 438.222,127.464 514.667,127.464 591.111,127.464 667.556,127.464 744.000,127.464" fill="none" stroke="#e377c2" stroke-width="1.6"/>
+<text x="64" y="152" font-size="10" fill="#e377c2" font-family="sans-serif">exp C_adapt seed=3</text>
+<polyline points="56.000,339.071 132.444,198.000 208.889,56.929 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#7f7f7f" stroke-width="1.6"/>
+<text x="64" y="166" font-size="10" fill="#7f7f7f" font-family="sans-serif">exp C_extend seed=3</text>
+<polyline points="56.000,198.000 132.444,127.464 208.889,268.536 285.333,268.536 361.778,268.536 438.222,268.536 514.667,268.536 591.111,268.536 667.556,268.536 744.000,268.536" fill="none" stroke="#1f77b4" stroke-width="1.6"/>
+<text x="64" y="180" font-size="10" fill="#1f77b4" font-family="sans-serif">exp C_struct seed=4</text>
+<polyline points="56.000,127.464 132.444,127.464 208.889,127.464 285.333,127.464 361.778,127.464 438.222,127.464 514.667,127.464 591.111,127.464 667.556,127.464 744.000,127.464" fill="none" stroke="#d62728" stroke-width="1.6"/>
+<text x="64" y="194" font-size="10" fill="#d62728" font-family="sans-serif">exp C_adapt seed=4</text>
+<polyline points="56.000,339.071 132.444,198.000 208.889,56.929 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#2ca02c" stroke-width="1.6"/>
+<text x="64" y="208" font-size="10" fill="#2ca02c" font-family="sans-serif">exp C_extend seed=4</text>
+<polyline points="56.000,198.000 132.444,127.464 208.889,268.536 285.333,268.536 361.778,268.536 438.222,268.536 514.667,268.536 591.111,268.536 667.556,268.536 744.000,268.536" fill="none" stroke="#ff7f0e" stroke-width="1.6"/>
+<text x="64" y="222" font-size="10" fill="#ff7f0e" font-family="sans-serif">exp C_struct seed=5</text>
+<polyline points="56.000,127.464 132.444,127.464 208.889,127.464 285.333,127.464 361.778,127.464 438.222,127.464 514.667,127.464 591.111,127.464 667.556,127.464 744.000,127.464" fill="none" stroke="#9467bd" stroke-width="1.6"/>
+<text x="64" y="236" font-size="10" fill="#9467bd" font-family="sans-serif">exp C_adapt seed=5</text>
+<polyline points="56.000,339.071 132.444,198.000 208.889,56.929 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#8c564b" stroke-width="1.6"/>
+<text x="64" y="250" font-size="10" fill="#8c564b" font-family="sans-serif">exp C_extend seed=5</text>
+<polyline points="56.000,198.000 132.444,127.464 208.889,268.536 285.333,268.536 361.778,268.536 438.222,268.536 514.667,268.536 591.111,268.536 667.556,268.536 744.000,268.536" fill="none" stroke="#17becf" stroke-width="1.6"/>
+<text x="64" y="264" font-size="10" fill="#17becf" font-family="sans-serif">exp C_struct seed=6</text>
+<polyline points="56.000,127.464 132.444,127.464 208.889,127.464 285.333,127.464 361.778,127.464 438.222,127.464 514.667,127.464 591.111,127.464 667.556,127.464 744.000,127.464" fill="none" stroke="#e377c2" stroke-width="1.6"/>
+<text x="64" y="278" font-size="10" fill="#e377c2" font-family="sans-serif">exp C_adapt seed=6</text>
+<polyline points="56.000,339.071 132.444,198.000 208.889,56.929 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#7f7f7f" stroke-width="1.6"/>
+<text x="64" y="292" font-size="10" fill="#7f7f7f" font-family="sans-serif">exp C_extend seed=6</text>
+<polyline points="56.000,198.000 132.444,127.464 208.889,268.536 285.333,268.536 361.778,268.536 438.222,268.536 514.667,268.536 591.111,268.536 667.556,268.536 744.000,268.536" fill="none" stroke="#1f77b4" stroke-width="1.6"/>
+<text x="64" y="306" font-size="10" fill="#1f77b4" font-family="sans-serif">exp C_struct seed=7</text>
+<polyline points="56.000,127.464 132.444,127.464 208.889,127.464 285.333,127.464 361.778,127.464 438.222,127.464 514.667,127.464 591.111,127.464 667.556,127.464 744.000,127.464" fill="none" stroke="#d62728" stroke-width="1.6"/>
+<text x="64" y="320" font-size="10" fill="#d62728" font-family="sans-serif">exp C_adapt seed=7</text>
+<polyline points="56.000,339.071 132.444,198.000 208.889,56.929 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#2ca02c" stroke-width="1.6"/>
+<text x="64" y="334" font-size="10" fill="#2ca02c" font-family="sans-serif">exp C_extend seed=7</text>
+<polyline points="56.000,198.000 132.444,127.464 208.889,268.536 285.333,268.536 361.778,268.536 438.222,268.536 514.667,268.536 591.111,268.536 667.556,268.536 744.000,268.536" fill="none" stroke="#ff7f0e" stroke-width="1.6"/>
+<text x="64" y="348" font-size="10" fill="#ff7f0e" font-family="sans-serif">exp C_struct seed=8</text>
+<polyline points="56.000,127.464 132.444,127.464 208.889,127.464 285.333,127.464 361.778,127.464 438.222,127.464 514.667,127.464 591.111,127.464 667.556,127.464 744.000,127.464" fill="none" stroke="#9467bd" stroke-width="1.6"/>
+<text x="64" y="362" font-size="10" fill="#9467bd" font-family="sans-serif">exp C_adapt seed=8</text>
+<polyline points="56.000,339.071 132.444,198.000 208.889,56.929 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#8c564b" stroke-width="1.6"/>
+<text x="64" y="376" font-size="10" fill="#8c564b" font-family="sans-serif">exp C_extend seed=8</text>
+<polyline points="56.000,198.000 132.444,127.464 208.889,268.536 285.333,268.536 361.778,268.536 438.222,268.536 514.667,268.536 591.111,268.536 667.556,268.536 744.000,268.536" fill="none" stroke="#17becf" stroke-width="1.6"/>
+<text x="64" y="390" font-size="10" fill="#17becf" font-family="sans-serif">exp C_struct seed=9</text>
+<polyline points="56.000,127.464 132.444,127.464 208.889,127.464 285.333,127.464 361.778,127.464 438.222,127.464 514.667,127.464 591.111,127.464 667.556,127.464 744.000,127.464" fill="none" stroke="#e377c2" stroke-width="1.6"/>
+<text x="64" y="404" font-size="10" fill="#e377c2" font-family="sans-serif">exp C_adapt seed=9</text>
+<polyline points="56.000,339.071 132.444,198.000 208.889,56.929 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#7f7f7f" stroke-width="1.6"/>
+<text x="64" y="418" font-size="10" fill="#7f7f7f" font-family="sans-serif">exp C_extend seed=9</text>
+<polyline points="56.000,198.000 132.444,127.464 208.889,268.536 285.333,268.536 361.778,268.536 438.222,268.536 514.667,268.536 591.111,268.536 667.556,268.536 744.000,268.536" fill="none" stroke="#1f77b4" stroke-width="1.6"/>
+<text x="64" y="432" font-size="10" fill="#1f77b4" font-family="sans-serif">exp C_struct seed=10</text>
+<polyline points="56.000,127.464 132.444,127.464 208.889,127.464 285.333,127.464 361.778,127.464 438.222,127.464 514.667,127.464 591.111,127.464 667.556,127.464 744.000,127.464" fill="none" stroke="#d62728" stroke-width="1.6"/>
+<text x="64" y="446" font-size="10" fill="#d62728" font-family="sans-serif">exp C_adapt seed=10</text>
+<polyline points="56.000,339.071 132.444,198.000 208.889,56.929 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#2ca02c" stroke-width="1.6"/>
+<text x="64" y="460" font-size="10" fill="#2ca02c" font-family="sans-serif">exp C_extend seed=10</text>
+<polyline points="56.000,198.000 132.444,127.464 208.889,268.536 285.333,268.536 361.778,268.536 438.222,268.536 514.667,268.536 591.111,268.536 667.556,268.536 744.000,268.536" fill="none" stroke="#ff7f0e" stroke-width="1.6"/>
+<text x="64" y="474" font-size="10" fill="#ff7f0e" font-family="sans-serif">exp C_struct seed=11</text>
+<polyline points="56.000,127.464 132.444,127.464 208.889,127.464 285.333,127.464 361.778,127.464 438.222,127.464 514.667,127.464 591.111,127.464 667.556,127.464 744.000,127.464" fill="none" stroke="#9467bd" stroke-width="1.6"/>
+<text x="64" y="488" font-size="10" fill="#9467bd" font-family="sans-serif">exp C_adapt seed=11</text>
+<polyline points="56.000,339.071 132.444,198.000 208.889,56.929 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#8c564b" stroke-width="1.6"/>
+<text x="64" y="502" font-size="10" fill="#8c564b" font-family="sans-serif">exp C_extend seed=11</text>
+<polyline points="56.000,198.000 132.444,127.464 208.889,268.536 285.333,268.536 361.778,268.536 438.222,268.536 514.667,268.536 591.111,268.536 667.556,268.536 744.000,268.536" fill="none" stroke="#17becf" stroke-width="1.6"/>
+<text x="64" y="516" font-size="10" fill="#17becf" font-family="sans-serif">exp C_struct seed=12</text>
+<polyline points="56.000,127.464 132.444,127.464 208.889,127.464 285.333,127.464 361.778,127.464 438.222,127.464 514.667,127.464 591.111,127.464 667.556,127.464 744.000,127.464" fill="none" stroke="#e377c2" stroke-width="1.6"/>
+<text x="64" y="530" font-size="10" fill="#e377c2" font-family="sans-serif">exp C_adapt seed=12</text>
+<polyline points="56.000,339.071 132.444,198.000 208.889,56.929 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#7f7f7f" stroke-width="1.6"/>
+<text x="64" y="544" font-size="10" fill="#7f7f7f" font-family="sans-serif">exp C_extend seed=12</text>
+<polyline points="56.000,198.000 132.444,127.464 208.889,268.536 285.333,268.536 361.778,268.536 438.222,268.536 514.667,268.536 591.111,268.536 667.556,268.536 744.000,268.536" fill="none" stroke="#1f77b4" stroke-width="1.6"/>
+<text x="64" y="558" font-size="10" fill="#1f77b4" font-family="sans-serif">exp C_struct seed=13</text>
+<polyline points="56.000,127.464 132.444,127.464 208.889,127.464 285.333,127.464 361.778,127.464 438.222,127.464 514.667,127.464 591.111,127.464 667.556,127.464 744.000,127.464" fill="none" stroke="#d62728" stroke-width="1.6"/>
+<text x="64" y="572" font-size="10" fill="#d62728" font-family="sans-serif">exp C_adapt seed=13</text>
+<polyline points="56.000,339.071 132.444,198.000 208.889,56.929 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#2ca02c" stroke-width="1.6"/>
+<text x="64" y="586" font-size="10" fill="#2ca02c" font-family="sans-serif">exp C_extend seed=13</text>
+<polyline points="56.000,198.000 132.444,127.464 208.889,268.536 285.333,268.536 361.778,268.536 438.222,268.536 514.667,268.536 591.111,268.536 667.556,268.536 744.000,268.536" fill="none" stroke="#ff7f0e" stroke-width="1.6"/>
+<text x="64" y="600" font-size="10" fill="#ff7f0e" font-family="sans-serif">exp C_struct seed=14</text>
+<polyline points="56.000,127.464 132.444,127.464 208.889,127.464 285.333,127.464 361.778,127.464 438.222,127.464 514.667,127.464 591.111,127.464 667.556,127.464 744.000,127.464" fill="none" stroke="#9467bd" stroke-width="1.6"/>
+<text x="64" y="614" font-size="10" fill="#9467bd" font-family="sans-serif">exp C_adapt seed=14</text>
+<polyline points="56.000,339.071 132.444,198.000 208.889,56.929 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#8c564b" stroke-width="1.6"/>
+<text x="64" y="628" font-size="10" fill="#8c564b" font-family="sans-serif">exp C_extend seed=14</text>
+<polyline points="56.000,198.000 132.444,127.464 208.889,268.536 285.333,268.536 361.778,268.536 438.222,268.536 514.667,268.536 591.111,268.536 667.556,268.536 744.000,268.536" fill="none" stroke="#17becf" stroke-width="1.6"/>
+<text x="64" y="642" font-size="10" fill="#17becf" font-family="sans-serif">exp C_struct seed=15</text>
+<polyline points="56.000,127.464 132.444,127.464 208.889,127.464 285.333,127.464 361.778,127.464 438.222,127.464 514.667,127.464 591.111,127.464 667.556,127.464 744.000,127.464" fill="none" stroke="#e377c2" stroke-width="1.6"/>
+<text x="64" y="656" font-size="10" fill="#e377c2" font-family="sans-serif">exp C_adapt seed=15</text>
+<polyline points="56.000,339.071 132.444,198.000 208.889,56.929 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#7f7f7f" stroke-width="1.6"/>
+<text x="64" y="670" font-size="10" fill="#7f7f7f" font-family="sans-serif">exp C_extend seed=15</text>
+<polyline points="56.000,198.000 132.444,127.464 208.889,268.536 285.333,268.536 361.778,268.536 438.222,268.536 514.667,268.536 591.111,268.536 667.556,268.536 744.000,268.536" fill="none" stroke="#1f77b4" stroke-width="1.6"/>
+<text x="64" y="684" font-size="10" fill="#1f77b4" font-family="sans-serif">exp C_struct seed=16</text>
+<polyline points="56.000,127.464 132.444,127.464 208.889,127.464 285.333,127.464 361.778,127.464 438.222,127.464 514.667,127.464 591.111,127.464 667.556,127.464 744.000,127.464" fill="none" stroke="#d62728" stroke-width="1.6"/>
+<text x="64" y="698" font-size="10" fill="#d62728" font-family="sans-serif">exp C_adapt seed=16</text>
+<polyline points="56.000,339.071 132.444,198.000 208.889,56.929 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#2ca02c" stroke-width="1.6"/>
+<text x="64" y="712" font-size="10" fill="#2ca02c" font-family="sans-serif">exp C_extend seed=16</text>
+<polyline points="56.000,198.000 132.444,127.464 208.889,268.536 285.333,268.536 361.778,268.536 438.222,268.536 514.667,268.536 591.111,268.536 667.556,268.536 744.000,268.536" fill="none" stroke="#ff7f0e" stroke-width="1.6"/>
+<text x="64" y="726" font-size="10" fill="#ff7f0e" font-family="sans-serif">exp C_struct seed=17</text>
+<polyline points="56.000,127.464 132.444,127.464 208.889,127.464 285.333,127.464 361.778,127.464 438.222,127.464 514.667,127.464 591.111,127.464 667.556,127.464 744.000,127.464" fill="none" stroke="#9467bd" stroke-width="1.6"/>
+<text x="64" y="740" font-size="10" fill="#9467bd" font-family="sans-serif">exp C_adapt seed=17</text>
+<polyline points="56.000,339.071 132.444,198.000 208.889,56.929 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#8c564b" stroke-width="1.6"/>
+<text x="64" y="754" font-size="10" fill="#8c564b" font-family="sans-serif">exp C_extend seed=17</text>
+<polyline points="56.000,198.000 132.444,127.464 208.889,268.536 285.333,268.536 361.778,268.536 438.222,268.536 514.667,268.536 591.111,268.536 667.556,268.536 744.000,268.536" fill="none" stroke="#17becf" stroke-width="1.6"/>
+<text x="64" y="768" font-size="10" fill="#17becf" font-family="sans-serif">exp C_struct seed=18</text>
+<polyline points="56.000,127.464 132.444,127.464 208.889,127.464 285.333,127.464 361.778,127.464 438.222,127.464 514.667,127.464 591.111,127.464 667.556,127.464 744.000,127.464" fill="none" stroke="#e377c2" stroke-width="1.6"/>
+<text x="64" y="782" font-size="10" fill="#e377c2" font-family="sans-serif">exp C_adapt seed=18</text>
+<polyline points="56.000,339.071 132.444,198.000 208.889,56.929 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#7f7f7f" stroke-width="1.6"/>
+<text x="64" y="796" font-size="10" fill="#7f7f7f" font-family="sans-serif">exp C_extend seed=18</text>
+<polyline points="56.000,198.000 132.444,127.464 208.889,268.536 285.333,268.536 361.778,268.536 438.222,268.536 514.667,268.536 591.111,268.536 667.556,268.536 744.000,268.536" fill="none" stroke="#1f77b4" stroke-width="1.6"/>
+<text x="64" y="810" font-size="10" fill="#1f77b4" font-family="sans-serif">exp C_struct seed=19</text>
+<polyline points="56.000,127.464 132.444,127.464 208.889,127.464 285.333,127.464 361.778,127.464 438.222,127.464 514.667,127.464 591.111,127.464 667.556,127.464 744.000,127.464" fill="none" stroke="#d62728" stroke-width="1.6"/>
+<text x="64" y="824" font-size="10" fill="#d62728" font-family="sans-serif">exp C_adapt seed=19</text>
+<polyline points="56.000,339.071 132.444,198.000 208.889,56.929 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#2ca02c" stroke-width="1.6"/>
+<text x="64" y="838" font-size="10" fill="#2ca02c" font-family="sans-serif">exp C_extend seed=19</text>
+<polyline points="56.000,198.000 132.444,127.464 208.889,268.536 285.333,268.536 361.778,268.536 438.222,268.536 514.667,268.536 591.111,268.536 667.556,268.536 744.000,268.536" fill="none" stroke="#ff7f0e" stroke-width="1.6"/>
+<text x="64" y="852" font-size="10" fill="#ff7f0e" font-family="sans-serif">exp C_struct seed=20</text>
+<polyline points="56.000,127.464 132.444,127.464 208.889,127.464 285.333,127.464 361.778,127.464 438.222,127.464 514.667,127.464 591.111,127.464 667.556,127.464 744.000,127.464" fill="none" stroke="#9467bd" stroke-width="1.6"/>
+<text x="64" y="866" font-size="10" fill="#9467bd" font-family="sans-serif">exp C_adapt seed=20</text>
+<polyline points="56.000,339.071 132.444,198.000 208.889,56.929 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#8c564b" stroke-width="1.6"/>
+<text x="64" y="880" font-size="10" fill="#8c564b" font-family="sans-serif">exp C_extend seed=20</text>
+<polyline points="56.000,198.000 132.444,127.464 208.889,268.536 285.333,268.536 361.778,268.536 438.222,268.536 514.667,268.536 591.111,268.536 667.556,268.536 744.000,268.536" fill="none" stroke="#17becf" stroke-width="1.6"/>
+<text x="64" y="894" font-size="10" fill="#17becf" font-family="sans-serif">exp C_struct seed=21</text>
+<polyline points="56.000,127.464 132.444,127.464 208.889,127.464 285.333,127.464 361.778,127.464 438.222,127.464 514.667,127.464 591.111,127.464 667.556,127.464 744.000,127.464" fill="none" stroke="#e377c2" stroke-width="1.6"/>
+<text x="64" y="908" font-size="10" fill="#e377c2" font-family="sans-serif">exp C_adapt seed=21</text>
+<polyline points="56.000,339.071 132.444,198.000 208.889,56.929 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#7f7f7f" stroke-width="1.6"/>
+<text x="64" y="922" font-size="10" fill="#7f7f7f" font-family="sans-serif">exp C_extend seed=21</text>
+<polyline points="56.000,198.000 132.444,127.464 208.889,268.536 285.333,268.536 361.778,268.536 438.222,268.536 514.667,268.536 591.111,268.536 667.556,268.536 744.000,268.536" fill="none" stroke="#1f77b4" stroke-width="1.6"/>
+<text x="64" y="936" font-size="10" fill="#1f77b4" font-family="sans-serif">exp C_struct seed=22</text>
+<polyline points="56.000,127.464 132.444,127.464 208.889,127.464 285.333,127.464 361.778,127.464 438.222,127.464 514.667,127.464 591.111,127.464 667.556,127.464 744.000,127.464" fill="none" stroke="#d62728" stroke-width="1.6"/>
+<text x="64" y="950" font-size="10" fill="#d62728" font-family="sans-serif">exp C_adapt seed=22</text>
+<polyline points="56.000,339.071 132.444,198.000 208.889,56.929 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#2ca02c" stroke-width="1.6"/>
+<text x="64" y="964" font-size="10" fill="#2ca02c" font-family="sans-serif">exp C_extend seed=22</text>
+<polyline points="56.000,198.000 132.444,127.464 208.889,268.536 285.333,268.536 361.778,268.536 438.222,268.536 514.667,268.536 591.111,268.536 667.556,268.536 744.000,268.536" fill="none" stroke="#ff7f0e" stroke-width="1.6"/>
+<text x="64" y="978" font-size="10" fill="#ff7f0e" font-family="sans-serif">exp C_struct seed=23</text>
+<polyline points="56.000,127.464 132.444,127.464 208.889,127.464 285.333,127.464 361.778,127.464 438.222,127.464 514.667,127.464 591.111,127.464 667.556,127.464 744.000,127.464" fill="none" stroke="#9467bd" stroke-width="1.6"/>
+<text x="64" y="992" font-size="10" fill="#9467bd" font-family="sans-serif">exp C_adapt seed=23</text>
+<polyline points="56.000,339.071 132.444,198.000 208.889,56.929 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#8c564b" stroke-width="1.6"/>
+<text x="64" y="1006" font-size="10" fill="#8c564b" font-family="sans-serif">exp C_extend seed=23</text>
+<polyline points="56.000,198.000 132.444,127.464 208.889,268.536 285.333,268.536 361.778,268.536 438.222,268.536 514.667,268.536 591.111,268.536 667.556,268.536 744.000,268.536" fill="none" stroke="#17becf" stroke-width="1.6"/>
+<text x="64" y="1020" font-size="10" fill="#17becf" font-family="sans-serif">exp C_struct seed=24</text>
+<polyline points="56.000,127.464 132.444,127.464 208.889,127.464 285.333,127.464 361.778,127.464 438.222,127.464 514.667,127.464 591.111,127.464 667.556,127.464 744.000,127.464" fill="none" stroke="#e377c2" stroke-width="1.6"/>
+<text x="64" y="1034" font-size="10" fill="#e377c2" font-family="sans-serif">exp C_adapt seed=24</text>
+<polyline points="56.000,339.071 132.444,198.000 208.889,56.929 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#7f7f7f" stroke-width="1.6"/>
+<text x="64" y="1048" font-size="10" fill="#7f7f7f" font-family="sans-serif">exp C_extend seed=24</text>
+<polyline points="56.000,198.000 132.444,127.464 208.889,268.536 285.333,268.536 361.778,268.536 438.222,268.536 514.667,268.536 591.111,268.536 667.556,268.536 744.000,268.536" fill="none" stroke="#1f77b4" stroke-width="1.6"/>
+<text x="64" y="1062" font-size="10" fill="#1f77b4" font-family="sans-serif">exp C_struct seed=25</text>
+<polyline points="56.000,127.464 132.444,127.464 208.889,127.464 285.333,127.464 361.778,127.464 438.222,127.464 514.667,127.464 591.111,127.464 667.556,127.464 744.000,127.464" fill="none" stroke="#d62728" stroke-width="1.6"/>
+<text x="64" y="1076" font-size="10" fill="#d62728" font-family="sans-serif">exp C_adapt seed=25</text>
+<polyline points="56.000,339.071 132.444,198.000 208.889,56.929 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#2ca02c" stroke-width="1.6"/>
+<text x="64" y="1090" font-size="10" fill="#2ca02c" font-family="sans-serif">exp C_extend seed=25</text>
+<polyline points="56.000,198.000 132.444,127.464 208.889,268.536 285.333,268.536 361.778,268.536 438.222,268.536 514.667,268.536 591.111,268.536 667.556,268.536 744.000,268.536" fill="none" stroke="#ff7f0e" stroke-width="1.6"/>
+<text x="64" y="1104" font-size="10" fill="#ff7f0e" font-family="sans-serif">exp C_struct seed=26</text>
+<polyline points="56.000,127.464 132.444,127.464 208.889,127.464 285.333,127.464 361.778,127.464 438.222,127.464 514.667,127.464 591.111,127.464 667.556,127.464 744.000,127.464" fill="none" stroke="#9467bd" stroke-width="1.6"/>
+<text x="64" y="1118" font-size="10" fill="#9467bd" font-family="sans-serif">exp C_adapt seed=26</text>
+<polyline points="56.000,339.071 132.444,198.000 208.889,56.929 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#8c564b" stroke-width="1.6"/>
+<text x="64" y="1132" font-size="10" fill="#8c564b" font-family="sans-serif">exp C_extend seed=26</text>
+<polyline points="56.000,198.000 132.444,127.464 208.889,268.536 285.333,268.536 361.778,268.536 438.222,268.536 514.667,268.536 591.111,268.536 667.556,268.536 744.000,268.536" fill="none" stroke="#17becf" stroke-width="1.6"/>
+<text x="64" y="1146" font-size="10" fill="#17becf" font-family="sans-serif">exp C_struct seed=27</text>
+<polyline points="56.000,127.464 132.444,127.464 208.889,127.464 285.333,127.464 361.778,127.464 438.222,127.464 514.667,127.464 591.111,127.464 667.556,127.464 744.000,127.464" fill="none" stroke="#e377c2" stroke-width="1.6"/>
+<text x="64" y="1160" font-size="10" fill="#e377c2" font-family="sans-serif">exp C_adapt seed=27</text>
+<polyline points="56.000,339.071 132.444,198.000 208.889,56.929 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#7f7f7f" stroke-width="1.6"/>
+<text x="64" y="1174" font-size="10" fill="#7f7f7f" font-family="sans-serif">exp C_extend seed=27</text>
+<polyline points="56.000,198.000 132.444,127.464 208.889,268.536 285.333,268.536 361.778,268.536 438.222,268.536 514.667,268.536 591.111,268.536 667.556,268.536 744.000,268.536" fill="none" stroke="#1f77b4" stroke-width="1.6"/>
+<text x="64" y="1188" font-size="10" fill="#1f77b4" font-family="sans-serif">exp C_struct seed=28</text>
+<polyline points="56.000,127.464 132.444,127.464 208.889,127.464 285.333,127.464 361.778,127.464 438.222,127.464 514.667,127.464 591.111,127.464 667.556,127.464 744.000,127.464" fill="none" stroke="#d62728" stroke-width="1.6"/>
+<text x="64" y="1202" font-size="10" fill="#d62728" font-family="sans-serif">exp C_adapt seed=28</text>
+<polyline points="56.000,339.071 132.444,198.000 208.889,56.929 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#2ca02c" stroke-width="1.6"/>
+<text x="64" y="1216" font-size="10" fill="#2ca02c" font-family="sans-serif">exp C_extend seed=28</text>
+<polyline points="56.000,198.000 132.444,127.464 208.889,268.536 285.333,268.536 361.778,268.536 438.222,268.536 514.667,268.536 591.111,268.536 667.556,268.536 744.000,268.536" fill="none" stroke="#ff7f0e" stroke-width="1.6"/>
+<text x="64" y="1230" font-size="10" fill="#ff7f0e" font-family="sans-serif">exp C_struct seed=29</text>
+<polyline points="56.000,127.464 132.444,127.464 208.889,127.464 285.333,127.464 361.778,127.464 438.222,127.464 514.667,127.464 591.111,127.464 667.556,127.464 744.000,127.464" fill="none" stroke="#9467bd" stroke-width="1.6"/>
+<text x="64" y="1244" font-size="10" fill="#9467bd" font-family="sans-serif">exp C_adapt seed=29</text>
+<polyline points="56.000,339.071 132.444,198.000 208.889,56.929 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#8c564b" stroke-width="1.6"/>
+<text x="64" y="1258" font-size="10" fill="#8c564b" font-family="sans-serif">exp C_extend seed=29</text>
+<polyline points="56.000,198.000 132.444,127.464 208.889,268.536 285.333,268.536 361.778,268.536 438.222,268.536 514.667,268.536 591.111,268.536 667.556,268.536 744.000,268.536" fill="none" stroke="#17becf" stroke-width="1.6"/>
+<text x="64" y="1272" font-size="10" fill="#17becf" font-family="sans-serif">exp C_struct seed=30</text>
+<polyline points="56.000,127.464 132.444,127.464 208.889,127.464 285.333,127.464 361.778,127.464 438.222,127.464 514.667,127.464 591.111,127.464 667.556,127.464 744.000,127.464" fill="none" stroke="#e377c2" stroke-width="1.6"/>
+<text x="64" y="1286" font-size="10" fill="#e377c2" font-family="sans-serif">exp C_adapt seed=30</text>
+<polyline points="56.000,339.071 132.444,198.000 208.889,56.929 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#7f7f7f" stroke-width="1.6"/>
+<text x="64" y="1300" font-size="10" fill="#7f7f7f" font-family="sans-serif">exp C_extend seed=30</text>
+<polyline points="56.000,198.000 132.444,127.464 208.889,268.536 285.333,268.536 361.778,268.536 438.222,268.536 514.667,268.536 591.111,268.536 667.556,268.536 744.000,268.536" fill="none" stroke="#1f77b4" stroke-width="1.6"/>
+<text x="64" y="1314" font-size="10" fill="#1f77b4" font-family="sans-serif">exp C_struct seed=31</text>
+<polyline points="56.000,127.464 132.444,127.464 208.889,127.464 285.333,127.464 361.778,127.464 438.222,127.464 514.667,127.464 591.111,127.464 667.556,127.464 744.000,127.464" fill="none" stroke="#d62728" stroke-width="1.6"/>
+<text x="64" y="1328" font-size="10" fill="#d62728" font-family="sans-serif">exp C_adapt seed=31</text>
+<polyline points="56.000,339.071 132.444,198.000 208.889,56.929 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#2ca02c" stroke-width="1.6"/>
+<text x="64" y="1342" font-size="10" fill="#2ca02c" font-family="sans-serif">exp C_extend seed=31</text>
+<polyline points="56.000,198.000 132.444,127.464 208.889,268.536 285.333,268.536 361.778,268.536 438.222,268.536 514.667,268.536 591.111,268.536 667.556,268.536 744.000,268.536" fill="none" stroke="#ff7f0e" stroke-width="1.6"/>
+<text x="64" y="1356" font-size="10" fill="#ff7f0e" font-family="sans-serif">exp C_struct seed=32</text>
+<polyline points="56.000,127.464 132.444,127.464 208.889,127.464 285.333,127.464 361.778,127.464 438.222,127.464 514.667,127.464 591.111,127.464 667.556,127.464 744.000,127.464" fill="none" stroke="#9467bd" stroke-width="1.6"/>
+<text x="64" y="1370" font-size="10" fill="#9467bd" font-family="sans-serif">exp C_adapt seed=32</text>
+<polyline points="56.000,339.071 132.444,198.000 208.889,56.929 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#8c564b" stroke-width="1.6"/>
+<text x="64" y="1384" font-size="10" fill="#8c564b" font-family="sans-serif">exp C_extend seed=32</text>
+<polyline points="56.000,198.000 132.444,127.464 208.889,268.536 285.333,268.536 361.778,268.536 438.222,268.536 514.667,268.536 591.111,268.536 667.556,268.536 744.000,268.536" fill="none" stroke="#17becf" stroke-width="1.6"/>
+<text x="64" y="1398" font-size="10" fill="#17becf" font-family="sans-serif">exp C_struct seed=33</text>
+<polyline points="56.000,127.464 132.444,127.464 208.889,127.464 285.333,127.464 361.778,127.464 438.222,127.464 514.667,127.464 591.111,127.464 667.556,127.464 744.000,127.464" fill="none" stroke="#e377c2" stroke-width="1.6"/>
+<text x="64" y="1412" font-size="10" fill="#e377c2" font-family="sans-serif">exp C_adapt seed=33</text>
+<polyline points="56.000,339.071 132.444,198.000 208.889,56.929 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#7f7f7f" stroke-width="1.6"/>
+<text x="64" y="1426" font-size="10" fill="#7f7f7f" font-family="sans-serif">exp C_extend seed=33</text>
+<polyline points="56.000,198.000 132.444,127.464 208.889,268.536 285.333,268.536 361.778,268.536 438.222,268.536 514.667,268.536 591.111,268.536 667.556,268.536 744.000,268.536" fill="none" stroke="#1f77b4" stroke-width="1.6"/>
+<text x="64" y="1440" font-size="10" fill="#1f77b4" font-family="sans-serif">exp C_struct seed=34</text>
+<polyline points="56.000,127.464 132.444,127.464 208.889,127.464 285.333,127.464 361.778,127.464 438.222,127.464 514.667,127.464 591.111,127.464 667.556,127.464 744.000,127.464" fill="none" stroke="#d62728" stroke-width="1.6"/>
+<text x="64" y="1454" font-size="10" fill="#d62728" font-family="sans-serif">exp C_adapt seed=34</text>
+<polyline points="56.000,339.071 132.444,198.000 208.889,56.929 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#2ca02c" stroke-width="1.6"/>
+<text x="64" y="1468" font-size="10" fill="#2ca02c" font-family="sans-serif">exp C_extend seed=34</text>
+<polyline points="56.000,198.000 132.444,127.464 208.889,268.536 285.333,268.536 361.778,268.536 438.222,268.536 514.667,268.536 591.111,268.536 667.556,268.536 744.000,268.536" fill="none" stroke="#ff7f0e" stroke-width="1.6"/>
+<text x="64" y="1482" font-size="10" fill="#ff7f0e" font-family="sans-serif">exp C_struct seed=35</text>
+<polyline points="56.000,127.464 132.444,127.464 208.889,127.464 285.333,127.464 361.778,127.464 438.222,127.464 514.667,127.464 591.111,127.464 667.556,127.464 744.000,127.464" fill="none" stroke="#9467bd" stroke-width="1.6"/>
+<text x="64" y="1496" font-size="10" fill="#9467bd" font-family="sans-serif">exp C_adapt seed=35</text>
+<polyline points="56.000,339.071 132.444,198.000 208.889,56.929 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#8c564b" stroke-width="1.6"/>
+<text x="64" y="1510" font-size="10" fill="#8c564b" font-family="sans-serif">exp C_extend seed=35</text>
+<polyline points="56.000,198.000 132.444,127.464 208.889,268.536 285.333,268.536 361.778,268.536 438.222,268.536 514.667,268.536 591.111,268.536 667.556,268.536 744.000,268.536" fill="none" stroke="#17becf" stroke-width="1.6"/>
+<text x="64" y="1524" font-size="10" fill="#17becf" font-family="sans-serif">exp C_struct seed=36</text>
+<polyline points="56.000,127.464 132.444,127.464 208.889,127.464 285.333,127.464 361.778,127.464 438.222,127.464 514.667,127.464 591.111,127.464 667.556,127.464 744.000,127.464" fill="none" stroke="#e377c2" stroke-width="1.6"/>
+<text x="64" y="1538" font-size="10" fill="#e377c2" font-family="sans-serif">exp C_adapt seed=36</text>
+<polyline points="56.000,339.071 132.444,198.000 208.889,56.929 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#7f7f7f" stroke-width="1.6"/>
+<text x="64" y="1552" font-size="10" fill="#7f7f7f" font-family="sans-serif">exp C_extend seed=36</text>
+</svg>

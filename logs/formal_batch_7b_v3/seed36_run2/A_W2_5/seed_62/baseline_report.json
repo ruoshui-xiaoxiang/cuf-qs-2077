@@ -1,0 +1,1470 @@
+{
+  "group": "baseline_statistical",
+  "rounds_target": 10,
+  "completed": 10,
+  "disintegrated": false,
+  "criterion": null,
+  "virtual_lifespan": 10,
+  "score_history": [
+    1.0,
+    1.0,
+    1.0,
+    -0.19999999999999996,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "accuracy_history": [
+    1.0,
+    1.0,
+    1.0,
+    0.4,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "converged_final": true,
+  "criteria_applicability": {
+    "semantic_death": "not_applicable",
+    "functional_death": "applicable",
+    "over_budget": "not_applicable"
+  },
+  "model_snapshot": {
+    "combos": 5,
+    "total_observations": 38,
+    "label_history_size": 5
+  },
+  "round_details": [
+    {
+      "round_id": 0,
+      "entities_count": 2,
+      "events_count": 0,
+      "predictions": [
+        {
+          "entity_id": "EID:1",
+          "combo": [
+            "player",
+            "player"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:N1",
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        }
+      ],
+      "adjudications": [
+        {
+          "entity_id": "EID:1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:N1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        }
+      ],
+      "accuracy": 1.0,
+      "alignment_score": 1.0,
+      "induction_conclusions": [
+        {
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "n_observed": 1,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        },
+        {
+          "combo": [
+            "player",
+            "player"
+          ],
+          "n_observed": 1,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        }
+      ],
+      "model_size": 2
+    },
+    {
+      "round_id": 1,
+      "entities_count": 2,
+      "events_count": 1,
+      "predictions": [
+        {
+          "entity_id": "EID:1",
+          "combo": [
+            "player",
+            "player"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:N1",
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        }
+      ],
+      "adjudications": [
+        {
+          "entity_id": "EID:1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:N1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        }
+      ],
+      "accuracy": 1.0,
+      "alignment_score": 1.0,
+      "induction_conclusions": [
+        {
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "n_observed": 2,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        },
+        {
+          "combo": [
+            "player",
+            "player"
+          ],
+          "n_observed": 2,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        }
+      ],
+      "model_size": 2
+    },
+    {
+      "round_id": 2,
+      "entities_count": 2,
+      "events_count": 0,
+      "predictions": [
+        {
+          "entity_id": "EID:1",
+          "combo": [
+            "player",
+            "player"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:N1",
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        }
+      ],
+      "adjudications": [
+        {
+          "entity_id": "EID:1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:N1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        }
+      ],
+      "accuracy": 1.0,
+      "alignment_score": 1.0,
+      "induction_conclusions": [
+        {
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "n_observed": 3,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        },
+        {
+          "combo": [
+            "player",
+            "player"
+          ],
+          "n_observed": 3,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        }
+      ],
+      "model_size": 2
+    },
+    {
+      "round_id": 3,
+      "entities_count": 5,
+      "events_count": 1,
+      "predictions": [
+        {
+          "entity_id": "EID:1",
+          "combo": [
+            "player",
+            "player"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:N1",
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:Z3_0",
+          "combo": [
+            "npc",
+            "neutral",
+            "undead"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:Z3_1",
+          "combo": [
+            "npc",
+            "aggressive",
+            "undead"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:Z3_2",
+          "combo": [
+            "npc",
+            "hostile",
+            "undead"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        }
+      ],
+      "adjudications": [
+        {
+          "entity_id": "EID:1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:N1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:Z3_0",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_1",
+              "reason": "hp=0 <= 0 but no entity_death event"
+            },
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_2",
+              "reason": "entity still in scan after death"
+            }
+          ],
+          "predicted": false,
+          "correct": false
+        },
+        {
+          "entity_id": "EID:Z3_1",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_1",
+              "reason": "hp=0 <= 0 but no entity_death event"
+            },
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_2",
+              "reason": "entity still in scan after death"
+            }
+          ],
+          "predicted": false,
+          "correct": false
+        },
+        {
+          "entity_id": "EID:Z3_2",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_1",
+              "reason": "hp=0 <= 0 but no entity_death event"
+            },
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_2",
+              "reason": "entity still in scan after death"
+            },
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_3",
+              "reason": "hostile NPC respawned after death"
+            }
+          ],
+          "predicted": false,
+          "correct": false
+        }
+      ],
+      "accuracy": 0.4,
+      "alignment_score": -0.19999999999999996,
+      "induction_conclusions": [
+        {
+          "combo": [
+            "npc",
+            "aggressive",
+            "undead"
+          ],
+          "n_observed": 1,
+          "n_anomalies": 1,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "n_observed": 4,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        },
+        {
+          "combo": [
+            "npc",
+            "hostile",
+            "undead"
+          ],
+          "n_observed": 1,
+          "n_anomalies": 1,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "npc",
+            "neutral",
+            "undead"
+          ],
+          "n_observed": 1,
+          "n_anomalies": 1,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "player",
+            "player"
+          ],
+          "n_observed": 4,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        }
+      ],
+      "model_size": 5
+    },
+    {
+      "round_id": 4,
+      "entities_count": 4,
+      "events_count": 0,
+      "predictions": [
+        {
+          "entity_id": "EID:1",
+          "combo": [
+            "player",
+            "player"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:N1",
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:Z4_0",
+          "combo": [
+            "npc",
+            "hostile",
+            "undead"
+          ],
+          "p_anomaly": 1.0,
+          "predicted_anomaly": true
+        },
+        {
+          "entity_id": "EID:Z4_1",
+          "combo": [
+            "npc",
+            "aggressive",
+            "undead"
+          ],
+          "p_anomaly": 1.0,
+          "predicted_anomaly": true
+        }
+      ],
+      "adjudications": [
+        {
+          "entity_id": "EID:1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:N1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:Z4_0",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_1",
+              "reason": "hp=0 <= 0 but no entity_death event"
+            },
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_2",
+              "reason": "entity still in scan after death"
+            },
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_3",
+              "reason": "hostile NPC respawned after death"
+            }
+          ],
+          "predicted": true,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:Z4_1",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_1",
+              "reason": "hp=0 <= 0 but no entity_death event"
+            },
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_2",
+              "reason": "entity still in scan after death"
+            }
+          ],
+          "predicted": true,
+          "correct": true
+        }
+      ],
+      "accuracy": 1.0,
+      "alignment_score": 1.0,
+      "induction_conclusions": [
+        {
+          "combo": [
+            "npc",
+            "aggressive",
+            "undead"
+          ],
+          "n_observed": 2,
+          "n_anomalies": 2,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "n_observed": 5,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        },
+        {
+          "combo": [
+            "npc",
+            "hostile",
+            "undead"
+          ],
+          "n_observed": 2,
+          "n_anomalies": 2,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "npc",
+            "neutral",
+            "undead"
+          ],
+          "n_observed": 1,
+          "n_anomalies": 1,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "player",
+            "player"
+          ],
+          "n_observed": 5,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        }
+      ],
+      "model_size": 5
+    },
+    {
+      "round_id": 5,
+      "entities_count": 5,
+      "events_count": 1,
+      "predictions": [
+        {
+          "entity_id": "EID:1",
+          "combo": [
+            "player",
+            "player"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:N1",
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:Z5_0",
+          "combo": [
+            "npc",
+            "hostile",
+            "undead"
+          ],
+          "p_anomaly": 1.0,
+          "predicted_anomaly": true
+        },
+        {
+          "entity_id": "EID:Z5_1",
+          "combo": [
+            "npc",
+            "neutral",
+            "undead"
+          ],
+          "p_anomaly": 1.0,
+          "predicted_anomaly": true
+        },
+        {
+          "entity_id": "EID:Z5_2",
+          "combo": [
+            "npc",
+            "aggressive",
+            "undead"
+          ],
+          "p_anomaly": 1.0,
+          "predicted_anomaly": true
+        }
+      ],
+      "adjudications": [
+        {
+          "entity_id": "EID:1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:N1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:Z5_0",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_1",
+              "reason": "hp=0 <= 0 but no entity_death event"
+            },
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_2",
+              "reason": "entity still in scan after death"
+            },
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_3",
+              "reason": "hostile NPC respawned after death"
+            }
+          ],
+          "predicted": true,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:Z5_1",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_1",
+              "reason": "hp=0 <= 0 but no entity_death event"
+            },
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_2",
+              "reason": "entity still in scan after death"
+            }
+          ],
+          "predicted": true,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:Z5_2",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_1",
+              "reason": "hp=0 <= 0 but no entity_death event"
+            },
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_2",
+              "reason": "entity still in scan after death"
+            }
+          ],
+          "predicted": true,
+          "correct": true
+        }
+      ],
+      "accuracy": 1.0,
+      "alignment_score": 1.0,
+      "induction_conclusions": [
+        {
+          "combo": [
+            "npc",
+            "aggressive",
+            "undead"
+          ],
+          "n_observed": 3,
+          "n_anomalies": 3,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "n_observed": 6,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        },
+        {
+          "combo": [
+            "npc",
+            "hostile",
+            "undead"
+          ],
+          "n_observed": 3,
+          "n_anomalies": 3,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "npc",
+            "neutral",
+            "undead"
+          ],
+          "n_observed": 2,
+          "n_anomalies": 2,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "player",
+            "player"
+          ],
+          "n_observed": 6,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        }
+      ],
+      "model_size": 5
+    },
+    {
+      "round_id": 6,
+      "entities_count": 4,
+      "events_count": 0,
+      "predictions": [
+        {
+          "entity_id": "EID:1",
+          "combo": [
+            "player",
+            "player"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:N1",
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:Z6_0",
+          "combo": [
+            "npc",
+            "aggressive",
+            "undead"
+          ],
+          "p_anomaly": 1.0,
+          "predicted_anomaly": true
+        },
+        {
+          "entity_id": "EID:Z6_1",
+          "combo": [
+            "npc",
+            "hostile",
+            "undead"
+          ],
+          "p_anomaly": 1.0,
+          "predicted_anomaly": true
+        }
+      ],
+      "adjudications": [
+        {
+          "entity_id": "EID:1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:N1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:Z6_0",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_1",
+              "reason": "hp=0 <= 0 but no entity_death event"
+            },
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_2",
+              "reason": "entity still in scan after death"
+            }
+          ],
+          "predicted": true,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:Z6_1",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_1",
+              "reason": "hp=0 <= 0 but no entity_death event"
+            },
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_2",
+              "reason": "entity still in scan after death"
+            },
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_3",
+              "reason": "hostile NPC respawned after death"
+            }
+          ],
+          "predicted": true,
+          "correct": true
+        }
+      ],
+      "accuracy": 1.0,
+      "alignment_score": 1.0,
+      "induction_conclusions": [
+        {
+          "combo": [
+            "npc",
+            "aggressive",
+            "undead"
+          ],
+          "n_observed": 4,
+          "n_anomalies": 4,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "n_observed": 7,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        },
+        {
+          "combo": [
+            "npc",
+            "hostile",
+            "undead"
+          ],
+          "n_observed": 4,
+          "n_anomalies": 4,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "npc",
+            "neutral",
+            "undead"
+          ],
+          "n_observed": 2,
+          "n_anomalies": 2,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "player",
+            "player"
+          ],
+          "n_observed": 7,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        }
+      ],
+      "model_size": 5
+    },
+    {
+      "round_id": 7,
+      "entities_count": 5,
+      "events_count": 1,
+      "predictions": [
+        {
+          "entity_id": "EID:1",
+          "combo": [
+            "player",
+            "player"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:N1",
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:Z7_0",
+          "combo": [
+            "npc",
+            "neutral",
+            "undead"
+          ],
+          "p_anomaly": 1.0,
+          "predicted_anomaly": true
+        },
+        {
+          "entity_id": "EID:Z7_1",
+          "combo": [
+            "npc",
+            "aggressive",
+            "undead"
+          ],
+          "p_anomaly": 1.0,
+          "predicted_anomaly": true
+        },
+        {
+          "entity_id": "EID:Z7_2",
+          "combo": [
+            "npc",
+            "hostile",
+            "undead"
+          ],
+          "p_anomaly": 1.0,
+          "predicted_anomaly": true
+        }
+      ],
+      "adjudications": [
+        {
+          "entity_id": "EID:1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:N1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:Z7_0",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_1",
+              "reason": "hp=0 <= 0 but no entity_death event"
+            },
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_2",
+              "reason": "entity still in scan after death"
+            }
+          ],
+          "predicted": true,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:Z7_1",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_1",
+              "reason": "hp=0 <= 0 but no entity_death event"
+            },
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_2",
+              "reason": "entity still in scan after death"
+            }
+          ],
+          "predicted": true,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:Z7_2",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_1",
+              "reason": "hp=0 <= 0 but no entity_death event"
+            },
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_2",
+              "reason": "entity still in scan after death"
+            },
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_3",
+              "reason": "hostile NPC respawned after death"
+            }
+          ],
+          "predicted": true,
+          "correct": true
+        }
+      ],
+      "accuracy": 1.0,
+      "alignment_score": 1.0,
+      "induction_conclusions": [
+        {
+          "combo": [
+            "npc",
+            "aggressive",
+            "undead"
+          ],
+          "n_observed": 5,
+          "n_anomalies": 5,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "n_observed": 8,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        },
+        {
+          "combo": [
+            "npc",
+            "hostile",
+            "undead"
+          ],
+          "n_observed": 5,
+          "n_anomalies": 5,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "npc",
+            "neutral",
+            "undead"
+          ],
+          "n_observed": 3,
+          "n_anomalies": 3,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "player",
+            "player"
+          ],
+          "n_observed": 8,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        }
+      ],
+      "model_size": 5
+    },
+    {
+      "round_id": 8,
+      "entities_count": 4,
+      "events_count": 0,
+      "predictions": [
+        {
+          "entity_id": "EID:1",
+          "combo": [
+            "player",
+            "player"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:N1",
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:Z8_0",
+          "combo": [
+            "npc",
+            "aggressive",
+            "undead"
+          ],
+          "p_anomaly": 1.0,
+          "predicted_anomaly": true
+        },
+        {
+          "entity_id": "EID:Z8_1",
+          "combo": [
+            "npc",
+            "neutral",
+            "undead"
+          ],
+          "p_anomaly": 1.0,
+          "predicted_anomaly": true
+        }
+      ],
+      "adjudications": [
+        {
+          "entity_id": "EID:1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:N1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:Z8_0",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_1",
+              "reason": "hp=0 <= 0 but no entity_death event"
+            },
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_2",
+              "reason": "entity still in scan after death"
+            }
+          ],
+          "predicted": true,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:Z8_1",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_1",
+              "reason": "hp=0 <= 0 but no entity_death event"
+            },
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_2",
+              "reason": "entity still in scan after death"
+            }
+          ],
+          "predicted": true,
+          "correct": true
+        }
+      ],
+      "accuracy": 1.0,
+      "alignment_score": 1.0,
+      "induction_conclusions": [
+        {
+          "combo": [
+            "npc",
+            "aggressive",
+            "undead"
+          ],
+          "n_observed": 6,
+          "n_anomalies": 6,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "n_observed": 9,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        },
+        {
+          "combo": [
+            "npc",
+            "hostile",
+            "undead"
+          ],
+          "n_observed": 5,
+          "n_anomalies": 5,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "npc",
+            "neutral",
+            "undead"
+          ],
+          "n_observed": 4,
+          "n_anomalies": 4,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "player",
+            "player"
+          ],
+          "n_observed": 9,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        }
+      ],
+      "model_size": 5
+    },
+    {
+      "round_id": 9,
+      "entities_count": 5,
+      "events_count": 1,
+      "predictions": [
+        {
+          "entity_id": "EID:1",
+          "combo": [
+            "player",
+            "player"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:N1",
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:Z9_0",
+          "combo": [
+            "npc",
+            "neutral",
+            "undead"
+          ],
+          "p_anomaly": 1.0,
+          "predicted_anomaly": true
+        },
+        {
+          "entity_id": "EID:Z9_1",
+          "combo": [
+            "npc",
+            "aggressive",
+            "undead"
+          ],
+          "p_anomaly": 1.0,
+          "predicted_anomaly": true
+        },
+        {
+          "entity_id": "EID:Z9_2",
+          "combo": [
+            "npc",
+            "hostile",
+            "undead"
+          ],
+          "p_anomaly": 1.0,
+          "predicted_anomaly": true
+        }
+      ],
+      "adjudications": [
+        {
+          "entity_id": "EID:1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:N1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:Z9_0",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_1",
+              "reason": "hp=0 <= 0 but no entity_death event"
+            },
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_2",
+              "reason": "entity still in scan after death"
+            }
+          ],
+          "predicted": true,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:Z9_1",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_1",
+              "reason": "hp=0 <= 0 but no entity_death event"
+            },
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_2",
+              "reason": "entity still in scan after death"
+            }
+          ],
+          "predicted": true,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:Z9_2",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_1",
+              "reason": "hp=0 <= 0 but no entity_death event"
+            },
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_2",
+              "reason": "entity still in scan after death"
+            },
+            {
+              "axiom_id": "A_W2_5",
+              "rule_id": "R_W2_3",
+              "reason": "hostile NPC respawned after death"
+            }
+          ],
+          "predicted": true,
+          "correct": true
+        }
+      ],
+      "accuracy": 1.0,
+      "alignment_score": 1.0,
+      "induction_conclusions": [
+        {
+          "combo": [
+            "npc",
+            "aggressive",
+            "undead"
+          ],
+          "n_observed": 7,
+          "n_anomalies": 7,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "n_observed": 10,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        },
+        {
+          "combo": [
+            "npc",
+            "hostile",
+            "undead"
+          ],
+          "n_observed": 6,
+          "n_anomalies": 6,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "npc",
+            "neutral",
+            "undead"
+          ],
+          "n_observed": 5,
+          "n_anomalies": 5,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "player",
+            "player"
+          ],
+          "n_observed": 10,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        }
+      ],
+      "model_size": 5
+    }
+  ]
+}
