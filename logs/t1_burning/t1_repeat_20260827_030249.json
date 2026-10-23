@@ -1,0 +1,534 @@
+{
+  "test": "T1_burning_repeat",
+  "started_at": "2026-08-27T03:00:30.110582",
+  "steps": [
+    {
+      "t": "2026-08-27T03:00:30.450188",
+      "step": "version_probe",
+      "data": {
+        "ok": true,
+        "data": {
+          "ok": true,
+          "variant_policy_enabled": true
+        },
+        "t": "resp",
+        "id": 1
+      }
+    },
+    {
+      "t": "2026-08-27T03:00:30.467943",
+      "step": "scan_before",
+      "data": {
+        "count": 14,
+        "entities": [
+          {
+            "eid": "EID:1",
+            "kind": "player",
+            "labels": [
+              "player"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:4485260346908141642",
+            "kind": "unknown",
+            "labels": [
+              "VendingMachine"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:11516062903039058999",
+            "kind": "unknown",
+            "labels": [
+              "VendingMachine"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:4913184312558518054",
+            "kind": "unknown",
+            "labels": [
+              "VendingMachine"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:2787231107983036612",
+            "kind": "unknown",
+            "labels": [
+              "VendingMachine"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:15160224001322105341",
+            "kind": "unknown",
+            "labels": [
+              "VendingMachine"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:12462422729831049519",
+            "kind": "item",
+            "labels": [
+              "LootContainerObjectAnimatedByTransform"
+            ],
+            "hp": 0
+          },
+          {
+            "eid": "EID:7831243249853901371",
+            "kind": "item",
+            "labels": [
+              "LootContainerObjectAnimatedByTransform"
+            ],
+            "hp": 0
+          },
+          {
+            "eid": "EID:9001332",
+            "kind": "npc",
+            "labels": [
+              "NPCPuppet"
+            ],
+            "hp": 80
+          },
+          {
+            "eid": "EID:9001333",
+            "kind": "npc",
+            "labels": [
+              "NPCPuppet"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:9001335",
+            "kind": "npc",
+            "labels": [
+              "NPCPuppet"
+            ],
+            "hp": 80
+          },
+          {
+            "eid": "EID:9001334",
+            "kind": "npc",
+            "labels": [
+              "NPCPuppet"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:9001329",
+            "kind": "vehicle",
+            "labels": [
+              "vehicleBikeBaseObject"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:9001330",
+            "kind": "vehicle",
+            "labels": [
+              "vehicleBikeBaseObject"
+            ],
+            "hp": 100
+          }
+        ]
+      }
+    },
+    {
+      "t": "2026-08-27T03:00:30.468027",
+      "step": "target_selected",
+      "data": {
+        "eid": "EID:9001333",
+        "hp": 100
+      }
+    },
+    {
+      "t": "2026-08-27T03:00:30.483785",
+      "step": "attack_1",
+      "data": {
+        "ok": true,
+        "data": {
+          "status_effect": "burning",
+          "hp_after": 100,
+          "variant_forced": "burning",
+          "reason": "status_effect_applied",
+          "attempts": [
+            {
+              "ok": true,
+              "kind": "status",
+              "verified": false,
+              "variant": "burning",
+              "applied": true
+            }
+          ],
+          "variant_policy_enabled": true,
+          "action_id": "act_2",
+          "accepted": true,
+          "hp_before": 100
+        },
+        "t": "resp",
+        "id": 3
+      }
+    },
+    {
+      "t": "2026-08-27T03:00:42.501213",
+      "step": "attack_2",
+      "data": {
+        "ok": true,
+        "data": {
+          "status_effect": "burning",
+          "hp_after": 100,
+          "variant_forced": "burning",
+          "reason": "status_effect_applied",
+          "attempts": [
+            {
+              "ok": true,
+              "kind": "status",
+              "verified": false,
+              "variant": "burning",
+              "applied": true
+            }
+          ],
+          "variant_policy_enabled": true,
+          "action_id": "act_3",
+          "accepted": true,
+          "hp_before": 100
+        },
+        "t": "resp",
+        "id": 6
+      }
+    },
+    {
+      "t": "2026-08-27T03:00:54.518202",
+      "step": "attack_3",
+      "data": {
+        "ok": true,
+        "data": {
+          "status_effect": "burning",
+          "hp_after": 100,
+          "variant_forced": "burning",
+          "reason": "status_effect_applied",
+          "attempts": [
+            {
+              "ok": true,
+              "kind": "status",
+              "verified": false,
+              "variant": "burning",
+              "applied": true
+            }
+          ],
+          "variant_policy_enabled": true,
+          "action_id": "act_4",
+          "accepted": true,
+          "hp_before": 100
+        },
+        "t": "resp",
+        "id": 9
+      }
+    },
+    {
+      "t": "2026-08-27T03:01:06.535058",
+      "step": "attack_4",
+      "data": {
+        "ok": true,
+        "data": {
+          "status_effect": "burning",
+          "hp_after": 100,
+          "variant_forced": "burning",
+          "reason": "status_effect_applied",
+          "attempts": [
+            {
+              "ok": true,
+              "kind": "status",
+              "verified": false,
+              "variant": "burning",
+              "applied": true
+            }
+          ],
+          "variant_policy_enabled": true,
+          "action_id": "act_5",
+          "accepted": true,
+          "hp_before": 100
+        },
+        "t": "resp",
+        "id": 13
+      }
+    },
+    {
+      "t": "2026-08-27T03:01:18.552254",
+      "step": "attack_5",
+      "data": {
+        "ok": true,
+        "data": {
+          "status_effect": "burning",
+          "hp_after": 100,
+          "variant_forced": "burning",
+          "reason": "status_effect_applied",
+          "attempts": [
+            {
+              "ok": true,
+              "kind": "status",
+              "verified": false,
+              "variant": "burning",
+              "applied": true
+            }
+          ],
+          "variant_policy_enabled": true,
+          "action_id": "act_6",
+          "accepted": true,
+          "hp_before": 100
+        },
+        "t": "resp",
+        "id": 16
+      }
+    },
+    {
+      "t": "2026-08-27T03:02:49.489376",
+      "step": "hp_track",
+      "data": [
+        {
+          "elapsed": 2.0,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 4.0,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 6.0,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 8.1,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 10.1,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 12.1,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 14.1,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 16.1,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 18.1,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 20.2,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 22.2,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 24.2,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 26.2,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 28.2,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 30.3,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 32.3,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 34.3,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 36.3,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 38.3,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 40.4,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 42.4,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 44.4,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 46.4,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 48.4,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 50.5,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 52.5,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 54.5,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 56.5,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 58.5,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 60.6,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 62.6,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 64.6,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 66.6,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 68.6,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 70.7,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 72.7,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 74.7,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 76.7,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 78.7,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 80.7,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 82.8,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 84.8,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 86.8,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 88.8,
+          "present": true,
+          "hp": 100
+        },
+        {
+          "elapsed": 90.8,
+          "present": false,
+          "hp": null
+        }
+      ]
+    },
+    {
+      "t": "2026-08-27T03:02:49.506004",
+      "step": "summary",
+      "data": {
+        "target_id": "EID:9001333",
+        "initial_hp": 100,
+        "final_hp": null,
+        "hp_decreased": false,
+        "status_confirmed_any": false,
+        "disappeared": true,
+        "killed": true,
+        "attack_count": 5
+      }
+    }
+  ],
+  "finished_at": "2026-08-27T03:02:49.506627"
+}

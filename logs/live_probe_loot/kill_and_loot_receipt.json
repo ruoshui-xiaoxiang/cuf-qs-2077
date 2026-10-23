@@ -1,0 +1,112 @@
+{
+  "ts": "2026-08-26 21:40:36",
+  "pickups": [
+    {
+      "item": {
+        "entity_id": "EID:10767505",
+        "labels": [
+          "gameItemDropObject"
+        ],
+        "hp": 0,
+        "kind": "item",
+        "position": {
+          "y": 357.202392578125,
+          "z": 16.64220428466797,
+          "x": -285.7655944824219
+        }
+      },
+      "probe": {
+        "container_item_list_readable": false,
+        "container_item_list_err": "container_item_list_empty",
+        "entity_methods": {
+          "GetComponents": "nil",
+          "GetLootItemsList": "nil",
+          "GetLootItemList": "nil",
+          "GetItemsList": "nil",
+          "Open": "nil",
+          "GetLootData": "nil",
+          "GetLoot": "nil",
+          "GetDestructionSystem": "nil",
+          "SetInteractive": "nil",
+          "Disable": "nil",
+          "IsInteractive": "nil"
+        },
+        "snapshot_before": {
+          "ok": false,
+          "reason": "get_item_list_failed"
+        },
+        "mod_version": "0.6.9",
+        "tsys_methods": {
+          "GetMoney": "nil",
+          "AddMoney": "nil",
+          "GetItemPrice": "nil",
+          "GetItemQuantity": "function",
+          "GetItemList": "function",
+          "GetItemIDList": "nil",
+          "GiveItem": "function",
+          "TransferItem": "function",
+          "RemoveItem": "function"
+        },
+        "add_to_inventory_type": "function",
+        "target_found": true,
+        "snapshot_after": {
+          "ok": false,
+          "reason": "get_item_list_failed"
+        },
+        "tdbid_tostring_type": "nil",
+        "resolve_failed": false,
+        "player_available": true,
+        "loot_list_readable": false,
+        "tsys_available": true,
+        "class_name": "gameItemDropObject",
+        "entity_id": "EID:10767505"
+      },
+      "pickup": {
+        "acquired_items": [],
+        "action_id": "act_3",
+        "accepted": true,
+        "semantics": "item_remove",
+        "transfer": {
+          "path": "container_transfer",
+          "err": "container_item_list_empty"
+        },
+        "removed": true,
+        "reason": "item_removed",
+        "snap_before": {
+          "ok": false,
+          "reason": "get_item_list_failed"
+        },
+        "item_id": "EID:10767505",
+        "attempts": [
+          {
+            "ok": false,
+            "err": "init.lua:1647: attempt to call method 'GetDestructionSystem' (a nil value)",
+            "variant": "destruction"
+          },
+          {
+            "ok": false,
+            "err": "init.lua:1651: attempt to call method 'Disable' (a nil value)",
+            "variant": "disable"
+          },
+          {
+            "ok": false,
+            "err": "init.lua:1654: attempt to call method 'SetInteractive' (a nil value)",
+            "variant": "set_interactive"
+          },
+          {
+            "variant": "teleport_away",
+            "ok": true
+          }
+        ]
+      },
+      "still_present": false,
+      "ev_acquired": 0,
+      "ev_remove": 1,
+      "verdict": "HONEST_REMOVE_PASS"
+    }
+  ],
+  "kills": [],
+  "player_hp_start": 100,
+  "player_hp_end": 100,
+  "overall": "HONEST_REMOVE_PASS"
+}

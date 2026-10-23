@@ -1,0 +1,22 @@
+{
+  "exp_series": [
+    1.0,
+    1.0
+  ],
+  "baseline_series": [
+    0.0,
+    1.0
+  ],
+  "compared_rounds": 2,
+  "exp_mean": 1.0,
+  "baseline_mean": 0.5,
+  "converged_exp": false,
+  "converged_baseline": false,
+  "lifespan_exp": 2,
+  "lifespan_baseline": 2,
+  "lifespan_delta": 0,
+  "exp_disintegrated": true,
+  "baseline_disintegrated": false,
+  "exp_criterion": "over_budget",
+  "baseline_criterion": null
+}

@@ -1,0 +1,24 @@
+{
+  "exp_series": [
+    -1.0,
+    -1.0,
+    -1.0
+  ],
+  "baseline_series": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "compared_rounds": 3,
+  "exp_mean": -1.0,
+  "baseline_mean": 1.0,
+  "converged_exp": false,
+  "converged_baseline": false,
+  "lifespan_exp": 3,
+  "lifespan_baseline": 3,
+  "lifespan_delta": 0,
+  "exp_disintegrated": true,
+  "baseline_disintegrated": false,
+  "exp_criterion": "functional_death",
+  "baseline_criterion": null
+}

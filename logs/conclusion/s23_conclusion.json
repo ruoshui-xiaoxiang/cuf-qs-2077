@@ -1,0 +1,172 @@
+{
+  "mode": "s23_conclusion",
+  "positioning": "本实验是 CUF v7 描述性框架在虚拟实例（赛博朋克2077 通信管线 + 种子化剧本世界）上的操作化验证。CUF v7 自定位为描述性框架（非理论），本实验不构成对该框架本身的真理性主张，仅为「其工程实例化的 W₂ 稳态自指体的运行机制」提供虚拟实例层面的实证参照。全部结论以结构化数据（stats_summary.json 与各轮JSONL 归档）为唯一依据。",
+  "hypothesis_anchor_table": [
+    {
+      "anchor": "P_W2_5",
+      "hypothesis": "降级机制比纯统计拟合更能维持稳态",
+      "falsification_criterion": "实验组收敛性不优于对照组",
+      "verdict": "supported",
+      "evidence": {
+        "permutation_p": 0.00390625,
+        "observed_mean_diff": 0.30000000000000004,
+        "all_diffs_nonneg": true,
+        "n_runs": 9
+      }
+    },
+    {
+      "anchor": "P_M1",
+      "hypothesis": "规则边界单调细化、永不穷尽",
+      "falsification_criterion": "公理集边界信息量出现净减少",
+      "verdict": "supported",
+      "evidence": {
+        "all_monotonic": true,
+        "net_increases": {
+          "A_M1": [
+            2,
+            2,
+            2
+          ],
+          "A_W1": [
+            1,
+            1,
+            1
+          ],
+          "A_W2_5": [
+            3,
+            3,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "anchor": "P_W1",
+      "hypothesis": "采样受传感器与规则处理能力双重限制",
+      "falsification_criterion": "出现超出白名单能力的有效观测",
+      "verdict": "supported",
+      "evidence": {
+        "dirty_total": 0
+      }
+    },
+    {
+      "anchor": "P_C",
+      "hypothesis": "超预算即解体",
+      "falsification_criterion": "成本代理超预算（C_extend > B_extend）后系统仍维持稳态",
+      "verdict": "not_triggered",
+      "evidence": {
+        "over_budget_rounds": 0,
+        "disintegration_matched": true
+      }
+    },
+    {
+      "anchor": "H_L",
+      "hypothesis": "递进动力学链单向成立（③→②→①）",
+      "falsification_criterion": "①/②被触发但此前连续 N 轮 C_extend 从未达到 B_extend",
+      "verdict": "not_tested",
+      "evidence": {
+        "evaluated": 0,
+        "violated": 0
+      }
+    }
+  ],
+  "main_results": {
+    "runs_total": 9,
+    "runs_completed_iteration": 9,
+    "all_converged": true,
+    "virtual_lifespan_mean": 10.0,
+    "permutation_p_pooled": 0.00390625,
+    "observed_mean_diff_pooled": 0.30000000000000004,
+    "axiom_coverage": {
+      "A_M1": 3,
+      "A_W1": 3,
+      "A_W2_5": 3
+    },
+    "downgrade_rounds": {
+      "A_M1": [
+        5,
+        5,
+        5
+      ],
+      "A_W1": [
+        2,
+        2,
+        2
+      ],
+      "A_W2_5": [
+        4,
+        5,
+        4
+      ]
+    }
+  },
+  "limitations": [
+    {
+      "summary": "对齐分走离线确定性嵌入路径（state_fn 返回当前目标向量），对齐分结构性恒为 1.0，收敛曲线的真实区分度待实机 7B 隐状态路径（S13 ModelAdapter 可替换，裁决路径不变）",
+      "impact": "本批实验组优势表现为「对齐分恒在上限 + 机制成本可控（单次降级）」，而非「跌落-恢复速度差异」"
+    },
+    {
+      "summary": "世界为种子化 mock 剧本（mock 游戏侧 + 种子化世界生成器），非真实赛博朋克2077 运行时环境",
+      "impact": "结论界定于剧本世界；实机通信/动作/采集管线已单独实机验收（S4/S5/S7），正式批次为剧本回放"
+    },
+    {
+      "summary": "每公理条件 3 个种子（锁定决策 #9 的下限），精确重排检验的 p 值下限为 2/512",
+      "impact": "统计功效有限；扩大种子数可直接提高分辨力"
+    },
+    {
+      "summary": "P_C（超预算解体）在本批未触发：默认 extend_budget=10 无超支轮",
+      "impact": "判据③在本批无触发实例，需专项低预算压力批次补充"
+    },
+    {
+      "summary": "H_L（递进动力学链）在本批未检验：无 ①/② 解体事件",
+      "impact": "动力学链假设待压力场景数据"
+    },
+    {
+      "summary": "C_H 为代理度量（锁定决策 #11），非真实热力学/计算资源成本",
+      "impact": "预算比较仅在代理口径内有效"
+    },
+    {
+      "summary": "对照组为频率估计器（纯统计拟合），非最强可能的统计基线",
+      "impact": "实验组优势对弱对照组成立时结论稳健；更强基线（7B 上下文预测路）待 induction_fn 接口实机接入"
+    },
+    {
+      "summary": "对照组分数为准确率仿射映射（score=2*acc-1），与实验组对齐分仅在同域意义上可比",
+      "impact": "两组分数物理含义不同，比较限于同域数值口径"
+    }
+  ],
+  "reproducibility": {
+    "commands": [
+      "py tests\\s21_selftest.py   # 再生正式批次（3 公理 × 3 种子聚焦剧本）",
+      "py tests\\s22_selftest.py   # 再生统计与图表（六大交付物）",
+      "py tests\\s23_selftest.py   # 再生本结论报告（字节级一致）",
+      "py src\\w3\\auto_experiment.py --rounds N --port <P> --log-path <log> --report-path <report>   # 单次一键实验"
+    ],
+    "data_sources": [
+      "logs\\formal_batch\\A_M1\\seed_7\\rounds.jsonl",
+      "logs\\formal_batch\\A_M1\\seed_42\\rounds.jsonl",
+      "logs\\formal_batch\\A_M1\\seed_2077\\rounds.jsonl",
+      "logs\\formal_batch\\A_W1\\seed_7\\rounds.jsonl",
+      "logs\\formal_batch\\A_W1\\seed_42\\rounds.jsonl",
+      "logs\\formal_batch\\A_W1\\seed_2077\\rounds.jsonl",
+      "logs\\formal_batch\\A_W2_5\\seed_7\\rounds.jsonl",
+      "logs\\formal_batch\\A_W2_5\\seed_42\\rounds.jsonl",
+      "logs\\formal_batch\\A_W2_5\\seed_2077\\rounds.jsonl"
+    ],
+    "batch_dir": "logs\\formal_batch",
+    "regression": {
+      "suites": 23,
+      "assertions": 557,
+      "note": "s2-s23 全量回归（结论生成时点锁定事实）"
+    },
+    "claim": "全部实验数据为 JSONL 追加式归档，任意轮次可一键复现；结论报告由数据机械再生，字节级一致。"
+  },
+  "discipline_statement": {
+    "decision": "#14",
+    "rule": "实验定位为「虚拟实例上的操作化验证」；禁止任何真理性断言类表述；CUF v7 自定位为描述性框架（非理论）。",
+    "banned_words": [
+      "证明",
+      "证实"
+    ],
+    "compliance": "template_level_guarantee"
+  }
+}

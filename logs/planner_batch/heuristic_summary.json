@@ -1,0 +1,345 @@
+{
+  "control": [
+    {
+      "seed": 7,
+      "port": 20890,
+      "completed": 14,
+      "virtual_lifespan": 14,
+      "disintegrated": false,
+      "criterion": null,
+      "align_mean": 1.0000000000000002,
+      "align_count": 14,
+      "attack_log": [
+        "EID:G1",
+        "EID:G1",
+        "EID:C1",
+        "EID:C2"
+      ],
+      "alive_ids": [
+        [
+          "EID:C1",
+          "EID:C2",
+          "EID:G1",
+          "EID:I1"
+        ],
+        [
+          "EID:C1",
+          "EID:C2",
+          "EID:G1",
+          "EID:I1"
+        ],
+        [
+          "EID:C1",
+          "EID:C2",
+          "EID:G1",
+          "EID:I1"
+        ],
+        [
+          "EID:C1",
+          "EID:C2",
+          "EID:G1",
+          "EID:I1"
+        ],
+        [
+          "EID:C1",
+          "EID:C2",
+          "EID:I1"
+        ],
+        [
+          "EID:C1",
+          "EID:C2",
+          "EID:I1"
+        ],
+        [
+          "EID:C2",
+          "EID:I1"
+        ],
+        [
+          "EID:C2",
+          "EID:I1"
+        ],
+        [
+          "EID:I1"
+        ],
+        [
+          "EID:I1"
+        ],
+        [
+          "EID:I1"
+        ],
+        [
+          "EID:I1"
+        ],
+        [
+          "EID:I1"
+        ],
+        [
+          "EID:I1"
+        ]
+      ],
+      "ce_counts": [
+        1,
+        5,
+        1,
+        5,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "activation": {
+        "enabled": false,
+        "candidate_count": 50,
+        "activated": [],
+        "inactive": [
+          "A_M2",
+          "A_S1",
+          "A_I1",
+          "C_GANG_001",
+          "C_GANG_002",
+          "C_GANG_003",
+          "C_GANG_004",
+          "C_GANG_005",
+          "C_GANG_006",
+          "C_GANG_007",
+          "C_GANG_008",
+          "C_GANG_101",
+          "C_GANG_102",
+          "C_STAT_001",
+          "C_STAT_002",
+          "C_STAT_003",
+          "C_STAT_004",
+          "C_STAT_005",
+          "C_STAT_006",
+          "C_STAT_007",
+          "C_STAT_008",
+          "C_ITEM_001",
+          "C_ITEM_002",
+          "C_ITEM_003",
+          "C_ITEM_004",
+          "C_ITEM_005",
+          "C_ITEM_006",
+          "C_ITEM_007",
+          "C_ITEM_008",
+          "C_MOVE_001",
+          "C_MOVE_002",
+          "C_MOVE_003",
+          "C_MOVE_004",
+          "C_MOVE_005",
+          "C_LIFE_001",
+          "C_LIFE_002",
+          "C_LIFE_003",
+          "C_LIFE_004",
+          "C_LIFE_005",
+          "C_LIFE_006",
+          "C_LIFE_007",
+          "C_PER_001",
+          "C_PER_002",
+          "C_PER_003",
+          "C_PER_004",
+          "C_PER_005",
+          "C_PER_006",
+          "C_HACK_001",
+          "C_HACK_002",
+          "C_HACK_003"
+        ],
+        "activation_events": []
+      },
+      "sources": [
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default"
+      ],
+      "actions": [
+        "move:(10.0,0.0,0.0)",
+        "attack:EID:G1",
+        "move:(20.0,0.0,0.0)",
+        "attack:EID:G1",
+        "move:(30.0,0.0,0.0)",
+        "attack:EID:C1",
+        "move:(40.0,0.0,0.0)",
+        "attack:EID:C2",
+        "move:(50.0,0.0,0.0)",
+        "move:(40.0,0.0,0.0)",
+        "move:(50.0,0.0,0.0)",
+        "move:(40.0,0.0,0.0)",
+        "move:(50.0,0.0,0.0)",
+        "move:(40.0,0.0,0.0)"
+      ]
+    }
+  ],
+  "heuristic": [
+    {
+      "seed": 7,
+      "port": 20891,
+      "completed": 14,
+      "virtual_lifespan": 14,
+      "disintegrated": false,
+      "criterion": null,
+      "align_mean": 1.0000000000000002,
+      "align_count": 14,
+      "attack_log": [
+        "EID:C1",
+        "EID:C2",
+        "EID:G1",
+        "EID:G1"
+      ],
+      "alive_ids": [
+        [
+          "EID:C1",
+          "EID:C2",
+          "EID:G1",
+          "EID:I1"
+        ],
+        [
+          "EID:C2",
+          "EID:G1",
+          "EID:I1"
+        ],
+        [
+          "EID:G1",
+          "EID:I1"
+        ],
+        [
+          "EID:G1",
+          "EID:I1"
+        ],
+        [
+          "EID:I1"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "ce_counts": [
+        6,
+        5,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "activation": {
+        "enabled": false,
+        "candidate_count": 50,
+        "activated": [],
+        "inactive": [
+          "A_M2",
+          "A_S1",
+          "A_I1",
+          "C_GANG_001",
+          "C_GANG_002",
+          "C_GANG_003",
+          "C_GANG_004",
+          "C_GANG_005",
+          "C_GANG_006",
+          "C_GANG_007",
+          "C_GANG_008",
+          "C_GANG_101",
+          "C_GANG_102",
+          "C_STAT_001",
+          "C_STAT_002",
+          "C_STAT_003",
+          "C_STAT_004",
+          "C_STAT_005",
+          "C_STAT_006",
+          "C_STAT_007",
+          "C_STAT_008",
+          "C_ITEM_001",
+          "C_ITEM_002",
+          "C_ITEM_003",
+          "C_ITEM_004",
+          "C_ITEM_005",
+          "C_ITEM_006",
+          "C_ITEM_007",
+          "C_ITEM_008",
+          "C_MOVE_001",
+          "C_MOVE_002",
+          "C_MOVE_003",
+          "C_MOVE_004",
+          "C_MOVE_005",
+          "C_LIFE_001",
+          "C_LIFE_002",
+          "C_LIFE_003",
+          "C_LIFE_004",
+          "C_LIFE_005",
+          "C_LIFE_006",
+          "C_LIFE_007",
+          "C_PER_001",
+          "C_PER_002",
+          "C_PER_003",
+          "C_PER_004",
+          "C_PER_005",
+          "C_PER_006",
+          "C_HACK_001",
+          "C_HACK_002",
+          "C_HACK_003"
+        ],
+        "activation_events": []
+      },
+      "sources": [
+        "planner",
+        "planner",
+        "planner",
+        "planner",
+        "planner",
+        "planner",
+        "planner",
+        "planner",
+        "planner",
+        "planner",
+        "planner",
+        "planner",
+        "planner",
+        "planner"
+      ],
+      "actions": [
+        "attack:EID:C1",
+        "attack:EID:C2",
+        "attack:EID:G1",
+        "attack:EID:G1",
+        "pickup:EID:I1",
+        "move:(10.0,0.0,0.0)",
+        "move:(0.0,0.0,0.0)",
+        "move:(0.0,0.0,10.0)",
+        "move:(0.0,0.0,0.0)",
+        "move:(10.0,0.0,0.0)",
+        "move:(0.0,0.0,0.0)",
+        "move:(0.0,0.0,10.0)",
+        "move:(0.0,0.0,0.0)",
+        "move:(10.0,0.0,0.0)"
+      ]
+    }
+  ]
+}

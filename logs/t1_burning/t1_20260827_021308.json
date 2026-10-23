@@ -1,0 +1,288 @@
+{
+  "test": "T1_burning",
+  "started_at": "2026-08-27T02:12:47.716989",
+  "steps": [
+    {
+      "t": "2026-08-27T02:12:48.207879",
+      "step": "version_probe",
+      "data": {
+        "data": {
+          "ok": true,
+          "variant_policy_enabled": true
+        },
+        "t": "resp",
+        "id": 1,
+        "ok": true
+      }
+    },
+    {
+      "t": "2026-08-27T02:12:48.225575",
+      "step": "scan_before",
+      "data": {
+        "count": 19,
+        "entities": [
+          {
+            "eid": "EID:1",
+            "kind": "player",
+            "labels": [
+              "player"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:15201353006866658849",
+            "kind": "unknown",
+            "labels": [
+              "VendingMachine"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:15160224001322105341",
+            "kind": "unknown",
+            "labels": [
+              "VendingMachine"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:10799456290062859851",
+            "kind": "unknown",
+            "labels": [
+              "VendingMachine"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:2787231107983036612",
+            "kind": "unknown",
+            "labels": [
+              "VendingMachine"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:4913184312558518054",
+            "kind": "unknown",
+            "labels": [
+              "VendingMachine"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:1759928272039071056",
+            "kind": "unknown",
+            "labels": [
+              "VendingMachine"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:3316514272913758511",
+            "kind": "unknown",
+            "labels": [
+              "VendingMachine"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:5119572088503438813",
+            "kind": "unknown",
+            "labels": [
+              "VendingMachine"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:4485260346908141642",
+            "kind": "unknown",
+            "labels": [
+              "VendingMachine"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:12462422729831049519",
+            "kind": "item",
+            "labels": [
+              "LootContainerObjectAnimatedByTransform"
+            ],
+            "hp": 0
+          },
+          {
+            "eid": "EID:7831243249853901371",
+            "kind": "item",
+            "labels": [
+              "LootContainerObjectAnimatedByTransform"
+            ],
+            "hp": 0
+          },
+          {
+            "eid": "EID:9001335",
+            "kind": "npc",
+            "labels": [
+              "NPCPuppet"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:9001332",
+            "kind": "npc",
+            "labels": [
+              "NPCPuppet"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:9001334",
+            "kind": "npc",
+            "labels": [
+              "NPCPuppet"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:9001336",
+            "kind": "npc",
+            "labels": [
+              "NPCPuppet"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:9001333",
+            "kind": "npc",
+            "labels": [
+              "NPCPuppet"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:9001329",
+            "kind": "vehicle",
+            "labels": [
+              "vehicleBikeBaseObject"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:9001330",
+            "kind": "vehicle",
+            "labels": [
+              "vehicleBikeBaseObject"
+            ],
+            "hp": 100
+          }
+        ]
+      }
+    },
+    {
+      "t": "2026-08-27T02:12:48.225575",
+      "step": "target_selected",
+      "data": {
+        "eid": "EID:9001335",
+        "labels": [
+          "NPCPuppet"
+        ],
+        "hp": 100
+      }
+    },
+    {
+      "t": "2026-08-27T02:12:48.242303",
+      "step": "attack_burning",
+      "data": {
+        "data": {
+          "reason": "damage_dispatched",
+          "attempts": [
+            {
+              "applied": true,
+              "verified": false,
+              "ok": false,
+              "kind": "status",
+              "variant": "burning"
+            },
+            {
+              "variant": 1,
+              "ok": true,
+              "kind": "injection"
+            },
+            {
+              "variant": 2,
+              "ok": true,
+              "kind": "injection"
+            },
+            {
+              "variant": 3,
+              "ok": true,
+              "kind": "injection"
+            }
+          ],
+          "accepted": true,
+          "action_id": "act_1",
+          "hp_before": 100,
+          "hp_after": 100
+        },
+        "t": "resp",
+        "id": 3,
+        "ok": true
+      }
+    },
+    {
+      "t": "2026-08-27T02:13:08.396010",
+      "step": "hp_track",
+      "data": [
+        {
+          "elapsed": 2.0,
+          "present": true,
+          "hp": 80
+        },
+        {
+          "elapsed": 4.0,
+          "present": true,
+          "hp": 80
+        },
+        {
+          "elapsed": 6.0,
+          "present": true,
+          "hp": 80
+        },
+        {
+          "elapsed": 8.1,
+          "present": true,
+          "hp": 80
+        },
+        {
+          "elapsed": 10.1,
+          "present": true,
+          "hp": 80
+        },
+        {
+          "elapsed": 12.1,
+          "present": true,
+          "hp": 80
+        },
+        {
+          "elapsed": 14.1,
+          "present": true,
+          "hp": 80
+        },
+        {
+          "elapsed": 16.1,
+          "present": true,
+          "hp": 80
+        },
+        {
+          "elapsed": 18.1,
+          "present": true,
+          "hp": 80
+        },
+        {
+          "elapsed": 20.2,
+          "present": true,
+          "hp": 80
+        }
+      ]
+    }
+  ],
+  "finished_at": "2026-08-27T02:13:08.396010"
+}

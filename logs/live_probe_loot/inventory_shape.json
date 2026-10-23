@@ -1,0 +1,8 @@
+{
+  "tsys_available": true,
+  "elem_probes": [],
+  "player_available": true,
+  "mod_version": "0.6.12",
+  "ret_type": "boolean",
+  "call_ok": true
+}

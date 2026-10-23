@@ -1,0 +1,14 @@
+{
+  "target_dir": "E:\\6a8b0dd1b3ead574d77ceda3\\src\\supervisor",
+  "total_files": 11,
+  "total_dirs": 0,
+  "extensions": {
+    ".py": 10,
+    ".html": 1
+  },
+  "top_level_entries": {
+    ".": 11
+  },
+  "task_id": "subprocess_repo_inventory",
+  "attempt": 1
+}

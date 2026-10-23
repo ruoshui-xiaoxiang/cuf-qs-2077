@@ -1,0 +1,37 @@
+{
+  "test": "T1_burning",
+  "started_at": "2026-08-27T02:52:57.651496",
+  "steps": [
+    {
+      "t": "2026-08-27T02:52:59.170203",
+      "step": "version_probe",
+      "data": {
+        "ok": true,
+        "data": {
+          "ok": true,
+          "variant_policy_enabled": true
+        },
+        "t": "resp",
+        "id": 1
+      }
+    },
+    {
+      "t": "2026-08-27T02:52:59.187180",
+      "step": "scan_before",
+      "data": {
+        "count": 1,
+        "entities": [
+          {
+            "eid": "EID:1",
+            "kind": "player",
+            "labels": [
+              "player"
+            ],
+            "hp": 100
+          }
+        ]
+      }
+    }
+  ],
+  "finished_at": "2026-08-27T02:52:59.187603"
+}

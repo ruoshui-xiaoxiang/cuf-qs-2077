@@ -1,0 +1,137 @@
+{
+  "normal": {
+    "entities": [
+      {
+        "entity_id": "player_0001",
+        "kind": "player",
+        "labels": ["player", "armed"],
+        "hp": 100,
+        "position": {"x": 120.5, "y": -340.25, "z": 12.0}
+      },
+      {
+        "entity_id": "npc_civ_0101",
+        "kind": "npc",
+        "labels": ["civilian", "unarmed", "non_hostile"],
+        "hp": 100,
+        "position": {"x": 128.75, "y": -335.5, "z": 12.0}
+      },
+      {
+        "entity_id": "npc_civ_0102",
+        "kind": "npc",
+        "labels": ["civilian", "unarmed", "non_hostile"],
+        "hp": 95,
+        "position": {"x": 131.0, "y": -333.0, "z": 12.0}
+      },
+      {
+        "entity_id": "npc_gang_0201",
+        "kind": "npc",
+        "labels": ["gang", "armed", "hostile"],
+        "hp": 150,
+        "position": {"x": 115.25, "y": -352.0, "z": 12.0}
+      },
+      {
+        "entity_id": "npc_gang_0202",
+        "kind": "npc",
+        "labels": ["gang", "armed", "hostile"],
+        "hp": 150,
+        "position": {"x": 113.5, "y": -355.75, "z": 12.0}
+      },
+      {
+        "entity_id": "npc_pol_0301",
+        "kind": "npc",
+        "labels": ["police", "armed", "non_hostile"],
+        "hp": 200,
+        "position": {"x": 140.0, "y": -320.5, "z": 12.0}
+      },
+      {
+        "entity_id": "dev_turret_0401",
+        "kind": "device",
+        "labels": ["device", "hackable", "hostile"],
+        "hp": 80,
+        "position": {"x": 118.0, "y": -348.0, "z": 13.5}
+      }
+    ],
+    "events": [
+      {
+        "event_id": "evt_0001",
+        "kind": "combat_attack",
+        "source_entity": "npc_gang_0201",
+        "target_entity": "player_0001",
+        "game_ts": 1756100001.0
+      },
+      {
+        "event_id": "evt_0002",
+        "kind": "intrusion_attempt",
+        "source_entity": "player_0001",
+        "target_entity": "dev_turret_0401",
+        "game_ts": 1756100002.0
+      },
+      {
+        "event_id": "evt_0003",
+        "kind": "area_alert",
+        "source_entity": "dev_turret_0401",
+        "target_entity": null,
+        "game_ts": 1756100003.0
+      }
+    ]
+  },
+  "anomaly": {
+    "entities": [
+      {
+        "entity_id": "player_0001",
+        "kind": "player",
+        "labels": ["player", "armed"],
+        "hp": 100,
+        "position": {"x": 120.5, "y": -340.25, "z": 12.0}
+      },
+      {
+        "entity_id": "npc_civ_0901",
+        "kind": "npc",
+        "labels": ["civilian", "unarmed", "hostile", "attacking"],
+        "hp": 100,
+        "position": {"x": 126.0, "y": -338.0, "z": 12.0}
+      },
+      {
+        "entity_id": "npc_gang_0902",
+        "kind": "npc",
+        "labels": ["gang", "armed", "hostile"],
+        "hp": -10,
+        "position": {"x": 115.25, "y": -352.0, "z": 12.0}
+      },
+      {
+        "entity_id": "dev_turret_0903",
+        "kind": "device",
+        "labels": ["device", "hackable", "non_hostile"],
+        "hp": 80,
+        "position": {"x": 118.0, "y": -348.0, "z": 13.5}
+      }
+    ],
+    "events": [
+      {
+        "event_id": "evt_9001",
+        "kind": "combat_attack",
+        "source_entity": "npc_civ_0901",
+        "target_entity": "player_0001",
+        "game_ts": 1756100901.0
+      },
+      {
+        "event_id": "evt_9002",
+        "kind": "entity_death",
+        "source_entity": "npc_gang_0902",
+        "target_entity": null,
+        "game_ts": 1756100902.0
+      },
+      {
+        "event_id": "evt_9003",
+        "kind": "intrusion_attempt",
+        "source_entity": "player_0001",
+        "target_entity": "dev_turret_0903",
+        "game_ts": 1756100903.0
+      }
+    ]
+  },
+  "empty": {
+    "entities": [],
+    "events": []
+  }
+}

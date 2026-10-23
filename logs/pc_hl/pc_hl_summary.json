@@ -1,0 +1,67 @@
+{
+  "pc": {
+    "supported": true,
+    "over_budget_runs": 27,
+    "low_budget_runs": 27,
+    "control_criterion": [
+      null
+    ]
+  },
+  "hl_functional_death_runs": 9,
+  "hl_entries": [
+    {
+      "axiom": "A_M1",
+      "seed": 7,
+      "criterion": "functional_death",
+      "virtual_lifespan": 5
+    },
+    {
+      "axiom": "A_M1",
+      "seed": 42,
+      "criterion": "functional_death",
+      "virtual_lifespan": 5
+    },
+    {
+      "axiom": "A_M1",
+      "seed": 2077,
+      "criterion": "functional_death",
+      "virtual_lifespan": 5
+    },
+    {
+      "axiom": "A_W1",
+      "seed": 7,
+      "criterion": "functional_death",
+      "virtual_lifespan": 5
+    },
+    {
+      "axiom": "A_W1",
+      "seed": 42,
+      "criterion": "functional_death",
+      "virtual_lifespan": 5
+    },
+    {
+      "axiom": "A_W1",
+      "seed": 2077,
+      "criterion": "functional_death",
+      "virtual_lifespan": 5
+    },
+    {
+      "axiom": "A_W2_5",
+      "seed": 7,
+      "criterion": "functional_death",
+      "virtual_lifespan": 3
+    },
+    {
+      "axiom": "A_W2_5",
+      "seed": 42,
+      "criterion": "functional_death",
+      "virtual_lifespan": 3
+    },
+    {
+      "axiom": "A_W2_5",
+      "seed": 2077,
+      "criterion": "functional_death",
+      "virtual_lifespan": 3
+    }
+  ]
+}

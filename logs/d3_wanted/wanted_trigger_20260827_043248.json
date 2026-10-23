@@ -1,0 +1,583 @@
+{
+  "mod_version": "0.6.17",
+  "target": {
+    "eid": "EID:4485260346908141642",
+    "class": "VendingMachine",
+    "kind": "unknown",
+    "hp": 100,
+    "hostile": false,
+    "police": false,
+    "player": false,
+    "pos": {
+      "z": 18.1923828125,
+      "x": -1649.3446044921875,
+      "y": 2395.98486328125
+    }
+  },
+  "attack_result": {
+    "ok": true,
+    "id": 12,
+    "t": "resp",
+    "data": {
+      "variant_policy_enabled": true,
+      "hp_after": 100,
+      "status_effect": "poison",
+      "hp_before": 100,
+      "reason": "status_effect_applied",
+      "attempts": [
+        {
+          "applied": true,
+          "ok": true,
+          "kind": "status",
+          "verified": false,
+          "variant": "poison"
+        }
+      ],
+      "action_id": "act_1",
+      "accepted": true
+    }
+  },
+  "baseline": {
+    "total": 15,
+    "npcs": 12,
+    "hostiles": 0,
+    "police": 0,
+    "entities": [
+      {
+        "eid": "EID:1",
+        "class": "",
+        "kind": "player",
+        "hp": 100,
+        "hostile": false,
+        "police": false,
+        "player": true,
+        "pos": {
+          "z": 18.15618896484375,
+          "x": -1637.7684326171875,
+          "y": 2388.359130859375
+        }
+      },
+      {
+        "eid": "EID:4485260346908141642",
+        "class": "VendingMachine",
+        "kind": "unknown",
+        "hp": 100,
+        "hostile": false,
+        "police": false,
+        "player": false,
+        "pos": {
+          "z": 18.1923828125,
+          "x": -1649.3446044921875,
+          "y": 2395.98486328125
+        }
+      },
+      {
+        "eid": "EID:15160224001322105341",
+        "class": "VendingMachine",
+        "kind": "unknown",
+        "hp": 100,
+        "hostile": false,
+        "police": false,
+        "player": false,
+        "pos": {
+          "z": 18.197608947753906,
+          "x": -1648.9412841796875,
+          "y": 2406.935546875
+        }
+      },
+      {
+        "eid": "EID:11516062903039058999",
+        "class": "VendingMachine",
+        "kind": "unknown",
+        "hp": 100,
+        "hostile": false,
+        "police": false,
+        "player": false,
+        "pos": {
+          "z": 18.197608947753906,
+          "x": -1646.514892578125,
+          "y": 2407.363525390625
+        }
+      },
+      {
+        "eid": "EID:2787231107983036612",
+        "class": "VendingMachine",
+        "kind": "unknown",
+        "hp": 100,
+        "hostile": false,
+        "police": false,
+        "player": false,
+        "pos": {
+          "z": 18.197608947753906,
+          "x": -1647.7607421875,
+          "y": 2407.23388671875
+        }
+      },
+      {
+        "eid": "EID:4913184312558518054",
+        "class": "VendingMachine",
+        "kind": "unknown",
+        "hp": 100,
+        "hostile": false,
+        "police": false,
+        "player": false,
+        "pos": {
+          "z": 18.197608947753906,
+          "x": -1645.2020263671875,
+          "y": 2407.594970703125
+        }
+      },
+      {
+        "eid": "EID:7831243249853901371",
+        "class": "LootContainerObjectAnimatedByTransform",
+        "kind": "item",
+        "hp": 0,
+        "hostile": false,
+        "police": false,
+        "player": false,
+        "pos": {
+          "z": 18.1636962890625,
+          "x": -1645.0916748046875,
+          "y": 2403.37939453125
+        }
+      },
+      {
+        "eid": "EID:12462422729831049519",
+        "class": "LootContainerObjectAnimatedByTransform",
+        "kind": "item",
+        "hp": 0,
+        "hostile": false,
+        "police": false,
+        "player": false,
+        "pos": {
+          "z": 18.16400909423828,
+          "x": -1645.318359375,
+          "y": 2402.934814453125
+        }
+      },
+      {
+        "eid": "EID:9001332",
+        "class": "NPCPuppet",
+        "kind": "npc",
+        "hp": 100,
+        "hostile": false,
+        "police": false,
+        "player": false,
+        "pos": {
+          "z": 18.15911102294922,
+          "x": -1644.5667724609375,
+          "y": 2400.678466796875
+        }
+      },
+      {
+        "eid": "EID:9001333",
+        "class": "NPCPuppet",
+        "kind": "npc",
+        "hp": 100,
+        "hostile": false,
+        "police": false,
+        "player": false,
+        "pos": {
+          "z": 18.156166076660156,
+          "x": -1649.7373046875,
+          "y": 2404.148193359375
+        }
+      },
+      {
+        "eid": "EID:9001331",
+        "class": "NPCPuppet",
+        "kind": "npc",
+        "hp": 55.60068893432617,
+        "hostile": false,
+        "police": false,
+        "player": false,
+        "pos": {
+          "z": 18.15618133544922,
+          "x": -1641.400634765625,
+          "y": 2402.992919921875
+        }
+      },
+      {
+        "eid": "EID:9001335",
+        "class": "NPCPuppet",
+        "kind": "npc",
+        "hp": 100,
+        "hostile": false,
+        "police": false,
+        "player": false,
+        "pos": {
+          "z": 18.159835815429688,
+          "x": -1646.7799072265625,
+          "y": 2406.140869140625
+        }
+      },
+      {
+        "eid": "EID:9001334",
+        "class": "NPCPuppet",
+        "kind": "npc",
+        "hp": 100,
+        "hostile": false,
+        "police": false,
+        "player": false,
+        "pos": {
+          "z": 18.15618133544922,
+          "x": -1648.4139404296875,
+          "y": 2396.412841796875
+        }
+      },
+      {
+        "eid": "EID:9001330",
+        "class": "vehicleBikeBaseObject",
+        "kind": "vehicle",
+        "hp": 100,
+        "hostile": false,
+        "police": false,
+        "player": false,
+        "pos": {
+          "z": 18.457977294921875,
+          "x": -1640.66455078125,
+          "y": 2396.989990234375
+        }
+      },
+      {
+        "eid": "EID:9001329",
+        "class": "vehicleBikeBaseObject",
+        "kind": "vehicle",
+        "hp": 100,
+        "hostile": false,
+        "police": false,
+        "player": false,
+        "pos": {
+          "z": 18.474746704101562,
+          "x": -1647.593505859375,
+          "y": 2400.734375
+        }
+      }
+    ]
+  },
+  "observations": [
+    {
+      "elapsed_s": 0.0,
+      "scan_num": 1,
+      "total": 15,
+      "npcs": 12,
+      "hostiles": 0,
+      "police": 0,
+      "new_entities": [],
+      "gone_entities": [],
+      "hostile_list": [],
+      "police_list": []
+    },
+    {
+      "elapsed_s": 5.0,
+      "scan_num": 2,
+      "total": 15,
+      "npcs": 12,
+      "hostiles": 0,
+      "police": 0,
+      "new_entities": [],
+      "gone_entities": [],
+      "hostile_list": [],
+      "police_list": []
+    },
+    {
+      "elapsed_s": 10.0,
+      "scan_num": 3,
+      "total": 15,
+      "npcs": 12,
+      "hostiles": 0,
+      "police": 0,
+      "new_entities": [],
+      "gone_entities": [],
+      "hostile_list": [],
+      "police_list": []
+    },
+    {
+      "elapsed_s": 15.1,
+      "scan_num": 4,
+      "total": 15,
+      "npcs": 12,
+      "hostiles": 0,
+      "police": 0,
+      "new_entities": [],
+      "gone_entities": [],
+      "hostile_list": [],
+      "police_list": []
+    },
+    {
+      "elapsed_s": 20.1,
+      "scan_num": 5,
+      "total": 15,
+      "npcs": 12,
+      "hostiles": 0,
+      "police": 0,
+      "new_entities": [],
+      "gone_entities": [],
+      "hostile_list": [],
+      "police_list": []
+    },
+    {
+      "elapsed_s": 25.1,
+      "scan_num": 6,
+      "total": 15,
+      "npcs": 12,
+      "hostiles": 0,
+      "police": 0,
+      "new_entities": [],
+      "gone_entities": [],
+      "hostile_list": [],
+      "police_list": []
+    },
+    {
+      "elapsed_s": 30.1,
+      "scan_num": 7,
+      "total": 15,
+      "npcs": 12,
+      "hostiles": 0,
+      "police": 0,
+      "new_entities": [],
+      "gone_entities": [],
+      "hostile_list": [],
+      "police_list": []
+    },
+    {
+      "elapsed_s": 35.1,
+      "scan_num": 8,
+      "total": 15,
+      "npcs": 12,
+      "hostiles": 0,
+      "police": 0,
+      "new_entities": [],
+      "gone_entities": [],
+      "hostile_list": [],
+      "police_list": []
+    },
+    {
+      "elapsed_s": 40.1,
+      "scan_num": 9,
+      "total": 15,
+      "npcs": 12,
+      "hostiles": 0,
+      "police": 0,
+      "new_entities": [],
+      "gone_entities": [],
+      "hostile_list": [],
+      "police_list": []
+    },
+    {
+      "elapsed_s": 45.2,
+      "scan_num": 10,
+      "total": 15,
+      "npcs": 12,
+      "hostiles": 0,
+      "police": 0,
+      "new_entities": [],
+      "gone_entities": [],
+      "hostile_list": [],
+      "police_list": []
+    },
+    {
+      "elapsed_s": 50.2,
+      "scan_num": 11,
+      "total": 15,
+      "npcs": 12,
+      "hostiles": 0,
+      "police": 0,
+      "new_entities": [],
+      "gone_entities": [],
+      "hostile_list": [],
+      "police_list": []
+    },
+    {
+      "elapsed_s": 55.2,
+      "scan_num": 12,
+      "total": 14,
+      "npcs": 11,
+      "hostiles": 0,
+      "police": 0,
+      "new_entities": [],
+      "gone_entities": [
+        "EID:9001331"
+      ],
+      "hostile_list": [],
+      "police_list": []
+    },
+    {
+      "elapsed_s": 60.2,
+      "scan_num": 13,
+      "total": 15,
+      "npcs": 12,
+      "hostiles": 0,
+      "police": 0,
+      "new_entities": [
+        {
+          "eid": "EID:9001331",
+          "class": "NPCPuppet",
+          "kind": "npc",
+          "hp": 55.60068893432617,
+          "hostile": false,
+          "police": false
+        }
+      ],
+      "gone_entities": [],
+      "hostile_list": [],
+      "police_list": []
+    },
+    {
+      "elapsed_s": 65.2,
+      "scan_num": 14,
+      "total": 15,
+      "npcs": 12,
+      "hostiles": 0,
+      "police": 0,
+      "new_entities": [],
+      "gone_entities": [],
+      "hostile_list": [],
+      "police_list": []
+    },
+    {
+      "elapsed_s": 70.2,
+      "scan_num": 15,
+      "total": 15,
+      "npcs": 12,
+      "hostiles": 0,
+      "police": 0,
+      "new_entities": [],
+      "gone_entities": [],
+      "hostile_list": [],
+      "police_list": []
+    },
+    {
+      "elapsed_s": 75.3,
+      "scan_num": 16,
+      "total": 15,
+      "npcs": 12,
+      "hostiles": 0,
+      "police": 0,
+      "new_entities": [],
+      "gone_entities": [],
+      "hostile_list": [],
+      "police_list": []
+    },
+    {
+      "elapsed_s": 80.3,
+      "scan_num": 17,
+      "total": 15,
+      "npcs": 12,
+      "hostiles": 0,
+      "police": 0,
+      "new_entities": [],
+      "gone_entities": [],
+      "hostile_list": [],
+      "police_list": []
+    },
+    {
+      "elapsed_s": 85.3,
+      "scan_num": 18,
+      "total": 15,
+      "npcs": 12,
+      "hostiles": 0,
+      "police": 0,
+      "new_entities": [],
+      "gone_entities": [],
+      "hostile_list": [],
+      "police_list": []
+    },
+    {
+      "elapsed_s": 90.3,
+      "scan_num": 19,
+      "total": 14,
+      "npcs": 11,
+      "hostiles": 0,
+      "police": 0,
+      "new_entities": [],
+      "gone_entities": [
+        "EID:9001331"
+      ],
+      "hostile_list": [],
+      "police_list": []
+    },
+    {
+      "elapsed_s": 95.3,
+      "scan_num": 20,
+      "total": 15,
+      "npcs": 12,
+      "hostiles": 0,
+      "police": 0,
+      "new_entities": [
+        {
+          "eid": "EID:9001331",
+          "class": "NPCPuppet",
+          "kind": "npc",
+          "hp": 55.60068893432617,
+          "hostile": false,
+          "police": false
+        }
+      ],
+      "gone_entities": [],
+      "hostile_list": [],
+      "police_list": []
+    },
+    {
+      "elapsed_s": 100.3,
+      "scan_num": 21,
+      "total": 15,
+      "npcs": 12,
+      "hostiles": 0,
+      "police": 0,
+      "new_entities": [],
+      "gone_entities": [],
+      "hostile_list": [],
+      "police_list": []
+    },
+    {
+      "elapsed_s": 105.4,
+      "scan_num": 22,
+      "total": 15,
+      "npcs": 12,
+      "hostiles": 0,
+      "police": 0,
+      "new_entities": [],
+      "gone_entities": [],
+      "hostile_list": [],
+      "police_list": []
+    },
+    {
+      "elapsed_s": 110.4,
+      "scan_num": 23,
+      "total": 15,
+      "npcs": 12,
+      "hostiles": 0,
+      "police": 0,
+      "new_entities": [],
+      "gone_entities": [],
+      "hostile_list": [],
+      "police_list": []
+    },
+    {
+      "elapsed_s": 115.4,
+      "scan_num": 24,
+      "total": 15,
+      "npcs": 12,
+      "hostiles": 0,
+      "police": 0,
+      "new_entities": [],
+      "gone_entities": [],
+      "hostile_list": [],
+      "police_list": []
+    }
+  ],
+  "summary": {
+    "total_scans": 24,
+    "duration_s": 120.4,
+    "max_hostiles": 0,
+    "max_police": 0,
+    "total_new_entities": 2,
+    "police_ever_appeared": false,
+    "hostile_increase": 0
+  },
+  "_meta": {
+    "timestamp": "20260827_043248",
+    "script": "d3_wanted_trigger.py"
+  }
+}

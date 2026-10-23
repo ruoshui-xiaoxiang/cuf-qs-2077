@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>CUF-QS 实验实时监控</title>
+<style>
+  :root {
+    --bg: #ffffff; --panel: #f8f8f6; --text: #0a0a0a; --text-2: #374151;
+    --faint: #9ca3af; --line: #e5e7eb; --brand: #0f172a;
+    --ok: #16a34a; --warn: #d97706; --block: #dc2626; --skip: #9ca3af;
+    --llm: #7c3aed; --mono: "SF Mono", Consolas, monospace;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: var(--bg); color: var(--text); font: 14px/1.5
+    -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif; padding: 20px; }
+  h1 { font-size: 18px; color: var(--brand); font-weight: 600; }
+  .top { display: flex; justify-content: space-between; align-items: center;
+    border-bottom: 2px solid var(--brand); padding-bottom: 10px; }
+  .src { color: var(--faint); font-family: var(--mono); font-size: 12px; }
+  .kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;
+    margin: 16px 0; }
+  .kpi { background: var(--panel); border-left: 2px solid var(--brand);
+    padding: 10px 12px; }
+  .kpi .lbl { color: var(--faint); font-size: 12px; }
+  .kpi .val { font-size: 20px; font-weight: 600; color: var(--brand); }
+  .kpi .val.ok { color: var(--ok); } .kpi .val.warn { color: var(--warn); }
+  .kpi .val.block { color: var(--block); }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+    margin-bottom: 12px; }
+  .panel { background: var(--panel); border-left: 2px solid var(--brand);
+    padding: 10px 12px; }
+  .panel h3 { font-size: 13px; color: var(--text-2); margin-bottom: 6px; }
+  canvas { width: 100%; height: 200px; background: #fff; border: 1px solid var(--line); }
+  table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  th, td { text-align: left; padding: 4px 6px; border-bottom: 1px solid var(--line); }
+  th { color: var(--faint); font-weight: 500; }
+  .badge { display: inline-block; padding: 0 6px; border-radius: 3px;
+    font-size: 11px; }
+  .b-active { background: #e8f5e9; color: var(--ok); }
+  .b-warned { background: #fef3e2; color: var(--warn); }
+  .b-deprecated { background: #fde8e8; color: var(--block); }
+  .b-none { background: #f3f4f6; color: var(--skip); }
+  .b-stable { background: #e8f5e9; color: var(--ok); }
+  .b-conditional { background: #fef3e2; color: var(--warn); }
+  .b-experimental { background: #fde8e8; color: var(--block); }
+  .b-confirmed { background: #e8f5e9; color: var(--ok); }
+  .b-unconfirmed { background: #fde8e8; color: var(--block); }
+  .b-pending_observation { background: #fef3e2; color: var(--warn); }
+  .b-not_started { background: #f3f4f6; color: var(--skip); }
+  .log { font-family: var(--mono); font-size: 12px; max-height: 220px;
+    overflow-y: auto; }
+  .log div { padding: 2px 0; border-bottom: 1px dashed var(--line); }
+  .axiom { padding: 6px 0; border-bottom: 1px solid var(--line); }
+  .axiom-h { color: var(--text-2); margin: 2px 0; }
+  .faint { color: var(--faint); font-size: 11px; }
+  .foot { color: var(--faint); font-size: 12px; margin-top: 16px; text-align: center; }
+</style>
+</head>
+<body>
+  <div class="top">
+    <h1>CUF-QS 实验实时监控</h1>
+    <div class="src" id="src">加载中…</div>
+  </div>
+
+  <div class="kpis">
+    <div class="kpi"><div class="lbl">完成轮次</div><div class="val" id="k-completed">-</div></div>
+    <div class="kpi"><div class="lbl">目标轮次</div><div class="val" id="k-target">-</div></div>
+    <div class="kpi"><div class="lbl">虚拟寿命 / 解体</div><div class="val" id="k-lifespan">-</div></div>
+    <div class="kpi"><div class="lbl">系统状态</div><div class="val" id="k-status">-</div></div>
+  </div>
+
+  <div class="grid2">
+    <div class="panel"><h3>对齐分（实验组；τ 阈值虚线）</h3><canvas id="c-align"></canvas></div>
+    <div class="panel"><h3>C_H 成本（三子维度独立）</h3><canvas id="c-ch"></canvas></div>
+  </div>
+
+  <div class="grid2">
+    <div class="panel">
+      <h3>公理内容（最新轮）</h3>
+      <div id="t-axioms"></div>
+    </div>
+    <div class="panel">
+      <h3>假设生成流（最新 60 条）</h3>
+      <div class="log" id="t-hyp"></div>
+    </div>
+  </div>
+
+  <div class="grid2">
+    <div class="panel">
+      <h3>降级 / 预警日志</h3>
+      <div class="log" id="t-events"></div>
+    </div>
+    <div class="panel">
+      <h3>轮次明细</h3>
+      <div class="log" id="t-rounds"></div>
+    </div>
+  </div>
+
+  <div class="foot">只读监控 · 不参与裁决 · 数据源为 JSONL 归档</div>
+
+<script>
+const REFRESH_MS = 2000;
+// τ 须与 config qs.convergence_threshold 一致（单一事实源；
+// 2026-08-26 S29.15 由 0.95 对齐到 0.6，改配置时此处同步）
+const TAU = 0.6;
+const C = { ok:"#16a34a", warn:"#d97706", block:"#dc2626",
+           brand:"#0f172a", faint:"#9ca3af", llm:"#7c3aed" };
+
+async function get(url) {
+  try {
+    const r = await fetch(url);
+    if (!r.ok) return null;
+    return await r.json();
+  } catch (e) { return null; }
+}
+
+function badge(status) {
+  const m = {
+    active:"b-active", warned:"b-warned", deprecated:"b-deprecated",
+    stable:"b-stable", conditional:"b-conditional", experimental:"b-experimental",
+    confirmed:"b-confirmed", unconfirmed:"b-unconfirmed",
+    pending_observation:"b-pending_observation", not_started:"b-not_started"
+  };
+  const cls = m[status] || "b-none";
+  return `<span class="badge ${cls}">${status || "?"}</span>`;
+}
+
+// ── Canvas 绘制 ──────────────────────────────────────────
+function drawLine(canvas, seriesList, yMin, yMax, tau) {
+  const dpr = window.devicePixelRatio || 1;
+  const w = canvas.clientWidth, h = canvas.clientHeight;
+  canvas.width = w * dpr; canvas.height = h * dpr;
+  const ctx = canvas.getContext("2d"); ctx.scale(dpr, dpr);
+  ctx.clearRect(0, 0, w, h);
+  const ml = 40, mr = 10, mt = 10, mb = 22, pw = w - ml - mr, ph = h - mt - mb;
+  const n = Math.max(seriesList.reduce((m, s) => Math.max(m, s.vals.length), 0), 2);
+  const y = v => mt + ph * (1 - (v - yMin) / (yMax - yMin));
+  const x = i => ml + pw * (i / (n - 1));
+  ctx.strokeStyle = C.faint; ctx.fillStyle = C.faint;
+  ctx.font = "10px sans-serif";
+  ctx.beginPath(); ctx.moveTo(ml, mt); ctx.lineTo(ml, mt + ph); ctx.lineTo(ml + pw, mt + ph); ctx.stroke();
+  for (let t = 0; t <= 2; t++) {
+    const v = yMin + (yMax - yMin) * t / 2;
+    ctx.fillText(v.toFixed(2), 4, y(v) + 3);
+  }
+  ctx.fillText("轮次", ml + pw / 2 - 10, h - 6);
+  if (tau !== undefined && tau >= yMin && tau <= yMax) {
+    ctx.setLineDash([4, 3]); ctx.strokeStyle = C.warn;
+    ctx.beginPath(); ctx.moveTo(ml, y(tau)); ctx.lineTo(ml + pw, y(tau)); ctx.stroke();
+    ctx.setLineDash([]); ctx.fillStyle = C.warn; ctx.fillText("τ", ml + pw - 12, y(tau) - 3);
+  }
+  seriesList.forEach((s, si) => {
+    ctx.strokeStyle = s.color; ctx.beginPath();
+    s.vals.forEach((v, i) => {
+      if (v === null || v === undefined) return;
+      const px = x(i), py = y(v);
+      if (si === 0) ctx.moveTo(px, py); else ctx.lineTo(px, py);
+    });
+    ctx.stroke();
+  });
+}
+
+function drawCH(canvas, rounds) {
+  const series = [
+    { color: C.brand, vals: rounds.map(r => r.c_h.struct) },
+    { color: C.warn,  vals: rounds.map(r => r.c_h.adapt) },
+    { color: C.ok,    vals: rounds.map(r => r.c_h.extend) },
+  ];
+  const all = [].concat(...series.map(s => s.vals)).filter(v => v !== null);
+  const mx = all.length ? Math.max(...all) : 1;
+  drawLine(canvas, series, 0, mx * 1.1, undefined);
+}
+
+// ── 渲染 ─────────────────────────────────────────────────
+let lastRounds = [];
+
+function renderReport(rep) {
+  const v = id => document.getElementById(id);
+  if (!rep) { v("k-lifespan").textContent = "-"; v("k-status").textContent = "-"; return; }
+  v("k-completed").textContent = rep.completed ?? "-";
+  v("k-target").textContent = rep.rounds_target ?? "-";
+  v("k-lifespan").textContent = rep.virtual_lifespan ?? "-";
+  const l = v("k-lifespan");
+  l.className = "val";
+  if (rep.disintegrated) { l.textContent += ` (${rep.criterion})`; l.classList.add("block"); }
+  const st = v("k-status");
+  st.textContent = rep.system_dead ? "system_dead" :
+                   rep.interruption ? "interrupted" : "running/finished";
+  st.className = "val" + (rep.system_dead ? " block" :
+                rep.interruption ? " warn" : " ok");
+}
+
+function renderRounds(data) {
+  const rounds = data.rounds || [];
+  lastRounds = rounds;
+  const v = id => document.getElementById(id);
+  v("k-completed").textContent = data.count ?? 0;
+
+  // 公理内容（最新轮）：假设文本 + 锚点 + 边界列表
+  const last = rounds[rounds.length - 1];
+  const tb = v("t-axioms");
+  tb.innerHTML = "";
+  if (last) {
+    Object.entries(last.axioms).forEach(([aid, a]) => {
+      const div = document.createElement("div");
+      div.className = "axiom";
+      const bc = (a.boundary_conditions || []).map(b =>
+        JSON.stringify(b)).join(" · ") || "无";
+      div.innerHTML =
+        `<div><b>${aid}</b> ${badge(a.status)} ` +
+        `<span class="faint">锚点 ${a.anchor || "?"}</span></div>` +
+        `<div class="axiom-h">${a.hypothesis || "—"}</div>` +
+        `<div class="faint">边界 ${a.boundary_count} 条：${bc}</div>`;
+      tb.appendChild(div);
+    });
+  } else {
+    tb.innerHTML = "<div class='faint'>（等待轮次数据）</div>";
+  }
+
+  // 假设生成流（最新 60 条）
+  const hyp = v("t-hyp"); hyp.innerHTML = "";
+  const hyps = [];
+  rounds.forEach(r => (r.hypotheses || []).forEach(h =>
+    hyps.push(Object.assign({ r: r.round_id }, h))));
+  if (!hyps.length) {
+    const d = document.createElement("div");
+    d.textContent = "（暂无假设生成）"; hyp.appendChild(d);
+  } else {
+    hyps.slice(-60).forEach(h => {
+      const d = document.createElement("div");
+      const t = h.type || "?";
+      const cls = t === "counterexample" ? "b-deprecated" :
+                  t === "boundary_refine" ? "b-warned" : "b-none";
+      d.innerHTML = `<span class="badge ${cls}">${t}</span> ` +
+        `<b>${h.axiom_id || ""}</b> ${h.description || ""}` +
+        ` <span class="faint">r${h.r}</span>`;
+      hyp.appendChild(d);
+    });
+  }
+
+  // 轮次明细（日志式）
+  const trb = v("t-rounds"); trb.innerHTML = "";
+  rounds.forEach(r => {
+    const as = r.alignment_score === null ? "—" :
+               Number(r.alignment_score).toFixed(4);
+    const tier = r.action_control_tier ? badge(r.action_control_tier) : badge(null);
+    const confirm = r.action_confirmation_status ?
+      badge(r.action_confirmation_status) : badge(null);
+    const receipt = r.action_receipt_reason || "—";
+    const outcome = r.action_outcome_semantics || "—";
+    const d = document.createElement("div");
+    d.innerHTML = `<b>r${r.round_id}</b> ${r.action || "-"} · ` +
+      `对齐 ${as} · C ${r.c_h.struct}/${r.c_h.adapt}/${r.c_h.extend} · ` +
+      `实体 ${r.entities_count} · 事件 ${r.events_count}<br>` +
+      `<span class="faint">状态 ${r.action_status || "-"} · 分层 ${tier} · 确认 ${confirm} · ` +
+      `回执 ${receipt} · 语义 ${outcome}</span>`;
+    trb.appendChild(d);
+  });
+
+  // 降级/预警日志
+  const ev = v("t-events"); ev.innerHTML = "";
+  const logs = [];
+  rounds.forEach(r => {
+    (r.downgrade_events || []).forEach(e =>
+      logs.push(`r${r.round_id} 降级 ${e.axiom_id} ${e.count}→${e.threshold}` +
+                (e.from_status && e.to_status ? ` (${e.from_status}→${e.to_status})` : "")));
+    (r.warn_events || []).forEach(e =>
+      logs.push(`r${r.round_id} 预警 ${e.axiom_id} ${e.count}→${e.threshold}` +
+                (e.from_status && e.to_status ? ` (${e.from_status}→${e.to_status})` : "")));
+  });
+  (logs.length ? logs.slice(-60) : ["（暂无降级/预警事件）"]).forEach(t => {
+    const d = document.createElement("div"); d.textContent = t; ev.appendChild(d);
+  });
+
+  // 图表
+  const align = rounds.map(r => r.alignment_score);
+  drawLine(v("c-align"), [{ color: C.brand, vals: align }], -1.05, 1.05, TAU);
+  drawCH(v("c-ch"), rounds);
+}
+
+async function tick() {
+  const cfg = await get("/api/config");
+  if (cfg) document.getElementById("src").textContent =
+    `数据源: ${cfg.log_path} · 刷新 ${REFRESH_MS/1000}s`;
+  const rounds = await get("/api/rounds");
+  if (rounds) renderRounds(rounds);
+  const rep = await get("/api/report");
+  if (rep) renderReport(rep);
+  setTimeout(tick, REFRESH_MS);
+}
+
+tick();
+</script>
+</body>
+</html>

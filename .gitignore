@@ -1,0 +1,56 @@
+# ===== 公开版排除区（按 docs/public_project_inventory_and_disposition.md §D）=====
+# 这些路径不在本仓，规则留着防止后续误把底层接入实现提交进来。
+cpp/
+cuf_native/
+game_mods/
+s1_backup/
+s1_installer/
+.trae/
+
+# ===== 超大原始归档（库外，见 README「数据可得性」）=====
+logs/formal_batch_7b_v3/
+
+# ===== 媒体（实机截图不入仓）=====
+*.png
+*.jpg
+*.jpeg
+*.bmp
+*.mp4
+*.zip
+*.rar
+*.7z
+
+# ===== Python =====
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+*.dll
+*.exe
+*.bin
+*.lib
+*.obj
+*.exp
+
+# ===== 临时探针产物 =====
+*_result.json
+get_state_result.json
+intervention-analysis.canvas.*
+*.log
+logs/_probe_remote_cmp/
+
+# ===== CMake =====
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# ===== IDE / OS =====
+.qoder/
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+.DS_Store

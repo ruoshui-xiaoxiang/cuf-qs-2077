@@ -1,0 +1,494 @@
+{
+  "method": "key_simulation",
+  "baseline": {
+    "total": 5,
+    "npcs": 2,
+    "hostile": 0
+  },
+  "observations": [
+    {
+      "elapsed_s": 2.0,
+      "total": 5,
+      "hostiles": 2,
+      "npcs": 2,
+      "new": 0,
+      "gone": 0,
+      "new_details": [],
+      "hostile_details": [
+        {
+          "eid": "EID:9005596",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9005601",
+          "class": "NPCPuppet"
+        }
+      ]
+    },
+    {
+      "elapsed_s": 7.0,
+      "total": 2,
+      "hostiles": 0,
+      "npcs": 0,
+      "new": 0,
+      "gone": 3,
+      "new_details": [],
+      "hostile_details": []
+    },
+    {
+      "elapsed_s": 12.1,
+      "total": 12,
+      "hostiles": 5,
+      "npcs": 5,
+      "new": 11,
+      "gone": 1,
+      "new_details": [
+        {
+          "eid": "EID:17046410331828568284",
+          "class": "LootContainerObjectAnimatedByTransform",
+          "hostile": false,
+          "hp": 0
+        },
+        {
+          "eid": "EID:1499762988281188911",
+          "class": "Reflector",
+          "hostile": false,
+          "hp": 100
+        },
+        {
+          "eid": "EID:1499765187304445333",
+          "class": "Reflector",
+          "hostile": false,
+          "hp": 100
+        },
+        {
+          "eid": "EID:1499761888769560700",
+          "class": "Reflector",
+          "hostile": false,
+          "hp": 100
+        },
+        {
+          "eid": "EID:2725431668059371601",
+          "class": "ExplosiveDevice",
+          "hostile": false,
+          "hp": 100
+        },
+        {
+          "eid": "EID:12404183016267080250",
+          "class": "LootContainerObjectAnimatedByTransform",
+          "hostile": false,
+          "hp": 0
+        },
+        {
+          "eid": "EID:9005599",
+          "class": "NPCPuppet",
+          "hostile": true,
+          "hp": 100
+        },
+        {
+          "eid": "EID:9005596",
+          "class": "NPCPuppet",
+          "hostile": true,
+          "hp": 100
+        },
+        {
+          "eid": "EID:9005601",
+          "class": "NPCPuppet",
+          "hostile": true,
+          "hp": 100
+        },
+        {
+          "eid": "EID:9005598",
+          "class": "NPCPuppet",
+          "hostile": true,
+          "hp": 100
+        },
+        {
+          "eid": "EID:9005600",
+          "class": "NPCPuppet",
+          "hostile": true,
+          "hp": 100
+        }
+      ],
+      "hostile_details": [
+        {
+          "eid": "EID:9005599",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9005596",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9005601",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9005598",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9005600",
+          "class": "NPCPuppet"
+        }
+      ]
+    },
+    {
+      "elapsed_s": 17.1,
+      "total": 12,
+      "hostiles": 5,
+      "npcs": 5,
+      "new": 0,
+      "gone": 0,
+      "new_details": [],
+      "hostile_details": [
+        {
+          "eid": "EID:9005599",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9005596",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9005601",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9005598",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9005600",
+          "class": "NPCPuppet"
+        }
+      ]
+    },
+    {
+      "elapsed_s": 22.1,
+      "total": 12,
+      "hostiles": 5,
+      "npcs": 5,
+      "new": 0,
+      "gone": 0,
+      "new_details": [],
+      "hostile_details": [
+        {
+          "eid": "EID:9005599",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9005596",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9005601",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9005598",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9005600",
+          "class": "NPCPuppet"
+        }
+      ]
+    },
+    {
+      "elapsed_s": 27.1,
+      "total": 12,
+      "hostiles": 5,
+      "npcs": 5,
+      "new": 0,
+      "gone": 0,
+      "new_details": [],
+      "hostile_details": [
+        {
+          "eid": "EID:9005599",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9005596",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9005601",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9005598",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9005600",
+          "class": "NPCPuppet"
+        }
+      ]
+    },
+    {
+      "elapsed_s": 32.1,
+      "total": 12,
+      "hostiles": 5,
+      "npcs": 5,
+      "new": 0,
+      "gone": 0,
+      "new_details": [],
+      "hostile_details": [
+        {
+          "eid": "EID:9005599",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9005596",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9005601",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9005598",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9005600",
+          "class": "NPCPuppet"
+        }
+      ]
+    },
+    {
+      "elapsed_s": 42.1,
+      "total": 1,
+      "hostiles": 0,
+      "npcs": 0,
+      "new": 0,
+      "gone": 11,
+      "new_details": [],
+      "hostile_details": []
+    },
+    {
+      "elapsed_s": 47.1,
+      "total": 1,
+      "hostiles": 0,
+      "npcs": 0,
+      "new": 0,
+      "gone": 0,
+      "new_details": [],
+      "hostile_details": []
+    },
+    {
+      "elapsed_s": 52.2,
+      "total": 1,
+      "hostiles": 0,
+      "npcs": 0,
+      "new": 0,
+      "gone": 0,
+      "new_details": [],
+      "hostile_details": []
+    },
+    {
+      "elapsed_s": 57.2,
+      "total": 1,
+      "hostiles": 0,
+      "npcs": 0,
+      "new": 0,
+      "gone": 0,
+      "new_details": [],
+      "hostile_details": []
+    },
+    {
+      "elapsed_s": 62.2,
+      "total": 1,
+      "hostiles": 0,
+      "npcs": 0,
+      "new": 0,
+      "gone": 0,
+      "new_details": [],
+      "hostile_details": []
+    },
+    {
+      "elapsed_s": 67.2,
+      "total": 11,
+      "hostiles": 0,
+      "npcs": 3,
+      "new": 10,
+      "gone": 0,
+      "new_details": [
+        {
+          "eid": "EID:10892892973104540086",
+          "class": "DisposalDevice",
+          "hostile": false,
+          "hp": 100
+        },
+        {
+          "eid": "EID:1499761888769560700",
+          "class": "Reflector",
+          "hostile": false,
+          "hp": 100
+        },
+        {
+          "eid": "EID:1499764087792817122",
+          "class": "Reflector",
+          "hostile": false,
+          "hp": 100
+        },
+        {
+          "eid": "EID:1499765187304445333",
+          "class": "Reflector",
+          "hostile": false,
+          "hp": 100
+        },
+        {
+          "eid": "EID:1499769585350958177",
+          "class": "Reflector",
+          "hostile": false,
+          "hp": 100
+        },
+        {
+          "eid": "EID:13630630535579172519",
+          "class": "ExplosiveDevice",
+          "hostile": false,
+          "hp": 100
+        },
+        {
+          "eid": "EID:5867547015418789705",
+          "class": "SecurityTurret",
+          "hostile": false,
+          "hp": 100
+        },
+        {
+          "eid": "EID:9005598",
+          "class": "NPCPuppet",
+          "hostile": false,
+          "hp": 100
+        },
+        {
+          "eid": "EID:9005599",
+          "class": "NPCPuppet",
+          "hostile": false,
+          "hp": 100
+        },
+        {
+          "eid": "EID:9005597",
+          "class": "NPCPuppet",
+          "hostile": false,
+          "hp": 100
+        }
+      ],
+      "hostile_details": []
+    },
+    {
+      "elapsed_s": 72.2,
+      "total": 11,
+      "hostiles": 0,
+      "npcs": 3,
+      "new": 0,
+      "gone": 0,
+      "new_details": [],
+      "hostile_details": []
+    },
+    {
+      "elapsed_s": 77.2,
+      "total": 11,
+      "hostiles": 0,
+      "npcs": 3,
+      "new": 0,
+      "gone": 0,
+      "new_details": [],
+      "hostile_details": []
+    },
+    {
+      "elapsed_s": 82.2,
+      "total": 10,
+      "hostiles": 0,
+      "npcs": 2,
+      "new": 0,
+      "gone": 1,
+      "new_details": [],
+      "hostile_details": []
+    },
+    {
+      "elapsed_s": 87.2,
+      "total": 10,
+      "hostiles": 0,
+      "npcs": 2,
+      "new": 0,
+      "gone": 0,
+      "new_details": [],
+      "hostile_details": []
+    },
+    {
+      "elapsed_s": 92.3,
+      "total": 10,
+      "hostiles": 0,
+      "npcs": 2,
+      "new": 0,
+      "gone": 0,
+      "new_details": [],
+      "hostile_details": []
+    },
+    {
+      "elapsed_s": 97.3,
+      "total": 10,
+      "hostiles": 0,
+      "npcs": 2,
+      "new": 0,
+      "gone": 0,
+      "new_details": [],
+      "hostile_details": []
+    },
+    {
+      "elapsed_s": 102.3,
+      "total": 10,
+      "hostiles": 0,
+      "npcs": 2,
+      "new": 0,
+      "gone": 0,
+      "new_details": [],
+      "hostile_details": []
+    },
+    {
+      "elapsed_s": 107.3,
+      "total": 10,
+      "hostiles": 0,
+      "npcs": 2,
+      "new": 0,
+      "gone": 0,
+      "new_details": [],
+      "hostile_details": []
+    },
+    {
+      "elapsed_s": 112.3,
+      "total": 10,
+      "hostiles": 0,
+      "npcs": 2,
+      "new": 0,
+      "gone": 0,
+      "new_details": [],
+      "hostile_details": []
+    },
+    {
+      "elapsed_s": 117.3,
+      "total": 10,
+      "hostiles": 0,
+      "npcs": 2,
+      "new": 0,
+      "gone": 0,
+      "new_details": [],
+      "hostile_details": []
+    }
+  ],
+  "summary": {
+    "total_scans": 24,
+    "duration_s": 122.4,
+    "pre_hostile": 0,
+    "max_hostile": 5,
+    "total_new": 21,
+    "any_new_hostile": true
+  },
+  "_meta": {
+    "timestamp": "20260827_044839",
+    "script": "d3_wanted_trigger_v4"
+  }
+}

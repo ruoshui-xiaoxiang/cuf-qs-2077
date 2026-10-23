@@ -1,0 +1,154 @@
+{
+  "results": [
+    {
+      "tdbid_ok": true,
+      "record": "Items.Preset_Saratoga",
+      "variants": [
+        {
+          "form": "player_td",
+          "ok": false,
+          "err": "Function 'GetItemQuantity' parameter 2 must be gameItemID."
+        },
+        {
+          "form": "td_player",
+          "ok": false,
+          "err": "Function 'GetItemQuantity' parameter 1 must be handle:gameObject."
+        },
+        {
+          "form": "player_str",
+          "ok": false,
+          "err": "Function 'GetItemQuantity' parameter 2 must be gameItemID."
+        }
+      ]
+    },
+    {
+      "tdbid_ok": true,
+      "record": "Items.Preset_Saratoga_Default",
+      "variants": [
+        {
+          "form": "player_td",
+          "ok": false,
+          "err": "Function 'GetItemQuantity' parameter 2 must be gameItemID."
+        },
+        {
+          "form": "td_player",
+          "ok": false,
+          "err": "Function 'GetItemQuantity' parameter 1 must be handle:gameObject."
+        },
+        {
+          "form": "player_str",
+          "ok": false,
+          "err": "Function 'GetItemQuantity' parameter 2 must be gameItemID."
+        }
+      ]
+    },
+    {
+      "tdbid_ok": true,
+      "record": "Items.Preset_Saratoga_Military",
+      "variants": [
+        {
+          "form": "player_td",
+          "ok": false,
+          "err": "Function 'GetItemQuantity' parameter 2 must be gameItemID."
+        },
+        {
+          "form": "td_player",
+          "ok": false,
+          "err": "Function 'GetItemQuantity' parameter 1 must be handle:gameObject."
+        },
+        {
+          "form": "player_str",
+          "ok": false,
+          "err": "Function 'GetItemQuantity' parameter 2 must be gameItemID."
+        }
+      ]
+    },
+    {
+      "tdbid_ok": true,
+      "record": "Items.Preset_Saratoga_Neon",
+      "variants": [
+        {
+          "form": "player_td",
+          "ok": false,
+          "err": "Function 'GetItemQuantity' parameter 2 must be gameItemID."
+        },
+        {
+          "form": "td_player",
+          "ok": false,
+          "err": "Function 'GetItemQuantity' parameter 1 must be handle:gameObject."
+        },
+        {
+          "form": "player_str",
+          "ok": false,
+          "err": "Function 'GetItemQuantity' parameter 2 must be gameItemID."
+        }
+      ]
+    },
+    {
+      "tdbid_ok": true,
+      "record": "Items.Preset_Saratoga_Legendary",
+      "variants": [
+        {
+          "form": "player_td",
+          "ok": false,
+          "err": "Function 'GetItemQuantity' parameter 2 must be gameItemID."
+        },
+        {
+          "form": "td_player",
+          "ok": false,
+          "err": "Function 'GetItemQuantity' parameter 1 must be handle:gameObject."
+        },
+        {
+          "form": "player_str",
+          "ok": false,
+          "err": "Function 'GetItemQuantity' parameter 2 must be gameItemID."
+        }
+      ]
+    },
+    {
+      "tdbid_ok": true,
+      "record": "Items.Saratoga",
+      "variants": [
+        {
+          "form": "player_td",
+          "ok": false,
+          "err": "Function 'GetItemQuantity' parameter 2 must be gameItemID."
+        },
+        {
+          "form": "td_player",
+          "ok": false,
+          "err": "Function 'GetItemQuantity' parameter 1 must be handle:gameObject."
+        },
+        {
+          "form": "player_str",
+          "ok": false,
+          "err": "Function 'GetItemQuantity' parameter 2 must be gameItemID."
+        }
+      ]
+    },
+    {
+      "tdbid_ok": true,
+      "record": "Items.HauntedCyberdeck_Legendary",
+      "variants": [
+        {
+          "form": "player_td",
+          "ok": false,
+          "err": "Function 'GetItemQuantity' parameter 2 must be gameItemID."
+        },
+        {
+          "form": "td_player",
+          "ok": false,
+          "err": "Function 'GetItemQuantity' parameter 1 must be handle:gameObject."
+        },
+        {
+          "form": "player_str",
+          "ok": false,
+          "err": "Function 'GetItemQuantity' parameter 2 must be gameItemID."
+        }
+      ]
+    }
+  ],
+  "player_available": true,
+  "tsys_available": true,
+  "mod_version": "0.6.11"
+}

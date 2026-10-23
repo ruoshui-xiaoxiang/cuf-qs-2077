@@ -1,0 +1,281 @@
+{
+  "baseline": {
+    "total": 15,
+    "npcs": 5,
+    "non_hostile": 5,
+    "pre_hostile": 0,
+    "player_pos": {
+      "x": -1637.7684326171875,
+      "y": 2388.359130859375,
+      "z": 18.15618896484375
+    }
+  },
+  "fire": {
+    "shots": 5,
+    "time": "20260827_054034"
+  },
+  "observations": [
+    {
+      "elapsed_s": 0.0,
+      "total": 14,
+      "hostiles": 4,
+      "npcs": 4,
+      "new": 14,
+      "hostile_details": [
+        {
+          "eid": "EID:9001332",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9001333",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9001335",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9001331",
+          "class": "NPCPuppet"
+        }
+      ]
+    },
+    {
+      "elapsed_s": 5.0,
+      "total": 13,
+      "hostiles": 3,
+      "npcs": 3,
+      "new": 0,
+      "hostile_details": [
+        {
+          "eid": "EID:9001332",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9001333",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9001335",
+          "class": "NPCPuppet"
+        }
+      ]
+    },
+    {
+      "elapsed_s": 10.0,
+      "total": 13,
+      "hostiles": 3,
+      "npcs": 3,
+      "new": 0,
+      "hostile_details": [
+        {
+          "eid": "EID:9001332",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9001333",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9001335",
+          "class": "NPCPuppet"
+        }
+      ]
+    },
+    {
+      "elapsed_s": 15.1,
+      "total": 9,
+      "hostiles": 3,
+      "npcs": 3,
+      "new": 0,
+      "hostile_details": [
+        {
+          "eid": "EID:9001332",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9001333",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9001335",
+          "class": "NPCPuppet"
+        }
+      ]
+    },
+    {
+      "elapsed_s": 20.1,
+      "total": 9,
+      "hostiles": 3,
+      "npcs": 3,
+      "new": 0,
+      "hostile_details": [
+        {
+          "eid": "EID:9001332",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9001333",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9001335",
+          "class": "NPCPuppet"
+        }
+      ]
+    },
+    {
+      "elapsed_s": 25.1,
+      "total": 9,
+      "hostiles": 3,
+      "npcs": 3,
+      "new": 0,
+      "hostile_details": [
+        {
+          "eid": "EID:9001332",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9001333",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9001335",
+          "class": "NPCPuppet"
+        }
+      ]
+    },
+    {
+      "elapsed_s": 30.1,
+      "total": 9,
+      "hostiles": 3,
+      "npcs": 3,
+      "new": 0,
+      "hostile_details": [
+        {
+          "eid": "EID:9001332",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9001333",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9001335",
+          "class": "NPCPuppet"
+        }
+      ]
+    },
+    {
+      "elapsed_s": 35.1,
+      "total": 9,
+      "hostiles": 3,
+      "npcs": 3,
+      "new": 0,
+      "hostile_details": [
+        {
+          "eid": "EID:9001332",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9001333",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9001335",
+          "class": "NPCPuppet"
+        }
+      ]
+    },
+    {
+      "elapsed_s": 40.1,
+      "total": 9,
+      "hostiles": 3,
+      "npcs": 3,
+      "new": 0,
+      "hostile_details": [
+        {
+          "eid": "EID:9001332",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9001333",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9001335",
+          "class": "NPCPuppet"
+        }
+      ]
+    },
+    {
+      "elapsed_s": 45.1,
+      "total": 9,
+      "hostiles": 3,
+      "npcs": 3,
+      "new": 0,
+      "hostile_details": [
+        {
+          "eid": "EID:9001332",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9001333",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9001335",
+          "class": "NPCPuppet"
+        }
+      ]
+    },
+    {
+      "elapsed_s": 50.2,
+      "total": 9,
+      "hostiles": 3,
+      "npcs": 3,
+      "new": 0,
+      "hostile_details": [
+        {
+          "eid": "EID:9001332",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9001333",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9001335",
+          "class": "NPCPuppet"
+        }
+      ]
+    },
+    {
+      "elapsed_s": 55.2,
+      "total": 9,
+      "hostiles": 3,
+      "npcs": 3,
+      "new": 0,
+      "hostile_details": [
+        {
+          "eid": "EID:9001332",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9001333",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9001335",
+          "class": "NPCPuppet"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "scans": 12,
+    "max_hostile": 4,
+    "any_hostile": true,
+    "first_hostile_at": 0.0
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "connection": {
+    "host": "127.0.0.1",
+    "port": 20770,
+    "response_timeout_s": 10.0,
+    "heartbeat_interval_s": 5.0,
+    "heartbeat_miss_count": 3
+  },
+  "bridge_mod": {
+    "name": "CufBridge",
+    "reconnect_interval_s": 5.0
+  },
+  "actions": {
+    "poll_interval_s": 0.2,
+    "attack_timeout_s": 20.0,
+    "move_timeout_s": 15.0,
+    "arrival_eps_m": 1.0,
+    "move_min_progress_m": 0.5
+  },
+  "c_h": {
+    "budget_b": 100.0,
+    "_note_budget_b": "逻辑学审查 B：兼容字段，仅用于绘图统计，不参与预算比较。三子维度异质（不同量纲）不可简单相加。",
+    "struct_budget": 50,
+    "_struct_budget_note": "C_H,struct = 活跃公理(active+warned)数 + 边界条件总数。O(10) 量级。2026-08-25 修正：struct 超预算（规则池膨胀）触发 Γ脆 P_C 判据③（备忘录 4.2：C_struct > B_struct OR C_extend > B_extend）——原设计仅打 struct_overload 标记导致规则池失控无刹车，已改。",
+    "extend_budget": 10,
+    "_extend_budget_note": "C_H,extend = min(累计反例数, 降级阈值)，逻辑学审查 A 单调递增方案（决策 #11：有界代理度量，饱和于降级阈值=5）。O(10) 量级。【诚实口径（S29.16 议题 1 方案 C，2026-08-26 用户批准）】默认参数下 extend ≤ 5 < extend_budget=10 恒成立，判据③的 extend 分支结构性不可达——判据③的解体判定由 struct 主导（struct 超预算 → within_budget=False，见 _struct_budget_note）。这是两个锁定选择的组合后果（决策 #11 饱和上限 × 预算量级），非实现遗漏：extend 的角色定位为「信念修正活动强度」的成本记账/遥测通道，不单独致死；需要实证「延展过度可致解体」这一理论命题时，走压力测试路径注入临时更小的 extend_budget（S29.12 pc_hl 批次已按此实证，P_C supported）。变更本参数组合须重跑阈值敏感性论证。",
+    "adapt_budget": 1000,
+    "_adapt_budget_note": "C_H,adapt = 采样吞吐 + 模型更新次数。O(100-1000) 量级。超预算仅打 adapt_overload 标记，不直接触发 Γ脆。模型不可用/上下文溢出属系统前置条件（见决策 #12），标记「系统不可用」/「系统不可信」，均不进判据②、不走 P_C。"
+  },
+  "qs": {
+    "window_size": 5,
+    "epsilon": 0.01,
+    "min_rounds": 5,
+    "convergence_threshold": 0.6,
+    "_threshold_note": "收敛/功能死亡阈值 τ 重标定（2026-08-25 用户批准，S26-7B 实证驱动）。原 0.95 为离线路（对齐分恒 1.0）设计；7B 隐状态余弦域基线实测 ≈0.77（logs/live_7b qs_history=[0.7716,0.761,0.7702]），0.95 对 7B 域过严导致判据②在 r2 机械触发功能死亡。重标定 τ=0.6：低于 7B 域基线 0.77 留余量、高于 ε=0.01 两个量级（满足决策 #3 ε≪τ 铁则）、远高于对照组最差 -1.0（判据②仍可捕获真正漂移）。离线路（对齐分恒 1.0）不受影响（1.0 > 0.6 仍收敛）。改 τ 触发 A7 纪律：本论证写入配置，变更须重跑阈值敏感性检验。"
+  },
+  "disintegration": {
+    "functional_death_k": 3,
+    "h_l_window_n": 5,
+    "_note": "锁定决策 #12 Γ脆解体判据配置。functional_death_k = 判据②（功能死亡）要求的连续低于 convergence_threshold 的轮数 K；h_l_window_n = H_L 递进动力学链检验的轮数窗口 N（①/②触发时回看触发前 N 轮 C_extend 是否从未达到 extend_budget，全部未超则 violated=True 判递进链不成立）。外层判定为三判据逻辑 OR，检查顺序 ①语义死亡 → ②功能死亡 → ③超预算。阈值依据：convergence_threshold 取自 qs 段（当前 0.6，2026-08-25 用户批准重标定，论证见 qs._threshold_note；须 ≫ ε=0.01 满足决策 #3 ε≪τ 铁则）；K=3 取最小可验证连续窗口（min_rounds=5 以下），避免与收敛判定纠缠；若 τ 被调至 0 则判据②永久架空，变更须重跑阈值敏感性论证。"
+  },
+  "fault_tolerance": {
+    "collect_retry_max": 2,
+    "collect_retry_sleep_s": 1.0,
+    "reconnect_wait_s": 30.0,
+    "_note": "S17 异常边界处理。collect_retry_max = W0 采集遇 GameConnectorError（加载异常/瞬时故障）时的重试次数；collect_retry_sleep_s = 每次重试间隔；reconnect_wait_s = 检测到断连（游戏崩溃/重启）后等待游戏侧重连的最长秒数，超时则该轮优雅跳过（不中断实验）。检查点 = JSONL 日志已归档的最大轮次，run(resume=True) 从检查点后续轮恢复。剧情锁（动作 accepted=False）与空实体为轮内非致命降级，照常归档。"
+  },
+  "planner": {
+    "enabled": true,
+    "mode": "active",
+    "allowed_actions": [
+      "attack",
+      "move",
+      "pickup"
+    ],
+    "area": {
+      "center": {
+        "x": -1627.1209716796875,
+        "y": 2381.88232421875,
+        "z": 18.15618896484375
+      },
+      "radius_m": 80.0
+    },
+    "_note": "S29 动作规划器（LLM 自主行动渐进部署）。mode=shadow（旁观学习）：planner 每轮生成动作建议（attack/move + 目标 + 理由），只记录 proposed_action/proposed_validated 不执行，实际动作仍走默认编排——用于测验 LLM 建议质量与安全性；mode=active（自主行动）：建议经白名单 + 固定实验区域位置约束（area.center/radius_m，超出即拒绝回退默认编排）校验通过后执行。plan_fn 由调用方注入（真实 LLM），默认离线 heuristic 确定性策略。反套壳：planner 只决定动作选择（行动权），真值判定仍归 rule_validator。2026-08-25 shadow 实机 10/10 达标（LLM 建议解析 10/10、白名单 10/10）后切 active；area.center 更新为当前实机区域（x=3,y=283,z=39，原日本街入口广场坐标已过时）。2026-08-25 S29.10 pickup 实机链路全通后，allowed_actions 补 pickup（S29.8 遗漏同步），LLM 决策串 pickup EID:x 进入白名单决策空间。2026-08-25 晚 area.center 再更新为玩家当前位置（-477.35,-125.32,8.01）——玩家已离开原实验区（实机扫描确认），原中心 (3,283,39) 距玩家 480m 导致 move 建议全被区域约束拒。"
+  },
+  "activation": {
+    "enabled": true,
+    "_note": "S28 候选公理自主激活（弱自进化）。候选池在 world_rules.candidate_axioms，每个含 activation_trigger{event_kinds,min_count,window_rounds}。激活判定 = 最近 window_rounds 轮内事件计数 ≥ min_count → 轮间注入活跃公理；激活不宣告真/假（真值判定仍归 rule_validator），幂等。min_count/window 可按 axiom_id 在此覆盖候选默认。enabled=false 时完全禁用（候选永不激活）。"
+  },
+  "baseline": {
+    "prior_anomaly_prob": 0.0,
+    "anomaly_prob_threshold": 0.5,
+    "_note": "S18 对照组基线（纯统计拟合）。prior_anomaly_prob = 无历史时的异常先验概率（0.0 = 默认世界正常）；anomaly_prob_threshold = 预测异常的频率阈值（严格大于）。对照组回放实验组 JSONL 归档的 w0 观测（同一批观测数据），无公理/无降级/无保护闸门；实际异常真值 = rule_validator 任一公理 violated_rules 非空（不施加多样性闸门）。口径映射：score = 2*accuracy - 1 ∈ [-1,1] 与实验组对齐分同域；测量仪器复用 QSKernel（同 window/ε/τ）；解体判据①/③ not_applicable，②同口径（连续 functional_death_k 轮 score < convergence_threshold）。induction_fn 默认纯频率统计，实机可替换 7B 归纳路径，裁决权仍归 W1。"
+  },
+  "model": {
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "hf_home": "E:\\HF_CACHE",
+    "device": "cuda:0",
+    "load_in_4bit": true,
+    "compute_dtype": "bfloat16",
+    "max_length": 512,
+    "seed": 2077,
+    "hidden_state_protocol": {
+      "layer_index": -1,
+      "token_position": "last_non_pad",
+      "pooling": "last",
+      "read_timing": "post_forward"
+    }
+  },
+  "logging": {
+    "log_dir": "logs"
+  }
+}

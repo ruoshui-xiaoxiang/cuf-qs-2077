@@ -1,0 +1,32 @@
+{
+  "ts": "2026-08-26 21:11:51",
+  "version_probe": {
+    "snapshot_after": {
+      "ok": false,
+      "reason": "get_item_list_failed"
+    },
+    "snapshot_before": {
+      "ok": false,
+      "reason": "get_item_list_failed"
+    },
+    "target_found": false,
+    "player_available": true,
+    "mod_version": "0.6.8",
+    "tsys_available": true,
+    "tsys_methods": {
+      "GetMoney": "nil",
+      "AddMoney": "nil",
+      "GetItemPrice": "nil",
+      "GetItemQuantity": "function",
+      "GetItemList": "function",
+      "GetItemIDList": "nil",
+      "GiveItem": "function",
+      "TransferItem": "function",
+      "RemoveItem": "function"
+    },
+    "add_to_inventory_type": "function",
+    "tdbid_tostring_type": "nil"
+  },
+  "scan_items": [],
+  "verdict": "no_item_in_area"
+}

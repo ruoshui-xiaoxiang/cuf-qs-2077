@@ -1,0 +1,946 @@
+{
+  "mode": "formal_batch",
+  "rounds_target": 10,
+  "conditions": [
+    {
+      "axiom": "A_M1",
+      "seeds": [
+        7,
+        42,
+        2077
+      ],
+      "runs": [
+        {
+          "seed": 7,
+          "port": 22050,
+          "log_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\pc_hl\\pc_b10\\A_M1\\seed_7\\rounds.jsonl",
+          "report_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\pc_hl\\pc_b10\\A_M1\\seed_7\\report.json",
+          "baseline_report_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\pc_hl\\pc_b10\\A_M1\\seed_7\\baseline_report.json",
+          "comparison_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\pc_hl\\pc_b10\\A_M1\\seed_7\\comparison.json",
+          "interruption": false,
+          "iteration": {
+            "axiom": "A_M1",
+            "final_status": "deprecated",
+            "warn_round": 1,
+            "downgrade_round": 2,
+            "max_count": 5,
+            "boundary_conditions_final": [
+              {
+                "kind": "npc",
+                "labels": [
+                  "civilian"
+                ],
+                "source": "auto_complete",
+                "from_counterexample": true
+              },
+              {
+                "event": "combat_attack",
+                "note": "hp not decreased",
+                "source": "auto_complete"
+              }
+            ]
+          },
+          "other_axiom_status": {
+            "A_W2_5": "active",
+            "A_W1": "active"
+          },
+          "convergence_curve": [
+            1.0,
+            1.0,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002
+          ],
+          "qs_history": [
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002
+          ],
+          "converged_final": true,
+          "virtual_lifespan": 10,
+          "disintegrated": false,
+          "criterion": null,
+          "comparison": {
+            "exp_series": [
+              1.0,
+              1.0,
+              1.0000000000000002,
+              1.0000000000000002,
+              1.0000000000000002,
+              1.0000000000000002,
+              1.0000000000000002,
+              1.0000000000000002,
+              1.0000000000000002,
+              1.0000000000000002
+            ],
+            "baseline_series": [
+              -0.33333333333333337,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "compared_rounds": 10,
+            "exp_mean": 1.0000000000000002,
+            "baseline_mean": 0.8666666666666666,
+            "converged_exp": true,
+            "converged_baseline": true,
+            "lifespan_exp": 10,
+            "lifespan_baseline": 10,
+            "lifespan_delta": 0,
+            "exp_disintegrated": false,
+            "baseline_disintegrated": false,
+            "exp_criterion": null,
+            "baseline_criterion": null
+          }
+        },
+        {
+          "seed": 42,
+          "port": 22051,
+          "log_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\pc_hl\\pc_b10\\A_M1\\seed_42\\rounds.jsonl",
+          "report_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\pc_hl\\pc_b10\\A_M1\\seed_42\\report.json",
+          "baseline_report_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\pc_hl\\pc_b10\\A_M1\\seed_42\\baseline_report.json",
+          "comparison_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\pc_hl\\pc_b10\\A_M1\\seed_42\\comparison.json",
+          "interruption": false,
+          "iteration": {
+            "axiom": "A_M1",
+            "final_status": "deprecated",
+            "warn_round": 1,
+            "downgrade_round": 2,
+            "max_count": 5,
+            "boundary_conditions_final": [
+              {
+                "kind": "npc",
+                "labels": [
+                  "civilian"
+                ],
+                "source": "auto_complete",
+                "from_counterexample": true
+              },
+              {
+                "event": "combat_attack",
+                "note": "hp not decreased",
+                "source": "auto_complete"
+              }
+            ]
+          },
+          "other_axiom_status": {
+            "A_W2_5": "active",
+            "A_W1": "active"
+          },
+          "convergence_curve": [
+            1.0,
+            1.0,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002
+          ],
+          "qs_history": [
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002
+          ],
+          "converged_final": true,
+          "virtual_lifespan": 10,
+          "disintegrated": false,
+          "criterion": null,
+          "comparison": {
+            "exp_series": [
+              1.0,
+              1.0,
+              1.0000000000000002,
+              1.0000000000000002,
+              1.0000000000000002,
+              1.0000000000000002,
+              1.0000000000000002,
+              1.0000000000000002,
+              1.0000000000000002,
+              1.0000000000000002
+            ],
+            "baseline_series": [
+              -0.33333333333333337,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "compared_rounds": 10,
+            "exp_mean": 1.0000000000000002,
+            "baseline_mean": 0.8666666666666666,
+            "converged_exp": true,
+            "converged_baseline": true,
+            "lifespan_exp": 10,
+            "lifespan_baseline": 10,
+            "lifespan_delta": 0,
+            "exp_disintegrated": false,
+            "baseline_disintegrated": false,
+            "exp_criterion": null,
+            "baseline_criterion": null
+          }
+        },
+        {
+          "seed": 2077,
+          "port": 22052,
+          "log_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\pc_hl\\pc_b10\\A_M1\\seed_2077\\rounds.jsonl",
+          "report_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\pc_hl\\pc_b10\\A_M1\\seed_2077\\report.json",
+          "baseline_report_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\pc_hl\\pc_b10\\A_M1\\seed_2077\\baseline_report.json",
+          "comparison_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\pc_hl\\pc_b10\\A_M1\\seed_2077\\comparison.json",
+          "interruption": false,
+          "iteration": {
+            "axiom": "A_M1",
+            "final_status": "deprecated",
+            "warn_round": 1,
+            "downgrade_round": 2,
+            "max_count": 5,
+            "boundary_conditions_final": [
+              {
+                "kind": "npc",
+                "labels": [
+                  "civilian"
+                ],
+                "source": "auto_complete",
+                "from_counterexample": true
+              },
+              {
+                "event": "combat_attack",
+                "note": "hp not decreased",
+                "source": "auto_complete"
+              }
+            ]
+          },
+          "other_axiom_status": {
+            "A_W2_5": "active",
+            "A_W1": "active"
+          },
+          "convergence_curve": [
+            1.0,
+            1.0,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002
+          ],
+          "qs_history": [
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002
+          ],
+          "converged_final": true,
+          "virtual_lifespan": 10,
+          "disintegrated": false,
+          "criterion": null,
+          "comparison": {
+            "exp_series": [
+              1.0,
+              1.0,
+              1.0000000000000002,
+              1.0000000000000002,
+              1.0000000000000002,
+              1.0000000000000002,
+              1.0000000000000002,
+              1.0000000000000002,
+              1.0000000000000002,
+              1.0000000000000002
+            ],
+            "baseline_series": [
+              -0.33333333333333337,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "compared_rounds": 10,
+            "exp_mean": 1.0000000000000002,
+            "baseline_mean": 0.8666666666666666,
+            "converged_exp": true,
+            "converged_baseline": true,
+            "lifespan_exp": 10,
+            "lifespan_baseline": 10,
+            "lifespan_delta": 0,
+            "exp_disintegrated": false,
+            "baseline_disintegrated": false,
+            "exp_criterion": null,
+            "baseline_criterion": null
+          }
+        }
+      ]
+    },
+    {
+      "axiom": "A_W1",
+      "seeds": [
+        7,
+        42,
+        2077
+      ],
+      "runs": [
+        {
+          "seed": 7,
+          "port": 22053,
+          "log_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\pc_hl\\pc_b10\\A_W1\\seed_7\\rounds.jsonl",
+          "report_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\pc_hl\\pc_b10\\A_W1\\seed_7\\report.json",
+          "baseline_report_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\pc_hl\\pc_b10\\A_W1\\seed_7\\baseline_report.json",
+          "comparison_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\pc_hl\\pc_b10\\A_W1\\seed_7\\comparison.json",
+          "interruption": false,
+          "iteration": {
+            "axiom": "A_W1",
+            "final_status": "deprecated",
+            "warn_round": 1,
+            "downgrade_round": 2,
+            "max_count": 5,
+            "boundary_conditions_final": [
+              {
+                "kind": "device",
+                "labels": [
+                  "drone"
+                ],
+                "source": "auto_complete",
+                "from_counterexample": true
+              }
+            ]
+          },
+          "other_axiom_status": {
+            "A_M1": "active",
+            "A_W2_5": "active"
+          },
+          "convergence_curve": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "qs_history": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "converged_final": true,
+          "virtual_lifespan": 10,
+          "disintegrated": false,
+          "criterion": null,
+          "comparison": {
+            "exp_series": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "baseline_series": [
+              0.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "compared_rounds": 10,
+            "exp_mean": 1.0,
+            "baseline_mean": 0.9,
+            "converged_exp": true,
+            "converged_baseline": true,
+            "lifespan_exp": 10,
+            "lifespan_baseline": 10,
+            "lifespan_delta": 0,
+            "exp_disintegrated": false,
+            "baseline_disintegrated": false,
+            "exp_criterion": null,
+            "baseline_criterion": null
+          }
+        },
+        {
+          "seed": 42,
+          "port": 22054,
+          "log_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\pc_hl\\pc_b10\\A_W1\\seed_42\\rounds.jsonl",
+          "report_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\pc_hl\\pc_b10\\A_W1\\seed_42\\report.json",
+          "baseline_report_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\pc_hl\\pc_b10\\A_W1\\seed_42\\baseline_report.json",
+          "comparison_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\pc_hl\\pc_b10\\A_W1\\seed_42\\comparison.json",
+          "interruption": false,
+          "iteration": {
+            "axiom": "A_W1",
+            "final_status": "deprecated",
+            "warn_round": 1,
+            "downgrade_round": 2,
+            "max_count": 5,
+            "boundary_conditions_final": [
+              {
+                "kind": "device",
+                "labels": [
+                  "drone"
+                ],
+                "source": "auto_complete",
+                "from_counterexample": true
+              }
+            ]
+          },
+          "other_axiom_status": {
+            "A_M1": "active",
+            "A_W2_5": "active"
+          },
+          "convergence_curve": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "qs_history": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "converged_final": true,
+          "virtual_lifespan": 10,
+          "disintegrated": false,
+          "criterion": null,
+          "comparison": {
+            "exp_series": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "baseline_series": [
+              0.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "compared_rounds": 10,
+            "exp_mean": 1.0,
+            "baseline_mean": 0.9,
+            "converged_exp": true,
+            "converged_baseline": true,
+            "lifespan_exp": 10,
+            "lifespan_baseline": 10,
+            "lifespan_delta": 0,
+            "exp_disintegrated": false,
+            "baseline_disintegrated": false,
+            "exp_criterion": null,
+            "baseline_criterion": null
+          }
+        },
+        {
+          "seed": 2077,
+          "port": 22055,
+          "log_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\pc_hl\\pc_b10\\A_W1\\seed_2077\\rounds.jsonl",
+          "report_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\pc_hl\\pc_b10\\A_W1\\seed_2077\\report.json",
+          "baseline_report_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\pc_hl\\pc_b10\\A_W1\\seed_2077\\baseline_report.json",
+          "comparison_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\pc_hl\\pc_b10\\A_W1\\seed_2077\\comparison.json",
+          "interruption": false,
+          "iteration": {
+            "axiom": "A_W1",
+            "final_status": "deprecated",
+            "warn_round": 1,
+            "downgrade_round": 2,
+            "max_count": 5,
+            "boundary_conditions_final": [
+              {
+                "kind": "device",
+                "labels": [
+                  "drone"
+                ],
+                "source": "auto_complete",
+                "from_counterexample": true
+              }
+            ]
+          },
+          "other_axiom_status": {
+            "A_M1": "active",
+            "A_W2_5": "active"
+          },
+          "convergence_curve": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "qs_history": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "converged_final": true,
+          "virtual_lifespan": 10,
+          "disintegrated": false,
+          "criterion": null,
+          "comparison": {
+            "exp_series": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "baseline_series": [
+              0.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "compared_rounds": 10,
+            "exp_mean": 1.0,
+            "baseline_mean": 0.9,
+            "converged_exp": true,
+            "converged_baseline": true,
+            "lifespan_exp": 10,
+            "lifespan_baseline": 10,
+            "lifespan_delta": 0,
+            "exp_disintegrated": false,
+            "baseline_disintegrated": false,
+            "exp_criterion": null,
+            "baseline_criterion": null
+          }
+        }
+      ]
+    },
+    {
+      "axiom": "A_W2_5",
+      "seeds": [
+        7,
+        42,
+        2077
+      ],
+      "runs": [
+        {
+          "seed": 7,
+          "port": 22056,
+          "log_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\pc_hl\\pc_b10\\A_W2_5\\seed_7\\rounds.jsonl",
+          "report_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\pc_hl\\pc_b10\\A_W2_5\\seed_7\\report.json",
+          "baseline_report_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\pc_hl\\pc_b10\\A_W2_5\\seed_7\\baseline_report.json",
+          "comparison_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\pc_hl\\pc_b10\\A_W2_5\\seed_7\\comparison.json",
+          "interruption": false,
+          "iteration": {
+            "axiom": "A_W2_5",
+            "final_status": "deprecated",
+            "warn_round": 3,
+            "downgrade_round": 3,
+            "max_count": 6,
+            "boundary_conditions_final": [
+              {
+                "kind": "npc",
+                "labels": [
+                  "undead",
+                  "hostile"
+                ],
+                "source": "auto_complete",
+                "from_counterexample": true
+              },
+              {
+                "kind": "npc",
+                "labels": [
+                  "undead",
+                  "neutral"
+                ],
+                "source": "auto_complete",
+                "from_counterexample": true
+              }
+            ]
+          },
+          "other_axiom_status": {
+            "A_M1": "active",
+            "A_W1": "active"
+          },
+          "convergence_curve": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "qs_history": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "converged_final": true,
+          "virtual_lifespan": 10,
+          "disintegrated": false,
+          "criterion": null,
+          "comparison": {
+            "exp_series": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "baseline_series": [
+              1.0,
+              1.0,
+              0.0,
+              0.6000000000000001,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "compared_rounds": 10,
+            "exp_mean": 1.0,
+            "baseline_mean": 0.86,
+            "converged_exp": true,
+            "converged_baseline": true,
+            "lifespan_exp": 10,
+            "lifespan_baseline": 10,
+            "lifespan_delta": 0,
+            "exp_disintegrated": false,
+            "baseline_disintegrated": false,
+            "exp_criterion": null,
+            "baseline_criterion": null
+          }
+        },
+        {
+          "seed": 42,
+          "port": 22057,
+          "log_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\pc_hl\\pc_b10\\A_W2_5\\seed_42\\rounds.jsonl",
+          "report_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\pc_hl\\pc_b10\\A_W2_5\\seed_42\\report.json",
+          "baseline_report_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\pc_hl\\pc_b10\\A_W2_5\\seed_42\\baseline_report.json",
+          "comparison_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\pc_hl\\pc_b10\\A_W2_5\\seed_42\\comparison.json",
+          "interruption": false,
+          "iteration": {
+            "axiom": "A_W2_5",
+            "final_status": "deprecated",
+            "warn_round": 4,
+            "downgrade_round": 4,
+            "max_count": 7,
+            "boundary_conditions_final": [
+              {
+                "kind": "npc",
+                "labels": [
+                  "undead",
+                  "hostile"
+                ],
+                "source": "auto_complete",
+                "from_counterexample": true
+              },
+              {
+                "kind": "npc",
+                "labels": [
+                  "undead",
+                  "aggressive"
+                ],
+                "source": "auto_complete",
+                "from_counterexample": true
+              },
+              {
+                "kind": "npc",
+                "labels": [
+                  "undead",
+                  "neutral"
+                ],
+                "source": "auto_complete",
+                "from_counterexample": true
+              }
+            ]
+          },
+          "other_axiom_status": {
+            "A_M1": "active",
+            "A_W1": "active"
+          },
+          "convergence_curve": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "qs_history": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "converged_final": true,
+          "virtual_lifespan": 10,
+          "disintegrated": false,
+          "criterion": null,
+          "comparison": {
+            "exp_series": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "baseline_series": [
+              1.0,
+              1.0,
+              1.0,
+              -0.19999999999999996,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "compared_rounds": 10,
+            "exp_mean": 1.0,
+            "baseline_mean": 0.8800000000000001,
+            "converged_exp": true,
+            "converged_baseline": true,
+            "lifespan_exp": 10,
+            "lifespan_baseline": 10,
+            "lifespan_delta": 0,
+            "exp_disintegrated": false,
+            "baseline_disintegrated": false,
+            "exp_criterion": null,
+            "baseline_criterion": null
+          }
+        },
+        {
+          "seed": 2077,
+          "port": 22058,
+          "log_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\pc_hl\\pc_b10\\A_W2_5\\seed_2077\\rounds.jsonl",
+          "report_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\pc_hl\\pc_b10\\A_W2_5\\seed_2077\\report.json",
+          "baseline_report_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\pc_hl\\pc_b10\\A_W2_5\\seed_2077\\baseline_report.json",
+          "comparison_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\pc_hl\\pc_b10\\A_W2_5\\seed_2077\\comparison.json",
+          "interruption": false,
+          "iteration": {
+            "axiom": "A_W2_5",
+            "final_status": "deprecated",
+            "warn_round": 3,
+            "downgrade_round": 3,
+            "max_count": 6,
+            "boundary_conditions_final": [
+              {
+                "kind": "npc",
+                "labels": [
+                  "undead",
+                  "neutral"
+                ],
+                "source": "auto_complete",
+                "from_counterexample": true
+              },
+              {
+                "kind": "npc",
+                "labels": [
+                  "undead",
+                  "aggressive"
+                ],
+                "source": "auto_complete",
+                "from_counterexample": true
+              },
+              {
+                "kind": "npc",
+                "labels": [
+                  "undead",
+                  "hostile"
+                ],
+                "source": "auto_complete",
+                "from_counterexample": true
+              }
+            ]
+          },
+          "other_axiom_status": {
+            "A_M1": "active",
+            "A_W1": "active"
+          },
+          "convergence_curve": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "qs_history": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "converged_final": true,
+          "virtual_lifespan": 10,
+          "disintegrated": false,
+          "criterion": null,
+          "comparison": {
+            "exp_series": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "baseline_series": [
+              1.0,
+              1.0,
+              0.0,
+              0.6000000000000001,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "compared_rounds": 10,
+            "exp_mean": 1.0,
+            "baseline_mean": 0.86,
+            "converged_exp": true,
+            "converged_baseline": true,
+            "lifespan_exp": 10,
+            "lifespan_baseline": 10,
+            "lifespan_delta": 0,
+            "exp_disintegrated": false,
+            "baseline_disintegrated": false,
+            "exp_criterion": null,
+            "baseline_criterion": null
+          }
+        }
+      ]
+    }
+  ],
+  "axiom_coverage": {
+    "A_M1": 3,
+    "A_W1": 3,
+    "A_W2_5": 3
+  }
+}

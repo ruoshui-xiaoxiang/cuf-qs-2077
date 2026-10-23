@@ -1,0 +1,41 @@
+{
+  "candidates": {
+    "Game_GetPhysicalSystem": "probe_error",
+    "Game_GetRaycastSystem": "probe_error",
+    "Game_GetSpatialQueriesSystem": "function",
+    "Game_GetNavGen": "probe_error",
+    "Game_TeleportPlayerToPosition": "probe_error",
+    "Game_QuickTravelToPoint": "probe_error",
+    "Game_FastTravel": "probe_error",
+    "Game_GetTeleportationFacility": "function",
+    "Game_GetPhysicalImpulseSystem": "probe_error"
+  },
+  "mod_version": "0.6.13",
+  "globals": {
+    "workspace": "nil",
+    "RaycastParams": "nil",
+    "Enum": "table",
+    "managers": "nil",
+    "Raycast": "nil",
+    "Trace": "function"
+  },
+  "systems": [],
+  "vector": {
+    "Vector3": "table",
+    "Vector4": "table",
+    "Vector3_new": {
+      "ok": true,
+      "ret_type": "userdata"
+    },
+    "Vector4_new": {
+      "ok": true,
+      "ret_type": "userdata"
+    }
+  },
+  "facility": {
+    "ret_type": "userdata",
+    "methods": [],
+    "enum_ok": false,
+    "call_ok": true
+  }
+}

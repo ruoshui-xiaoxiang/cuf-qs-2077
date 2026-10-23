@@ -1,0 +1,108 @@
+{
+  "baseline": {
+    "total": 3,
+    "npcs": 1,
+    "non_hostile": 1
+  },
+  "observations": [
+    {
+      "elapsed_s": 0.0,
+      "total": 3,
+      "hostiles": 0,
+      "npcs": 1,
+      "new": 1
+    },
+    {
+      "elapsed_s": 5.0,
+      "total": 2,
+      "hostiles": 0,
+      "npcs": 0,
+      "new": 0
+    },
+    {
+      "elapsed_s": 10.0,
+      "total": 16,
+      "hostiles": 0,
+      "npcs": 2,
+      "new": 15
+    },
+    {
+      "elapsed_s": 15.0,
+      "total": 17,
+      "hostiles": 0,
+      "npcs": 4,
+      "new": 2
+    },
+    {
+      "elapsed_s": 20.1,
+      "total": 13,
+      "hostiles": 0,
+      "npcs": 2,
+      "new": 3
+    },
+    {
+      "elapsed_s": 25.1,
+      "total": 16,
+      "hostiles": 0,
+      "npcs": 4,
+      "new": 5
+    },
+    {
+      "elapsed_s": 30.1,
+      "total": 21,
+      "hostiles": 0,
+      "npcs": 7,
+      "new": 8
+    },
+    {
+      "elapsed_s": 35.1,
+      "total": 18,
+      "hostiles": 0,
+      "npcs": 5,
+      "new": 0
+    },
+    {
+      "elapsed_s": 40.1,
+      "total": 17,
+      "hostiles": 0,
+      "npcs": 4,
+      "new": 0
+    },
+    {
+      "elapsed_s": 45.1,
+      "total": 20,
+      "hostiles": 3,
+      "npcs": 6,
+      "new": 3
+    },
+    {
+      "elapsed_s": 50.2,
+      "total": 20,
+      "hostiles": 2,
+      "npcs": 6,
+      "new": 0
+    },
+    {
+      "elapsed_s": 55.2,
+      "total": 17,
+      "hostiles": 2,
+      "npcs": 4,
+      "new": 0
+    }
+  ],
+  "summary": {
+    "player_pos": {
+      "z": 28.821823120117188,
+      "x": -241.30120849609375,
+      "y": 295.2718505859375
+    },
+    "pre_hostile": 0,
+    "max_hostile": 3,
+    "total_new": 37,
+    "any_new_hostile": true
+  },
+  "_meta": {
+    "timestamp": "20260827_045804",
+    "script": "d3_quick_trigger"
+  }
+}

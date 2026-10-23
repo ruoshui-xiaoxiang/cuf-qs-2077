@@ -1,0 +1,402 @@
+{
+  "mode": "s22_stats",
+  "batch_dir": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b",
+  "rounds_target": 10,
+  "axiom_coverage": {
+    "A_M1": 3,
+    "A_W1": 3,
+    "A_W2_5": 3
+  },
+  "figures": {
+    "convergence_A_M1": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b\\stats\\figures\\convergence_A_M1.svg",
+    "convergence_A_W1": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b\\stats\\figures\\convergence_A_W1.svg",
+    "convergence_A_W2_5": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b\\stats\\figures\\convergence_A_W2_5.svg",
+    "c_h_A_M1": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b\\stats\\figures\\c_h_A_M1.svg",
+    "c_h_A_W1": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b\\stats\\figures\\c_h_A_W1.svg",
+    "c_h_A_W2_5": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b\\stats\\figures\\c_h_A_W2_5.svg"
+  },
+  "lifespan": {
+    "per_condition": {
+      "A_M1": {
+        "values": [
+          10,
+          10,
+          10
+        ],
+        "n": 3,
+        "mean": 10.0,
+        "std": 0.0,
+        "min": 10,
+        "max": 10
+      },
+      "A_W1": {
+        "values": [
+          10,
+          10,
+          10
+        ],
+        "n": 3,
+        "mean": 10.0,
+        "std": 0.0,
+        "min": 10,
+        "max": 10
+      },
+      "A_W2_5": {
+        "values": [
+          10,
+          10,
+          10
+        ],
+        "n": 3,
+        "mean": 10.0,
+        "std": 0.0,
+        "min": 10,
+        "max": 10
+      }
+    },
+    "overall": {
+      "values": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "n": 9,
+      "mean": 10.0,
+      "std": 0.0,
+      "min": 10,
+      "max": 10
+    }
+  },
+  "anchors": {
+    "P_W2_5": {
+      "hypothesis": "降级机制比纯统计拟合更能维持稳态",
+      "falsification_criterion": "实验组收敛性不优于对照组",
+      "evidence": {
+        "permutation_p": 0.26171875,
+        "observed_mean_diff": 0.09480661301193748,
+        "all_diffs_nonneg": false,
+        "n_runs": 9
+      },
+      "verdict": "inconclusive"
+    },
+    "P_M1": {
+      "hypothesis": "规则边界单调细化、永不穷尽",
+      "falsification_criterion": "公理集边界信息量出现净减少",
+      "evidence": {
+        "all_monotonic": true,
+        "net_increases": {
+          "A_M1": [
+            2,
+            2,
+            2
+          ],
+          "A_W1": [
+            1,
+            1,
+            1
+          ],
+          "A_W2_5": [
+            3,
+            3,
+            3
+          ]
+        }
+      },
+      "verdict": "supported"
+    },
+    "P_W1": {
+      "hypothesis": "采样受传感器与规则处理能力双重限制",
+      "falsification_criterion": "出现超出白名单能力的有效观测",
+      "evidence": {
+        "dirty_total": 0
+      },
+      "verdict": "supported"
+    },
+    "P_C": {
+      "hypothesis": "超预算即解体",
+      "falsification_criterion": "成本代理超预算（C_extend > B_extend）后系统仍维持稳态",
+      "evidence": {
+        "over_budget_rounds": 0,
+        "disintegration_matched": true
+      },
+      "verdict": "not_triggered"
+    },
+    "H_L": {
+      "hypothesis": "递进动力学链单向成立（③→②→①）",
+      "falsification_criterion": "①/②触发但此前连续 N 轮 C_extend 从未达到 B_extend",
+      "evidence": {
+        "evaluated": 0,
+        "violated": 0
+      },
+      "verdict": "not_tested"
+    }
+  },
+  "metrics": {
+    "per_condition": {
+      "A_M1": [
+        {
+          "seed": 7,
+          "convergence_round": null,
+          "max_c_extend": 5,
+          "warn_round": 3,
+          "downgrade_round": 5,
+          "virtual_lifespan": 10,
+          "converged_final": true,
+          "boundary_final_count": 2
+        },
+        {
+          "seed": 42,
+          "convergence_round": null,
+          "max_c_extend": 5,
+          "warn_round": 3,
+          "downgrade_round": 5,
+          "virtual_lifespan": 10,
+          "converged_final": true,
+          "boundary_final_count": 2
+        },
+        {
+          "seed": 2077,
+          "convergence_round": null,
+          "max_c_extend": 5,
+          "warn_round": 3,
+          "downgrade_round": 5,
+          "virtual_lifespan": 10,
+          "converged_final": true,
+          "boundary_final_count": 2
+        }
+      ],
+      "A_W1": [
+        {
+          "seed": 7,
+          "convergence_round": null,
+          "max_c_extend": 5,
+          "warn_round": 1,
+          "downgrade_round": 2,
+          "virtual_lifespan": 10,
+          "converged_final": true,
+          "boundary_final_count": 1
+        },
+        {
+          "seed": 42,
+          "convergence_round": null,
+          "max_c_extend": 5,
+          "warn_round": 1,
+          "downgrade_round": 2,
+          "virtual_lifespan": 10,
+          "converged_final": true,
+          "boundary_final_count": 1
+        },
+        {
+          "seed": 2077,
+          "convergence_round": null,
+          "max_c_extend": 5,
+          "warn_round": 1,
+          "downgrade_round": 2,
+          "virtual_lifespan": 10,
+          "converged_final": true,
+          "boundary_final_count": 1
+        }
+      ],
+      "A_W2_5": [
+        {
+          "seed": 7,
+          "convergence_round": null,
+          "max_c_extend": 5,
+          "warn_round": 3,
+          "downgrade_round": 4,
+          "virtual_lifespan": 10,
+          "converged_final": true,
+          "boundary_final_count": 3
+        },
+        {
+          "seed": 42,
+          "convergence_round": null,
+          "max_c_extend": 5,
+          "warn_round": 4,
+          "downgrade_round": 5,
+          "virtual_lifespan": 10,
+          "converged_final": true,
+          "boundary_final_count": 3
+        },
+        {
+          "seed": 2077,
+          "convergence_round": null,
+          "max_c_extend": 5,
+          "warn_round": 3,
+          "downgrade_round": 4,
+          "virtual_lifespan": 10,
+          "converged_final": true,
+          "boundary_final_count": 3
+        }
+      ]
+    }
+  },
+  "statistical_tests": {
+    "per_condition": {
+      "A_M1": {
+        "n_runs": 3,
+        "exp_means": [
+          0.7804769834391629,
+          0.7804769834391629,
+          0.7804769834391629
+        ],
+        "baseline_means": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "diffs": [
+          0.4471436501058296,
+          0.4471436501058296,
+          0.4471436501058296
+        ],
+        "permutation": {
+          "test": "exact_paired_permutation_two_sided",
+          "n": 3,
+          "observed_mean_diff": 0.4471436501058296,
+          "p_value": 0.25,
+          "enumerated": 8
+        },
+        "t_test": {
+          "test": "paired_t",
+          "n": 3,
+          "dof": 2,
+          "observed_mean_diff": 0.4471436501058296,
+          "t_stat": null,
+          "p_value": 0.0,
+          "cohen_d": null,
+          "note": "zero_variance_nonzero_effect"
+        }
+      },
+      "A_W1": {
+        "n_runs": 3,
+        "exp_means": [
+          0.8006271571804102,
+          0.8006271571804102,
+          0.8006271571804102
+        ],
+        "baseline_means": [
+          0.9,
+          0.9,
+          0.9
+        ],
+        "diffs": [
+          -0.0993728428195898,
+          -0.0993728428195898,
+          -0.0993728428195898
+        ],
+        "permutation": {
+          "test": "exact_paired_permutation_two_sided",
+          "n": 3,
+          "observed_mean_diff": -0.0993728428195898,
+          "p_value": 0.25,
+          "enumerated": 8
+        },
+        "t_test": {
+          "test": "paired_t",
+          "n": 3,
+          "dof": 2,
+          "observed_mean_diff": -0.0993728428195898,
+          "t_stat": null,
+          "p_value": 0.0,
+          "cohen_d": null,
+          "note": "zero_variance_nonzero_effect"
+        }
+      },
+      "A_W2_5": {
+        "n_runs": 3,
+        "exp_means": [
+          0.805613650237761,
+          0.798719794773196,
+          0.805613650237761
+        ],
+        "baseline_means": [
+          0.86,
+          0.8800000000000001,
+          0.86
+        ],
+        "diffs": [
+          -0.054386349762238995,
+          -0.08128020522680413,
+          -0.054386349762238995
+        ],
+        "permutation": {
+          "test": "exact_paired_permutation_two_sided",
+          "n": 3,
+          "observed_mean_diff": -0.06335096825042737,
+          "p_value": 0.25,
+          "enumerated": 8
+        },
+        "t_test": {
+          "test": "paired_t",
+          "n": 3,
+          "dof": 2,
+          "observed_mean_diff": -0.06335096825042737,
+          "t_stat": -7.066777948654199,
+          "p_value": 0.01944222499897247,
+          "cohen_d": -4.0800061509588135
+        }
+      }
+    },
+    "pooled": {
+      "n_runs": 9,
+      "exp_means": [
+        0.7804769834391629,
+        0.7804769834391629,
+        0.7804769834391629,
+        0.8006271571804102,
+        0.8006271571804102,
+        0.8006271571804102,
+        0.805613650237761,
+        0.798719794773196,
+        0.805613650237761
+      ],
+      "baseline_means": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333,
+        0.9,
+        0.9,
+        0.9,
+        0.86,
+        0.8800000000000001,
+        0.86
+      ],
+      "diffs": [
+        0.4471436501058296,
+        0.4471436501058296,
+        0.4471436501058296,
+        -0.0993728428195898,
+        -0.0993728428195898,
+        -0.0993728428195898,
+        -0.054386349762238995,
+        -0.08128020522680413,
+        -0.054386349762238995
+      ],
+      "permutation": {
+        "test": "exact_paired_permutation_two_sided",
+        "n": 9,
+        "observed_mean_diff": 0.09480661301193748,
+        "p_value": 0.26171875,
+        "enumerated": 512
+      },
+      "t_test": {
+        "test": "paired_t",
+        "n": 9,
+        "dof": 8,
+        "observed_mean_diff": 0.09480661301193748,
+        "t_stat": 1.0739853829926713,
+        "p_value": 0.3141522511561322,
+        "cohen_d": 0.35799512766422376
+      }
+    },
+    "unit": "seed-level run mean (锁定决策 #9 独立性单元)",
+    "alpha": 0.05
+  }
+}

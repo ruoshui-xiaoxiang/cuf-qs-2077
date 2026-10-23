@@ -1,0 +1,233 @@
+{
+  "baseline": {
+    "total": 10,
+    "npcs": 2,
+    "non_hostile": 2,
+    "pre_hostile": 0,
+    "player_pos": {
+      "x": -475.7539978027344,
+      "y": -131.2474365234375,
+      "z": 8.022148132324219
+    }
+  },
+  "fire": {
+    "shots": 5,
+    "time": "20260827_053135"
+  },
+  "observations": [
+    {
+      "elapsed_s": 0.0,
+      "total": 11,
+      "hostiles": 3,
+      "npcs": 3,
+      "new": 11,
+      "hostile_details": [
+        {
+          "eid": "EID:9005597",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9005599",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9005600",
+          "class": "NPCPuppet"
+        }
+      ]
+    },
+    {
+      "elapsed_s": 5.0,
+      "total": 9,
+      "hostiles": 1,
+      "npcs": 1,
+      "new": 0,
+      "hostile_details": [
+        {
+          "eid": "EID:9005599",
+          "class": "NPCPuppet"
+        }
+      ]
+    },
+    {
+      "elapsed_s": 10.0,
+      "total": 12,
+      "hostiles": 4,
+      "npcs": 4,
+      "new": 3,
+      "hostile_details": [
+        {
+          "eid": "EID:9005598",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9005597",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9005599",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9005600",
+          "class": "NPCPuppet"
+        }
+      ]
+    },
+    {
+      "elapsed_s": 15.0,
+      "total": 10,
+      "hostiles": 2,
+      "npcs": 2,
+      "new": 0,
+      "hostile_details": [
+        {
+          "eid": "EID:9005599",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9005600",
+          "class": "NPCPuppet"
+        }
+      ]
+    },
+    {
+      "elapsed_s": 20.1,
+      "total": 12,
+      "hostiles": 4,
+      "npcs": 4,
+      "new": 2,
+      "hostile_details": [
+        {
+          "eid": "EID:9005598",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9005597",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9005599",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9005600",
+          "class": "NPCPuppet"
+        }
+      ]
+    },
+    {
+      "elapsed_s": 25.1,
+      "total": 11,
+      "hostiles": 3,
+      "npcs": 3,
+      "new": 0,
+      "hostile_details": [
+        {
+          "eid": "EID:9005598",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9005597",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9005599",
+          "class": "NPCPuppet"
+        }
+      ]
+    },
+    {
+      "elapsed_s": 30.1,
+      "total": 11,
+      "hostiles": 3,
+      "npcs": 3,
+      "new": 0,
+      "hostile_details": [
+        {
+          "eid": "EID:9005598",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9005597",
+          "class": "NPCPuppet"
+        },
+        {
+          "eid": "EID:9005599",
+          "class": "NPCPuppet"
+        }
+      ]
+    },
+    {
+      "elapsed_s": 35.1,
+      "total": 7,
+      "hostiles": 1,
+      "npcs": 1,
+      "new": 2,
+      "hostile_details": [
+        {
+          "eid": "EID:9005597",
+          "class": "NPCPuppet"
+        }
+      ]
+    },
+    {
+      "elapsed_s": 40.1,
+      "total": 7,
+      "hostiles": 1,
+      "npcs": 1,
+      "new": 0,
+      "hostile_details": [
+        {
+          "eid": "EID:9005597",
+          "class": "NPCPuppet"
+        }
+      ]
+    },
+    {
+      "elapsed_s": 45.1,
+      "total": 7,
+      "hostiles": 1,
+      "npcs": 1,
+      "new": 0,
+      "hostile_details": [
+        {
+          "eid": "EID:9005597",
+          "class": "NPCPuppet"
+        }
+      ]
+    },
+    {
+      "elapsed_s": 50.2,
+      "total": 7,
+      "hostiles": 1,
+      "npcs": 1,
+      "new": 0,
+      "hostile_details": [
+        {
+          "eid": "EID:9005597",
+          "class": "NPCPuppet"
+        }
+      ]
+    },
+    {
+      "elapsed_s": 55.2,
+      "total": 7,
+      "hostiles": 1,
+      "npcs": 1,
+      "new": 0,
+      "hostile_details": [
+        {
+          "eid": "EID:9005597",
+          "class": "NPCPuppet"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "scans": 12,
+    "max_hostile": 4,
+    "any_hostile": true,
+    "first_hostile_at": 0.0
+  }
+}

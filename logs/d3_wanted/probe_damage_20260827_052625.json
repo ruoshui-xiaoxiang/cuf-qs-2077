@@ -1,0 +1,36 @@
+{
+  "ds_exists": true,
+  "ds_type": "userdata",
+  "ds_methods": [],
+  "ds_pairs_error": "init.lua:2458: sol: cannot call '__pairs/pairs' on type 'sol::as_container_t<StrongReference>': it is not recognized as a container",
+  "damage_attempts": {
+    "RegisterDamage": "nil_method",
+    "ApplyDamageToEntity": "nil_method",
+    "Damage": "nil_method",
+    "Hit": "nil_method",
+    "DoDamage": "nil_method",
+    "GetDamage": "nil_method",
+    "CalculateDamage": "nil_method",
+    "NotifyDamage": "nil_method",
+    "ApplyDamage": "nil_method",
+    "DealDamage": "nil_method",
+    "DamageEntity": "nil_method",
+    "HitEntity": "nil_method",
+    "InflictDamage": "nil_method",
+    "CauseDamage": "nil_method",
+    "ProcessDamage": "nil_method"
+  },
+  "player_damage_methods": {
+    "Damage": "nil_method",
+    "Hit": "nil_method",
+    "GetStatPool": "nil_method",
+    "GetStatPools": "nil_method",
+    "TakeDamage": "nil_method",
+    "ReceiveDamage": "nil_method",
+    "OnDamage": "nil_method",
+    "GetHealth": "nil_method",
+    "GetCurrentHealth": "nil_method",
+    "ApplyDamage": "nil_method",
+    "GetMaxHealth": "nil_method"
+  }
+}

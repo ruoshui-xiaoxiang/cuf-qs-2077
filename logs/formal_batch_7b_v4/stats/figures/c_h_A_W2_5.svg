@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="400" viewBox="0 0 760 400">
+<rect width="760" height="400" fill="white"/>
+<text x="380" y="20" text-anchor="middle" font-size="14" font-family="sans-serif">C_H cost curve — A_W2_5 (heterogeneous)</text>
+<line x1="56" y1="40" x2="56" y2="356" stroke="black" stroke-width="1"/>
+<line x1="56" y1="356" x2="744" y2="356" stroke="black" stroke-width="1"/>
+<text x="400" y="392" text-anchor="middle" font-size="11" font-family="sans-serif">round</text>
+<text x="14" y="198" text-anchor="middle" font-size="11" font-family="sans-serif" transform="rotate(-90 14 198)">C_H component</text>
+<text x="50" y="44" text-anchor="end" font-size="10" font-family="sans-serif">5.300</text>
+<text x="50" y="360" text-anchor="end" font-size="10" font-family="sans-serif">-0.300</text>
+<polyline points="56.000,169.786 132.444,169.786 208.889,169.786 285.333,226.214 361.778,226.214 438.222,226.214 514.667,226.214 591.111,226.214 667.556,226.214 744.000,226.214" fill="none" stroke="#1f77b4" stroke-width="1.6"/>
+<text x="64" y="54" font-size="10" fill="#1f77b4" font-family="sans-serif">exp C_struct seed=7</text>
+<polyline points="56.000,226.214 132.444,226.214 208.889,113.357 285.333,56.929 361.778,113.357 438.222,56.929 514.667,113.357 591.111,56.929 667.556,113.357 744.000,56.929" fill="none" stroke="#d62728" stroke-width="1.6"/>
+<text x="64" y="68" font-size="10" fill="#d62728" font-family="sans-serif">exp C_adapt seed=7</text>
+<polyline points="56.000,339.071 132.444,339.071 208.889,282.643 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#2ca02c" stroke-width="1.6"/>
+<text x="64" y="82" font-size="10" fill="#2ca02c" font-family="sans-serif">exp C_extend seed=7</text>
+<polyline points="56.000,169.786 132.444,169.786 208.889,169.786 285.333,169.786 361.778,226.214 438.222,226.214 514.667,226.214 591.111,226.214 667.556,226.214 744.000,226.214" fill="none" stroke="#ff7f0e" stroke-width="1.6"/>
+<text x="64" y="96" font-size="10" fill="#ff7f0e" font-family="sans-serif">exp C_struct seed=42</text>
+<polyline points="56.000,226.214 132.444,226.214 208.889,226.214 285.333,56.929 361.778,113.357 438.222,56.929 514.667,113.357 591.111,56.929 667.556,113.357 744.000,56.929" fill="none" stroke="#9467bd" stroke-width="1.6"/>
+<text x="64" y="110" font-size="10" fill="#9467bd" font-family="sans-serif">exp C_adapt seed=42</text>
+<polyline points="56.000,339.071 132.444,339.071 208.889,339.071 285.333,226.214 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#8c564b" stroke-width="1.6"/>
+<text x="64" y="124" font-size="10" fill="#8c564b" font-family="sans-serif">exp C_extend seed=42</text>
+<polyline points="56.000,169.786 132.444,169.786 208.889,169.786 285.333,226.214 361.778,226.214 438.222,226.214 514.667,226.214 591.111,226.214 667.556,226.214 744.000,226.214" fill="none" stroke="#17becf" stroke-width="1.6"/>
+<text x="64" y="138" font-size="10" fill="#17becf" font-family="sans-serif">exp C_struct seed=2077</text>
+<polyline points="56.000,226.214 132.444,226.214 208.889,113.357 285.333,56.929 361.778,113.357 438.222,56.929 514.667,113.357 591.111,56.929 667.556,113.357 744.000,56.929" fill="none" stroke="#e377c2" stroke-width="1.6"/>
+<text x="64" y="152" font-size="10" fill="#e377c2" font-family="sans-serif">exp C_adapt seed=2077</text>
+<polyline points="56.000,339.071 132.444,339.071 208.889,282.643 285.333,56.929 361.778,56.929 438.222,56.929 514.667,56.929 591.111,56.929 667.556,56.929 744.000,56.929" fill="none" stroke="#7f7f7f" stroke-width="1.6"/>
+<text x="64" y="166" font-size="10" fill="#7f7f7f" font-family="sans-serif">exp C_extend seed=2077</text>
+</svg>

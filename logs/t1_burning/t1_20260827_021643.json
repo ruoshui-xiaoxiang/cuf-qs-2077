@@ -1,0 +1,338 @@
+{
+  "test": "T1_burning",
+  "started_at": "2026-08-27T02:16:02.789706",
+  "steps": [
+    {
+      "t": "2026-08-27T02:16:03.200876",
+      "step": "version_probe",
+      "data": {
+        "data": {
+          "ok": true,
+          "variant_policy_enabled": true
+        },
+        "t": "resp",
+        "id": 1,
+        "ok": true
+      }
+    },
+    {
+      "t": "2026-08-27T02:16:03.219495",
+      "step": "scan_before",
+      "data": {
+        "count": 19,
+        "entities": [
+          {
+            "eid": "EID:1",
+            "kind": "player",
+            "labels": [
+              "player"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:3871444148577837687",
+            "kind": "unknown",
+            "labels": [
+              "VendingMachine"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:15160224001322105341",
+            "kind": "unknown",
+            "labels": [
+              "VendingMachine"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:2787231107983036612",
+            "kind": "unknown",
+            "labels": [
+              "VendingMachine"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:11516062903039058999",
+            "kind": "unknown",
+            "labels": [
+              "VendingMachine"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:315127559416723946",
+            "kind": "unknown",
+            "labels": [
+              "VendingMachine"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:4913184312558518054",
+            "kind": "unknown",
+            "labels": [
+              "VendingMachine"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:3316514272913758511",
+            "kind": "unknown",
+            "labels": [
+              "VendingMachine"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:5119572088503438813",
+            "kind": "unknown",
+            "labels": [
+              "VendingMachine"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:4485260346908141642",
+            "kind": "unknown",
+            "labels": [
+              "VendingMachine"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:12462422729831049519",
+            "kind": "item",
+            "labels": [
+              "LootContainerObjectAnimatedByTransform"
+            ],
+            "hp": 0
+          },
+          {
+            "eid": "EID:7831243249853901371",
+            "kind": "item",
+            "labels": [
+              "LootContainerObjectAnimatedByTransform"
+            ],
+            "hp": 0
+          },
+          {
+            "eid": "EID:9001335",
+            "kind": "npc",
+            "labels": [
+              "NPCPuppet"
+            ],
+            "hp": 80
+          },
+          {
+            "eid": "EID:9001332",
+            "kind": "npc",
+            "labels": [
+              "NPCPuppet"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:9001331",
+            "kind": "npc",
+            "labels": [
+              "NPCPuppet"
+            ],
+            "hp": 55.60068893432617
+          },
+          {
+            "eid": "EID:9001334",
+            "kind": "npc",
+            "labels": [
+              "NPCPuppet"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:9001336",
+            "kind": "npc",
+            "labels": [
+              "NPCPuppet"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:9001329",
+            "kind": "vehicle",
+            "labels": [
+              "vehicleBikeBaseObject"
+            ],
+            "hp": 100
+          },
+          {
+            "eid": "EID:9001330",
+            "kind": "vehicle",
+            "labels": [
+              "vehicleBikeBaseObject"
+            ],
+            "hp": 100
+          }
+        ]
+      }
+    },
+    {
+      "t": "2026-08-27T02:16:03.219495",
+      "step": "target_selected",
+      "data": {
+        "eid": "EID:9001332",
+        "labels": [
+          "NPCPuppet"
+        ],
+        "hp": 100
+      }
+    },
+    {
+      "t": "2026-08-27T02:16:03.235586",
+      "step": "attack_burning",
+      "data": {
+        "data": {
+          "reason": "damage_dispatched",
+          "attempts": [
+            {
+              "applied": true,
+              "verified": false,
+              "ok": false,
+              "kind": "status",
+              "variant": "burning"
+            },
+            {
+              "variant": 1,
+              "ok": true,
+              "kind": "injection"
+            },
+            {
+              "variant": 2,
+              "ok": true,
+              "kind": "injection"
+            },
+            {
+              "variant": 3,
+              "ok": true,
+              "kind": "injection"
+            }
+          ],
+          "accepted": true,
+          "action_id": "act_2",
+          "hp_before": 100,
+          "hp_after": 100
+        },
+        "t": "resp",
+        "id": 3,
+        "ok": true
+      }
+    },
+    {
+      "t": "2026-08-27T02:16:43.571757",
+      "step": "hp_track",
+      "data": [
+        {
+          "elapsed": 2.0,
+          "present": true,
+          "hp": 80
+        },
+        {
+          "elapsed": 4.0,
+          "present": true,
+          "hp": 80
+        },
+        {
+          "elapsed": 6.0,
+          "present": true,
+          "hp": 80
+        },
+        {
+          "elapsed": 8.1,
+          "present": true,
+          "hp": 80
+        },
+        {
+          "elapsed": 10.1,
+          "present": true,
+          "hp": 80
+        },
+        {
+          "elapsed": 12.1,
+          "present": true,
+          "hp": 80
+        },
+        {
+          "elapsed": 14.1,
+          "present": true,
+          "hp": 80
+        },
+        {
+          "elapsed": 16.1,
+          "present": true,
+          "hp": 80
+        },
+        {
+          "elapsed": 18.2,
+          "present": true,
+          "hp": 80
+        },
+        {
+          "elapsed": 20.2,
+          "present": true,
+          "hp": 80
+        },
+        {
+          "elapsed": 22.2,
+          "present": true,
+          "hp": 80
+        },
+        {
+          "elapsed": 24.2,
+          "present": true,
+          "hp": 80
+        },
+        {
+          "elapsed": 26.2,
+          "present": true,
+          "hp": 80
+        },
+        {
+          "elapsed": 28.2,
+          "present": true,
+          "hp": 80
+        },
+        {
+          "elapsed": 30.2,
+          "present": true,
+          "hp": 80
+        },
+        {
+          "elapsed": 32.3,
+          "present": true,
+          "hp": 80
+        },
+        {
+          "elapsed": 34.3,
+          "present": true,
+          "hp": 80
+        },
+        {
+          "elapsed": 36.3,
+          "present": true,
+          "hp": 80
+        },
+        {
+          "elapsed": 38.3,
+          "present": true,
+          "hp": 80
+        },
+        {
+          "elapsed": 40.3,
+          "present": true,
+          "hp": 80
+        }
+      ]
+    }
+  ],
+  "finished_at": "2026-08-27T02:16:43.571757"
+}

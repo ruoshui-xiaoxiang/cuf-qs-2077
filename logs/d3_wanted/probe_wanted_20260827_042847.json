@@ -1,0 +1,212 @@
+{
+  "player_wanted_methods": [
+    {
+      "method": "GetWantedLevel",
+      "found": false
+    },
+    {
+      "method": "IsWanted",
+      "found": false
+    },
+    {
+      "method": "GetHeatLevel",
+      "found": false
+    },
+    {
+      "method": "GetCrimeLevel",
+      "found": false
+    },
+    {
+      "method": "GetPursuitLevel",
+      "found": false
+    },
+    {
+      "method": "GetThreatLevel",
+      "found": false
+    },
+    {
+      "ret_value": "false",
+      "found": true,
+      "ret_type": "boolean",
+      "method": "IsInCombat"
+    },
+    {
+      "method": "IsInPursuit",
+      "found": false
+    },
+    {
+      "method": "IsDetected",
+      "found": false
+    },
+    {
+      "ret_value": "userdata: 0x029f63f5a5d8",
+      "found": true,
+      "ret_type": "userdata",
+      "method": "GetAttitude"
+    },
+    {
+      "method": "GetPlayerAttitude",
+      "found": false
+    }
+  ],
+  "blackboard_probe": {
+    "ok": false,
+    "bb_system_available": true,
+    "player_bb_ok": false
+  },
+  "player_available": true,
+  "mod_version": "0.6.17",
+  "systems": [
+    {
+      "methods": [],
+      "name": "PoliceSystem",
+      "available": false
+    },
+    {
+      "methods": [],
+      "name": "WantedSystem",
+      "available": false
+    },
+    {
+      "methods": [],
+      "name": "CrimeSystem",
+      "available": false
+    },
+    {
+      "methods": [],
+      "name": "PlayerSystem",
+      "pairs_error": "init.lua:2073: sol: cannot call '__pairs/pairs' on type 'sol::as_container_t<StrongReference>': it is not recognized as a container",
+      "available": true,
+      "type": "userdata"
+    },
+    {
+      "methods": [],
+      "name": "AttitudeSystem",
+      "pairs_error": "init.lua:2073: sol: cannot call '__pairs/pairs' on type 'sol::as_container_t<StrongReference>': it is not recognized as a container",
+      "available": true,
+      "type": "userdata"
+    },
+    {
+      "methods": [],
+      "name": "BlackboardSystem",
+      "pairs_error": "init.lua:2073: sol: cannot call '__pairs/pairs' on type 'sol::as_container_t<StrongReference>': it is not recognized as a container",
+      "available": true,
+      "type": "userdata"
+    },
+    {
+      "methods": [],
+      "name": "StatPoolsSystem",
+      "pairs_error": "init.lua:2073: sol: cannot call '__pairs/pairs' on type 'sol::as_container_t<StrongReference>': it is not recognized as a container",
+      "available": true,
+      "type": "userdata"
+    },
+    {
+      "methods": [],
+      "name": "AICommandingSystem",
+      "available": false
+    },
+    {
+      "methods": [],
+      "name": "CommandableSystem",
+      "available": false
+    },
+    {
+      "methods": [],
+      "name": "GameplayLogicSystem",
+      "available": false
+    },
+    {
+      "methods": [],
+      "name": "PreventionSystem",
+      "available": false
+    },
+    {
+      "methods": [],
+      "name": "PersistenceSystem",
+      "available": false
+    },
+    {
+      "methods": [],
+      "name": "SpawnSystem",
+      "available": false
+    },
+    {
+      "methods": [],
+      "name": "DynamicEntitySystem",
+      "available": false
+    },
+    {
+      "methods": [],
+      "name": "UISystem",
+      "pairs_error": "init.lua:2073: sol: cannot call '__pairs/pairs' on type 'sol::as_container_t<StrongReference>': it is not recognized as a container",
+      "available": true,
+      "type": "userdata"
+    },
+    {
+      "methods": [],
+      "name": "ScriptableSystem",
+      "available": false
+    }
+  ],
+  "police_scan": {
+    "police_count": 0,
+    "hostile_count": 0,
+    "samples": []
+  },
+  "attitude_player_to_police": [
+    {
+      "ok": false,
+      "group": "NCPD"
+    },
+    {
+      "ok": false,
+      "group": "Police"
+    },
+    {
+      "ok": false,
+      "group": "PoliceForce"
+    }
+  ],
+  "wanted_apis": [
+    {
+      "ok": false,
+      "desc": "Game.GetPoliceSystem()"
+    },
+    {
+      "ok": false,
+      "desc": "Game.GetWantedSystem()"
+    },
+    {
+      "ok": false,
+      "desc": "Game.GetCrimeSystem()"
+    },
+    {
+      "ok": true,
+      "desc": "Game.GetPlayerSystem()",
+      "sub_methods": [],
+      "type": "userdata"
+    },
+    {
+      "ok": false,
+      "desc": "PlayerSystem.Instance"
+    },
+    {
+      "ok": false,
+      "desc": "PlayerSystem.GetInstance()"
+    },
+    {
+      "ok": false,
+      "desc": "Game.GetPreventionSystem()"
+    }
+  ],
+  "attitude_system": {
+    "methods": [],
+    "pairs_error": "init.lua:2217: sol: cannot call '__pairs/pairs' on type 'sol::as_container_t<StrongReference>': it is not recognized as a container",
+    "available": true
+  },
+  "_meta": {
+    "timestamp": "20260827_042847",
+    "mod_version": "0.6.17",
+    "script": "d3_probe_wanted.py"
+  }
+}

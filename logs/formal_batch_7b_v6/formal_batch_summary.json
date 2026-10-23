@@ -1,0 +1,931 @@
+{
+  "mode": "formal_batch",
+  "rounds_target": 10,
+  "conditions": [
+    {
+      "axiom": "A_M1",
+      "seeds": [
+        7,
+        42,
+        2077
+      ],
+      "runs": [
+        {
+          "seed": 7,
+          "port": 20950,
+          "log_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b_v6\\A_M1\\seed_7\\rounds.jsonl",
+          "report_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b_v6\\A_M1\\seed_7\\report.json",
+          "baseline_report_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b_v6\\A_M1\\seed_7\\baseline_report.json",
+          "comparison_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b_v6\\A_M1\\seed_7\\comparison.json",
+          "interruption": false,
+          "iteration": {
+            "axiom": "A_M1",
+            "final_status": "deprecated",
+            "warn_round": 3,
+            "downgrade_round": 5,
+            "max_count": 5,
+            "boundary_conditions_final": [
+              {
+                "kind": "npc",
+                "labels": [
+                  "gang",
+                  "hostile"
+                ],
+                "source": "auto_complete",
+                "from_counterexample": true
+              },
+              {
+                "event": "combat_attack",
+                "note": "hp not decreased",
+                "source": "auto_complete"
+              },
+              {
+                "constraint": "hp_no_decrease",
+                "before": 100.0,
+                "after": 100.0,
+                "source": "auto_complete"
+              }
+            ]
+          },
+          "other_axiom_status": {
+            "A_W2_5": "active",
+            "A_W1": "active"
+          },
+          "convergence_curve": [
+            0.771576243088171,
+            0.761037036510972,
+            0.7702020473734517,
+            0.7584148956850082,
+            0.7603263837613097,
+            0.7936982229824355,
+            0.7990720500610036,
+            0.7982551971936198,
+            0.7978306601048067,
+            0.7943570976308506
+          ],
+          "qs_history": [
+            0.7936982229824355,
+            0.7990720500610036,
+            0.7982551971936198,
+            0.7978306601048067,
+            0.7943570976308506
+          ],
+          "converged_final": true,
+          "virtual_lifespan": 10,
+          "disintegrated": false,
+          "criterion": null,
+          "comparison": {
+            "exp_series": [
+              0.771576243088171,
+              0.761037036510972,
+              0.7702020473734517,
+              0.7584148956850082,
+              0.7603263837613097,
+              0.7936982229824355,
+              0.7990720500610036,
+              0.7982551971936198,
+              0.7978306601048067,
+              0.7943570976308506
+            ],
+            "baseline_series": [
+              0.6666666666666667,
+              0.33333333333333326,
+              0.6666666666666667,
+              0.33333333333333326,
+              0.6666666666666667,
+              0.33333333333333326,
+              0.6666666666666667,
+              0.33333333333333326,
+              0.6666666666666667,
+              0.33333333333333326
+            ],
+            "compared_rounds": 10,
+            "truncated": false,
+            "exp_mean": 0.7804769834391629,
+            "baseline_mean": 0.5,
+            "converged_exp": true,
+            "converged_baseline": false,
+            "lifespan_exp": 10,
+            "lifespan_baseline": 10,
+            "lifespan_delta": 0,
+            "exp_disintegrated": false,
+            "baseline_disintegrated": false,
+            "exp_criterion": null,
+            "baseline_criterion": null
+          }
+        },
+        {
+          "seed": 42,
+          "port": 20951,
+          "log_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b_v6\\A_M1\\seed_42\\rounds.jsonl",
+          "report_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b_v6\\A_M1\\seed_42\\report.json",
+          "baseline_report_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b_v6\\A_M1\\seed_42\\baseline_report.json",
+          "comparison_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b_v6\\A_M1\\seed_42\\comparison.json",
+          "interruption": false,
+          "iteration": {
+            "axiom": "A_M1",
+            "final_status": "deprecated",
+            "warn_round": 3,
+            "downgrade_round": 5,
+            "max_count": 5,
+            "boundary_conditions_final": [
+              {
+                "kind": "npc",
+                "labels": [
+                  "gang",
+                  "hostile"
+                ],
+                "source": "auto_complete",
+                "from_counterexample": true
+              },
+              {
+                "event": "combat_attack",
+                "note": "hp not decreased",
+                "source": "auto_complete"
+              },
+              {
+                "constraint": "hp_no_decrease",
+                "before": 100.0,
+                "after": 100.0,
+                "source": "auto_complete"
+              }
+            ]
+          },
+          "other_axiom_status": {
+            "A_W2_5": "active",
+            "A_W1": "active"
+          },
+          "convergence_curve": [
+            0.771576243088171,
+            0.761037036510972,
+            0.7702020473734517,
+            0.7584148956850082,
+            0.7603263837613097,
+            0.7936982229824355,
+            0.7990720500610036,
+            0.7982551971936198,
+            0.7978306601048067,
+            0.7943570976308506
+          ],
+          "qs_history": [
+            0.7936982229824355,
+            0.7990720500610036,
+            0.7982551971936198,
+            0.7978306601048067,
+            0.7943570976308506
+          ],
+          "converged_final": true,
+          "virtual_lifespan": 10,
+          "disintegrated": false,
+          "criterion": null,
+          "comparison": {
+            "exp_series": [
+              0.771576243088171,
+              0.761037036510972,
+              0.7702020473734517,
+              0.7584148956850082,
+              0.7603263837613097,
+              0.7936982229824355,
+              0.7990720500610036,
+              0.7982551971936198,
+              0.7978306601048067,
+              0.7943570976308506
+            ],
+            "baseline_series": [
+              0.6666666666666667,
+              0.33333333333333326,
+              0.6666666666666667,
+              0.33333333333333326,
+              0.6666666666666667,
+              0.33333333333333326,
+              0.6666666666666667,
+              0.33333333333333326,
+              0.6666666666666667,
+              0.33333333333333326
+            ],
+            "compared_rounds": 10,
+            "truncated": false,
+            "exp_mean": 0.7804769834391629,
+            "baseline_mean": 0.5,
+            "converged_exp": true,
+            "converged_baseline": false,
+            "lifespan_exp": 10,
+            "lifespan_baseline": 10,
+            "lifespan_delta": 0,
+            "exp_disintegrated": false,
+            "baseline_disintegrated": false,
+            "exp_criterion": null,
+            "baseline_criterion": null
+          }
+        },
+        {
+          "seed": 2077,
+          "port": 20952,
+          "log_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b_v6\\A_M1\\seed_2077\\rounds.jsonl",
+          "report_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b_v6\\A_M1\\seed_2077\\report.json",
+          "baseline_report_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b_v6\\A_M1\\seed_2077\\baseline_report.json",
+          "comparison_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b_v6\\A_M1\\seed_2077\\comparison.json",
+          "interruption": false,
+          "iteration": {
+            "axiom": "A_M1",
+            "final_status": "deprecated",
+            "warn_round": 3,
+            "downgrade_round": 5,
+            "max_count": 5,
+            "boundary_conditions_final": [
+              {
+                "kind": "npc",
+                "labels": [
+                  "gang",
+                  "hostile"
+                ],
+                "source": "auto_complete",
+                "from_counterexample": true
+              },
+              {
+                "event": "combat_attack",
+                "note": "hp not decreased",
+                "source": "auto_complete"
+              },
+              {
+                "constraint": "hp_no_decrease",
+                "before": 100.0,
+                "after": 100.0,
+                "source": "auto_complete"
+              }
+            ]
+          },
+          "other_axiom_status": {
+            "A_W2_5": "active",
+            "A_W1": "active"
+          },
+          "convergence_curve": [
+            0.771576243088171,
+            0.761037036510972,
+            0.7702020473734517,
+            0.7584148956850082,
+            0.7603263837613097,
+            0.7936982229824355,
+            0.7990720500610036,
+            0.7982551971936198,
+            0.7978306601048067,
+            0.7943570976308506
+          ],
+          "qs_history": [
+            0.7936982229824355,
+            0.7990720500610036,
+            0.7982551971936198,
+            0.7978306601048067,
+            0.7943570976308506
+          ],
+          "converged_final": true,
+          "virtual_lifespan": 10,
+          "disintegrated": false,
+          "criterion": null,
+          "comparison": {
+            "exp_series": [
+              0.771576243088171,
+              0.761037036510972,
+              0.7702020473734517,
+              0.7584148956850082,
+              0.7603263837613097,
+              0.7936982229824355,
+              0.7990720500610036,
+              0.7982551971936198,
+              0.7978306601048067,
+              0.7943570976308506
+            ],
+            "baseline_series": [
+              0.6666666666666667,
+              0.33333333333333326,
+              0.6666666666666667,
+              0.33333333333333326,
+              0.6666666666666667,
+              0.33333333333333326,
+              0.6666666666666667,
+              0.33333333333333326,
+              0.6666666666666667,
+              0.33333333333333326
+            ],
+            "compared_rounds": 10,
+            "truncated": false,
+            "exp_mean": 0.7804769834391629,
+            "baseline_mean": 0.5,
+            "converged_exp": true,
+            "converged_baseline": false,
+            "lifespan_exp": 10,
+            "lifespan_baseline": 10,
+            "lifespan_delta": 0,
+            "exp_disintegrated": false,
+            "baseline_disintegrated": false,
+            "exp_criterion": null,
+            "baseline_criterion": null
+          }
+        }
+      ]
+    },
+    {
+      "axiom": "A_W1",
+      "seeds": [
+        7,
+        42,
+        2077
+      ],
+      "runs": [
+        {
+          "seed": 7,
+          "port": 20953,
+          "log_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b_v6\\A_W1\\seed_7\\rounds.jsonl",
+          "report_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b_v6\\A_W1\\seed_7\\report.json",
+          "baseline_report_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b_v6\\A_W1\\seed_7\\baseline_report.json",
+          "comparison_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b_v6\\A_W1\\seed_7\\comparison.json",
+          "interruption": false,
+          "iteration": {
+            "axiom": "A_W1",
+            "final_status": "deprecated",
+            "warn_round": 1,
+            "downgrade_round": 2,
+            "max_count": 5,
+            "boundary_conditions_final": [
+              {
+                "kind": "device",
+                "labels": [
+                  "drone"
+                ],
+                "source": "auto_complete",
+                "from_counterexample": true
+              }
+            ]
+          },
+          "other_axiom_status": {
+            "A_M1": "active",
+            "A_W2_5": "active"
+          },
+          "convergence_curve": [
+            0.771576243088171,
+            0.761037036510972,
+            0.8082427719815487,
+            0.8081028639285458,
+            0.8052851776376088,
+            0.8052098064198533,
+            0.812391675146595,
+            0.8107645135716777,
+            0.8137323126235226,
+            0.8099291708956071
+          ],
+          "qs_history": [
+            0.8082427719815487,
+            0.8081028639285458,
+            0.8052851776376088,
+            0.8052098064198533,
+            0.812391675146595,
+            0.8107645135716777,
+            0.8137323126235226,
+            0.8099291708956071
+          ],
+          "converged_final": true,
+          "virtual_lifespan": 10,
+          "disintegrated": false,
+          "criterion": null,
+          "comparison": {
+            "exp_series": [
+              0.771576243088171,
+              0.761037036510972,
+              0.8082427719815487,
+              0.8081028639285458,
+              0.8052851776376088,
+              0.8052098064198533,
+              0.812391675146595,
+              0.8107645135716777,
+              0.8137323126235226,
+              0.8099291708956071
+            ],
+            "baseline_series": [
+              0.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "compared_rounds": 10,
+            "truncated": false,
+            "exp_mean": 0.8006271571804102,
+            "baseline_mean": 0.9,
+            "converged_exp": true,
+            "converged_baseline": true,
+            "lifespan_exp": 10,
+            "lifespan_baseline": 10,
+            "lifespan_delta": 0,
+            "exp_disintegrated": false,
+            "baseline_disintegrated": false,
+            "exp_criterion": null,
+            "baseline_criterion": null
+          }
+        },
+        {
+          "seed": 42,
+          "port": 20954,
+          "log_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b_v6\\A_W1\\seed_42\\rounds.jsonl",
+          "report_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b_v6\\A_W1\\seed_42\\report.json",
+          "baseline_report_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b_v6\\A_W1\\seed_42\\baseline_report.json",
+          "comparison_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b_v6\\A_W1\\seed_42\\comparison.json",
+          "interruption": false,
+          "iteration": {
+            "axiom": "A_W1",
+            "final_status": "deprecated",
+            "warn_round": 1,
+            "downgrade_round": 2,
+            "max_count": 5,
+            "boundary_conditions_final": [
+              {
+                "kind": "device",
+                "labels": [
+                  "drone"
+                ],
+                "source": "auto_complete",
+                "from_counterexample": true
+              }
+            ]
+          },
+          "other_axiom_status": {
+            "A_M1": "active",
+            "A_W2_5": "active"
+          },
+          "convergence_curve": [
+            0.771576243088171,
+            0.761037036510972,
+            0.8082427719815487,
+            0.8081028639285458,
+            0.8052851776376088,
+            0.8052098064198533,
+            0.812391675146595,
+            0.8107645135716777,
+            0.8137323126235226,
+            0.8099291708956071
+          ],
+          "qs_history": [
+            0.8082427719815487,
+            0.8081028639285458,
+            0.8052851776376088,
+            0.8052098064198533,
+            0.812391675146595,
+            0.8107645135716777,
+            0.8137323126235226,
+            0.8099291708956071
+          ],
+          "converged_final": true,
+          "virtual_lifespan": 10,
+          "disintegrated": false,
+          "criterion": null,
+          "comparison": {
+            "exp_series": [
+              0.771576243088171,
+              0.761037036510972,
+              0.8082427719815487,
+              0.8081028639285458,
+              0.8052851776376088,
+              0.8052098064198533,
+              0.812391675146595,
+              0.8107645135716777,
+              0.8137323126235226,
+              0.8099291708956071
+            ],
+            "baseline_series": [
+              0.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "compared_rounds": 10,
+            "truncated": false,
+            "exp_mean": 0.8006271571804102,
+            "baseline_mean": 0.9,
+            "converged_exp": true,
+            "converged_baseline": true,
+            "lifespan_exp": 10,
+            "lifespan_baseline": 10,
+            "lifespan_delta": 0,
+            "exp_disintegrated": false,
+            "baseline_disintegrated": false,
+            "exp_criterion": null,
+            "baseline_criterion": null
+          }
+        },
+        {
+          "seed": 2077,
+          "port": 20955,
+          "log_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b_v6\\A_W1\\seed_2077\\rounds.jsonl",
+          "report_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b_v6\\A_W1\\seed_2077\\report.json",
+          "baseline_report_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b_v6\\A_W1\\seed_2077\\baseline_report.json",
+          "comparison_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b_v6\\A_W1\\seed_2077\\comparison.json",
+          "interruption": false,
+          "iteration": {
+            "axiom": "A_W1",
+            "final_status": "deprecated",
+            "warn_round": 1,
+            "downgrade_round": 2,
+            "max_count": 5,
+            "boundary_conditions_final": [
+              {
+                "kind": "device",
+                "labels": [
+                  "drone"
+                ],
+                "source": "auto_complete",
+                "from_counterexample": true
+              }
+            ]
+          },
+          "other_axiom_status": {
+            "A_M1": "active",
+            "A_W2_5": "active"
+          },
+          "convergence_curve": [
+            0.771576243088171,
+            0.761037036510972,
+            0.8082427719815487,
+            0.8081028639285458,
+            0.8052851776376088,
+            0.8052098064198533,
+            0.812391675146595,
+            0.8107645135716777,
+            0.8137323126235226,
+            0.8099291708956071
+          ],
+          "qs_history": [
+            0.8082427719815487,
+            0.8081028639285458,
+            0.8052851776376088,
+            0.8052098064198533,
+            0.812391675146595,
+            0.8107645135716777,
+            0.8137323126235226,
+            0.8099291708956071
+          ],
+          "converged_final": true,
+          "virtual_lifespan": 10,
+          "disintegrated": false,
+          "criterion": null,
+          "comparison": {
+            "exp_series": [
+              0.771576243088171,
+              0.761037036510972,
+              0.8082427719815487,
+              0.8081028639285458,
+              0.8052851776376088,
+              0.8052098064198533,
+              0.812391675146595,
+              0.8107645135716777,
+              0.8137323126235226,
+              0.8099291708956071
+            ],
+            "baseline_series": [
+              0.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "compared_rounds": 10,
+            "truncated": false,
+            "exp_mean": 0.8006271571804102,
+            "baseline_mean": 0.9,
+            "converged_exp": true,
+            "converged_baseline": true,
+            "lifespan_exp": 10,
+            "lifespan_baseline": 10,
+            "lifespan_delta": 0,
+            "exp_disintegrated": false,
+            "baseline_disintegrated": false,
+            "exp_criterion": null,
+            "baseline_criterion": null
+          }
+        }
+      ]
+    },
+    {
+      "axiom": "A_W2_5",
+      "seeds": [
+        7,
+        42,
+        2077
+      ],
+      "runs": [
+        {
+          "seed": 7,
+          "port": 20956,
+          "log_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b_v6\\A_W2_5\\seed_7\\rounds.jsonl",
+          "report_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b_v6\\A_W2_5\\seed_7\\report.json",
+          "baseline_report_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b_v6\\A_W2_5\\seed_7\\baseline_report.json",
+          "comparison_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b_v6\\A_W2_5\\seed_7\\comparison.json",
+          "interruption": false,
+          "iteration": {
+            "axiom": "A_W2_5",
+            "final_status": "deprecated",
+            "warn_round": 3,
+            "downgrade_round": 3,
+            "max_count": 6,
+            "boundary_conditions_final": [
+              {
+                "kind": "npc",
+                "labels": [
+                  "undead",
+                  "hostile"
+                ],
+                "source": "auto_complete",
+                "from_counterexample": true
+              }
+            ]
+          },
+          "other_axiom_status": {
+            "A_M1": "active",
+            "A_W1": "active"
+          },
+          "convergence_curve": [
+            0.771576243088171,
+            0.761037036510972,
+            0.7702020473734517,
+            0.8293678995900641,
+            0.8292649384069598,
+            0.8339630696313667,
+            0.8352138834166848,
+            0.8319516886794616,
+            0.8336273091007858,
+            0.8308853904847482
+          ],
+          "qs_history": [
+            0.8293678995900641,
+            0.8292649384069598,
+            0.8339630696313667,
+            0.8352138834166848,
+            0.8319516886794616,
+            0.8336273091007858,
+            0.8308853904847482
+          ],
+          "converged_final": true,
+          "virtual_lifespan": 10,
+          "disintegrated": false,
+          "criterion": null,
+          "comparison": {
+            "exp_series": [
+              0.771576243088171,
+              0.761037036510972,
+              0.7702020473734517,
+              0.8293678995900641,
+              0.8292649384069598,
+              0.8339630696313667,
+              0.8352138834166848,
+              0.8319516886794616,
+              0.8336273091007858,
+              0.8308853904847482
+            ],
+            "baseline_series": [
+              1.0,
+              1.0,
+              0.0,
+              0.6000000000000001,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "compared_rounds": 10,
+            "truncated": false,
+            "exp_mean": 0.8127089506282665,
+            "baseline_mean": 0.86,
+            "converged_exp": true,
+            "converged_baseline": true,
+            "lifespan_exp": 10,
+            "lifespan_baseline": 10,
+            "lifespan_delta": 0,
+            "exp_disintegrated": false,
+            "baseline_disintegrated": false,
+            "exp_criterion": null,
+            "baseline_criterion": null
+          }
+        },
+        {
+          "seed": 42,
+          "port": 20957,
+          "log_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b_v6\\A_W2_5\\seed_42\\rounds.jsonl",
+          "report_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b_v6\\A_W2_5\\seed_42\\report.json",
+          "baseline_report_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b_v6\\A_W2_5\\seed_42\\baseline_report.json",
+          "comparison_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b_v6\\A_W2_5\\seed_42\\comparison.json",
+          "interruption": false,
+          "iteration": {
+            "axiom": "A_W2_5",
+            "final_status": "deprecated",
+            "warn_round": 4,
+            "downgrade_round": 4,
+            "max_count": 7,
+            "boundary_conditions_final": [
+              {
+                "kind": "npc",
+                "labels": [
+                  "undead",
+                  "hostile"
+                ],
+                "source": "auto_complete",
+                "from_counterexample": true
+              },
+              {
+                "kind": "npc",
+                "labels": [
+                  "undead",
+                  "neutral"
+                ],
+                "source": "auto_complete",
+                "from_counterexample": true
+              }
+            ]
+          },
+          "other_axiom_status": {
+            "A_M1": "active",
+            "A_W1": "active"
+          },
+          "convergence_curve": [
+            0.771576243088171,
+            0.761037036510972,
+            0.7702020473734517,
+            0.7584148956850082,
+            0.8292649384069598,
+            0.8339630696313667,
+            0.8352138834166848,
+            0.8319516886794616,
+            0.8336273091007858,
+            0.8308853904847482
+          ],
+          "qs_history": [
+            0.8292649384069598,
+            0.8339630696313667,
+            0.8352138834166848,
+            0.8319516886794616,
+            0.8336273091007858,
+            0.8308853904847482
+          ],
+          "converged_final": true,
+          "virtual_lifespan": 10,
+          "disintegrated": false,
+          "criterion": null,
+          "comparison": {
+            "exp_series": [
+              0.771576243088171,
+              0.761037036510972,
+              0.7702020473734517,
+              0.7584148956850082,
+              0.8292649384069598,
+              0.8339630696313667,
+              0.8352138834166848,
+              0.8319516886794616,
+              0.8336273091007858,
+              0.8308853904847482
+            ],
+            "baseline_series": [
+              1.0,
+              1.0,
+              1.0,
+              -0.19999999999999996,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "compared_rounds": 10,
+            "truncated": false,
+            "exp_mean": 0.805613650237761,
+            "baseline_mean": 0.8800000000000001,
+            "converged_exp": true,
+            "converged_baseline": true,
+            "lifespan_exp": 10,
+            "lifespan_baseline": 10,
+            "lifespan_delta": 0,
+            "exp_disintegrated": false,
+            "baseline_disintegrated": false,
+            "exp_criterion": null,
+            "baseline_criterion": null
+          }
+        },
+        {
+          "seed": 2077,
+          "port": 20958,
+          "log_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b_v6\\A_W2_5\\seed_2077\\rounds.jsonl",
+          "report_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b_v6\\A_W2_5\\seed_2077\\report.json",
+          "baseline_report_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b_v6\\A_W2_5\\seed_2077\\baseline_report.json",
+          "comparison_path": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\formal_batch_7b_v6\\A_W2_5\\seed_2077\\comparison.json",
+          "interruption": false,
+          "iteration": {
+            "axiom": "A_W2_5",
+            "final_status": "deprecated",
+            "warn_round": 3,
+            "downgrade_round": 3,
+            "max_count": 6,
+            "boundary_conditions_final": [
+              {
+                "kind": "npc",
+                "labels": [
+                  "undead",
+                  "neutral"
+                ],
+                "source": "auto_complete",
+                "from_counterexample": true
+              }
+            ]
+          },
+          "other_axiom_status": {
+            "A_M1": "active",
+            "A_W1": "active"
+          },
+          "convergence_curve": [
+            0.771576243088171,
+            0.761037036510972,
+            0.7702020473734517,
+            0.8293678995900641,
+            0.8292649384069598,
+            0.8339630696313667,
+            0.8352138834166848,
+            0.8319516886794616,
+            0.8336273091007858,
+            0.8308853904847482
+          ],
+          "qs_history": [
+            0.8293678995900641,
+            0.8292649384069598,
+            0.8339630696313667,
+            0.8352138834166848,
+            0.8319516886794616,
+            0.8336273091007858,
+            0.8308853904847482
+          ],
+          "converged_final": true,
+          "virtual_lifespan": 10,
+          "disintegrated": false,
+          "criterion": null,
+          "comparison": {
+            "exp_series": [
+              0.771576243088171,
+              0.761037036510972,
+              0.7702020473734517,
+              0.8293678995900641,
+              0.8292649384069598,
+              0.8339630696313667,
+              0.8352138834166848,
+              0.8319516886794616,
+              0.8336273091007858,
+              0.8308853904847482
+            ],
+            "baseline_series": [
+              1.0,
+              1.0,
+              0.0,
+              0.6000000000000001,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "compared_rounds": 10,
+            "truncated": false,
+            "exp_mean": 0.8127089506282665,
+            "baseline_mean": 0.86,
+            "converged_exp": true,
+            "converged_baseline": true,
+            "lifespan_exp": 10,
+            "lifespan_baseline": 10,
+            "lifespan_delta": 0,
+            "exp_disintegrated": false,
+            "baseline_disintegrated": false,
+            "exp_criterion": null,
+            "baseline_criterion": null
+          }
+        }
+      ]
+    }
+  ],
+  "axiom_coverage": {
+    "A_M1": 3,
+    "A_W1": 3,
+    "A_W2_5": 3
+  }
+}

@@ -1,0 +1,133 @@
+[13:26:19] 瑙傚療寰幆鍚姩锛堟瘡 2.0s 杞锛屽彧璇伙級
+[13:26:19] STATE inCombat=False, isMoving=False, isExhausted=False, isIncapacitated=False, heatStage=0, chasingPlayer=False, preventionEnabled=True, preventionLocked=False
+[13:26:19] MOVE  pos=(-476.4, -131.4, 8.0) (寰皟)
+[13:26:27] STATE inCombat=False, isMoving=True, isExhausted=False, isIncapacitated=False, heatStage=0, chasingPlayer=False, preventionEnabled=True, preventionLocked=False
+[13:26:27] MOVE  pos=(-476.2, -130.8, 8.0) (寰皟)
+[13:26:29] STATE inCombat=False, isMoving=False, isExhausted=False, isIncapacitated=False, heatStage=0, chasingPlayer=False, preventionEnabled=True, preventionLocked=False
+[13:26:31] STATE inCombat=True, isMoving=True, isExhausted=False, isIncapacitated=False, heatStage=0, chasingPlayer=False, preventionEnabled=True, preventionLocked=False
+[13:26:31] MOVE  pos=(-481.0, -129.3, 8.0)
+[13:26:33] STATE inCombat=True, isMoving=False, isExhausted=False, isIncapacitated=False, heatStage=0, chasingPlayer=False, preventionEnabled=True, preventionLocked=False
+[13:26:33] MOVE  pos=(-481.7, -128.5, 7.9)
+[13:26:35] STATE inCombat=True, isMoving=False, isExhausted=True, isIncapacitated=False, heatStage=0, chasingPlayer=False, preventionEnabled=True, preventionLocked=False
+[13:26:37] STATE inCombat=True, isMoving=True, isExhausted=False, isIncapacitated=False, heatStage=0, chasingPlayer=False, preventionEnabled=True, preventionLocked=False
+[13:26:37] MOVE  pos=(-481.2, -127.6, 7.9)
+[13:26:39] MOVE  pos=(-479.2, -126.9, 8.0)
+[13:26:41] STATE inCombat=True, isMoving=False, isExhausted=True, isIncapacitated=False, heatStage=0, chasingPlayer=False, preventionEnabled=True, preventionLocked=False
+[13:26:45] STATE inCombat=True, isMoving=False, isExhausted=False, isIncapacitated=False, heatStage=0, chasingPlayer=False, preventionEnabled=True, preventionLocked=False
+[13:26:45] MOVE  pos=(-478.6, -124.0, 7.9)
+[13:26:47] STATE inCombat=True, isMoving=True, isExhausted=False, isIncapacitated=False, heatStage=0, chasingPlayer=False, preventionEnabled=True, preventionLocked=False
+[13:26:47] MOVE  pos=(-472.8, -125.7, 8.0)
+[13:26:49] MOVE  pos=(-475.9, -130.0, 8.0)
+[13:26:51] MOVE  pos=(-472.1, -132.2, 7.8)
+[13:26:53] STATE inCombat=True, isMoving=False, isExhausted=False, isIncapacitated=True, heatStage=0, chasingPlayer=False, preventionEnabled=True, preventionLocked=False
+[13:26:53] MOVE  pos=(-470.9, -132.8, 7.8)
+[13:26:59] STATE inCombat=False, isMoving=False, isExhausted=False, isIncapacitated=False, heatStage=0, chasingPlayer=False, preventionEnabled=True, preventionLocked=False
+[13:26:59] MOVE  pos=(0, 0, 0)
+[13:27:01] MOVE  pos=(-476.4, -131.4, 8.0)
+[13:28:15] STATE inCombat=False, isMoving=True, isExhausted=False, isIncapacitated=False, heatStage=0, chasingPlayer=False, preventionEnabled=True, preventionLocked=False
+[13:28:15] MOVE  pos=(-477.9, -129.2, 8.0)
+[13:28:17] STATE inCombat=False, isMoving=False, isExhausted=False, isIncapacitated=False, heatStage=0, chasingPlayer=False, preventionEnabled=True, preventionLocked=False
+[13:28:17] MOVE  pos=(-478.7, -128.9, 8.0)
+[13:28:19] MOVE  pos=(-481.2, -128.1, 7.9)
+[13:28:21] STATE inCombat=False, isMoving=True, isExhausted=False, isIncapacitated=False, heatStage=0, chasingPlayer=False, preventionEnabled=True, preventionLocked=False
+[13:28:24] MOVE  pos=(-484.2, -127.3, 7.9)
+[13:28:26] STATE inCombat=True, isMoving=True, isExhausted=False, isIncapacitated=False, heatStage=0, chasingPlayer=False, preventionEnabled=True, preventionLocked=False
+[13:28:26] MOVE  pos=(-490.4, -124.3, 7.9)
+[13:28:30] MOVE  pos=(-493.5, -125.7, 7.9)
+[13:28:32] MOVE  pos=(-498.3, -128.2, 7.9)
+[13:28:34] STATE inCombat=True, isMoving=False, isExhausted=False, isIncapacitated=False, heatStage=0, chasingPlayer=False, preventionEnabled=True, preventionLocked=False
+[13:28:34] MOVE  pos=(-497.4, -129.0, 7.9)
+[13:28:36] STATE inCombat=True, isMoving=False, isExhausted=True, isIncapacitated=False, heatStage=0, chasingPlayer=False, preventionEnabled=True, preventionLocked=False
+[13:28:40] STATE inCombat=True, isMoving=False, isExhausted=False, isIncapacitated=False, heatStage=0, chasingPlayer=False, preventionEnabled=True, preventionLocked=False
+[13:28:42] STATE inCombat=True, isMoving=True, isExhausted=False, isIncapacitated=False, heatStage=0, chasingPlayer=False, preventionEnabled=True, preventionLocked=False
+[13:28:42] MOVE  pos=(-502.5, -131.6, 7.9)
+[13:28:44] STATE inCombat=True, isMoving=False, isExhausted=False, isIncapacitated=False, heatStage=0, chasingPlayer=False, preventionEnabled=True, preventionLocked=False
+[13:28:44] MOVE  pos=(-500.4, -134.8, 7.9)
+[13:28:48] STATE inCombat=True, isMoving=True, isExhausted=False, isIncapacitated=False, heatStage=0, chasingPlayer=False, preventionEnabled=True, preventionLocked=False
+[13:28:48] MOVE  pos=(-496.9, -138.2, 7.9)
+[13:28:50] MOVE  pos=(-496.5, -137.1, 8.0)
+[13:28:52] STATE inCombat=True, isMoving=False, isExhausted=False, isIncapacitated=False, heatStage=0, chasingPlayer=False, preventionEnabled=True, preventionLocked=False
+[13:28:52] MOVE  pos=(-497.4, -139.2, 7.9)
+[13:28:54] STATE inCombat=True, isMoving=True, isExhausted=False, isIncapacitated=False, heatStage=0, chasingPlayer=False, preventionEnabled=True, preventionLocked=False
+[13:28:54] MOVE  pos=(-504.1, -136.0, 7.9)
+[13:28:56] MOVE  pos=(-517.5, -129.0, 7.9)
+[13:28:58] MOVE  pos=(-533.7, -125.7, 8.0)
+[13:29:00] MOVE  pos=(-549.6, -121.0, 7.8)
+[13:29:02] MOVE  pos=(-565.3, -115.7, 7.8)
+[13:29:04] MOVE  pos=(-580.8, -109.8, 7.8)
+[13:29:06] MOVE  pos=(-595.4, -105.5, 7.8)
+[13:29:08] STATE inCombat=False, isMoving=True, isExhausted=False, isIncapacitated=False, heatStage=0, chasingPlayer=False, preventionEnabled=True, preventionLocked=False
+[13:29:08] MOVE  pos=(-610.4, -108.6, 7.9)
+[13:29:10] STATE inCombat=False, isMoving=False, isExhausted=False, isIncapacitated=False, heatStage=0, chasingPlayer=False, preventionEnabled=True, preventionLocked=False
+[13:29:10] MOVE  pos=(-617.4, -114.6, 8.0)
+[13:29:12] STATE inCombat=False, isMoving=True, isExhausted=False, isIncapacitated=False, heatStage=0, chasingPlayer=False, preventionEnabled=True, preventionLocked=False
+[13:29:14] MOVE  pos=(-613.4, -110.0, 8.0)
+[13:29:16] MOVE  pos=(-612.2, -103.9, 7.8)
+[13:29:18] STATE inCombat=False, isMoving=True, isExhausted=False, isIncapacitated=False, heatStage=1, chasingPlayer=True, preventionEnabled=True, preventionLocked=False
+[13:29:18] MOVE  pos=(-614.0, -97.0, 7.8)
+[13:29:20] STATE inCombat=True, isMoving=True, isExhausted=False, isIncapacitated=False, heatStage=1, chasingPlayer=True, preventionEnabled=True, preventionLocked=False
+[13:29:20] MOVE  pos=(-617.7, -90.7, 7.8)
+[13:29:22] STATE inCombat=True, isMoving=False, isExhausted=False, isIncapacitated=False, heatStage=1, chasingPlayer=True, preventionEnabled=True, preventionLocked=False
+[13:29:22] MOVE  pos=(-618.0, -87.4, 7.8)
+[13:29:24] STATE inCombat=True, isMoving=True, isExhausted=True, isIncapacitated=False, heatStage=1, chasingPlayer=True, preventionEnabled=True, preventionLocked=False
+[13:29:26] STATE inCombat=True, isMoving=True, isExhausted=False, isIncapacitated=False, heatStage=1, chasingPlayer=True, preventionEnabled=True, preventionLocked=False
+[13:29:26] MOVE  pos=(-622.0, -81.1, 7.8)
+[13:29:28] MOVE  pos=(-627.9, -76.1, 7.8)
+[13:29:30] MOVE  pos=(-634.6, -72.3, 7.8)
+[13:29:32] MOVE  pos=(-641.6, -69.1, 7.8)
+[13:29:34] STATE inCombat=True, isMoving=True, isExhausted=True, isIncapacitated=False, heatStage=1, chasingPlayer=True, preventionEnabled=True, preventionLocked=False
+[13:29:34] MOVE  pos=(-648.7, -66.0, 7.8)
+[13:29:36] STATE inCombat=True, isMoving=True, isExhausted=False, isIncapacitated=False, heatStage=1, chasingPlayer=True, preventionEnabled=True, preventionLocked=False
+[13:29:36] MOVE  pos=(-655.8, -63.0, 7.8)
+[13:29:38] MOVE  pos=(-663.0, -60.2, 7.8)
+[13:29:40] MOVE  pos=(-670.1, -57.9, 7.8)
+[13:29:42] STATE inCombat=True, isMoving=True, isExhausted=True, isIncapacitated=False, heatStage=1, chasingPlayer=True, preventionEnabled=True, preventionLocked=False
+[13:29:42] MOVE  pos=(-677.0, -54.3, 7.8)
+[13:29:44] STATE inCombat=True, isMoving=True, isExhausted=False, isIncapacitated=False, heatStage=1, chasingPlayer=True, preventionEnabled=True, preventionLocked=False
+[13:29:44] MOVE  pos=(-682.4, -49.7, 7.8)
+[13:29:46] MOVE  pos=(-684.5, -45.0, 7.9)
+[13:29:48] MOVE  pos=(-677.4, -44.4, 7.8)
+[13:29:50] MOVE  pos=(-670.2, -47.0, 7.8)
+[13:29:52] MOVE  pos=(-663.0, -49.8, 7.8)
+[13:29:54] STATE inCombat=True, isMoving=False, isExhausted=False, isIncapacitated=False, heatStage=2, chasingPlayer=True, preventionEnabled=True, preventionLocked=False
+[13:29:54] MOVE  pos=(-656.1, -49.9, 7.8)
+[13:29:56] STATE inCombat=True, isMoving=True, isExhausted=False, isIncapacitated=False, heatStage=2, chasingPlayer=True, preventionEnabled=True, preventionLocked=False
+[13:29:56] MOVE  pos=(-655.2, -51.8, 7.8)
+[13:29:58] MOVE  pos=(-652.0, -53.1, 7.8)
+[13:30:00] MOVE  pos=(-653.4, -56.0, 7.8)
+[13:30:02] MOVE  pos=(-656.7, -58.3, 7.8)
+[13:30:04] MOVE  pos=(-651.8, -57.3, 7.8)
+[13:30:06] MOVE  pos=(-655.0, -52.2, 7.8)
+[13:30:08] STATE inCombat=False, isMoving=True, isExhausted=False, isIncapacitated=False, heatStage=2, chasingPlayer=True, preventionEnabled=True, preventionLocked=False
+[13:30:08] MOVE  pos=(-661.5, -47.9, 7.8)
+[13:30:10] MOVE  pos=(-662.5, -47.3, 7.8)
+[13:30:12] STATE inCombat=False, isMoving=False, isExhausted=False, isIncapacitated=False, heatStage=2, chasingPlayer=True, preventionEnabled=True, preventionLocked=False
+[13:30:12] MOVE  pos=(-659.7, -45.7, 7.8)
+[13:30:14] STATE inCombat=False, isMoving=True, isExhausted=False, isIncapacitated=False, heatStage=2, chasingPlayer=True, preventionEnabled=True, preventionLocked=False
+[13:30:14] MOVE  pos=(-659.0, -47.1, 7.8)
+[13:30:16] MOVE  pos=(-653.0, -51.4, 7.8)
+[13:30:18] STATE inCombat=True, isMoving=True, isExhausted=False, isIncapacitated=False, heatStage=2, chasingPlayer=True, preventionEnabled=True, preventionLocked=False
+[13:30:18] MOVE  pos=(-647.9, -52.1, 7.8)
+[13:30:20] MOVE  pos=(-645.5, -52.6, 7.9)
+[13:30:22] STATE inCombat=True, isMoving=True, isExhausted=True, isIncapacitated=False, heatStage=3, chasingPlayer=True, preventionEnabled=True, preventionLocked=False
+[13:30:24] STATE inCombat=True, isMoving=True, isExhausted=False, isIncapacitated=False, heatStage=3, chasingPlayer=True, preventionEnabled=True, preventionLocked=False
+[13:30:26] MOVE  pos=(-647.9, -51.1, 7.8)
+[13:30:28] MOVE  pos=(-655.1, -48.9, 7.8)
+[13:30:30] STATE inCombat=True, isMoving=True, isExhausted=True, isIncapacitated=False, heatStage=3, chasingPlayer=True, preventionEnabled=True, preventionLocked=False
+[13:30:30] MOVE  pos=(-654.4, -50.9, 7.8)
+[13:30:32] STATE inCombat=True, isMoving=False, isExhausted=False, isIncapacitated=False, heatStage=3, chasingPlayer=True, preventionEnabled=True, preventionLocked=False
+[13:30:32] MOVE  pos=(-656.6, -51.0, 7.8)
+[13:30:34] STATE inCombat=True, isMoving=True, isExhausted=False, isIncapacitated=False, heatStage=3, chasingPlayer=True, preventionEnabled=True, preventionLocked=False
+[13:30:34] MOVE  pos=(-658.6, -50.9, 7.8)
+[13:30:36] MOVE  pos=(-652.6, -51.2, 7.8)
+[13:30:38] STATE inCombat=True, isMoving=False, isExhausted=False, isIncapacitated=False, heatStage=3, chasingPlayer=True, preventionEnabled=True, preventionLocked=False
+[13:30:38] MOVE  pos=(-649.8, -52.0, 7.8)
+[13:30:40] STATE inCombat=True, isMoving=True, isExhausted=False, isIncapacitated=False, heatStage=3, chasingPlayer=True, preventionEnabled=True, preventionLocked=False
+[13:30:40] MOVE  pos=(-650.5, -51.4, 7.8)
+[13:30:42] MOVE  pos=(-644.7, -53.3, 7.8)
+[13:30:44] STATE inCombat=True, isMoving=True, isExhausted=False, isIncapacitated=True, heatStage=3, chasingPlayer=True, preventionEnabled=True, preventionLocked=False
+[13:30:44] MOVE  pos=(-643.8, -52.9, 8.0)
+[13:30:50] STATE inCombat=False, isMoving=False, isExhausted=False, isIncapacitated=False, heatStage=0, chasingPlayer=False, preventionEnabled=True, preventionLocked=False
+[13:30:50] MOVE  pos=(0, 0, 0)
+[13:30:52] MOVE  pos=(-476.4, -131.4, 8.0)
+[13:36:19] 瑙傚療绐楀彛 10 鍒嗛挓缁撴潫

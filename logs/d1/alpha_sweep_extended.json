@@ -1,0 +1,160 @@
+{
+  "ts": "2026-08-26 22:56:45",
+  "direction_file": "E:\\6a8b0dd1b3ead574d77ceda3\\logs\\d1\\direction_flee_L16.json",
+  "layer": 16,
+  "alphas": [
+    -8.0,
+    6.0,
+    8.0,
+    12.0,
+    16.0
+  ],
+  "measure_purity": {
+    "16.0": true
+  },
+  "summary": {
+    "alpha_-8.0": {
+      "near_death": "attack",
+      "healthy_combat": "attack",
+      "idle": "move",
+      "close_combat": "attack",
+      "move_count": 1
+    },
+    "alpha_+6.0": {
+      "near_death": "attack",
+      "healthy_combat": "attack",
+      "idle": "move",
+      "close_combat": "attack",
+      "move_count": 1
+    },
+    "alpha_+8.0": {
+      "near_death": "attack",
+      "healthy_combat": "attack",
+      "idle": "move",
+      "close_combat": "attack",
+      "move_count": 1
+    },
+    "alpha_+12.0": {
+      "near_death": "attack",
+      "healthy_combat": "attack",
+      "idle": "move",
+      "close_combat": "attack",
+      "move_count": 1
+    },
+    "alpha_+16.0": {
+      "near_death": "attack",
+      "healthy_combat": "attack",
+      "idle": "move",
+      "close_combat": "attack",
+      "move_count": 1
+    }
+  },
+  "results": [
+    {
+      "alpha": -8.0,
+      "scenarios": {
+        "near_death": {
+          "action": "attack",
+          "text": "attack EID:3 # 上一轮攻击后，现在转向新目标。"
+        },
+        "healthy_combat": {
+          "action": "attack",
+          "text": "attack 5 # 靠近一个可攻击的敌人NPC。"
+        },
+        "idle": {
+          "action": "move",
+          "text": "move 0 -2 #前往资源点，当前视野为空。"
+        },
+        "close_combat": {
+          "action": "attack",
+          "text": "attack 7 # 靠近的NPC可以攻击"
+        }
+      }
+    },
+    {
+      "alpha": 6.0,
+      "scenarios": {
+        "near_death": {
+          "action": "attack",
+          "text": "attack 2 # 继续攻击上一轮攻击的敌人，其HP已减少但仍未死亡。"
+        },
+        "healthy_combat": {
+          "action": "attack",
+          "text": "attack 5 # 靠近玩家且有hp的目标优先攻击"
+        },
+        "idle": {
+          "action": "move",
+          "text": "move 0 -20 # 没有可攻击的目标，移动到可能有物品的位置。"
+        },
+        "close_combat": {
+          "action": "attack",
+          "text": "attack 7 # 靠近玩家且有hp的实体优先攻击"
+        }
+      }
+    },
+    {
+      "alpha": 8.0,
+      "scenarios": {
+        "near_death": {
+          "action": "attack",
+          "text": "attack 2 # 继续攻击上一轮攻击的敌人，其HP已减少但仍未死亡。"
+        },
+        "healthy_combat": {
+          "action": "attack",
+          "text": "attack 5 # 靠近玩家且有hp的实体优先攻击"
+        },
+        "idle": {
+          "action": "move",
+          "text": "move 0 -20 # 没有可攻击的目标，移动到可能有物品的位置。"
+        },
+        "close_combat": {
+          "action": "attack",
+          "text": "attack 7 # 靠近玩家且有hp的实体优先攻击"
+        }
+      }
+    },
+    {
+      "alpha": 12.0,
+      "scenarios": {
+        "near_death": {
+          "action": "attack",
+          "text": "attack EID:3 # 优先攻击其他敌人"
+        },
+        "healthy_combat": {
+          "action": "attack",
+          "text": "attack 5 # 靠近玩家且有hp的实体优先攻击"
+        },
+        "idle": {
+          "action": "move",
+          "text": "move -2 0 # 无敌人可攻击，移动至可能有敌人的位置。"
+        },
+        "close_combat": {
+          "action": "attack",
+          "text": "attack 7 # 靠近玩家有可攻击的敌人。"
+        }
+      }
+    },
+    {
+      "alpha": 16.0,
+      "scenarios": {
+        "near_death": {
+          "action": "attack",
+          "text": "attack EID:3 # 优先攻击其他敌人"
+        },
+        "healthy_combat": {
+          "action": "attack",
+          "text": "attack 5 # 靠近玩家有可攻击的敌人。"
+        },
+        "idle": {
+          "action": "move",
+          "text": "move -2 0 # 无敌人可攻击，移动至可能的安全位置或资源位置。"
+        },
+        "close_combat": {
+          "action": "attack",
+          "text": "attack 7 # 靠近玩家的敌人的HP大于0，因此优先攻击。"
+        }
+      },
+      "measure_purity_exact": true
+    }
+  ]
+}

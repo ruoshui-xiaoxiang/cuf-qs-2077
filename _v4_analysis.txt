@@ -1,0 +1,79 @@
+=== 1. TARGETING SYSTEM - ALL FUNCTIONS ===
+  GetTargetParts(whandle:gameObject instigator, gameTargetSearchQuery query, array:gametargetingTargetPartInfo parts) -> Bool [nat=True, sta=False]
+  GetObjectClosestToCrosshair(whandle:gameObject instigator, EulerAngles angleDistance, gameTargetSearchQuery query) -> handle:gameObject [nat=True, sta=False]
+  GetComponentClosestToCrosshair(whandle:gameObject instigator, EulerAngles angleDistance, gameTargetSearchQuery query) -> handle:entIPlacedComponent [nat=True, sta=False]
+  GetTargetClosestByDistance(whandle:gameObject instigator, gameTargetSearchQuery query, Vector4 position, gametargetingTargetPartInfo targetPartInfo) -> handle:gameObject [nat=True, sta=False]
+  GetCrosshairData(whandle:gameObject instigator, Vector4 crosshairPosition, Vector4 crosshairForward) -> void [nat=True, sta=False]
+  GetDefaultCrosshairData(whandle:gameObject instigator, Vector4 crosshairPosition, Vector4 crosshairForward) -> void [nat=True, sta=False]
+  GetDefaultCrosshairPositionProvider(whandle:gameObject instigator, Vector3 offsetEntitySpace) -> handle:entIPositionProvider [nat=True, sta=False]
+  GetDefaultCrosshairOrientationProvider(whandle:gameObject instigator, Quaternion orientationEntitySpace) -> handle:entIOrientationProvider [nat=True, sta=False]
+  GetOrientationFromCrosshairToTargetOrientationProvider(whandle:gameObject instigator, whandle:entIPlacedComponent targetComponent, Quaternion orientationEntitySpace) -> handle:entIOrientationProvider [nat=True, sta=False]
+  GetLookAtObject(whandle:gameObject instigator, Bool withLOS, Bool ignoreTranparent) -> handle:gameObject [nat=True, sta=False]
+  GetLookAtComponent(whandle:gameObject instigator, Bool withLOS, Bool ignoreTranparent) -> whandle:entIComponent [nat=True, sta=False]
+  GetLookAtPosition(whandle:gameObject instigator, Bool withLOS, Bool ignoreTranparent) -> Vector4 [nat=True, sta=False]
+  GetCurrentSpread(whandle:gameObject instigator) -> Vector4 [nat=True, sta=False]
+  GetPuppetBlackboardUpdater() -> handle:gamePuppetBlackboardUpdater [nat=True, sta=False]
+  AimSnap(whandle:gameObject instigator) -> void [nat=True, sta=False]
+  LookAt(whandle:gameObject instigator, gameaimAssistAimRequest params) -> void [nat=True, sta=False]
+  BreakAimSnap(whandle:gameObject instigator) -> void [nat=True, sta=False]
+  BreakLookAt(whandle:gameObject instigator) -> void [nat=True, sta=False]
+  HasAimSnapActive(whandle:gameObject instigator) -> Bool [nat=True, sta=False]
+  OnAimStartBegin(whandle:gameObject instigator) -> void [nat=True, sta=False]
+  OnAimStartEnd(whandle:gameObject instigator) -> void [nat=True, sta=False]
+  OnAimStop(whandle:gameObject instigator) -> void [nat=True, sta=False]
+  SetPlayerAimWeaponPositionProvider(whandle:gameObject instigator, handle:entIPositionProvider positionProvider) -> void [nat=True, sta=False]
+  SetIsMovingFast(whandle:gameObject instigator, Bool isFast) -> void [nat=True, sta=False]
+  SetAimAssistConfig(whandle:gameObject owner, TweakDBID presetId) -> void [nat=True, sta=False]
+  GetAimAssistConfig(whandle:gameObject owner) -> TweakDBID [nat=True, sta=False]
+  GetTrackedTargetObject(whandle:gameObject instigator) -> handle:gameObject [nat=True, sta=False]
+  GetTrackedTargetComponent(whandle:gameObject instigator) -> whandle:gameTargetingComponent [nat=True, sta=False]
+  ProcessLookAtFilter(whandle:gameObject instigator, handle:gametargetingSystemTargetFilter filter) -> void [nat=True, sta=False]
+  RegisterLookAtFilter(whandle:gameObject instigator, handle:gametargetingSystemTargetFilter filter) -> gametargetingSystemTargetFilterTicket [nat=True, sta=False]
+  UnregisterLookAtFilter(whandle:gameObject instigator, gametargetingSystemTargetFilterTicket filterTicket) -> void [nat=True, sta=False]
+  AddIgnoredLookAtEntity(whandle:gameObject instigator, entEntityID ignoredEntityId) -> void [nat=True, sta=False]
+  RemoveIgnoredLookAtEntity(whandle:gameObject instigator, entEntityID ignoredEntityId) -> void [nat=True, sta=False]
+  AddIgnoredCollisionEntities(whandle:gameObject entity) -> void [nat=True, sta=False]
+  RemoveIgnoredCollisionEntities(whandle:gameObject entity) -> void [nat=True, sta=False]
+  IsVisibleTarget(whandle:gameObject instigator, whandle:gameObject target) -> Bool [nat=True, sta=False]
+  GetTargetingSet(whandle:gameObject instigator, whandle:gameObject object) -> gameTargetingSet [nat=True, sta=False]
+  GetBestComponentOnTargetObject(Vector4 shootStartPosition, Vector4 shootStartForward, whandle:gameObject target, gametargetingSystemScriptFilter componentFilter) -> whandle:gameTargetingComponent [nat=True, sta=False]
+  IsAnyEnemyVisible(whandle:gameObject instigator, Float distance) -> Bool [nat=True, sta=False]
+  IsAnyEnemyOrSensorVisible(whandle:gameObject instigator, Float distance) -> Bool [nat=True, sta=False]
+  IsAnyActiveVehicleVisible(whandle:gameObject instigator, Float distance) -> Bool [nat=True, sta=False]
+
+=== 2. entEntity PROPS ===
+  customCameraTarget: ECustomCameraTarget @offset 340
+  renderSceneLayerMask: RenderSceneLayerMask @offset 347
+  entEntitySize: 352
+
+=== 3. searchFilter ===
+  name: gameTargetSearchFilter
+  size: 24
+  parent: None
+  propCount: 0
+
+=== 4. DETECT FUNCS (entity detection alternatives) ===
+  gameObject::CanPlayerScanThroughWalls() -> Bool [nat=False]
+  gameObject::IsScannerDataDirty() -> Bool [nat=False]
+  gameObject::SetScannerDirty(Bool) -> void [nat=False]
+  gameObject::GetSensesComponent() -> handle:senseComponent [nat=False]
+  gameObject::GetScannerAttitudeTweak() -> TweakDBID [nat=False]
+  gameObject::GetTargetTrackerComponent() -> handle:AITargetTrackerComponent [nat=False]
+  gameObject::GetNPCsAroundObject(Float) -> array:handle:NPCPuppet [nat=False]
+  gameObject::UpdateAdditionalScanningData() -> void [nat=False]
+  gameObject::OnScanningModeChanged(handle:gameScanningModeEvent) -> Bool [nat=False]
+  gameObject::OnScanningLookedAt(handle:gameScanningLookAtEvent) -> Bool [nat=False]
+  gameObject::GetObjectToForwardHighlight() -> array:whandle:gameObject [nat=False]
+  gameObject::IsScanned() -> Bool [nat=False]
+  gameObject::PurgeScannerBlackboard() -> void [nat=False]
+  gameObject::CompileScannerChunks() -> Bool [nat=False]
+  gameObject::GetScannableObjects() -> array:gameScanningTooltipElementDef [nat=False]
+  gameObject::ShouldShowScanner() -> Bool [nat=False]
+  gameObject::IsScaningCluesBlocked() -> Bool [nat=False]
+  gameObject::IsCurrentlyScanned() -> Bool [nat=False]
+  gameObject::GetTargetShootComponent() -> handle:gameTargetShootComponent [nat=False]
+  entEntity::GetEntity() -> entEntityGameInterface [nat=True]
+  entEntity::GetEntityID() -> entEntityID [nat=True]
+
+=== 5. PLAYER ENTITY HASH ===
+  playerEntityHash: 1

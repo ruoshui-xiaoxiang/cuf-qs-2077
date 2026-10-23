@@ -1,0 +1,76 @@
+{
+  "ts": "20260827_183811",
+  "rounds": 6,
+  "completed": 6,
+  "kill_actions": [
+    {
+      "round": 2,
+      "status": "completed",
+      "control_tier": "experimental",
+      "receipt_reason": "native_kill_receipt",
+      "outcome_semantics": "death_unconfirmed_non_hostile_target",
+      "confirmation_status": "unconfirmed"
+    },
+    {
+      "round": 4,
+      "status": "completed",
+      "control_tier": "experimental",
+      "receipt_reason": "native_kill_receipt",
+      "outcome_semantics": "death_confirmed",
+      "confirmation_status": "confirmed"
+    }
+  ],
+  "entity_death_events": [
+    {
+      "round": 2,
+      "target": "EID:9000650",
+      "unconfirmed": true
+    },
+    {
+      "round": 4,
+      "target": "EID:9000650",
+      "unconfirmed": false
+    }
+  ],
+  "native_states": [
+    {
+      "round": 0,
+      "available": true,
+      "heat_stage": 0
+    },
+    {
+      "round": 1,
+      "available": true,
+      "heat_stage": 0
+    },
+    {
+      "round": 2,
+      "available": true,
+      "heat_stage": 0
+    },
+    {
+      "round": 3,
+      "available": true,
+      "heat_stage": 0
+    },
+    {
+      "round": 4,
+      "available": true,
+      "heat_stage": 0
+    },
+    {
+      "round": 5,
+      "available": true,
+      "heat_stage": 1
+    }
+  ],
+  "alignment_series": [
+    0.7716,
+    0.7404,
+    0.7417,
+    0.7415,
+    0.7375,
+    0.7444
+  ],
+  "chain_ok": true
+}

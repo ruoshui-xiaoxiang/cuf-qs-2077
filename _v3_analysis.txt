@@ -1,0 +1,387 @@
+========== 1. ENUMS ==========
+
+--- gameStatIDType (enum) ---
+  EntityID = 0
+  ItemID = 1
+  Invalid = 2
+
+--- gameTargetingSet (enum) ---
+  Visible = 0
+  ClearlyVisible = 1
+  Frustum = 2
+  Complete = 3
+  None = 4
+
+--- gamedataStatPoolType (enum) ---
+  AccumulatedDoT = 0
+  Adrenaline = 1
+  Aggressiveness = 2
+  Armor = 3
+  BerserkCharge = 4
+  BleedingTrigger = 5
+  BurningTrigger = 6
+  CPUPower = 7
+  CWMaskCharges = 8
+  CallReinforcementProgress = 9
+  CyberdeckOverclock = 10
+  Durability = 11
+  E3_BossWeakSpotHealth = 12
+  ElectrocutedTrigger = 13
+  Fear = 14
+  GrenadesCharges = 15
+  HealingItemsCharges = 16
+  Health = 17
+  HitShapeArmor = 18
+  JenkinsHelper = 19
+  LeftArmHealth = 20
+  LeftLegHealth = 21
+  Memory = 22
+  OpticalCamoCharges = 23
+  Overshield = 24
+  Oxygen = 25
+  PhoneCallDuration = 26
+  Poise = 27
+  PoisonTrigger = 28
+  ProjectileLauncherCharges = 29
+  QuickHackDuration = 30
+  QuickHackUpload = 31
+  ReprimandEscalation = 32
+  RightLegHealth = 33
+  SandevistanCharge = 34
+  Stamina = 35
+  StunTrigger = 36
+  ThrowRecovery = 37
+  TimeBank = 38
+  UnlockProgress = 39
+  VehicleMissileLauncherCharges = 40
+  WeakspotHealth = 41
+  WeaponCharge = 42
+  WeaponOverheat = 43
+  CPOShockedTrigger = 44
+  CPO_Armor = 45
+  CPO_NPC_Importance = 46
+  Count = 47
+  Invalid = 48
+
+--- EAIAttitude (enum) ---
+  AIA_Friendly = 0
+  AIA_Neutral = 1
+  AIA_Hostile = 2
+
+--- gameTargetSearchFilter (class) ---
+  size: 24
+
+--- gamedataAttackType (enum) ---
+  ChargedWhipAttack = 0
+  Direct = 1
+  Effect = 2
+  Explosion = 3
+  ForceKill = 4
+  GuardBreak = 5
+  Hack = 6
+  Melee = 7
+  PressureWave = 8
+  QuickMelee = 9
+  Ranged = 10
+  Reflect = 11
+  StrongMelee = 12
+  Thrown = 13
+  WhipAttack = 14
+  Count = 15
+  Invalid = 16
+
+--- gameStatPoolModificationTypes (enum) ---
+  Regeneration = 0
+  Decay = 1
+
+--- gameuiHitType (enum) ---
+  Miss = 0
+  Glance = 1
+  Hit = 2
+  CriticalHit = 3
+  CriticalHit_x2 = 4
+  Special = 5
+
+========== 2. CLASSES ==========
+
+--- gameStatsObjectID (size=16, props=2) ---
+  entityHash: Uint64 @offset 0
+  idType: gameStatIDType @offset 8
+
+--- gameTargetSearchQuery (size=56, props=7) ---
+  testedSet: gameTargetingSet @offset 0
+  searchFilter: gameTargetSearchFilter @offset 8
+  includeSecondaryTargets: Bool @offset 34
+  ignoreInstigator: Bool @offset 35
+  maxDistance: Float @offset 36
+  filterObjectByDistance: Bool @offset 48
+  queryTarget: entEntityID @offset 40
+
+--- gameTargetSearchFilter (size=24, props=0) ---
+
+--- gametargetingTargetPartInfo (size=24, props=0) ---
+
+--- entEntityID (size=8, props=1) ---
+  hash: Uint64 @offset 0
+
+--- gamedamageAttackData (size=208, props=20) ---
+  attackType: gamedataAttackType @offset 64
+  instigator: whandle:gameObject @offset 72
+  source: whandle:gameObject @offset 88
+  weapon: whandle:gameweaponObject @offset 104
+  attackDefinition: handle:gameIAttack @offset 120
+  attackPosition: Vector4 @offset 144
+  weaponCharge: Float @offset 160
+  numRicochetBounces: Int32 @offset 164
+  numAttackSpread: Int32 @offset 168
+  attackTime: Float @offset 172
+  triggerMode: gamedataTriggerMode @offset 176
+  flags: array:SHitFlag @offset 0
+  statusEffects: array:SHitStatusEffect @offset 16
+  hitType: gameuiHitType @offset 32
+  vehicleImpactForce: Float @offset 36
+  minimumHealthPercent: Float @offset 40
+  additionalCritChance: Float @offset 44
+  randRoll: Float @offset 48
+  hitReactionMin: Int32 @offset 52
+  hitReactionMax: Int32 @offset 56
+
+--- gameeventsHitEvent (size=240, props=11) ---
+  attackData: handle:gamedamageAttackData @offset 64
+  target: whandle:gameObject @offset 80
+  hitPosition: Vector4 @offset 96
+  hitDirection: Vector4 @offset 112
+  hitComponent: whandle:entIPlacedComponent @offset 128
+  hitColliderTag: CName @offset 144
+  hitRepresentationResult: gameQueryResult @offset 160
+  attackPentration: Float @offset 200
+  hasPiercedTechSurface: Bool @offset 204
+  attackComputed: handle:gameAttackComputed @offset 208
+  projectionPipeline: Bool @offset 0
+
+--- gameStatPoolModifier (size=128, props=7) ---
+  enabled: Bool @offset 120
+  rangeBegin: Float @offset 104
+  rangeEnd: Float @offset 108
+  startDelay: Float @offset 112
+  valuePerSec: Float @offset 116
+  delayOnChange: Bool @offset 121
+  usingPointValues: Bool @offset 122
+
+--- gameTargetingComponent (size=448, props=5) ---
+  isPrimary: Bool @offset 432
+  isDirectional: Bool @offset 434
+  aimAssistData: array:TweakDBID @offset 288
+  isEnabled: Bool @offset 139
+  alwaysInTestRange: Bool @offset 433
+
+--- gameStatusEffectSystem (size=164288, props=0) ---
+
+--- gameStatPoolsSystem (size=424, props=0) ---
+
+========== 3. FUNCTIONS BY GROUP ==========
+
+--- entityDetect (0 funcs) ---
+
+--- attitude (27 funcs) ---
+  ScriptedPuppetPS::SetIsDead(Bool) -> void [nat=False, sta=False, params=1]
+  ScriptedPuppetPS::GetIsDead() -> Bool [nat=False, sta=False, params=0]
+  gameObject::GetAttitudeAgent() -> handle:gameAttitudeAgent [nat=False, sta=False, params=0]
+  gameObject::GetScannerAttitudeTweak() -> TweakDBID [nat=False, sta=False, params=0]
+  gameObject::GetAttitudeTowards(handle:gameObject) -> EAIAttitude [nat=False, sta=False, params=1]
+  gameObject::HasAttitude(EAIAttitude) -> Bool [nat=False, sta=False, params=1]
+  gameObject::IsHostile() -> Bool [nat=False, sta=False, params=0]
+  gameObject::OnAttitudeChanged(handle:gameeventsAttitudeChangedEvent) -> Bool [nat=False, sta=False, params=1]
+  gameObject::IsValidHostileTarget() -> Bool [nat=False, sta=False, params=0]
+  gameObject::IsDead() -> Bool [nat=False, sta=False, params=0]
+  gameObject::IsDeadNoStatPool() -> Bool [nat=False, sta=False, params=0]
+  PlayerPuppet::IsAimingAtFriendly() -> Bool [nat=False, sta=False, params=0]
+  PlayerPuppet::RegisterFriendlyDeviceHostileToEnemies(entEntityID) -> void [nat=False, sta=False, params=1]
+  PlayerPuppet::UnregisterFriendlyDeviceHostileToEnemies(entEntityID) -> void [nat=False, sta=False, params=1]
+  PlayerPuppet::OnAttitudeChanged(handle:gameeventsAttitudeChangedEvent) -> Bool [nat=False, sta=False, params=1]
+  PlayerPuppet::OnStartedBeingTrackedAsHostile(handle:AIStartedBeingTrackedAsHostile) -> Bool [nat=False, sta=False, params=1]
+  PlayerPuppet::OnStoppedBeingTrackedAsHostile(handle:AIStoppedBeingTrackedAsHostile) -> Bool [nat=False, sta=False, params=1]
+  ScriptedPuppet::GetAttitudeAgent() -> handle:gameAttitudeAgent [nat=False, sta=False, params=0]
+  ScriptedPuppet::IsDead() -> Bool [nat=False, sta=False, params=0]
+  ScriptedPuppet::IsDeadNoStatPool() -> Bool [nat=False, sta=False, params=0]
+  ScriptedPuppet::IsEnemy() -> Bool [nat=False, sta=False, params=0]
+  ScriptedPuppet::LogEnemyDown(handle:gameeventsKillRewardEvent, gameTelemetryDamageSituation) -> void [nat=False, sta=False, params=2]
+  ScriptedPuppet::OnAttitudeChanged(handle:gameeventsAttitudeChangedEvent) -> Bool [nat=False, sta=False, params=1]
+  ScriptedPuppet::ProcessEnemyNetrunnerTutorialFact() -> void [nat=False, sta=False, params=0]
+  NPCPuppet::IsDead() -> Bool [nat=False, sta=False, params=0]
+  NPCPuppet::SetAnimWrapperWeightBasedOnFaction() -> void [nat=False, sta=False, params=0]
+  NPCPuppet::OnAttitudeChanged(handle:gameeventsAttitudeChangedEvent) -> Bool [nat=False, sta=False, params=1]
+
+--- health (22 funcs) ---
+  gameObject::IsDeadNoStatPool() -> Bool [nat=False, sta=False, params=0]
+  PlayerPuppet::SetStatPoolEnabled(gamedataStatPoolType, gameStatPoolModificationTypes, Bool) -> void [nat=False, sta=False, params=3]
+  gameStatPoolsSystem::RequestAddingStatPool(gameStatsObjectID, TweakDBID, Bool) -> void [nat=True, sta=False, params=3]
+  gameStatPoolsSystem::RequestRemovingStatPool(gameStatsObjectID, gamedataStatPoolType) -> void [nat=True, sta=False, params=2]
+  gameStatPoolsSystem::GetStatPoolMaxPointValue(gameStatsObjectID, gamedataStatPoolType) -> Float [nat=True, sta=False, params=2]
+  gameStatPoolsSystem::GetStatPoolValue(gameStatsObjectID, gamedataStatPoolType, Bool) -> Float [nat=True, sta=False, params=3]
+  gameStatPoolsSystem::GetStatPoolValueCustomLimit(gameStatsObjectID, gamedataStatPoolType, Bool) -> Float [nat=True, sta=False, params=3]
+  gameStatPoolsSystem::IsStatPoolAdded(gameStatsObjectID, gamedataStatPoolType) -> Bool [nat=True, sta=False, params=2]
+  gameStatPoolsSystem::HasActiveStatPool(gameStatsObjectID, gamedataStatPoolType) -> Bool [nat=True, sta=False, params=2]
+  gameStatPoolsSystem::HasStatPoolValueReachedMin(gameStatsObjectID, gamedataStatPoolType) -> Bool [nat=True, sta=False, params=2]
+  gameStatPoolsSystem::HasStatPoolValueReachedMax(gameStatsObjectID, gamedataStatPoolType) -> Bool [nat=True, sta=False, params=2]
+  gameStatPoolsSystem::HasStatPoolValueReachedCustomLimit(gameStatsObjectID, gamedataStatPoolType) -> Bool [nat=True, sta=False, params=2]
+  gameStatPoolsSystem::IsStatPoolModificationDelayed(gameStatsObjectID, gamedataStatPoolType) -> Bool [nat=True, sta=False, params=2]
+  gameStatPoolsSystem::RequestSettingStatPoolMinValue(gameStatsObjectID, gamedataStatPoolType, whandle:gameObject) -> void [nat=True, sta=False, params=3]
+  gameStatPoolsSystem::RequestSettingStatPoolMaxValue(gameStatsObjectID, gamedataStatPoolType, whandle:gameObject) -> void [nat=True, sta=False, params=3]
+  gameStatPoolsSystem::RequestSettingStatPoolValue(gameStatsObjectID, gamedataStatPoolType, Float, whandle:gameObject, Bool, Bool) -> void [nat=True, sta=False, params=6]
+  gameStatPoolsSystem::RequestSettingStatPoolValueCustomLimit(gameStatsObjectID, gamedataStatPoolType, Float, whandle:gameObject, Bool) -> void [nat=True, sta=False, params=5]
+  gameStatPoolsSystem::RequestSettingStatPoolValueIgnoreChangeMode(gameStatsObjectID, gamedataStatPoolType, Float, whandle:gameObject, Bool) -> void [nat=True, sta=False, params=5]
+  gameStatPoolsSystem::RequestChangingStatPoolValue() -> void [nat=True, sta=False, params=7]
+  gameStatPoolsSystem::RequestSettingStatPoolBonus(gameStatsObjectID, gamedataStatPoolType, Float, whandle:gameObject, Bool, Bool) -> void [nat=True, sta=False, params=6]
+  gameStatPoolsSystem::RequestMarkingStatPoolActive(gameStatsObjectID, gamedataStatPoolType) -> void [nat=True, sta=False, params=2]
+  ScriptedPuppet::IsDeadNoStatPool() -> Bool [nat=False, sta=False, params=0]
+
+--- damage (30 funcs) ---
+  gameStatPoolsSystem::RequestSettingStatPoolMinValue(gameStatsObjectID, gamedataStatPoolType, whandle:gameObject) -> void [nat=True, sta=False, params=3]
+  gameStatPoolsSystem::RequestSettingStatPoolMaxValue(gameStatsObjectID, gamedataStatPoolType, whandle:gameObject) -> void [nat=True, sta=False, params=3]
+  gameStatPoolsSystem::RequestSettingStatPoolValue(gameStatsObjectID, gamedataStatPoolType, Float, whandle:gameObject, Bool, Bool) -> void [nat=True, sta=False, params=6]
+  gameStatPoolsSystem::RequestSettingStatPoolValueCustomLimit(gameStatsObjectID, gamedataStatPoolType, Float, whandle:gameObject, Bool) -> void [nat=True, sta=False, params=5]
+  gameStatPoolsSystem::RequestSettingStatPoolValueIgnoreChangeMode(gameStatsObjectID, gamedataStatPoolType, Float, whandle:gameObject, Bool) -> void [nat=True, sta=False, params=5]
+  gameStatPoolsSystem::RequestSettingStatPoolBonus(gameStatsObjectID, gamedataStatPoolType, Float, whandle:gameObject, Bool, Bool) -> void [nat=True, sta=False, params=6]
+  gameStatPoolsSystem::RequestSettingModifier(gameStatsObjectID, gamedataStatPoolType, gameStatPoolModificationTypes, gameStatPoolModifier) -> void [nat=True, sta=False, params=4]
+  gameStatPoolsSystem::RequestSettingModifierWithRecord(gameStatsObjectID, gamedataStatPoolType, gameStatPoolModificationTypes, TweakDBID) -> void [nat=True, sta=False, params=4]
+  gameDamageSystem::FillInDamageBlackboard(handle:gameeventsHitEvent) -> void [nat=False, sta=False, params=1]
+  gameDamageSystem::ConvertHitDataToDamageInfo(handle:gameeventsHitEvent) -> array:gameuiDamageInfo [nat=False, sta=False, params=1]
+  gameDamageSystem::ProcessClientKill(handle:gamedamageServerKillData) -> void [nat=False, sta=False, params=1]
+  gameDamageSystem::ConvertDPSToHitDamage(handle:gameeventsHitEvent) -> void [nat=False, sta=False, params=1]
+  gameDamageSystem::CalculateDamageVariants(handle:gameeventsHitEvent) -> void [nat=False, sta=False, params=1]
+  gameDamageSystem::ProcessDamageReduction(handle:gameeventsHitEvent) -> void [nat=False, sta=False, params=1]
+  gameDamageSystem::ProcessLocalizedDamage(handle:gameeventsHitEvent) -> void [nat=False, sta=False, params=1]
+  gameDamageSystem::ProcessInstantKill(handle:gameeventsHitEvent) -> void [nat=False, sta=False, params=1]
+  gameDamageSystem::ProcessPlayerIncomingDamageMultiplier(handle:gameeventsHitEvent) -> void [nat=False, sta=False, params=1]
+  gameDamageSystem::ProcessTurretDamageTakenFromMelee(handle:gameeventsHitEvent) -> void [nat=False, sta=False, params=1]
+  gameDamageSystem::ProcessDeviceExplosionDamageToTierNPC(handle:gameeventsHitEvent) -> void [nat=False, sta=False, params=1]
+  gameDamageSystem::ProcessGrenadeExplosionDamageToPlayer(handle:gameeventsHitEvent) -> void [nat=False, sta=False, params=1]
+  gameDamageSystem::CalculateVehicleTargetRangedDamage(handle:gameweaponObject, Float, handle:gameStatsSystem) -> Float [nat=False, sta=False, params=3]
+  gameDamageSystem::CalculateVehicleTargetMeleeDamage(handle:gameweaponObject, gamedataAttackType, Bool, handle:gameStatsSystem) -> Float [nat=False, sta=False, params=4]
+  gameDamageSystem::DealDamages(handle:gameeventsHitEvent) -> void [nat=False, sta=False, params=1]
+  gameDamageSystem::SendDamageEvents(handle:gameeventsHitEvent, script_ref:array:SDamageDealt) -> void [nat=False, sta=False, params=2]
+  gameDamageSystem::SendDamageRequestToPreventionSystem(handle:gameeventsHitEvent) -> void [nat=False, sta=False, params=1]
+  gameDamageSystem::ApplyStatusEffectByApplicationRate(handle:gameeventsHitEvent, gamedataStatType, TweakDBID) -> void [nat=False, sta=False, params=3]
+  gameDamageSystem::ProcessReturnedDamage(handle:gameeventsHitEvent) -> void [nat=False, sta=False, params=1]
+  gameDamageSystem::ProcessDamageMultipliers(handle:gameeventsHitEvent) -> void [nat=False, sta=False, params=1]
+  gameDamageSystem::GetHeadshotDamageModifier(handle:gameStatsSystem, handle:gamedamageAttackData) -> Float [nat=False, sta=False, params=2]
+  gameDamageSystem::GetWeakspotDamageModifier(handle:gameStatsSystem, handle:gamedamageAttackData) -> Float [nat=False, sta=False, params=2]
+
+--- hitDetect (27 funcs) ---
+  gameObject::OnHit(handle:gameeventsHitEvent) -> Bool [nat=False, sta=False, params=1]
+  gameObject::OnHitInstigatorCooldown(handle:HitInstigatorCooldownEvent) -> Bool [nat=False, sta=False, params=1]
+  gameObject::HandleStimsOnHit(handle:gameeventsHitEvent) -> void [nat=False, sta=False, params=1]
+  gameObject::OnHitProjection(handle:gameeventsProjectedHitEvent) -> Bool [nat=False, sta=False, params=1]
+  gameObject::OnHitBlockedOrDeflected(handle:gameeventsHitEvent) -> void [nat=False, sta=False, params=1]
+  gameObject::OnHitAnimation(handle:gameeventsHitEvent) -> void [nat=False, sta=False, params=1]
+  gameObject::OnHitUI(handle:gameeventsHitEvent) -> void [nat=False, sta=False, params=1]
+  gameObject::OnHitSounds(handle:gameeventsHitEvent) -> void [nat=False, sta=False, params=1]
+  gameObject::OnHitVFX(handle:gameeventsHitEvent) -> void [nat=False, sta=False, params=1]
+  gameObject::OnDamageReceived(handle:gameeventsDamageReceivedEvent) -> Bool [nat=False, sta=False, params=1]
+  PlayerPuppet::OnHitBlockedOrDeflected(handle:gameeventsHitEvent) -> void [nat=False, sta=False, params=1]
+  PlayerPuppet::OnHitAnimation(handle:gameeventsHitEvent) -> void [nat=True, sta=False, params=1]
+  PlayerPuppet::AddOnHitRumble(handle:gameeventsHitEvent) -> void [nat=False, sta=False, params=1]
+  PlayerPuppet::OnHitUI(handle:gameeventsHitEvent) -> void [nat=False, sta=False, params=1]
+  PlayerPuppet::OnHitSounds(handle:gameeventsHitEvent) -> void [nat=False, sta=False, params=1]
+  PlayerPuppet::OnDamageInflicted(handle:DamageInflictedEvent) -> Bool [nat=False, sta=False, params=1]
+  gameDamageSystem::GetHitReactionZone(handle:gameeventsProjectedHitEvent) -> EHitReactionZone [nat=False, sta=False, params=1]
+  gameDamageSystem::ProcessPlayerIncomingDamageMultiplier(handle:gameeventsHitEvent) -> void [nat=False, sta=False, params=1]
+  gameDamageSystem::ProcessDeviceExplosionDamageToTierNPC(handle:gameeventsHitEvent) -> void [nat=False, sta=False, params=1]
+  gameDamageSystem::ProcessGrenadeExplosionDamageToPlayer(handle:gameeventsHitEvent) -> void [nat=False, sta=False, params=1]
+  ScriptedPuppet::GetHitReactionComponent() -> handle:HitReactionComponent [nat=False, sta=False, params=0]
+  ScriptedPuppet::GetHitRepresantationSlotComponent() -> handle:entSlotComponent [nat=False, sta=False, params=0]
+  ScriptedPuppet::GetHitReactionModeFromBlackboard() -> EHitReactionMode [nat=False, sta=False, params=0]
+  ScriptedPuppet::OnDamageReceived(handle:gameeventsDamageReceivedEvent) -> Bool [nat=True, sta=False, params=1]
+  ScriptedPuppet::OnDamageDealt(handle:gameeventsTargetDamageEvent) -> Bool [nat=False, sta=False, params=1]
+  ScriptedPuppet::OnHit(handle:gameeventsHitEvent) -> Bool [nat=True, sta=False, params=1]
+  ScriptedPuppet::HandleStimsOnHit(handle:gameeventsHitEvent) -> void [nat=False, sta=False, params=1]
+
+--- combatState (4 funcs) ---
+  PlayerPuppet::GetCombatExitTimestamp() -> Float [nat=False, sta=False, params=0]
+  PlayerPuppet::OnCombatStateChanged(Int32) -> Bool [nat=False, sta=False, params=1]
+  PlayerPuppet::IsInCombat() -> Bool [nat=False, sta=False, params=0]
+  PlayerPuppetPS::GetCombatExitTimestamp() -> Float [nat=False, sta=False, params=0]
+
+========== 4. PLAYER PROPS ==========
+  enviroDamageRcvComponent: handle:gameEnvironmentDamageReceiverComponent @offset 1088
+  Debug_DamageInputRec: handle:DEBUG_DamageInputReceiver @offset 1232
+  highDamageThreshold: Float @offset 1248
+  medDamageThreshold: Float @offset 1252
+  lowDamageThreshold: Float @offset 1256
+  meleeHighDamageThreshold: Float @offset 1260
+  meleeMedDamageThreshold: Float @offset 1264
+  meleeLowDamageThreshold: Float @offset 1268
+  explosionHighDamageThreshold: Float @offset 1272
+  explosionMedDamageThreshold: Float @offset 1276
+  explosionLowDamageThreshold: Float @offset 1280
+  healthVfxBlackboard: handle:worldEffectBlackboard @offset 1296
+  workspotDamageReductionActive: Bool @offset 1505
+  CPOMissionDataState: handle:CPOMissionDataState @offset 1544
+  armorStatListener: handle:ArmorStatListener @offset 1608
+  healthStatListener: handle:HealthStatListener @offset 1624
+  oxygenStatListener: handle:OxygenStatListener @offset 1640
+  allStatsListener: handle:PlayerPuppetAllStatListener @offset 1688
+  HealingItemsChargeStatListener: handle:HealingItemsChargeStatListener @offset 1720
+  GrenadesChargeStatListener: handle:GrenadesChargeStatListener @offset 1736
+  ProjectileLauncherChargeStatListener: handle:ProjectileLauncherChargeStatListener @offset 1752
+  OpticalCamoChargeStatListener: handle:OpticalCamoChargeStatListener @offset 1768
+  DataDamageUpdateID: gameDelayID @offset 1820
+  numberOfCombatants: Int32 @offset 1856
+  inCombat: Bool @offset 1898
+  vehicleState: gamePSMVehicle @offset 1904
+  inDriverCombatTPP: Bool @offset 1909
+  driverCombatWeaponType: gamedataItemType @offset 1910
+  locomotionState: Int32 @offset 1940
+  leftHandCyberwareState: Int32 @offset 1944
+  meleeWeaponState: Int32 @offset 1948
+  combatGadgetState: Int32 @offset 1980
+  damageReductionRecordID: TweakDBID @offset 2056
+  critHealthRumblePlayed: Bool @offset 2080
+  critHealthRumbleDurationID: gameDelayID @offset 2084
+  lastHealthUpdate: Float @offset 2092
+  combatController: handle:PlayerCombatController @offset 2192
+  friendlyDevicesHostileToEnemiesLock: ScriptReentrantRWLock @offset 2256
+  friendlyDevicesHostileToEnemies: array:entEntityID @offset 2272
+
+========== 5. gameObject FUNCS ==========
+  IsPlayerControlled() -> Bool [native=True]
+  IsTargetTresspassingMyZone(handle:gameObject) -> Bool [native=False]
+  OnAddStatusEffectTriggerListener(handle:AddStatusEffectListenerEvent) -> Bool [native=False]
+  OnRemoveStatusEffectTriggerListener(handle:RemoveStatusEffectListenerEvent) -> Bool [native=False]
+  ShouldReactToTarget(entEntityID) -> Bool [native=False]
+  GetAttitudeAgent() -> handle:gameAttitudeAgent [native=False]
+  GetScannerAttitudeTweak() -> TweakDBID [native=False]
+  GetAttitudeTowards(handle:gameObject) -> EAIAttitude [native=False]
+  HasAttitude(EAIAttitude) -> Bool [native=False]
+  IsHostile() -> Bool [native=False]
+  GetTargetTrackerComponent() -> handle:AITargetTrackerComponent [native=False]
+  OnStatusEffectApplied(handle:gameeventsApplyStatusEffectEvent) -> Bool [native=False]
+  StartStatusEffectVFX(handle:gameeventsApplyStatusEffectEvent) -> void [native=False]
+  StartStatusEffectSFX(handle:gameeventsApplyStatusEffectEvent) -> void [native=False]
+  OnStatusEffectRemoved(handle:gameeventsRemoveStatusEffect) -> Bool [native=False]
+  StopStatusEffectVFX(handle:gameeventsRemoveStatusEffect) -> void [native=False]
+  StopStatusEffectSFX(handle:gameeventsRemoveStatusEffect) -> void [native=False]
+  OnHit(handle:gameeventsHitEvent) -> Bool [native=False]
+  DamagePipelineFinalized(handle:gameeventsHitEvent) -> void [native=False]
+  ResolveHitIstigatorCooldown(entEntityID) -> Bool [native=False]
+  OnHitInstigatorCooldown(handle:HitInstigatorCooldownEvent) -> Bool [native=False]
+  HandleStimsOnHit(handle:gameeventsHitEvent) -> void [native=False]
+  OnVehicleHit(handle:gameeventsVehicleHitEvent) -> Bool [native=False]
+  OnHitProjection(handle:gameeventsProjectedHitEvent) -> Bool [native=False]
+  OnAttitudeChanged(handle:gameeventsAttitudeChangedEvent) -> Bool [native=False]
+  ProcessDamagePipeline(handle:gameeventsHitEvent) -> void [native=False]
+  ReactToHitProcess(handle:gameeventsHitEvent) -> void [native=False]
+  OnHitBlockedOrDeflected(handle:gameeventsHitEvent) -> void [native=False]
+  OnHitAnimation(handle:gameeventsHitEvent) -> void [native=False]
+  OnHitUI(handle:gameeventsHitEvent) -> void [native=False]
+  DisplayHitUI(script_ref:array:gameuiDamageInfo) -> void [native=False]
+  OnHitSounds(handle:gameeventsHitEvent) -> void [native=False]
+  OnHitVFX(handle:gameeventsHitEvent) -> void [native=False]
+  OnDamageReceived(handle:gameeventsDamageReceivedEvent) -> Bool [native=False]
+  GetReceivedDamageByPlayerLastTimeStamp() -> Float [native=False]
+  ProcessDamageReceived(handle:gameeventsDamageReceivedEvent) -> void [native=False]
+  Record1DamageInHistory(handle:gameObject) -> void [native=False]
+  OnRecord1DamageInHistoryEvent(handle:Record1DamageInHistoryEvent) -> Bool [native=False]
+  IsPlayer() -> Bool [native=False]
+  IsNPC() -> Bool [native=False]

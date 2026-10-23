@@ -1,0 +1,67 @@
+{
+  "weapon_candidates": {
+    "GetWeaponSystem": {
+      "pcall_error": "init.lua:2347: Function GetWeaponSystem is not a GameInstance member and is not a global."
+    },
+    "GetDamageSystem": {
+      "exists": true,
+      "result_type": "userdata"
+    },
+    "GetDamageModifierSystem": {
+      "pcall_error": "init.lua:2347: Function GetDamageModifierSystem is not a GameInstance member and is not a global."
+    },
+    "GetEquipmentSystem": {
+      "pcall_error": "init.lua:2347: Function GetEquipmentSystem is not a GameInstance member and is not a global."
+    },
+    "GetInventorySystem": {
+      "pcall_error": "init.lua:2347: Function GetInventorySystem is not a GameInstance member and is not a global."
+    },
+    "GetCombatSystem": {
+      "pcall_error": "init.lua:2347: Function GetCombatSystem is not a GameInstance member and is not a global."
+    },
+    "GetStatPoolSystem": {
+      "pcall_error": "init.lua:2347: Function GetStatPoolSystem is not a GameInstance member and is not a global."
+    },
+    "GetHitRep": {
+      "pcall_error": "init.lua:2347: Function GetHitRep is not a GameInstance member and is not a global."
+    },
+    "GetTargetingSystem": {
+      "exists": true,
+      "result_type": "userdata"
+    }
+  },
+  "player_ok": true,
+  "player_type": "userdata",
+  "player_methods": {
+    "GetFPPCameraComponent": {
+      "result_ok": true,
+      "type": "function",
+      "result_type": "userdata"
+    },
+    "GetBlackboard": {
+      "result_ok": true,
+      "type": "function",
+      "result_type": "userdata"
+    },
+    "GetActiveWeapon": {
+      "result_ok": true,
+      "type": "function",
+      "result_type": "nil"
+    },
+    "IsAlive": {
+      "result_ok": true,
+      "type": "function",
+      "result_type": "boolean"
+    }
+  },
+  "weapon_obj": [],
+  "damage_candidates": {
+    "StatusEffect_Apply": {
+      "system_type": "userdata"
+    },
+    "StatPools_Damage": {
+      "error": "init.lua:2362: Function GetStatPoolSystem is not a GameInstance member and is not a global."
+    }
+  },
+  "fire_candidates": []
+}

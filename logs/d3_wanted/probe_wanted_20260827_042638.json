@@ -1,0 +1,14 @@
+{
+  "error": "init.lua:2216: sol: cannot call '__pairs/pairs' on type 'sol::as_container_t<StrongReference>': it is not recognized as a container",
+  "raw": {
+    "id": 2,
+    "ok": false,
+    "t": "resp",
+    "error": "init.lua:2216: sol: cannot call '__pairs/pairs' on type 'sol::as_container_t<StrongReference>': it is not recognized as a container"
+  },
+  "_meta": {
+    "timestamp": "20260827_042638",
+    "mod_version": "0.6.17",
+    "script": "d3_probe_wanted.py"
+  }
+}

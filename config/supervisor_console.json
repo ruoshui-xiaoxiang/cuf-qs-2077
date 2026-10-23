@@ -1,0 +1,18 @@
+{
+  "monitor": {
+    "host": "127.0.0.1",
+    "port": 8091,
+    "open_browser": true
+  },
+  "runtime": {
+    "log_path": "logs/runtime_supervisor.jsonl",
+    "output_dir": "logs/runtime_worker_out"
+  },
+  "seed_task": {
+    "enabled": true,
+    "mode": "if_missing",
+    "executor": "subprocess",
+    "demo": "repo_inventory",
+    "target_dir": "src/supervisor"
+  }
+}

@@ -1,0 +1,756 @@
+{
+  "version": "1.0",
+  "description": "W1 因果物理规则层——游戏实例化的度规因果结构（D层）+ M静态部分。全程只读，W2 不可写回。",
+  "scan_radius": 50.0,
+  "scan_limit": 30,
+  "axioms": [
+    {
+      "axiom_id": "A_M1",
+      "hypothesis": "攻击 NPC 会降低其 HP（规则边界单调细化，永不穷尽）",
+      "anchor": "P_M1",
+      "falsification": "公理集边界信息量出现净减少"
+    },
+    {
+      "axiom_id": "A_W2_5",
+      "hypothesis": "HP 归零的实体会死亡并消失（降级机制比纯统计拟合更能维持稳态）",
+      "anchor": "P_W2_5",
+      "falsification": "实验组收敛性不优于对照组"
+    },
+    {
+      "axiom_id": "A_W1",
+      "hypothesis": "只有 SCAN_RADIUS 内的实体可被感知（采样受传感器与规则处理能力双重限制）",
+      "anchor": "P_W1",
+      "falsification": "出现超出白名单能力的有效观测"
+    }
+  ],
+  "candidate_axioms_note": "S29.16 决策（议题3 方案 B，2026-08-26 用户批准）：A_M2/A_S1/A_I1 三个基础候选已移出候选池——其触发事件（move_confirmed/status_applied/物品数量变化）不在 W0 观测词表、裁决分支依赖的 context 字段主链路从不注入，属「激活不了、激活了也不可证伪」的双重死锁（假设空间必须在观测词表内可表达、可证伪）。对应规则定义（R_M2_*/R_S1_*/R_I1_*）保留在 rules 真值层，待观测接口扩展后可重新入池。",
+  "candidate_axioms": [
+    {
+      "axiom_id": "C_G2_GANG_000",
+      "domain": "A_M1",
+      "hypothesis": "夜之城帮派 maelstrom 成员对玩家为敌对实体",
+      "anchor": "P_GANG_HOSTILE",
+      "falsification": "观测到 maelstrom 实体不携带 hostile",
+      "source": "S29.9 候选池扩充（2077 设定 + L2 时序）",
+      "intentional_error": false,
+      "activation_trigger": {
+        "kind": "event_count",
+        "event_kinds": [
+          "entity_appeared"
+        ],
+        "min_count": 2,
+        "window_rounds": 4
+      },
+      "assertion": {
+        "kind": "npc",
+        "label_match_any": [
+          "maelstrom"
+        ],
+        "label_require": [
+          "hostile"
+        ]
+      }
+    },
+    {
+      "axiom_id": "C_G2_REG_000",
+      "domain": "A_W1",
+      "hypothesis": "帮派 maelstrom 主要活动于 watson",
+      "anchor": "P_W1",
+      "falsification": "观测到 maelstrom 实体无 watson 区域标签",
+      "source": "S29.9 候选池扩充（2077 设定 + L2 时序）",
+      "intentional_error": false,
+      "activation_trigger": {
+        "kind": "event_count",
+        "event_kinds": [
+          "entity_appeared"
+        ],
+        "min_count": 2,
+        "window_rounds": 4
+      },
+      "assertion": {
+        "kind": "npc",
+        "label_match_any": [
+          "maelstrom"
+        ],
+        "label_require": [
+          "watson"
+        ]
+      }
+    },
+    {
+      "axiom_id": "C_G2_ATTR_000",
+      "domain": "A_M1",
+      "hypothesis": "帮派 maelstrom 成员携带/具备 cyberware 行为属性",
+      "anchor": "P_GANG_HOSTILE",
+      "falsification": "maelstrom 实体缺少 cyberware",
+      "source": "S29.9 候选池扩充（2077 设定 + L2 时序）",
+      "intentional_error": false,
+      "activation_trigger": {
+        "kind": "event_count",
+        "event_kinds": [
+          "entity_appeared"
+        ],
+        "min_count": 2,
+        "window_rounds": 4
+      },
+      "assertion": {
+        "kind": "npc",
+        "label_match_any": [
+          "maelstrom"
+        ],
+        "label_require": [
+          "cyberware"
+        ]
+      }
+    },
+    {
+      "axiom_id": "C_G2_MOX_PROTECT",
+      "domain": "A_W2_5",
+      "hypothesis": "Mox 帮派保护性工作者（protector）",
+      "anchor": "P_STATUS",
+      "falsification": "Mox 实体不携带 protector",
+      "source": "S29.9 候选池扩充（2077 设定 + L2 时序）",
+      "intentional_error": false,
+      "activation_trigger": {
+        "kind": "event_count",
+        "event_kinds": [
+          "entity_appeared"
+        ],
+        "min_count": 2,
+        "window_rounds": 4
+      },
+      "assertion": {
+        "kind": "npc",
+        "label_match_any": [
+          "mox"
+        ],
+        "label_require": [
+          "protector"
+        ]
+      }
+    },
+    {
+      "axiom_id": "C_G2_CORP_GUARD",
+      "domain": "A_M1",
+      "hypothesis": "公司保安（Arasaka/Militech 实体）对玩家敌对",
+      "anchor": "P_GANG_HOSTILE",
+      "falsification": "公司保安实体不携带 hostile",
+      "source": "S29.9 候选池扩充（2077 设定 + L2 时序）",
+      "intentional_error": false,
+      "activation_trigger": {
+        "kind": "event_count",
+        "event_kinds": [
+          "entity_appeared"
+        ],
+        "min_count": 2,
+        "window_rounds": 4
+      },
+      "assertion": {
+        "kind": "npc",
+        "label_match_any": [
+          "arasaka",
+          "militech"
+        ],
+        "label_require": [
+          "hostile"
+        ]
+      }
+    },
+    {
+      "axiom_id": "C_G2_STAT_000",
+      "domain": "A_S1",
+      "hypothesis": "burning 状态由 thermal 伤害触发",
+      "anchor": "P_STATUS",
+      "falsification": "burning 实体缺少 thermal 来源标签",
+      "source": "S29.9 候选池扩充（2077 设定 + L2 时序）",
+      "intentional_error": false,
+      "activation_trigger": {
+        "kind": "event_count",
+        "event_kinds": [
+          "status_applied"
+        ],
+        "min_count": 2,
+        "window_rounds": 4
+      },
+      "assertion": {
+        "kind": "npc",
+        "label_match_any": [
+          "burning"
+        ],
+        "label_require": [
+          "thermal"
+        ]
+      }
+    },
+    {
+      "axiom_id": "C_G2_ITEM_000",
+      "domain": "A_I1",
+      "hypothesis": "cyberware 物品 pickup 属性成立",
+      "anchor": "P_ITEM",
+      "falsification": "cyberware 实体缺少 pickup",
+      "source": "S29.9 候选池扩充（2077 设定 + L2 时序）",
+      "intentional_error": false,
+      "activation_trigger": {
+        "kind": "event_count",
+        "event_kinds": [
+          "item_acquired",
+          "item_used"
+        ],
+        "min_count": 2,
+        "window_rounds": 4
+      },
+      "assertion": {
+        "kind": "item",
+        "label_match_any": [
+          "cyberware"
+        ],
+        "label_require": [
+          "pickup"
+        ]
+      }
+    },
+    {
+      "axiom_id": "C_G2_MOVE_000",
+      "domain": "A_M2",
+      "hypothesis": "vehicle 实体具备 mobile",
+      "anchor": "P_M1",
+      "falsification": "vehicle 实体缺少 mobile",
+      "source": "S29.9 候选池扩充（2077 设定 + L2 时序）",
+      "intentional_error": false,
+      "activation_trigger": {
+        "kind": "event_count",
+        "event_kinds": [
+          "move_confirmed"
+        ],
+        "min_count": 2,
+        "window_rounds": 4
+      },
+      "assertion": {
+        "kind": "vehicle",
+        "label_match_any": [
+          "vehicle"
+        ],
+        "label_require": [
+          "mobile"
+        ]
+      }
+    },
+    {
+      "axiom_id": "C_G2_MOVE_PLAYER",
+      "domain": "A_M2",
+      "hypothesis": "玩家角色可自由移动（mobile）",
+      "anchor": "P_M1",
+      "falsification": "玩家实体不可移动",
+      "source": "S29.9 候选池扩充（2077 设定 + L2 时序）",
+      "intentional_error": false,
+      "activation_trigger": {
+        "kind": "event_count",
+        "event_kinds": [
+          "move_confirmed"
+        ],
+        "min_count": 2,
+        "window_rounds": 4
+      },
+      "assertion": {
+        "kind": "player",
+        "label_match_any": [
+          "player"
+        ],
+        "label_require": [
+          "mobile"
+        ]
+      }
+    },
+    {
+      "axiom_id": "C_G2_LIFE_CIV_NONAGGR",
+      "domain": "A_W2_5",
+      "hypothesis": "平民不主动攻击（non_aggressive）",
+      "anchor": "P_STATUS",
+      "falsification": "平民携带 aggressive",
+      "source": "S29.9 候选池扩充（2077 设定 + L2 时序）",
+      "intentional_error": false,
+      "activation_trigger": {
+        "kind": "event_count",
+        "event_kinds": [
+          "entity_appeared"
+        ],
+        "min_count": 2,
+        "window_rounds": 4
+      },
+      "assertion": {
+        "kind": "npc",
+        "label_match_any": [
+          "civilian"
+        ],
+        "label_require": [
+          "non_aggressive"
+        ]
+      }
+    },
+    {
+      "axiom_id": "C_G2_LIFE_PERSIST",
+      "domain": "A_W2_5",
+      "hypothesis": "敌对实体出现后应持续至少 2 轮（不会凭空消失）",
+      "anchor": "P_STATUS",
+      "falsification": "敌对实体过早消失",
+      "source": "S29.9 候选池扩充（2077 设定 + L2 时序）",
+      "intentional_error": false,
+      "activation_trigger": {
+        "kind": "event_count",
+        "event_kinds": [
+          "entity_appeared",
+          "entity_death"
+        ],
+        "min_count": 2,
+        "window_rounds": 4
+      },
+      "assertion": {
+        "kind": "npc",
+        "label_match_any": [
+          "hostile"
+        ]
+      },
+      "verification": {
+        "kind": "temporal",
+        "condition": "persist_min",
+        "min_rounds": 2
+      }
+    },
+    {
+      "axiom_id": "C_G2_PER_SCAN",
+      "domain": "A_W1",
+      "hypothesis": "玩家实体可被扫描（scannable）",
+      "anchor": "P_W1",
+      "falsification": "玩家不可扫描",
+      "source": "S29.9 候选池扩充（2077 设定 + L2 时序）",
+      "intentional_error": false,
+      "activation_trigger": {
+        "kind": "event_count",
+        "event_kinds": [
+          "entity_appeared"
+        ],
+        "min_count": 2,
+        "window_rounds": 4
+      },
+      "assertion": {
+        "kind": "player",
+        "label_match_any": [
+          "player"
+        ],
+        "label_require": [
+          "scannable"
+        ]
+      }
+    },
+    {
+      "axiom_id": "C_G2_SUPP_TMP_036",
+      "domain": "A_W2_5",
+      "hypothesis": "敌对实体出现后 8 轮内应消失（被击杀）",
+      "anchor": "P_STATUS",
+      "falsification": "实体违反时序条件 disappear_within",
+      "source": "S29.9 候选池扩充（2077 设定 + L2 时序）",
+      "intentional_error": false,
+      "activation_trigger": {
+        "kind": "event_count",
+        "event_kinds": [
+          "entity_appeared",
+          "entity_death"
+        ],
+        "min_count": 2,
+        "window_rounds": 4
+      },
+      "assertion": {
+        "kind": "npc",
+        "label_match_any": [
+          "hostile"
+        ]
+      },
+      "verification": {
+        "kind": "temporal",
+        "condition": "disappear_within",
+        "window_rounds": 8
+      }
+    },
+    {
+      "axiom_id": "C_G2_ERR_000",
+      "domain": "A_M1",
+      "hypothesis": "Maelstrom 是和平主义帮派（不敌对）（故意设置错误）",
+      "anchor": "P_GANG_HOSTILE",
+      "falsification": "观测与 Maelstrom 是和平主义帮派（不敌对） 相反",
+      "source": "S29.9 候选池扩充（2077 设定 + L2 时序）",
+      "intentional_error": true,
+      "activation_trigger": {
+        "kind": "event_count",
+        "event_kinds": [
+          "entity_appeared",
+          "status_applied"
+        ],
+        "min_count": 2,
+        "window_rounds": 4
+      },
+      "assertion": {
+        "kind": "npc",
+        "label_match_any": [
+          "maelstrom"
+        ],
+        "label_require": [
+          "civilian"
+        ]
+      }
+    },
+    {
+      "axiom_id": "C_G2_ERR_008",
+      "domain": "A_M1",
+      "hypothesis": "敌对实体免疫死亡（故意设置错误）",
+      "anchor": "P_GANG_HOSTILE",
+      "falsification": "观测与 敌对实体免疫死亡 相反",
+      "source": "S29.9 候选池扩充（2077 设定 + L2 时序）",
+      "intentional_error": true,
+      "activation_trigger": {
+        "kind": "event_count",
+        "event_kinds": [
+          "entity_appeared",
+          "status_applied"
+        ],
+        "min_count": 2,
+        "window_rounds": 4
+      },
+      "assertion": {
+        "kind": "npc",
+        "label_match_any": [
+          "hostile"
+        ],
+        "label_require": [
+          "immortal"
+        ]
+      }
+    }
+  ],
+  "rules": [
+    {
+      "rule_id": "R_M1_1",
+      "axiom_id": "A_M1",
+      "description": "combat_attack 事件的目标必须是可受伤害的实体类型（npc/player/vehicle）",
+      "conditions": {
+        "event_kind": "combat_attack",
+        "target_kind_in": [
+          "npc",
+          "player",
+          "vehicle"
+        ]
+      },
+      "ground_truth": {
+        "target_must_be_damagable": true,
+        "excluded_kinds": [
+          "device",
+          "item",
+          "unknown"
+        ]
+      },
+      "verified_version": "0.5.8",
+      "confidence": 0.95,
+      "sample_count": 158
+    },
+    {
+      "rule_id": "R_M1_2",
+      "axiom_id": "A_M1",
+      "description": "combat_attack 事件发生后，target 的 hp 应下降（hp_after < hp_before）",
+      "conditions": {
+        "event_kind": "combat_attack",
+        "requires_hp_comparison": true
+      },
+      "ground_truth": {
+        "hp_should_decrease": true,
+        "strict": true
+      },
+      "verified_version": "0.5.8",
+      "confidence": 0.9,
+      "sample_count": 120
+    },
+    {
+      "rule_id": "R_M1_3",
+      "axiom_id": "A_M1",
+      "description": "实体 hp 下限为 0，不可为负数",
+      "conditions": {
+        "entity_field": "hp",
+        "constraint": "min"
+      },
+      "ground_truth": {
+        "hp_min": 0,
+        "allow_negative": false
+      },
+      "verified_version": "0.5.8",
+      "confidence": 1.0,
+      "sample_count": 500
+    },
+    {
+      "rule_id": "R_M1_4",
+      "axiom_id": "A_M1",
+      "description": "不同 kind 的实体 HP 上限不同：player/npc 上限 100，vehicle 上限 1000，device/item 无 hp",
+      "conditions": {
+        "entity_field": "hp",
+        "constraint": "max_by_kind"
+      },
+      "ground_truth": {
+        "hp_max": {
+          "player": 100,
+          "npc": 100,
+          "vehicle": 1000,
+          "device": 0,
+          "item": 0,
+          "unknown": 100
+        }
+      },
+      "verified_version": "0.5.8",
+      "confidence": 0.85,
+      "sample_count": 80
+    },
+    {
+      "rule_id": "R_M1_5",
+      "axiom_id": "A_M1",
+      "description": "combat_attack 的目标不得为非敌对平民（labels 含 civilian 且不含 hostile）——误伤平民为违规（S29.5 planner 批次补全的世界规则，让攻击目标选择的因果语义可判定）",
+      "conditions": {
+        "event_kind": "combat_attack",
+        "target_labels_exclude": [
+          "hostile"
+        ],
+        "target_labels_require": [
+          "civilian"
+        ]
+      },
+      "ground_truth": {
+        "civilian_attack_is_violation": true
+      },
+      "verified_version": "mock",
+      "confidence": 1.0,
+      "sample_count": 0
+    },
+    {
+      "rule_id": "R_W2_1",
+      "axiom_id": "A_W2_5",
+      "description": "hp <= 0 时，该实体应触发 entity_death 事件",
+      "conditions": {
+        "entity_hp": "<=0",
+        "expected_event": "entity_death"
+      },
+      "ground_truth": {
+        "should_die": true,
+        "death_event_kind": "entity_death"
+      },
+      "verified_version": "0.5.8",
+      "confidence": 0.9,
+      "sample_count": 24
+    },
+    {
+      "rule_id": "R_W2_2",
+      "axiom_id": "A_W2_5",
+      "description": "entity_death 事件后，该实体不再出现在后续 scan 结果中",
+      "conditions": {
+        "event_kind": "entity_death",
+        "post_condition": "entity_gone_from_scan"
+      },
+      "ground_truth": {
+        "should_disappear": true
+      },
+      "verified_version": "0.5.8",
+      "confidence": 0.88,
+      "sample_count": 49
+    },
+    {
+      "rule_id": "R_W2_3",
+      "axiom_id": "A_W2_5",
+      "description": "带有 hostile 标签的 NPC 死亡后不会复活（不重新出现在 scan 中）",
+      "conditions": {
+        "entity_labels_contains": "hostile",
+        "entity_hp": "<=0",
+        "post_condition": "no_respawn"
+      },
+      "ground_truth": {
+        "no_respawn": true
+      },
+      "verified_version": "0.5.8",
+      "confidence": 0.8,
+      "sample_count": 15
+    },
+    {
+      "rule_id": "R_W2_4",
+      "axiom_id": "A_W2_5",
+      "description": "entity_death 事件的 target_entity 应等于死亡实体的 entity_id",
+      "conditions": {
+        "event_kind": "entity_death",
+        "field": "target_entity"
+      },
+      "ground_truth": {
+        "target_equals_victim": true
+      },
+      "verified_version": "0.5.8",
+      "confidence": 1.0,
+      "sample_count": 5
+    },
+    {
+      "rule_id": "R_W1_1",
+      "axiom_id": "A_W1",
+      "description": "距离玩家超过 SCAN_RADIUS 的实体不出现在 scan 结果中",
+      "conditions": {
+        "distance_to_player": ">scan_radius",
+        "scan_presence": false
+      },
+      "ground_truth": {
+        "should_be_visible": false
+      },
+      "verified_version": "0.6.5",
+      "confidence": 0.92,
+      "sample_count": 60
+    },
+    {
+      "rule_id": "R_W1_2",
+      "axiom_id": "A_W1",
+      "description": "距离玩家在 SCAN_RADIUS 内的实体应出现在 scan 结果中",
+      "conditions": {
+        "distance_to_player": "<=scan_radius",
+        "scan_presence": true
+      },
+      "ground_truth": {
+        "should_be_visible": true
+      },
+      "verified_version": "0.6.5",
+      "confidence": 0.85,
+      "sample_count": 60
+    },
+    {
+      "rule_id": "R_W1_3",
+      "axiom_id": "A_W1",
+      "description": "玩家自身始终在 scan 结果中（距离=0）",
+      "conditions": {
+        "entity_kind": "player",
+        "distance_to_player": 0
+      },
+      "ground_truth": {
+        "always_visible": true
+      },
+      "verified_version": "0.5.8",
+      "confidence": 1.0,
+      "sample_count": 500
+    },
+    {
+      "rule_id": "R_W1_4",
+      "axiom_id": "A_W1",
+      "description": "每轮 scan 结果数量不超过 SCAN_LIMIT",
+      "conditions": {
+        "scan_result_count": "<=scan_limit"
+      },
+      "ground_truth": {
+        "max_entities": 30
+      },
+      "verified_version": "0.6.5",
+      "confidence": 1.0,
+      "sample_count": 500
+    },
+    {
+      "rule_id": "R_M2_1",
+      "axiom_id": "A_M2",
+      "description": "移动/瞬移后实体应出现在目的位置（scan 可见）",
+      "conditions": {
+        "event_kind": "teleport",
+        "post_condition": "entity_at_goal"
+      },
+      "ground_truth": {
+        "should_appear_at_goal": true
+      },
+      "verified_version": "0.6.6",
+      "confidence": 0.95,
+      "sample_count": 15
+    },
+    {
+      "rule_id": "R_M2_2",
+      "axiom_id": "A_M2",
+      "description": "移动后实体不应再出现在旧位置",
+      "conditions": {
+        "event_kind": "teleport",
+        "post_condition": "entity_gone_from_old"
+      },
+      "ground_truth": {
+        "should_disappear_from_old": true
+      },
+      "verified_version": "0.6.6",
+      "confidence": 0.95,
+      "sample_count": 15
+    },
+    {
+      "rule_id": "R_S1_1",
+      "axiom_id": "A_S1",
+      "description": "状态效果施加后应可观测（存在性证据）",
+      "conditions": {
+        "event_kind": "status_applied",
+        "post_condition": "status_observable"
+      },
+      "ground_truth": {
+        "observable": true
+      },
+      "verified_version": "0.6.6",
+      "confidence": 0.9,
+      "sample_count": 10
+    },
+    {
+      "rule_id": "R_S1_2",
+      "axiom_id": "A_S1",
+      "description": "状态效果应在合理时长后消退（不永久持续）",
+      "conditions": {
+        "event_kind": "status_present",
+        "post_condition": "elapsed_within_lifetime"
+      },
+      "ground_truth": {
+        "should_expire": true
+      },
+      "verified_version": "0.6.6",
+      "confidence": 0.9,
+      "sample_count": 10
+    },
+    {
+      "rule_id": "R_I1_1",
+      "axiom_id": "A_I1",
+      "description": "获取物品后背包数量应增加",
+      "conditions": {
+        "event_kind": "item_acquired",
+        "requires_qty_comparison": true
+      },
+      "ground_truth": {
+        "qty_should_increase": true
+      },
+      "verified_version": "0.6.6",
+      "confidence": 0.95,
+      "sample_count": 10
+    },
+    {
+      "rule_id": "R_I1_2",
+      "axiom_id": "A_I1",
+      "description": "使用/消耗物品后背包数量应减少",
+      "conditions": {
+        "event_kind": "item_used",
+        "requires_qty_comparison": true
+      },
+      "ground_truth": {
+        "qty_should_decrease": true
+      },
+      "verified_version": "0.6.6",
+      "confidence": 0.95,
+      "sample_count": 10
+    },
+    {
+      "rule_id": "R_I1_3",
+      "axiom_id": "A_I1",
+      "description": "背包数量不应为负",
+      "conditions": {
+        "entity_field": "inventory_qty",
+        "constraint": "min"
+      },
+      "ground_truth": {
+        "qty_min": 0,
+        "allow_negative": false
+      },
+      "verified_version": "0.6.6",
+      "confidence": 1.0,
+      "sample_count": 20
+    }
+  ]
+}

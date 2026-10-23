@@ -1,0 +1,3533 @@
+{
+  "ts": "2026-08-26 21:46:27",
+  "events": [
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_294",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751857
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_295",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751857
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_296",
+      "source_entity": "EID:9001523",
+      "target_entity": "EID:9001523",
+      "game_ts": 1787751857
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_297",
+      "source_entity": "EID:9001520",
+      "target_entity": "EID:1",
+      "game_ts": 1787751858
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_298",
+      "source_entity": "EID:9001520",
+      "target_entity": "EID:1",
+      "game_ts": 1787751858
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_299",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751858
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_300",
+      "source_entity": "EID:9001516",
+      "target_entity": "EID:9001520",
+      "game_ts": 1787751858
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_301",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751858
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_302",
+      "source_entity": "EID:9001518",
+      "target_entity": "EID:9001520",
+      "game_ts": 1787751858
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_303",
+      "source_entity": "EID:9001523",
+      "target_entity": "EID:1",
+      "game_ts": 1787751858
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_304",
+      "source_entity": "EID:9001523",
+      "target_entity": "EID:1",
+      "game_ts": 1787751858
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_305",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751858
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_306",
+      "source_entity": "EID:9001516",
+      "target_entity": "EID:1",
+      "game_ts": 1787751859
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_307",
+      "source_entity": "EID:9001516",
+      "target_entity": "EID:1",
+      "game_ts": 1787751859
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_308",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751859
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_309",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751859
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_310",
+      "source_entity": "EID:17769804983241389717",
+      "target_entity": "EID:17769804983241389717",
+      "game_ts": 1787751859
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_311",
+      "source_entity": "EID:9001520",
+      "target_entity": "EID:9001520",
+      "game_ts": 1787751859
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_312",
+      "source_entity": "EID:15082312839680014071",
+      "target_entity": "EID:15082312839680014071",
+      "game_ts": 1787751859
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_313",
+      "source_entity": "EID:1889074092653954607",
+      "target_entity": "EID:1889074092653954607",
+      "game_ts": 1787751859
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_314",
+      "source_entity": "EID:9001520",
+      "target_entity": "EID:1",
+      "game_ts": 1787751859
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_315",
+      "source_entity": "EID:9001520",
+      "target_entity": "EID:1",
+      "game_ts": 1787751859
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_316",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751859
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_317",
+      "source_entity": "EID:9001522",
+      "target_entity": "EID:1",
+      "game_ts": 1787751859
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_318",
+      "source_entity": "EID:9001522",
+      "target_entity": "EID:1",
+      "game_ts": 1787751859
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_319",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751859
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_320",
+      "source_entity": "EID:1",
+      "target_entity": "EID:9001516",
+      "game_ts": 1787751860
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_321",
+      "source_entity": "EID:9001516",
+      "target_entity": "EID:9001516",
+      "game_ts": 1787751860
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_322",
+      "source_entity": "EID:9001516",
+      "target_entity": "EID:9001516",
+      "game_ts": 1787751860
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_323",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751860
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_324",
+      "source_entity": "EID:9001518",
+      "target_entity": "EID:9001518",
+      "game_ts": 1787751860
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_325",
+      "source_entity": "EID:1",
+      "target_entity": "EID:9001522",
+      "game_ts": 1787751860
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_326",
+      "source_entity": "EID:1",
+      "target_entity": "EID:9001516",
+      "game_ts": 1787751860
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_327",
+      "source_entity": "EID:1",
+      "target_entity": "EID:9001519",
+      "game_ts": 1787751860
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_328",
+      "source_entity": "EID:9001516",
+      "target_entity": "EID:9001516",
+      "game_ts": 1787751860
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_329",
+      "source_entity": "EID:9001522",
+      "target_entity": "EID:9001522",
+      "game_ts": 1787751860
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_330",
+      "source_entity": "EID:1",
+      "target_entity": "EID:9001519",
+      "game_ts": 1787751860
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_331",
+      "source_entity": "EID:1",
+      "target_entity": "EID:9001516",
+      "game_ts": 1787751860
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_332",
+      "source_entity": "EID:1",
+      "target_entity": "EID:9001519",
+      "game_ts": 1787751860
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_333",
+      "source_entity": "EID:1",
+      "target_entity": "EID:9001516",
+      "game_ts": 1787751860
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_334",
+      "source_entity": "EID:1",
+      "target_entity": "EID:9001522",
+      "game_ts": 1787751860
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_335",
+      "source_entity": "EID:1",
+      "target_entity": "EID:9001522",
+      "game_ts": 1787751860
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_336",
+      "source_entity": "EID:1",
+      "target_entity": "EID:9001517",
+      "game_ts": 1787751860
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_337",
+      "source_entity": "EID:9001522",
+      "target_entity": "EID:9001522",
+      "game_ts": 1787751860
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_338",
+      "source_entity": "EID:9001522",
+      "target_entity": "EID:9001522",
+      "game_ts": 1787751860
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_339",
+      "source_entity": "EID:1",
+      "target_entity": "EID:9001522",
+      "game_ts": 1787751860
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_340",
+      "source_entity": "EID:10767692",
+      "target_entity": "EID:10767692",
+      "game_ts": 1787751861
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_341",
+      "source_entity": "EID:1885088620470113026",
+      "target_entity": "EID:1885088620470113026",
+      "game_ts": 1787751861
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_342",
+      "source_entity": "EID:10767693",
+      "target_entity": "EID:10767693",
+      "game_ts": 1787751861
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_343",
+      "source_entity": "EID:256706393329851751",
+      "target_entity": "EID:256706393329851751",
+      "game_ts": 1787751861
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_344",
+      "source_entity": "EID:1889074092653954607",
+      "target_entity": "EID:1889074092653954607",
+      "game_ts": 1787751861
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_345",
+      "source_entity": "EID:9001519",
+      "target_entity": "EID:9001519",
+      "game_ts": 1787751861
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_346",
+      "source_entity": "EID:9001522",
+      "target_entity": "EID:9001522",
+      "game_ts": 1787751861
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_347",
+      "source_entity": "EID:9001516",
+      "target_entity": "EID:9001516",
+      "game_ts": 1787751861
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_348",
+      "source_entity": "EID:9001521",
+      "target_entity": "EID:9001521",
+      "game_ts": 1787751861
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_349",
+      "source_entity": "EID:11790695631398179097",
+      "target_entity": "EID:11790695631398179097",
+      "game_ts": 1787751861
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_350",
+      "source_entity": "EID:9001520",
+      "target_entity": "EID:9001520",
+      "game_ts": 1787751862
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_351",
+      "source_entity": "EID:9001522",
+      "target_entity": "EID:9001522",
+      "game_ts": 1787751862
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_352",
+      "source_entity": "EID:15082312839680014071",
+      "target_entity": "EID:15082312839680014071",
+      "game_ts": 1787751862
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_353",
+      "source_entity": "EID:9001516",
+      "target_entity": "EID:9001516",
+      "game_ts": 1787751862
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_354",
+      "source_entity": "EID:9001523",
+      "target_entity": "EID:9001523",
+      "game_ts": 1787751862
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_355",
+      "source_entity": "EID:9001519",
+      "target_entity": "EID:9001519",
+      "game_ts": 1787751862
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_356",
+      "source_entity": "EID:9001521",
+      "target_entity": "EID:9001521",
+      "game_ts": 1787751862
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_357",
+      "source_entity": "EID:11790695631398179097",
+      "target_entity": "EID:11790695631398179097",
+      "game_ts": 1787751862
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_358",
+      "source_entity": "EID:9001520",
+      "target_entity": "EID:1",
+      "game_ts": 1787751862
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_359",
+      "source_entity": "EID:9001520",
+      "target_entity": "EID:1",
+      "game_ts": 1787751862
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_360",
+      "source_entity": "EID:3711204245172879519",
+      "target_entity": "EID:3711204245172879519",
+      "game_ts": 1787751863
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_361",
+      "source_entity": "EID:9001522",
+      "target_entity": "EID:9001522",
+      "game_ts": 1787751863
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_362",
+      "source_entity": "EID:15082312839680014071",
+      "target_entity": "EID:15082312839680014071",
+      "game_ts": 1787751863
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_363",
+      "source_entity": "EID:9001517",
+      "target_entity": "EID:9001517",
+      "game_ts": 1787751863
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_364",
+      "source_entity": "EID:9001516",
+      "target_entity": "EID:9001516",
+      "game_ts": 1787751863
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_365",
+      "source_entity": "EID:10767692",
+      "target_entity": "EID:10767692",
+      "game_ts": 1787751863
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_366",
+      "source_entity": "EID:1885088620470113026",
+      "target_entity": "EID:1885088620470113026",
+      "game_ts": 1787751863
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_367",
+      "source_entity": "EID:1889074092653954607",
+      "target_entity": "EID:1889074092653954607",
+      "game_ts": 1787751863
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_368",
+      "source_entity": "EID:7154479785259391771",
+      "target_entity": "EID:7154479785259391771",
+      "game_ts": 1787751863
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_369",
+      "source_entity": "EID:256706393329851751",
+      "target_entity": "EID:256706393329851751",
+      "game_ts": 1787751863
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_370",
+      "source_entity": "EID:10767693",
+      "target_entity": "EID:10767693",
+      "game_ts": 1787751863
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_371",
+      "source_entity": "EID:9001519",
+      "target_entity": "EID:9001519",
+      "game_ts": 1787751863
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_372",
+      "source_entity": "EID:9001521",
+      "target_entity": "EID:9001521",
+      "game_ts": 1787751863
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_373",
+      "source_entity": "EID:11790695631398179097",
+      "target_entity": "EID:11790695631398179097",
+      "game_ts": 1787751863
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_374",
+      "source_entity": "EID:1",
+      "target_entity": "EID:9001520",
+      "game_ts": 1787751863
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_375",
+      "source_entity": "EID:9001520",
+      "target_entity": "EID:9001520",
+      "game_ts": 1787751863
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_376",
+      "source_entity": "EID:9001523",
+      "target_entity": "EID:1",
+      "game_ts": 1787751864
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_377",
+      "source_entity": "EID:9001523",
+      "target_entity": "EID:1",
+      "game_ts": 1787751864
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_378",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751864
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_379",
+      "source_entity": "EID:9001520",
+      "target_entity": "EID:9001520",
+      "game_ts": 1787751864
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_380",
+      "source_entity": "EID:3711204245172879519",
+      "target_entity": "EID:3711204245172879519",
+      "game_ts": 1787751864
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_381",
+      "source_entity": "EID:9001522",
+      "target_entity": "EID:9001522",
+      "game_ts": 1787751864
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_382",
+      "source_entity": "EID:15082312839680014071",
+      "target_entity": "EID:15082312839680014071",
+      "game_ts": 1787751864
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_383",
+      "source_entity": "EID:9001517",
+      "target_entity": "EID:9001517",
+      "game_ts": 1787751864
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_384",
+      "source_entity": "EID:9001516",
+      "target_entity": "EID:9001516",
+      "game_ts": 1787751864
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_385",
+      "source_entity": "EID:17769804983241389717",
+      "target_entity": "EID:17769804983241389717",
+      "game_ts": 1787751864
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_386",
+      "source_entity": "EID:10767692",
+      "target_entity": "EID:10767692",
+      "game_ts": 1787751864
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_387",
+      "source_entity": "EID:1885088620470113026",
+      "target_entity": "EID:1885088620470113026",
+      "game_ts": 1787751864
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_388",
+      "source_entity": "EID:1889074092653954607",
+      "target_entity": "EID:1889074092653954607",
+      "game_ts": 1787751864
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_389",
+      "source_entity": "EID:7154479785259391771",
+      "target_entity": "EID:7154479785259391771",
+      "game_ts": 1787751864
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_390",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751864
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_391",
+      "source_entity": "EID:10767693",
+      "target_entity": "EID:10767693",
+      "game_ts": 1787751864
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_392",
+      "source_entity": "EID:256706393329851751",
+      "target_entity": "EID:256706393329851751",
+      "game_ts": 1787751864
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_393",
+      "source_entity": "EID:9001519",
+      "target_entity": "EID:9001519",
+      "game_ts": 1787751864
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_394",
+      "source_entity": "EID:11790695631398179097",
+      "target_entity": "EID:11790695631398179097",
+      "game_ts": 1787751864
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_395",
+      "source_entity": "EID:9001523",
+      "target_entity": "EID:1",
+      "game_ts": 1787751864
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_396",
+      "source_entity": "EID:9001523",
+      "target_entity": "EID:1",
+      "game_ts": 1787751864
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_397",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751864
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_398",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751865
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_399",
+      "source_entity": "EID:9001518",
+      "target_entity": "EID:9001518",
+      "game_ts": 1787751865
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_400",
+      "source_entity": "EID:9001521",
+      "target_entity": "EID:9001521",
+      "game_ts": 1787751865
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_401",
+      "source_entity": "EID:9001520",
+      "target_entity": "EID:1",
+      "game_ts": 1787751865
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_402",
+      "source_entity": "EID:9001520",
+      "target_entity": "EID:1",
+      "game_ts": 1787751865
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_403",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751865
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_404",
+      "source_entity": "EID:9001518",
+      "target_entity": "EID:9001523",
+      "game_ts": 1787751865
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_405",
+      "source_entity": "EID:1",
+      "target_entity": "EID:9001519",
+      "game_ts": 1787751865
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_406",
+      "source_entity": "EID:1",
+      "target_entity": "EID:9001523",
+      "game_ts": 1787751866
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_407",
+      "source_entity": "EID:9001523",
+      "target_entity": "EID:9001523",
+      "game_ts": 1787751866
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_408",
+      "source_entity": "EID:9001523",
+      "target_entity": "EID:9001523",
+      "game_ts": 1787751866
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_409",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751866
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_410",
+      "source_entity": "EID:9001520",
+      "target_entity": "EID:9001520",
+      "game_ts": 1787751866
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_411",
+      "source_entity": "EID:10767708",
+      "target_entity": "EID:10767708",
+      "game_ts": 1787751867
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_412",
+      "source_entity": "EID:9001520",
+      "target_entity": "EID:9001520",
+      "game_ts": 1787751867
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_413",
+      "source_entity": "EID:9001522",
+      "target_entity": "EID:9001522",
+      "game_ts": 1787751867
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_414",
+      "source_entity": "EID:15082312839680014071",
+      "target_entity": "EID:15082312839680014071",
+      "game_ts": 1787751867
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_415",
+      "source_entity": "EID:11790695631398179097",
+      "target_entity": "EID:11790695631398179097",
+      "game_ts": 1787751867
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_416",
+      "source_entity": "EID:17769804983241389717",
+      "target_entity": "EID:17769804983241389717",
+      "game_ts": 1787751867
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_417",
+      "source_entity": "EID:1",
+      "target_entity": "EID:9001520",
+      "game_ts": 1787751867
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_418",
+      "source_entity": "EID:9001520",
+      "target_entity": "EID:9001520",
+      "game_ts": 1787751867
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_419",
+      "source_entity": "EID:1",
+      "target_entity": "EID:9001520",
+      "game_ts": 1787751867
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_420",
+      "source_entity": "EID:9001520",
+      "target_entity": "EID:9001520",
+      "game_ts": 1787751867
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_421",
+      "source_entity": "EID:1",
+      "target_entity": "EID:9001520",
+      "game_ts": 1787751867
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_422",
+      "source_entity": "EID:3622817354063734847",
+      "target_entity": "EID:3622817354063734847",
+      "game_ts": 1787751868
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_423",
+      "source_entity": "EID:9001520",
+      "target_entity": "EID:9001520",
+      "game_ts": 1787751868
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_424",
+      "source_entity": "EID:9001522",
+      "target_entity": "EID:9001522",
+      "game_ts": 1787751868
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_425",
+      "source_entity": "EID:15082312839680014071",
+      "target_entity": "EID:15082312839680014071",
+      "game_ts": 1787751868
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_426",
+      "source_entity": "EID:11790695631398179097",
+      "target_entity": "EID:11790695631398179097",
+      "game_ts": 1787751868
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_427",
+      "source_entity": "EID:10767710",
+      "target_entity": "EID:10767710",
+      "game_ts": 1787751868
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_428",
+      "source_entity": "EID:743782346858616223",
+      "target_entity": "EID:743782346858616223",
+      "game_ts": 1787751868
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_429",
+      "source_entity": "EID:1",
+      "target_entity": "EID:9001523",
+      "game_ts": 1787751869
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_430",
+      "source_entity": "EID:9001523",
+      "target_entity": "EID:9001523",
+      "game_ts": 1787751869
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_431",
+      "source_entity": "EID:1",
+      "target_entity": "EID:9001523",
+      "game_ts": 1787751869
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_432",
+      "source_entity": "EID:10767712",
+      "target_entity": "EID:10767712",
+      "game_ts": 1787751869
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_433",
+      "source_entity": "EID:9001523",
+      "target_entity": "EID:9001523",
+      "game_ts": 1787751869
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_434",
+      "source_entity": "EID:18146540648193706554",
+      "target_entity": "EID:18146540648193706554",
+      "game_ts": 1787751870
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_435",
+      "source_entity": "EID:3622817354063734847",
+      "target_entity": "EID:3622817354063734847",
+      "game_ts": 1787751870
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_436",
+      "source_entity": "EID:9001522",
+      "target_entity": "EID:9001522",
+      "game_ts": 1787751870
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_437",
+      "source_entity": "EID:15082312839680014071",
+      "target_entity": "EID:15082312839680014071",
+      "game_ts": 1787751870
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_438",
+      "source_entity": "EID:11790695631398179097",
+      "target_entity": "EID:11790695631398179097",
+      "game_ts": 1787751870
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_439",
+      "source_entity": "EID:7154479785259391771",
+      "target_entity": "EID:7154479785259391771",
+      "game_ts": 1787751870
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_440",
+      "source_entity": "EID:743782346858616223",
+      "target_entity": "EID:743782346858616223",
+      "game_ts": 1787751870
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_441",
+      "source_entity": "EID:1",
+      "target_entity": "EID:9001518",
+      "game_ts": 1787751870
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_442",
+      "source_entity": "EID:9001518",
+      "target_entity": "EID:1",
+      "game_ts": 1787751870
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_443",
+      "source_entity": "EID:9001518",
+      "target_entity": "EID:1",
+      "game_ts": 1787751870
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_444",
+      "source_entity": "EID:9001518",
+      "target_entity": "EID:9001518",
+      "game_ts": 1787751870
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_445",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751870
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_446",
+      "source_entity": "EID:9001518",
+      "target_entity": "EID:9001518",
+      "game_ts": 1787751871
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_447",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751871
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_448",
+      "source_entity": "EID:3711204245172879519",
+      "target_entity": "EID:3711204245172879519",
+      "game_ts": 1787751872
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_449",
+      "source_entity": "EID:10767708",
+      "target_entity": "EID:10767708",
+      "game_ts": 1787751872
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_450",
+      "source_entity": "EID:9001517",
+      "target_entity": "EID:9001517",
+      "game_ts": 1787751872
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_451",
+      "source_entity": "EID:10767712",
+      "target_entity": "EID:10767712",
+      "game_ts": 1787751872
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_452",
+      "source_entity": "EID:9001516",
+      "target_entity": "EID:9001516",
+      "game_ts": 1787751872
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_453",
+      "source_entity": "EID:10767692",
+      "target_entity": "EID:10767692",
+      "game_ts": 1787751872
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_454",
+      "source_entity": "EID:1885088620470113026",
+      "target_entity": "EID:1885088620470113026",
+      "game_ts": 1787751872
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_455",
+      "source_entity": "EID:10767693",
+      "target_entity": "EID:10767693",
+      "game_ts": 1787751872
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_456",
+      "source_entity": "EID:256706393329851751",
+      "target_entity": "EID:256706393329851751",
+      "game_ts": 1787751872
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_457",
+      "source_entity": "EID:9001518",
+      "target_entity": "EID:9001518",
+      "game_ts": 1787751872
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_458",
+      "source_entity": "EID:9001519",
+      "target_entity": "EID:9001519",
+      "game_ts": 1787751872
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_459",
+      "source_entity": "EID:9001521",
+      "target_entity": "EID:9001521",
+      "game_ts": 1787751872
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_460",
+      "source_entity": "EID:3711204245172879519",
+      "target_entity": "EID:3711204245172879519",
+      "game_ts": 1787751873
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_461",
+      "source_entity": "EID:10767708",
+      "target_entity": "EID:10767708",
+      "game_ts": 1787751873
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_462",
+      "source_entity": "EID:9001517",
+      "target_entity": "EID:9001517",
+      "game_ts": 1787751873
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_463",
+      "source_entity": "EID:10767712",
+      "target_entity": "EID:10767712",
+      "game_ts": 1787751873
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_464",
+      "source_entity": "EID:9001516",
+      "target_entity": "EID:9001516",
+      "game_ts": 1787751873
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_465",
+      "source_entity": "EID:10767692",
+      "target_entity": "EID:10767692",
+      "game_ts": 1787751873
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_466",
+      "source_entity": "EID:1885088620470113026",
+      "target_entity": "EID:1885088620470113026",
+      "game_ts": 1787751873
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_467",
+      "source_entity": "EID:10767693",
+      "target_entity": "EID:10767693",
+      "game_ts": 1787751873
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_468",
+      "source_entity": "EID:256706393329851751",
+      "target_entity": "EID:256706393329851751",
+      "game_ts": 1787751873
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_469",
+      "source_entity": "EID:9001518",
+      "target_entity": "EID:9001518",
+      "game_ts": 1787751873
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_470",
+      "source_entity": "EID:9001519",
+      "target_entity": "EID:9001519",
+      "game_ts": 1787751873
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_471",
+      "source_entity": "EID:9001521",
+      "target_entity": "EID:9001521",
+      "game_ts": 1787751873
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_472",
+      "source_entity": "EID:1",
+      "target_entity": "EID:9001518",
+      "game_ts": 1787751874
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_473",
+      "source_entity": "EID:9001518",
+      "target_entity": "EID:9001518",
+      "game_ts": 1787751874
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_474",
+      "source_entity": "EID:1",
+      "target_entity": "EID:9001518",
+      "game_ts": 1787751874
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_475",
+      "source_entity": "EID:1",
+      "target_entity": "EID:9001518",
+      "game_ts": 1787751875
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_476",
+      "source_entity": "EID:9001518",
+      "target_entity": "EID:9001518",
+      "game_ts": 1787751875
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_477",
+      "source_entity": "EID:10767708",
+      "target_entity": "EID:10767708",
+      "game_ts": 1787751875
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_478",
+      "source_entity": "EID:9001516",
+      "target_entity": "EID:9001516",
+      "game_ts": 1787751875
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_479",
+      "source_entity": "EID:1885088620470113026",
+      "target_entity": "EID:1885088620470113026",
+      "game_ts": 1787751875
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_480",
+      "source_entity": "EID:9001519",
+      "target_entity": "EID:9001519",
+      "game_ts": 1787751875
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_481",
+      "source_entity": "EID:10767708",
+      "target_entity": "EID:10767708",
+      "game_ts": 1787751876
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_482",
+      "source_entity": "EID:1885088620470113026",
+      "target_entity": "EID:1885088620470113026",
+      "game_ts": 1787751876
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_483",
+      "source_entity": "EID:9001519",
+      "target_entity": "EID:9001519",
+      "game_ts": 1787751876
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_484",
+      "source_entity": "EID:9001518",
+      "target_entity": "EID:9001518",
+      "game_ts": 1787751877
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_485",
+      "source_entity": "EID:1",
+      "target_entity": "EID:9001521",
+      "game_ts": 1787751878
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_486",
+      "source_entity": "EID:9001521",
+      "target_entity": "EID:9001521",
+      "game_ts": 1787751878
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_487",
+      "source_entity": "EID:1",
+      "target_entity": "EID:9001521",
+      "game_ts": 1787751878
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_488",
+      "source_entity": "EID:9001521",
+      "target_entity": "EID:9001521",
+      "game_ts": 1787751878
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_489",
+      "source_entity": "EID:9001519",
+      "target_entity": "EID:9001519",
+      "game_ts": 1787751878
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_490",
+      "source_entity": "EID:10767708",
+      "target_entity": "EID:10767708",
+      "game_ts": 1787751878
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_491",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751879
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_492",
+      "source_entity": "EID:3711204245172879519",
+      "target_entity": "EID:3711204245172879519",
+      "game_ts": 1787751879
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_493",
+      "source_entity": "EID:9001521",
+      "target_entity": "EID:9001521",
+      "game_ts": 1787751879
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_494",
+      "source_entity": "EID:9001517",
+      "target_entity": "EID:9001517",
+      "game_ts": 1787751879
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_495",
+      "source_entity": "EID:10767712",
+      "target_entity": "EID:10767712",
+      "game_ts": 1787751879
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_496",
+      "source_entity": "EID:1885088620470113026",
+      "target_entity": "EID:1885088620470113026",
+      "game_ts": 1787751879
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_497",
+      "source_entity": "EID:9001521",
+      "target_entity": "EID:9001521",
+      "game_ts": 1787751880
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_498",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751880
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_499",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751881
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_500",
+      "source_entity": "EID:9001519",
+      "target_entity": "EID:9001519",
+      "game_ts": 1787751882
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_501",
+      "source_entity": "EID:3711204245172879519",
+      "target_entity": "EID:3711204245172879519",
+      "game_ts": 1787751882
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_502",
+      "source_entity": "EID:10767708",
+      "target_entity": "EID:10767708",
+      "game_ts": 1787751882
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_503",
+      "source_entity": "EID:9001517",
+      "target_entity": "EID:9001517",
+      "game_ts": 1787751882
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_504",
+      "source_entity": "EID:10767712",
+      "target_entity": "EID:10767712",
+      "game_ts": 1787751882
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_505",
+      "source_entity": "EID:9001516",
+      "target_entity": "EID:9001516",
+      "game_ts": 1787751882
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_506",
+      "source_entity": "EID:1885088620470113026",
+      "target_entity": "EID:1885088620470113026",
+      "game_ts": 1787751882
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_507",
+      "source_entity": "EID:7154479785259391771",
+      "target_entity": "EID:7154479785259391771",
+      "game_ts": 1787751882
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_508",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751882
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_509",
+      "source_entity": "EID:18146540648193706554",
+      "target_entity": "EID:18146540648193706554",
+      "game_ts": 1787751882
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_510",
+      "source_entity": "EID:9001522",
+      "target_entity": "EID:9001522",
+      "game_ts": 1787751883
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_511",
+      "source_entity": "EID:15082312839680014071",
+      "target_entity": "EID:15082312839680014071",
+      "game_ts": 1787751883
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_512",
+      "source_entity": "EID:11790695631398179097",
+      "target_entity": "EID:11790695631398179097",
+      "game_ts": 1787751883
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_513",
+      "source_entity": "EID:17769804983241389717",
+      "target_entity": "EID:17769804983241389717",
+      "game_ts": 1787751883
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_514",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751883
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_515",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751884
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_516",
+      "source_entity": "EID:17769804983241389717",
+      "target_entity": "EID:17769804983241389717",
+      "game_ts": 1787751884
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_517",
+      "source_entity": "EID:17769804983241389717",
+      "target_entity": "EID:17769804983241389717",
+      "game_ts": 1787751885
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_518",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751885
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_519",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751886
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_520",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751887
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_521",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751888
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_522",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751889
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_523",
+      "source_entity": "EID:9001522",
+      "target_entity": "EID:9001522",
+      "game_ts": 1787751889
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_524",
+      "source_entity": "EID:15082312839680014071",
+      "target_entity": "EID:15082312839680014071",
+      "game_ts": 1787751889
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_525",
+      "source_entity": "EID:11790695631398179097",
+      "target_entity": "EID:11790695631398179097",
+      "game_ts": 1787751889
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_526",
+      "source_entity": "EID:9001516",
+      "target_entity": "EID:9001516",
+      "game_ts": 1787751889
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_527",
+      "source_entity": "EID:17769804983241389717",
+      "target_entity": "EID:17769804983241389717",
+      "game_ts": 1787751889
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_528",
+      "source_entity": "EID:9001519",
+      "target_entity": "EID:9001519",
+      "game_ts": 1787751889
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_529",
+      "source_entity": "EID:9001519",
+      "target_entity": "EID:9001519",
+      "game_ts": 1787751890
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_530",
+      "source_entity": "EID:9001516",
+      "target_entity": "EID:9001516",
+      "game_ts": 1787751890
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_531",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751890
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_532",
+      "source_entity": "EID:13954058841965090967",
+      "target_entity": "EID:13954058841965090967",
+      "game_ts": 1787751890
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_533",
+      "source_entity": "EID:3711204245172879519",
+      "target_entity": "EID:3711204245172879519",
+      "game_ts": 1787751890
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_534",
+      "source_entity": "EID:10767710",
+      "target_entity": "EID:10767710",
+      "game_ts": 1787751890
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_535",
+      "source_entity": "EID:7154479785259391771",
+      "target_entity": "EID:7154479785259391771",
+      "game_ts": 1787751890
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_536",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751891
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_537",
+      "source_entity": "EID:10767692",
+      "target_entity": "EID:10767692",
+      "game_ts": 1787751891
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_538",
+      "source_entity": "EID:9001519",
+      "target_entity": "EID:9001519",
+      "game_ts": 1787751891
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_539",
+      "source_entity": "EID:10767712",
+      "target_entity": "EID:10767712",
+      "game_ts": 1787751891
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_540",
+      "source_entity": "EID:1889074092653954607",
+      "target_entity": "EID:1889074092653954607",
+      "game_ts": 1787751891
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_541",
+      "source_entity": "EID:10767693",
+      "target_entity": "EID:10767693",
+      "game_ts": 1787751891
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_542",
+      "source_entity": "EID:10767708",
+      "target_entity": "EID:10767708",
+      "game_ts": 1787751891
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_543",
+      "source_entity": "EID:9001516",
+      "target_entity": "EID:9001516",
+      "game_ts": 1787751891
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_544",
+      "source_entity": "EID:9001521",
+      "target_entity": "EID:9001521",
+      "game_ts": 1787751891
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_545",
+      "source_entity": "EID:9001523",
+      "target_entity": "EID:9001523",
+      "game_ts": 1787751891
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_546",
+      "source_entity": "EID:9001517",
+      "target_entity": "EID:9001517",
+      "game_ts": 1787751891
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_547",
+      "source_entity": "EID:13954058841965090967",
+      "target_entity": "EID:13954058841965090967",
+      "game_ts": 1787751891
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_548",
+      "source_entity": "EID:256706393329851751",
+      "target_entity": "EID:256706393329851751",
+      "game_ts": 1787751891
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_549",
+      "source_entity": "EID:1885088620470113026",
+      "target_entity": "EID:1885088620470113026",
+      "game_ts": 1787751891
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_550",
+      "source_entity": "EID:9001519",
+      "target_entity": "EID:9001519",
+      "game_ts": 1787751892
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_551",
+      "source_entity": "EID:1889074092653954607",
+      "target_entity": "EID:1889074092653954607",
+      "game_ts": 1787751892
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_552",
+      "source_entity": "EID:10767708",
+      "target_entity": "EID:10767708",
+      "game_ts": 1787751892
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_553",
+      "source_entity": "EID:10767712",
+      "target_entity": "EID:10767712",
+      "game_ts": 1787751892
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_554",
+      "source_entity": "EID:10767693",
+      "target_entity": "EID:10767693",
+      "game_ts": 1787751892
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_555",
+      "source_entity": "EID:256706393329851751",
+      "target_entity": "EID:256706393329851751",
+      "game_ts": 1787751892
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_556",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751892
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_557",
+      "source_entity": "EID:9001517",
+      "target_entity": "EID:9001517",
+      "game_ts": 1787751892
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_558",
+      "source_entity": "EID:13954058841965090967",
+      "target_entity": "EID:13954058841965090967",
+      "game_ts": 1787751892
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_559",
+      "source_entity": "EID:9001516",
+      "target_entity": "EID:9001516",
+      "game_ts": 1787751892
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_560",
+      "source_entity": "EID:1885088620470113026",
+      "target_entity": "EID:1885088620470113026",
+      "game_ts": 1787751892
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_561",
+      "source_entity": "EID:9001520",
+      "target_entity": "EID:9001520",
+      "game_ts": 1787751892
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_562",
+      "source_entity": "EID:17769804983241389717",
+      "target_entity": "EID:17769804983241389717",
+      "game_ts": 1787751893
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_563",
+      "source_entity": "EID:10767692",
+      "target_entity": "EID:10767692",
+      "game_ts": 1787751893
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_564",
+      "source_entity": "EID:3711204245172879519",
+      "target_entity": "EID:3711204245172879519",
+      "game_ts": 1787751893
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_565",
+      "source_entity": "EID:10767718",
+      "target_entity": "EID:10767718",
+      "game_ts": 1787751893
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_566",
+      "source_entity": "EID:15082312839680014071",
+      "target_entity": "EID:15082312839680014071",
+      "game_ts": 1787751893
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_567",
+      "source_entity": "EID:9001521",
+      "target_entity": "EID:9001521",
+      "game_ts": 1787751893
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_568",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751893
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_569",
+      "source_entity": "EID:11790695631398179097",
+      "target_entity": "EID:11790695631398179097",
+      "game_ts": 1787751893
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_570",
+      "source_entity": "EID:10767708",
+      "target_entity": "EID:10767708",
+      "game_ts": 1787751893
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_571",
+      "source_entity": "EID:10767712",
+      "target_entity": "EID:10767712",
+      "game_ts": 1787751893
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_572",
+      "source_entity": "EID:13954058841965090967",
+      "target_entity": "EID:13954058841965090967",
+      "game_ts": 1787751893
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_573",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751894
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_574",
+      "source_entity": "EID:17769804983241389717",
+      "target_entity": "EID:17769804983241389717",
+      "game_ts": 1787751894
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_575",
+      "source_entity": "EID:10767692",
+      "target_entity": "EID:10767692",
+      "game_ts": 1787751894
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_576",
+      "source_entity": "EID:3711204245172879519",
+      "target_entity": "EID:3711204245172879519",
+      "game_ts": 1787751894
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_577",
+      "source_entity": "EID:10767693",
+      "target_entity": "EID:10767693",
+      "game_ts": 1787751894
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_578",
+      "source_entity": "EID:10767718",
+      "target_entity": "EID:10767718",
+      "game_ts": 1787751894
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_579",
+      "source_entity": "EID:15082312839680014071",
+      "target_entity": "EID:15082312839680014071",
+      "game_ts": 1787751894
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_580",
+      "source_entity": "EID:9001521",
+      "target_entity": "EID:9001521",
+      "game_ts": 1787751894
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_581",
+      "source_entity": "EID:11790695631398179097",
+      "target_entity": "EID:11790695631398179097",
+      "game_ts": 1787751894
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_582",
+      "source_entity": "EID:256706393329851751",
+      "target_entity": "EID:256706393329851751",
+      "game_ts": 1787751894
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_583",
+      "source_entity": "EID:1889074092653954607",
+      "target_entity": "EID:1889074092653954607",
+      "game_ts": 1787751894
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_584",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751895
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_585",
+      "source_entity": "EID:9001517",
+      "target_entity": "EID:9001517",
+      "game_ts": 1787751895
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_586",
+      "source_entity": "EID:1885088620470113026",
+      "target_entity": "EID:1885088620470113026",
+      "game_ts": 1787751895
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_587",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751896
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_588",
+      "source_entity": "EID:18146540648193706554",
+      "target_entity": "EID:18146540648193706554",
+      "game_ts": 1787751897
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_589",
+      "source_entity": "EID:1885088620470113026",
+      "target_entity": "EID:1885088620470113026",
+      "game_ts": 1787751897
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_590",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751897
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_591",
+      "source_entity": "EID:9001518",
+      "target_entity": "EID:9001518",
+      "game_ts": 1787751897
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_592",
+      "source_entity": "EID:10767690",
+      "target_entity": "EID:10767690",
+      "game_ts": 1787751897
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_593",
+      "source_entity": "EID:9001521",
+      "target_entity": "EID:9001521",
+      "game_ts": 1787751897
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_594",
+      "source_entity": "EID:9001517",
+      "target_entity": "EID:9001517",
+      "game_ts": 1787751897
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_595",
+      "source_entity": "EID:9001516",
+      "target_entity": "EID:9001516",
+      "game_ts": 1787751897
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_596",
+      "source_entity": "EID:9001519",
+      "target_entity": "EID:9001519",
+      "game_ts": 1787751897
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_597",
+      "source_entity": "EID:3622817354063734847",
+      "target_entity": "EID:3622817354063734847",
+      "game_ts": 1787751898
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_598",
+      "source_entity": "EID:743782346858616223",
+      "target_entity": "EID:743782346858616223",
+      "game_ts": 1787751898
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_599",
+      "source_entity": "EID:15082312839680014071",
+      "target_entity": "EID:15082312839680014071",
+      "game_ts": 1787751898
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_600",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751898
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_601",
+      "source_entity": "EID:11790695631398179097",
+      "target_entity": "EID:11790695631398179097",
+      "game_ts": 1787751898
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_602",
+      "source_entity": "EID:18146540648193706554",
+      "target_entity": "EID:18146540648193706554",
+      "game_ts": 1787751898
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_603",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751899
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_604",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751900
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_605",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751901
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_606",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751902
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_607",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751903
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_608",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751904
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_609",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751905
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_610",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751906
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_611",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751907
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_612",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751908
+    },
+    {
+      "kind": "hp_changed",
+      "event_id": "evt_613",
+      "source_entity": "EID:1",
+      "target_entity": "EID:1",
+      "game_ts": 1787751909
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_614",
+      "source_entity": "EID:3622817354063734847",
+      "target_entity": "EID:3622817354063734847",
+      "game_ts": 1787751917
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_615",
+      "source_entity": "EID:743782346858616223",
+      "target_entity": "EID:743782346858616223",
+      "game_ts": 1787751917
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_616",
+      "source_entity": "EID:15082312839680014071",
+      "target_entity": "EID:15082312839680014071",
+      "game_ts": 1787751917
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_617",
+      "source_entity": "EID:11790695631398179097",
+      "target_entity": "EID:11790695631398179097",
+      "game_ts": 1787751917
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_618",
+      "source_entity": "EID:11790695631398179097",
+      "target_entity": "EID:11790695631398179097",
+      "game_ts": 1787751918
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_619",
+      "source_entity": "EID:3622817354063734847",
+      "target_entity": "EID:3622817354063734847",
+      "game_ts": 1787751920
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_620",
+      "source_entity": "EID:743782346858616223",
+      "target_entity": "EID:743782346858616223",
+      "game_ts": 1787751920
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_621",
+      "source_entity": "EID:15082312839680014071",
+      "target_entity": "EID:15082312839680014071",
+      "game_ts": 1787751920
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_622",
+      "source_entity": "EID:3622817354063734847",
+      "target_entity": "EID:3622817354063734847",
+      "game_ts": 1787751921
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_623",
+      "source_entity": "EID:1885088620470113026",
+      "target_entity": "EID:1885088620470113026",
+      "game_ts": 1787751921
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_624",
+      "source_entity": "EID:743782346858616223",
+      "target_entity": "EID:743782346858616223",
+      "game_ts": 1787751921
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_625",
+      "source_entity": "EID:15082312839680014071",
+      "target_entity": "EID:15082312839680014071",
+      "game_ts": 1787751921
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_626",
+      "source_entity": "EID:10767690",
+      "target_entity": "EID:10767690",
+      "game_ts": 1787751921
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_627",
+      "source_entity": "EID:11790695631398179097",
+      "target_entity": "EID:11790695631398179097",
+      "game_ts": 1787751921
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_628",
+      "source_entity": "EID:9001517",
+      "target_entity": "EID:9001517",
+      "game_ts": 1787751921
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_629",
+      "source_entity": "EID:9001521",
+      "target_entity": "EID:9001521",
+      "game_ts": 1787751921
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_630",
+      "source_entity": "EID:9001518",
+      "target_entity": "EID:9001518",
+      "game_ts": 1787751921
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_631",
+      "source_entity": "EID:9001520",
+      "target_entity": "EID:9001520",
+      "game_ts": 1787751922
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_632",
+      "source_entity": "EID:10767710",
+      "target_entity": "EID:10767710",
+      "game_ts": 1787751922
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_633",
+      "source_entity": "EID:10767712",
+      "target_entity": "EID:10767712",
+      "game_ts": 1787751922
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_634",
+      "source_entity": "EID:10767708",
+      "target_entity": "EID:10767708",
+      "game_ts": 1787751922
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_635",
+      "source_entity": "EID:9001523",
+      "target_entity": "EID:9001523",
+      "game_ts": 1787751922
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_636",
+      "source_entity": "EID:10767693",
+      "target_entity": "EID:10767693",
+      "game_ts": 1787751923
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_637",
+      "source_entity": "EID:10767693",
+      "target_entity": "EID:10767693",
+      "game_ts": 1787751924
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_638",
+      "source_entity": "EID:10767712",
+      "target_entity": "EID:10767712",
+      "game_ts": 1787751929
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_639",
+      "source_entity": "EID:10767708",
+      "target_entity": "EID:10767708",
+      "game_ts": 1787751929
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_640",
+      "source_entity": "EID:9001523",
+      "target_entity": "EID:9001523",
+      "game_ts": 1787751930
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_641",
+      "source_entity": "EID:10767710",
+      "target_entity": "EID:10767710",
+      "game_ts": 1787751931
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_642",
+      "source_entity": "EID:10767710",
+      "target_entity": "EID:10767710",
+      "game_ts": 1787751932
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_643",
+      "source_entity": "EID:9001520",
+      "target_entity": "EID:9001520",
+      "game_ts": 1787751932
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_644",
+      "source_entity": "EID:10767710",
+      "target_entity": "EID:10767710",
+      "game_ts": 1787751934
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_645",
+      "source_entity": "EID:10767710",
+      "target_entity": "EID:10767710",
+      "game_ts": 1787751936
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_646",
+      "source_entity": "EID:1885088620470113026",
+      "target_entity": "EID:1885088620470113026",
+      "game_ts": 1787751937
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_647",
+      "source_entity": "EID:10767712",
+      "target_entity": "EID:10767712",
+      "game_ts": 1787751937
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_648",
+      "source_entity": "EID:3711204245172879519",
+      "target_entity": "EID:3711204245172879519",
+      "game_ts": 1787751937
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_649",
+      "source_entity": "EID:10767693",
+      "target_entity": "EID:10767693",
+      "game_ts": 1787751937
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_650",
+      "source_entity": "EID:7154479785259391771",
+      "target_entity": "EID:7154479785259391771",
+      "game_ts": 1787751937
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_651",
+      "source_entity": "EID:9001517",
+      "target_entity": "EID:9001517",
+      "game_ts": 1787751937
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_652",
+      "source_entity": "EID:9001516",
+      "target_entity": "EID:9001516",
+      "game_ts": 1787751937
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_653",
+      "source_entity": "EID:9001520",
+      "target_entity": "EID:9001520",
+      "game_ts": 1787751937
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_654",
+      "source_entity": "EID:9001519",
+      "target_entity": "EID:9001519",
+      "game_ts": 1787751937
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_655",
+      "source_entity": "EID:11790695631398179097",
+      "target_entity": "EID:11790695631398179097",
+      "game_ts": 1787751937
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_656",
+      "source_entity": "EID:13954058841965090967",
+      "target_entity": "EID:13954058841965090967",
+      "game_ts": 1787751937
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_657",
+      "source_entity": "EID:256706393329851751",
+      "target_entity": "EID:256706393329851751",
+      "game_ts": 1787751937
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_658",
+      "source_entity": "EID:1889074092653954607",
+      "target_entity": "EID:1889074092653954607",
+      "game_ts": 1787751937
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_659",
+      "source_entity": "EID:10767710",
+      "target_entity": "EID:10767710",
+      "game_ts": 1787751937
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_660",
+      "source_entity": "EID:9001522",
+      "target_entity": "EID:9001522",
+      "game_ts": 1787751939
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_661",
+      "source_entity": "EID:15082312839680014071",
+      "target_entity": "EID:15082312839680014071",
+      "game_ts": 1787751939
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_662",
+      "source_entity": "EID:9001523",
+      "target_entity": "EID:9001523",
+      "game_ts": 1787751939
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_663",
+      "source_entity": "EID:10767708",
+      "target_entity": "EID:10767708",
+      "game_ts": 1787751939
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_664",
+      "source_entity": "EID:9001520",
+      "target_entity": "EID:9001520",
+      "game_ts": 1787751946
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_665",
+      "source_entity": "EID:15082312839680014071",
+      "target_entity": "EID:15082312839680014071",
+      "game_ts": 1787751946
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_666",
+      "source_entity": "EID:17769804983241389717",
+      "target_entity": "EID:17769804983241389717",
+      "game_ts": 1787751947
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_667",
+      "source_entity": "EID:10767692",
+      "target_entity": "EID:10767692",
+      "game_ts": 1787751947
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_668",
+      "source_entity": "EID:10767718",
+      "target_entity": "EID:10767718",
+      "game_ts": 1787751947
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_669",
+      "source_entity": "EID:18146540648193706554",
+      "target_entity": "EID:18146540648193706554",
+      "game_ts": 1787751947
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_670",
+      "source_entity": "EID:9001521",
+      "target_entity": "EID:9001521",
+      "game_ts": 1787751947
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_671",
+      "source_entity": "EID:15082312839680014071",
+      "target_entity": "EID:15082312839680014071",
+      "game_ts": 1787751947
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_672",
+      "source_entity": "EID:10767712",
+      "target_entity": "EID:10767712",
+      "game_ts": 1787751947
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_673",
+      "source_entity": "EID:7154479785259391771",
+      "target_entity": "EID:7154479785259391771",
+      "game_ts": 1787751947
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_674",
+      "source_entity": "EID:9001522",
+      "target_entity": "EID:9001522",
+      "game_ts": 1787751947
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_675",
+      "source_entity": "EID:10767708",
+      "target_entity": "EID:10767708",
+      "game_ts": 1787751947
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_676",
+      "source_entity": "EID:9001523",
+      "target_entity": "EID:9001523",
+      "game_ts": 1787751947
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_677",
+      "source_entity": "EID:13954058841965090967",
+      "target_entity": "EID:13954058841965090967",
+      "game_ts": 1787751947
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_678",
+      "source_entity": "EID:3622817354063734847",
+      "target_entity": "EID:3622817354063734847",
+      "game_ts": 1787751948
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_679",
+      "source_entity": "EID:743782346858616223",
+      "target_entity": "EID:743782346858616223",
+      "game_ts": 1787751948
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_680",
+      "source_entity": "EID:9001518",
+      "target_entity": "EID:9001518",
+      "game_ts": 1787751948
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_681",
+      "source_entity": "EID:17769804983241389717",
+      "target_entity": "EID:17769804983241389717",
+      "game_ts": 1787751948
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_682",
+      "source_entity": "EID:10767692",
+      "target_entity": "EID:10767692",
+      "game_ts": 1787751948
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_683",
+      "source_entity": "EID:10767693",
+      "target_entity": "EID:10767693",
+      "game_ts": 1787751948
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_684",
+      "source_entity": "EID:1889074092653954607",
+      "target_entity": "EID:1889074092653954607",
+      "game_ts": 1787751948
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_685",
+      "source_entity": "EID:10767718",
+      "target_entity": "EID:10767718",
+      "game_ts": 1787751948
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_686",
+      "source_entity": "EID:18146540648193706554",
+      "target_entity": "EID:18146540648193706554",
+      "game_ts": 1787751948
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_687",
+      "source_entity": "EID:9001521",
+      "target_entity": "EID:9001521",
+      "game_ts": 1787751948
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_688",
+      "source_entity": "EID:17769804983241389717",
+      "target_entity": "EID:17769804983241389717",
+      "game_ts": 1787751950
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_689",
+      "source_entity": "EID:1885088620470113026",
+      "target_entity": "EID:1885088620470113026",
+      "game_ts": 1787751950
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_690",
+      "source_entity": "EID:3711204245172879519",
+      "target_entity": "EID:3711204245172879519",
+      "game_ts": 1787751950
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_691",
+      "source_entity": "EID:9001517",
+      "target_entity": "EID:9001517",
+      "game_ts": 1787751950
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_692",
+      "source_entity": "EID:9001518",
+      "target_entity": "EID:9001518",
+      "game_ts": 1787751950
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_693",
+      "source_entity": "EID:256706393329851751",
+      "target_entity": "EID:256706393329851751",
+      "game_ts": 1787751950
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_694",
+      "source_entity": "EID:1885088620470113026",
+      "target_entity": "EID:1885088620470113026",
+      "game_ts": 1787751951
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_695",
+      "source_entity": "EID:5795940407909234389",
+      "target_entity": "EID:5795940407909234389",
+      "game_ts": 1787751951
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_696",
+      "source_entity": "EID:9001517",
+      "target_entity": "EID:9001517",
+      "game_ts": 1787751951
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_697",
+      "source_entity": "EID:9001519",
+      "target_entity": "EID:9001519",
+      "game_ts": 1787751951
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_698",
+      "source_entity": "EID:9001516",
+      "target_entity": "EID:9001516",
+      "game_ts": 1787751951
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_699",
+      "source_entity": "EID:1885088620470113026",
+      "target_entity": "EID:1885088620470113026",
+      "game_ts": 1787751952
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_700",
+      "source_entity": "EID:9001517",
+      "target_entity": "EID:9001517",
+      "game_ts": 1787751952
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_701",
+      "source_entity": "EID:15082312839680014071",
+      "target_entity": "EID:15082312839680014071",
+      "game_ts": 1787751953
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_702",
+      "source_entity": "EID:17769804983241389717",
+      "target_entity": "EID:17769804983241389717",
+      "game_ts": 1787751953
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_703",
+      "source_entity": "EID:11790695631398179097",
+      "target_entity": "EID:11790695631398179097",
+      "game_ts": 1787751953
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_704",
+      "source_entity": "EID:15082312839680014071",
+      "target_entity": "EID:15082312839680014071",
+      "game_ts": 1787751954
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_705",
+      "source_entity": "EID:11790695631398179097",
+      "target_entity": "EID:11790695631398179097",
+      "game_ts": 1787751954
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_706",
+      "source_entity": "EID:5795940407909234389",
+      "target_entity": "EID:5795940407909234389",
+      "game_ts": 1787751954
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_707",
+      "source_entity": "EID:3711204245172879519",
+      "target_entity": "EID:3711204245172879519",
+      "game_ts": 1787751955
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_708",
+      "source_entity": "EID:11947775198557841390",
+      "target_entity": "EID:11947775198557841390",
+      "game_ts": 1787751955
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_709",
+      "source_entity": "EID:7154479785259391771",
+      "target_entity": "EID:7154479785259391771",
+      "game_ts": 1787751955
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_710",
+      "source_entity": "EID:3217410990069622115",
+      "target_entity": "EID:3217410990069622115",
+      "game_ts": 1787751955
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_711",
+      "source_entity": "EID:819602686189752365",
+      "target_entity": "EID:819602686189752365",
+      "game_ts": 1787751955
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_712",
+      "source_entity": "EID:9001518",
+      "target_entity": "EID:9001518",
+      "game_ts": 1787751955
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_713",
+      "source_entity": "EID:9001517",
+      "target_entity": "EID:9001517",
+      "game_ts": 1787751955
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_714",
+      "source_entity": "EID:9001521",
+      "target_entity": "EID:9001521",
+      "game_ts": 1787751955
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_715",
+      "source_entity": "EID:15082312839680014071",
+      "target_entity": "EID:15082312839680014071",
+      "game_ts": 1787751955
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_716",
+      "source_entity": "EID:3622817354063734847",
+      "target_entity": "EID:3622817354063734847",
+      "game_ts": 1787751955
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_717",
+      "source_entity": "EID:11790695631398179097",
+      "target_entity": "EID:11790695631398179097",
+      "game_ts": 1787751955
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_718",
+      "source_entity": "EID:743782346858616223",
+      "target_entity": "EID:743782346858616223",
+      "game_ts": 1787751955
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_719",
+      "source_entity": "EID:3711204245172879519",
+      "target_entity": "EID:3711204245172879519",
+      "game_ts": 1787751956
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_720",
+      "source_entity": "EID:11947775198557841390",
+      "target_entity": "EID:11947775198557841390",
+      "game_ts": 1787751956
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_721",
+      "source_entity": "EID:7154479785259391771",
+      "target_entity": "EID:7154479785259391771",
+      "game_ts": 1787751956
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_722",
+      "source_entity": "EID:819602686189752365",
+      "target_entity": "EID:819602686189752365",
+      "game_ts": 1787751956
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_723",
+      "source_entity": "EID:9001521",
+      "target_entity": "EID:9001521",
+      "game_ts": 1787751956
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_724",
+      "source_entity": "EID:9001518",
+      "target_entity": "EID:9001518",
+      "game_ts": 1787751957
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_725",
+      "source_entity": "EID:9001517",
+      "target_entity": "EID:9001517",
+      "game_ts": 1787751957
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_726",
+      "source_entity": "EID:819602686189752365",
+      "target_entity": "EID:819602686189752365",
+      "game_ts": 1787751958
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_727",
+      "source_entity": "EID:819602686189752365",
+      "target_entity": "EID:819602686189752365",
+      "game_ts": 1787751959
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_728",
+      "source_entity": "EID:5795940407909234389",
+      "target_entity": "EID:5795940407909234389",
+      "game_ts": 1787751962
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_729",
+      "source_entity": "EID:9001517",
+      "target_entity": "EID:9001517",
+      "game_ts": 1787751962
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_730",
+      "source_entity": "EID:9001521",
+      "target_entity": "EID:9001521",
+      "game_ts": 1787751962
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_731",
+      "source_entity": "EID:10767718",
+      "target_entity": "EID:10767718",
+      "game_ts": 1787751962
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_732",
+      "source_entity": "EID:3217410990069622115",
+      "target_entity": "EID:3217410990069622115",
+      "game_ts": 1787751962
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_733",
+      "source_entity": "EID:3622817354063734847",
+      "target_entity": "EID:3622817354063734847",
+      "game_ts": 1787751963
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_734",
+      "source_entity": "EID:3711204245172879519",
+      "target_entity": "EID:3711204245172879519",
+      "game_ts": 1787751963
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_735",
+      "source_entity": "EID:7154479785259391771",
+      "target_entity": "EID:7154479785259391771",
+      "game_ts": 1787751963
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_736",
+      "source_entity": "EID:15082312839680014071",
+      "target_entity": "EID:15082312839680014071",
+      "game_ts": 1787751963
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_737",
+      "source_entity": "EID:11790695631398179097",
+      "target_entity": "EID:11790695631398179097",
+      "game_ts": 1787751963
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_738",
+      "source_entity": "EID:743782346858616223",
+      "target_entity": "EID:743782346858616223",
+      "game_ts": 1787751963
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_739",
+      "source_entity": "EID:9001517",
+      "target_entity": "EID:9001517",
+      "game_ts": 1787751963
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_740",
+      "source_entity": "EID:3622817354063734847",
+      "target_entity": "EID:3622817354063734847",
+      "game_ts": 1787751964
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_741",
+      "source_entity": "EID:3711204245172879519",
+      "target_entity": "EID:3711204245172879519",
+      "game_ts": 1787751964
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_742",
+      "source_entity": "EID:7154479785259391771",
+      "target_entity": "EID:7154479785259391771",
+      "game_ts": 1787751964
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_743",
+      "source_entity": "EID:15082312839680014071",
+      "target_entity": "EID:15082312839680014071",
+      "game_ts": 1787751964
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_744",
+      "source_entity": "EID:11790695631398179097",
+      "target_entity": "EID:11790695631398179097",
+      "game_ts": 1787751964
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_745",
+      "source_entity": "EID:743782346858616223",
+      "target_entity": "EID:743782346858616223",
+      "game_ts": 1787751964
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_746",
+      "source_entity": "EID:5795940407909234389",
+      "target_entity": "EID:5795940407909234389",
+      "game_ts": 1787751964
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_747",
+      "source_entity": "EID:10767718",
+      "target_entity": "EID:10767718",
+      "game_ts": 1787751966
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_748",
+      "source_entity": "EID:9001519",
+      "target_entity": "EID:9001519",
+      "game_ts": 1787751968
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_749",
+      "source_entity": "EID:1889074092653954607",
+      "target_entity": "EID:1889074092653954607",
+      "game_ts": 1787751968
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_750",
+      "source_entity": "EID:10767708",
+      "target_entity": "EID:10767708",
+      "game_ts": 1787751968
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_751",
+      "source_entity": "EID:10767690",
+      "target_entity": "EID:10767690",
+      "game_ts": 1787751968
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_752",
+      "source_entity": "EID:9001517",
+      "target_entity": "EID:9001517",
+      "game_ts": 1787751968
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_753",
+      "source_entity": "EID:9001516",
+      "target_entity": "EID:9001516",
+      "game_ts": 1787751968
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_754",
+      "source_entity": "EID:9001523",
+      "target_entity": "EID:9001523",
+      "game_ts": 1787751968
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_755",
+      "source_entity": "EID:9001518",
+      "target_entity": "EID:9001518",
+      "game_ts": 1787751968
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_756",
+      "source_entity": "EID:9001522",
+      "target_entity": "EID:9001522",
+      "game_ts": 1787751968
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_757",
+      "source_entity": "EID:256706393329851751",
+      "target_entity": "EID:256706393329851751",
+      "game_ts": 1787751968
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_758",
+      "source_entity": "EID:1885088620470113026",
+      "target_entity": "EID:1885088620470113026",
+      "game_ts": 1787751968
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_759",
+      "source_entity": "EID:9001521",
+      "target_entity": "EID:9001521",
+      "game_ts": 1787751968
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_760",
+      "source_entity": "EID:9001519",
+      "target_entity": "EID:9001519",
+      "game_ts": 1787751969
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_761",
+      "source_entity": "EID:1889074092653954607",
+      "target_entity": "EID:1889074092653954607",
+      "game_ts": 1787751969
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_762",
+      "source_entity": "EID:10767708",
+      "target_entity": "EID:10767708",
+      "game_ts": 1787751969
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_763",
+      "source_entity": "EID:9001517",
+      "target_entity": "EID:9001517",
+      "game_ts": 1787751969
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_764",
+      "source_entity": "EID:9001516",
+      "target_entity": "EID:9001516",
+      "game_ts": 1787751969
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_765",
+      "source_entity": "EID:9001523",
+      "target_entity": "EID:9001523",
+      "game_ts": 1787751969
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_766",
+      "source_entity": "EID:9001522",
+      "target_entity": "EID:9001522",
+      "game_ts": 1787751969
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_767",
+      "source_entity": "EID:256706393329851751",
+      "target_entity": "EID:256706393329851751",
+      "game_ts": 1787751969
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_768",
+      "source_entity": "EID:1885088620470113026",
+      "target_entity": "EID:1885088620470113026",
+      "game_ts": 1787751969
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_769",
+      "source_entity": "EID:9001519",
+      "target_entity": "EID:9001519",
+      "game_ts": 1787751979
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_770",
+      "source_entity": "EID:9001522",
+      "target_entity": "EID:9001522",
+      "game_ts": 1787751979
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_771",
+      "source_entity": "EID:1885088620470113026",
+      "target_entity": "EID:1885088620470113026",
+      "game_ts": 1787751979
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_772",
+      "source_entity": "EID:9001517",
+      "target_entity": "EID:9001517",
+      "game_ts": 1787751979
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_773",
+      "source_entity": "EID:256706393329851751",
+      "target_entity": "EID:256706393329851751",
+      "game_ts": 1787751979
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_774",
+      "source_entity": "EID:9001516",
+      "target_entity": "EID:9001516",
+      "game_ts": 1787751979
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_775",
+      "source_entity": "EID:10767708",
+      "target_entity": "EID:10767708",
+      "game_ts": 1787751980
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_776",
+      "source_entity": "EID:9001518",
+      "target_entity": "EID:9001518",
+      "game_ts": 1787751980
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_777",
+      "source_entity": "EID:1889074092653954607",
+      "target_entity": "EID:1889074092653954607",
+      "game_ts": 1787751983
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_778",
+      "source_entity": "EID:9001523",
+      "target_entity": "EID:9001523",
+      "game_ts": 1787751983
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_779",
+      "source_entity": "EID:10767690",
+      "target_entity": "EID:10767690",
+      "game_ts": 1787751983
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_780",
+      "source_entity": "EID:1889074092653954607",
+      "target_entity": "EID:1889074092653954607",
+      "game_ts": 1787751984
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_781",
+      "source_entity": "EID:1",
+      "target_entity": "EID:9001516",
+      "game_ts": 1787751984
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_782",
+      "source_entity": "EID:9001516",
+      "target_entity": "EID:9001516",
+      "game_ts": 1787751984
+    },
+    {
+      "kind": "combat_attack",
+      "event_id": "evt_783",
+      "source_entity": "EID:1",
+      "target_entity": "EID:9001516",
+      "game_ts": 1787751984
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_784",
+      "source_entity": "EID:17769804983241389717",
+      "target_entity": "EID:17769804983241389717",
+      "game_ts": 1787751986
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_785",
+      "source_entity": "EID:5795940407909234389",
+      "target_entity": "EID:5795940407909234389",
+      "game_ts": 1787751986
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_786",
+      "source_entity": "EID:9001522",
+      "target_entity": "EID:9001522",
+      "game_ts": 1787751986
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_787",
+      "source_entity": "EID:256706393329851751",
+      "target_entity": "EID:256706393329851751",
+      "game_ts": 1787751986
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_788",
+      "source_entity": "EID:9001523",
+      "target_entity": "EID:9001523",
+      "game_ts": 1787751986
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_789",
+      "source_entity": "EID:10767708",
+      "target_entity": "EID:10767708",
+      "game_ts": 1787751986
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_790",
+      "source_entity": "EID:10767690",
+      "target_entity": "EID:10767690",
+      "game_ts": 1787751987
+    },
+    {
+      "kind": "entity_appeared",
+      "event_id": "evt_791",
+      "source_entity": "EID:9001522",
+      "target_entity": "EID:9001522",
+      "game_ts": 1787751987
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_792",
+      "source_entity": "EID:17769804983241389717",
+      "target_entity": "EID:17769804983241389717",
+      "game_ts": 1787751987
+    },
+    {
+      "kind": "entity_disappeared",
+      "event_id": "evt_793",
+      "source_entity": "EID:5795940407909234389",
+      "target_entity": "EID:5795940407909234389",
+      "game_ts": 1787751987
+    }
+  ],
+  "items": [
+    {
+      "entity_id": "EID:10767690",
+      "labels": [
+        "gameItemDropObject"
+      ],
+      "hp": 0,
+      "kind": "item",
+      "position": {
+        "y": 359.25994873046875,
+        "z": 16.63153076171875,
+        "x": -287.29632568359375
+      }
+    }
+  ],
+  "player": {
+    "entity_id": "EID:1",
+    "labels": [
+      "player"
+    ],
+    "hp": 100,
+    "kind": "player",
+    "position": {
+      "y": 360.8646545410156,
+      "z": 16.60083770751953,
+      "x": -288.9273376464844
+    }
+  }
+}

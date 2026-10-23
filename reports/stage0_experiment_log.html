@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>CUF-QS 虚拟具身实验系统 · 阶段实验日志</title>
+<style>
+  @page { size: A4; margin: 18mm 16mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+    color: #0a0a0a; background: #fff;
+    font-size: 10.5pt; line-height: 1.65; margin: 0;
+  }
+  h1 { font-size: 17pt; margin: 0 0 4px 0; color: #0f172a; }
+  h2 {
+    font-size: 12.5pt; color: #0f172a; margin: 22px 0 8px 0;
+    padding-left: 8px; border-left: 3px solid #0f172a;
+  }
+  h3 { font-size: 11pt; color: #374151; margin: 14px 0 6px 0; }
+  .meta { color: #6b7280; font-size: 9.5pt; margin-bottom: 14px; }
+  .badge {
+    display: inline-block; padding: 1px 8px; border-radius: 10px;
+    font-size: 9pt; margin-left: 6px; vertical-align: middle;
+  }
+  .ok { background: #dcfce7; color: #16a34a; }
+  .info { background: #e0e7ff; color: #4f46e5; }
+  table { border-collapse: collapse; width: 100%; margin: 8px 0 12px 0; font-size: 9.5pt; }
+  th, td { border: 1px solid #d1d5db; padding: 5px 8px; text-align: left; vertical-align: top; }
+  th { background: #f3f4f6; color: #0f172a; }
+  code, .mono {
+    font-family: Consolas, "Courier New", monospace;
+    background: #f3f4f6; padding: 0 4px; border-radius: 3px; font-size: 9.5pt;
+  }
+  ul, ol { margin: 4px 0 10px 0; padding-left: 22px; }
+  li { margin: 2px 0; }
+  .callout {
+    background: #fafaf9; border-left: 3px solid #6b7280;
+    padding: 8px 12px; margin: 8px 0; font-size: 10pt;
+  }
+  .footer { margin-top: 26px; color: #9ca3af; font-size: 8.5pt; border-top: 1px solid #e5e7eb; padding-top: 8px; }
+  .pagebreak { page-break-before: always; }
+</style>
+</head>
+<body>
+
+<h1>CUF-QS 虚拟具身实验系统 · 阶段实验日志</h1>
+<div class="meta">
+  记录日期：2026-08-24 ｜ 当前进度：阶段0（环境与通信底座）｜ 已完成步骤：S1、S2 ｜ 下一步骤：S3
+</div>
+
+<h2>一、项目总目标</h2>
+<p>在《赛博朋克2077》中构建真实运行的 CUF（自指认知框架）实验系统，完成
+「公理注入 → 假设生成 → 动作执行 → 观测采集 → 反例判定 → 公理降级 → QS 收敛监控」完整闭环，
+产出 CUF 机制组与纯统计拟合对照组的论文级对比数据（收敛曲线、降级日志、C_H 成本曲线、虚拟寿命、量化指标）。</p>
+
+<h2>二、理论基础：CUF v7 对齐</h2>
+<p>理论四层：D（度规因果结构）、M（规则接口）、W₁（现象场）、W₂（稳态自指体）。核心命题：任何 W₂ 持续存在须支付稳态成本
+C_H（struct / adapt / extend 三子维度），C_H ≤ B_entropy，超预算触发 Γ脆 解体；意识是自指运行的副产品，无因果力。</p>
+
+<h3>工程层 ↔ 理论层映射（已锁定）</h3>
+<table>
+  <tr><th>工程层</th><th>职责</th><th>CUF v7 对应</th></tr>
+  <tr><td>W0 原始信号层</td><td>感知采样</td><td>W₁ 现象场采样面（“采—自指”之“采”）</td></tr>
+  <tr><td>W1 因果物理规则层</td><td>只读真值库</td><td>D 层（游戏实例化的度规因果结构）+ M 静态部分</td></tr>
+  <tr><td>W2 自指语义层</td><td>公理自治 / 降级 / 审计</td><td>W₂ 稳态自指体（本实验的目标实例）</td></tr>
+  <tr><td>W3 输出行动层</td><td>纯执行</td><td>M 接口行动面（理论中无独立对应层）</td></tr>
+</table>
+
+<h2>三、反套壳四铁则（不可变量）</h2>
+<ol>
+  <li><b>裁决权下沉</b>：真值判定、降级触发、QS 收敛计算、ICC 审计全部由独立 Python 模块硬编码实现；LLM 仅做语义转译与实验假设生成，无任何最终判定权。</li>
+  <li><b>数据流解耦</b>：四层架构走结构化 JSON 数据链路；自然语言仅为人类可读输出，不参与核心决策。</li>
+  <li><b>可单测验证</b>：QS 计算、降级判定、ICC 审计必须能脱离 LLM 独立运行，输入模拟数据即可验证。</li>
+  <li><b>因果链可追溯</b>：每次公理变更、收敛判定必须对应明确的观测数据与阈值触发记录，禁止黑盒决策。</li>
+</ol>
+
+<h2>四、S1 游戏环境部署 <span class="badge ok">已完成 2026-08-24</span></h2>
+<h3>4.1 硬件基线（实测锁定）</h3>
+<table>
+  <tr><th>项目</th><th>配置</th></tr>
+  <tr><td>CPU / 内存</td><td>i5-14600KF / 32GB</td></tr>
+  <tr><td>GPU</td><td>RTX 5060 Ti 16GB（Blackwell 架构，compute capability 12.0）</td></tr>
+  <tr><td>画质设定</td><td>1080p 最低画质（用户确认）；显存预算：游戏 ≤6GB，为 7B 模型预留 ≥8GB</td></tr>
+</table>
+
+<h3>4.2 版本锁定组合</h3>
+<table>
+  <tr><th>组件</th><th>版本</th></tr>
+  <tr><td>游戏</td><td>2.31（内部 3.0.80.51928），已关闭自动更新</td></tr>
+  <tr><td>RED4ext</td><td>1.30.0（winmm.dll）</td></tr>
+  <tr><td>CET（Cyber Engine Tweaks）</td><td>1.37.1（version.dll）</td></tr>
+  <tr><td>RedSocket</td><td>0.5.0</td></tr>
+  <tr><td>CET 覆盖层键</td><td><code>~</code>（0xC0）</td></tr>
+</table>
+
+<h3>4.3 验收与备份</h3>
+<ul>
+  <li>验收通过：游戏正常启动，CET 控制台可用，<code>print</code> 正常输出。</li>
+  <li>完整备份 11 个模组文件（含 SHA256 指纹）与版本锁定记录，存于 <code>s1_backup/version_lock.json</code>。</li>
+  <li>运维经验：退出游戏后若 Steam 仍显示运行中，清理残留 <code>REDlauncher</code> 进程即可；CET 按键绑定仅可在游戏关闭时修改；<code>scripting.log</code> 为可靠观测通道（主日志异步缓冲）。</li>
+</ul>
+
+<div class="pagebreak"></div>
+
+<h2>五、S2 Python TCP 通信底座 <span class="badge ok">已完成 2026-08-24</span></h2>
+
+<h3>5.1 架构与交付物</h3>
+<p>Python 侧作为 TCP 服务端监听 <code>127.0.0.1:20770</code>，游戏内 CufBridge 模组（Lua）作为客户端主动连接，
+双向通信采用 JSON 行协议（帧终止符 <code>\r\n</code>），含心跳保活、断连检测与 15 秒收包看门狗。</p>
+<table>
+  <tr><th>交付物</th><th>说明</th></tr>
+  <tr><td><code>src/w0/game_connector.py</code></td><td>TCP 服务器 + <code>execute_action(fn, args)</code> + 心跳保活 + 断连检测</td></tr>
+  <tr><td><code>game_mods/CufBridge/init.lua</code> 0.4.0</td><td>游戏内桥接模组，白名单 handlers 注册表协议（SHA256 <span class="mono">39D2A2…D8AE</span>）</td></tr>
+  <tr><td><code>tests/fake_game_client.py</code> / <code>s2_selftest.py</code> / <code>s2_livetest.py</code></td><td>模拟客户端、脱机自测、实机验收脚本</td></tr>
+  <tr><td><code>config/experiment_config.json</code></td><td>端口 / 超时 / 心跳参数配置</td></tr>
+</table>
+
+<h3>5.2 排查全程：四大根因（均已解决并记录在案）</h3>
+<table>
+  <tr><th>#</th><th>故障现象</th><th>根因</th><th>修复方案</th></tr>
+  <tr><td>1</td><td>模组加载报错，找不到 RedSocket</td><td>CET 沙箱隔离，<code>require</code> 只能解析本模组目录</td><td>改用 <code>GetMod('RedSocket')</code> 懒加载</td></tr>
+  <tr><td>2</td><td>连接建立但收不到任何回包</td><td>帧终止符不匹配，RedSocket 按 <code>\r\n</code> 分帧</td><td>全链路改用 <code>\r\n</code> 帧终止符</td></tr>
+  <tr><td>3</td><td>偶发僵死连接，模组误判在线</td><td>TCP 半开连接无感知</td><td>增加 15 秒收包看门狗，超时强制重连</td></tr>
+  <tr><td>4</td><td>hello/ping 全通，但下发代码执行必然超时</td><td><b>CET 沙箱移除 <code>load</code> / <code>loadstring</code></b>，运行时无法编译任意代码字符串</td><td>任意 Lua 下发路线废止，改白名单结构化指令协议（见 5.3）</td></tr>
+</table>
+<div class="callout">
+  根因 4 的取证方式：在游戏内按 <code>~</code> 打开 CET 控制台直接执行
+  <code>print(type(load), type(loadstring), _VERSION)</code>，返回 <code>nil nil Lua 5.1</code>——
+  一次性实锤两件事：① <code>load</code>/<code>loadstring</code> 均被沙箱移除；② CET 运行的是 <b>Lua 5.1</b>（非 5.4），后续所有模组代码按 5.1 语法编写。
+</div>
+
+<h3>5.3 协议变更：proto 2 白名单结构化指令（用户批准，锁定决策 15）</h3>
+<p>Python ↔ 游戏不再下发任意代码，改为调用模组预注册的白名单处理函数：</p>
+<table>
+  <tr><th>方向</th><th>报文格式</th></tr>
+  <tr><td>Python → 游戏</td><td><code>{"t":"call","id":2,"fn":"add","args":[1,1]}</code></td></tr>
+  <tr><td>游戏 → Python</td><td><code>{"t":"resp","id":2,"ok":true,"data":2}</code></td></tr>
+</table>
+<ul>
+  <li>首批注册函数：<code>echo</code> / <code>add</code> / <code>lua_version</code> / <code>list_fns</code>。</li>
+  <li>模组端全链路 <code>pcall</code> 保护，未知函数、执行异常均以结构化错误回传，永不静默超时。</li>
+  <li>S4 数据采集与 S5 动作执行将来一律以「新增注册函数」方式扩展，与 W3 白名单铁则天然对齐。</li>
+</ul>
+
+<h3>5.4 验收数据（实测）</h3>
+<table>
+  <tr><th>验收项</th><th>结果</th></tr>
+  <tr><td>游戏连接 + hello</td><td>通过：<code>proto=2, mod=CufBridge, mod_version=0.4.0, lua_version='Lua 5.1'</code></td></tr>
+  <tr><td>ping 心跳</td><td>通过：延迟 11.36 ms</td></tr>
+  <tr><td><code>call add(1,1)</code></td><td>通过：返回 <code>2</code></td></tr>
+  <tr><td><code>call lua_version()</code></td><td>通过：返回 <code>'Lua 5.1'</code></td></tr>
+  <tr><td>脱机自测（无需游戏）</td><td>通过：11/11（连接 / 心跳 / 调用 / 并发 / 超时 / 断连 / 重连 / 停止）</td></tr>
+  <tr><td>实机验收</td><td>LIVE TEST PASSED（一次通过）</td></tr>
+</table>
+
+<h2>六、反套壳合规自查（S2 阶段）</h2>
+<ul>
+  <li>协议全结构化 JSON，无自然语言参与核心决策（铁则 2 ✓）。</li>
+  <li>全部通信逻辑可脱离游戏单测验证，脱机自测 11/11（铁则 3 ✓）。</li>
+  <li>白名单指令协议与 W3 白名单动作铁则对齐，每次调用有 id 对应回执，因果链可追溯（铁则 4 ✓）。</li>
+</ul>
+
+<h2>七、下一步：S3 Mock 游戏服务器</h2>
+<p>模拟协议的本地假服务端，返回预设实体与事件，使 W1/W2 核心认知层开发可完全脱离游戏进行。
+验收标准：W1/W2 开发可完全脱离游戏进行。</p>
+
+<div class="footer">
+  CUF-QS 虚拟具身实验系统 · 阶段实验日志 ｜ 依据 project_rules.md（2026-08-24 版）整理 ｜
+  实验定位：虚拟实例上的操作化验证（遵守结论表述纪律，锁定决策 14）
+</div>
+
+</body>
+</html>

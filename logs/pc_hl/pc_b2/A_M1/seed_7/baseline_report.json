@@ -1,0 +1,237 @@
+{
+  "group": "baseline_statistical",
+  "rounds_target": 10,
+  "completed": 2,
+  "disintegrated": false,
+  "criterion": null,
+  "virtual_lifespan": 2,
+  "score_history": [
+    -0.33333333333333337,
+    1.0
+  ],
+  "accuracy_history": [
+    0.3333333333333333,
+    1.0
+  ],
+  "converged_final": false,
+  "criteria_applicability": {
+    "semantic_death": "not_applicable",
+    "functional_death": "applicable",
+    "over_budget": "not_applicable"
+  },
+  "model_snapshot": {
+    "combos": 3,
+    "total_observations": 6,
+    "label_history_size": 3
+  },
+  "round_details": [
+    {
+      "round_id": 0,
+      "entities_count": 3,
+      "events_count": 2,
+      "predictions": [
+        {
+          "entity_id": "EID:1",
+          "combo": [
+            "player",
+            "player"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:N1",
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        },
+        {
+          "entity_id": "EID:G1",
+          "combo": [
+            "npc",
+            "gang"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        }
+      ],
+      "adjudications": [
+        {
+          "entity_id": "EID:1",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_M1",
+              "rule_id": "R_M1_1",
+              "reason": "target EID:G1 != entity EID:1"
+            }
+          ],
+          "predicted": false,
+          "correct": false
+        },
+        {
+          "entity_id": "EID:N1",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_M1",
+              "rule_id": "R_M1_1",
+              "reason": "target EID:G1 != entity EID:N1"
+            }
+          ],
+          "predicted": false,
+          "correct": false
+        },
+        {
+          "entity_id": "EID:G1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        }
+      ],
+      "accuracy": 0.3333333333333333,
+      "alignment_score": -0.33333333333333337,
+      "induction_conclusions": [
+        {
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "n_observed": 1,
+          "n_anomalies": 1,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "npc",
+            "gang"
+          ],
+          "n_observed": 1,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        },
+        {
+          "combo": [
+            "player",
+            "player"
+          ],
+          "n_observed": 1,
+          "n_anomalies": 1,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        }
+      ],
+      "model_size": 3
+    },
+    {
+      "round_id": 1,
+      "entities_count": 3,
+      "events_count": 2,
+      "predictions": [
+        {
+          "entity_id": "EID:1",
+          "combo": [
+            "player",
+            "player"
+          ],
+          "p_anomaly": 1.0,
+          "predicted_anomaly": true
+        },
+        {
+          "entity_id": "EID:N1",
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "p_anomaly": 1.0,
+          "predicted_anomaly": true
+        },
+        {
+          "entity_id": "EID:G1",
+          "combo": [
+            "npc",
+            "gang"
+          ],
+          "p_anomaly": 0.0,
+          "predicted_anomaly": false
+        }
+      ],
+      "adjudications": [
+        {
+          "entity_id": "EID:1",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_M1",
+              "rule_id": "R_M1_1",
+              "reason": "target EID:G1 != entity EID:1"
+            }
+          ],
+          "predicted": true,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:N1",
+          "actual_anomaly": true,
+          "violated_rules": [
+            {
+              "axiom_id": "A_M1",
+              "rule_id": "R_M1_1",
+              "reason": "target EID:G1 != entity EID:N1"
+            }
+          ],
+          "predicted": true,
+          "correct": true
+        },
+        {
+          "entity_id": "EID:G1",
+          "actual_anomaly": false,
+          "violated_rules": [],
+          "predicted": false,
+          "correct": true
+        }
+      ],
+      "accuracy": 1.0,
+      "alignment_score": 1.0,
+      "induction_conclusions": [
+        {
+          "combo": [
+            "npc",
+            "civilian"
+          ],
+          "n_observed": 2,
+          "n_anomalies": 2,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        },
+        {
+          "combo": [
+            "npc",
+            "gang"
+          ],
+          "n_observed": 2,
+          "n_anomalies": 0,
+          "p_anomaly": 0.0,
+          "prediction": "normal"
+        },
+        {
+          "combo": [
+            "player",
+            "player"
+          ],
+          "n_observed": 2,
+          "n_anomalies": 2,
+          "p_anomaly": 1.0,
+          "prediction": "anomaly"
+        }
+      ],
+      "model_size": 3
+    }
+  ]
+}

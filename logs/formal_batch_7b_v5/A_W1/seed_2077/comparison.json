@@ -1,0 +1,39 @@
+{
+  "exp_series": [
+    0.771576243088171,
+    0.761037036510972,
+    0.8082427719815487,
+    0.8081028639285458,
+    0.8052851776376088,
+    0.8052098064198533,
+    0.812391675146595,
+    0.8107645135716777,
+    0.8137323126235226,
+    0.8099291708956071
+  ],
+  "baseline_series": [
+    0.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "compared_rounds": 10,
+  "truncated": false,
+  "exp_mean": 0.8006271571804102,
+  "baseline_mean": 0.9,
+  "converged_exp": true,
+  "converged_baseline": true,
+  "lifespan_exp": 10,
+  "lifespan_baseline": 10,
+  "lifespan_delta": 0,
+  "exp_disintegrated": false,
+  "baseline_disintegrated": false,
+  "exp_criterion": null,
+  "baseline_criterion": null
+}

@@ -1,0 +1,231 @@
+{
+  "control": [
+    {
+      "seed": 7,
+      "port": 20890,
+      "completed": 10,
+      "virtual_lifespan": 10,
+      "disintegrated": false,
+      "criterion": null,
+      "align_mean": 0.778521396382617,
+      "align_count": 10,
+      "attack_log": [
+        "EID:G1",
+        "EID:G1",
+        "EID:C1",
+        "EID:C2"
+      ],
+      "alive_ids": [
+        [
+          "EID:C1",
+          "EID:C2",
+          "EID:G1"
+        ],
+        [
+          "EID:C1",
+          "EID:C2",
+          "EID:G1"
+        ],
+        [
+          "EID:C1",
+          "EID:C2",
+          "EID:G1"
+        ],
+        [
+          "EID:C1",
+          "EID:C2",
+          "EID:G1"
+        ],
+        [
+          "EID:C1",
+          "EID:C2"
+        ],
+        [
+          "EID:C1",
+          "EID:C2"
+        ],
+        [
+          "EID:C2"
+        ],
+        [
+          "EID:C2"
+        ],
+        [],
+        []
+      ],
+      "ce_counts": [
+        0,
+        3,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "activation": {
+        "enabled": true,
+        "candidate_count": 3,
+        "activated": [
+          "A_M2"
+        ],
+        "inactive": [
+          "A_S1",
+          "A_I1"
+        ],
+        "activation_events": [
+          {
+            "axiom_id": "A_M2",
+            "round_id": 5,
+            "evidence_count": 3,
+            "window_rounds": 5,
+            "min_count": 3,
+            "trigger": {
+              "kind": "event_count",
+              "event_kinds": [
+                "teleport",
+                "move_confirmed"
+              ],
+              "min_count": 3,
+              "window_rounds": 5
+            }
+          }
+        ]
+      },
+      "sources": [
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default"
+      ],
+      "actions": [
+        "move:(10.0,0.0,0.0)",
+        "attack:EID:G1",
+        "move:(20.0,0.0,0.0)",
+        "attack:EID:G1",
+        "move:(30.0,0.0,0.0)",
+        "attack:EID:C1",
+        "move:(40.0,0.0,0.0)",
+        "attack:EID:C2",
+        "move:(50.0,0.0,0.0)",
+        "move:(40.0,0.0,0.0)"
+      ]
+    }
+  ],
+  "llm": [
+    {
+      "seed": 7,
+      "port": 20891,
+      "completed": 10,
+      "virtual_lifespan": 10,
+      "disintegrated": false,
+      "criterion": null,
+      "align_mean": 0.7878951333494221,
+      "align_count": 10,
+      "attack_log": [
+        "EID:C1",
+        "EID:C2",
+        "EID:G1",
+        "EID:G1"
+      ],
+      "alive_ids": [
+        [
+          "EID:C1",
+          "EID:C2",
+          "EID:G1"
+        ],
+        [
+          "EID:C2",
+          "EID:G1"
+        ],
+        [
+          "EID:G1"
+        ],
+        [
+          "EID:G1"
+        ],
+        [
+          "EID:G1"
+        ],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "ce_counts": [
+        4,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "activation": {
+        "enabled": true,
+        "candidate_count": 3,
+        "activated": [
+          "A_M2"
+        ],
+        "inactive": [
+          "A_S1",
+          "A_I1"
+        ],
+        "activation_events": [
+          {
+            "axiom_id": "A_M2",
+            "round_id": 7,
+            "evidence_count": 3,
+            "window_rounds": 5,
+            "min_count": 3,
+            "trigger": {
+              "kind": "event_count",
+              "event_kinds": [
+                "teleport",
+                "move_confirmed"
+              ],
+              "min_count": 3,
+              "window_rounds": 5
+            }
+          }
+        ]
+      },
+      "sources": [
+        "planner",
+        "planner",
+        "planner",
+        "planner",
+        "planner",
+        "planner",
+        "planner",
+        "planner",
+        "planner",
+        "planner"
+      ],
+      "actions": [
+        "attack:EID:C1",
+        "attack:EID:C2",
+        "move:(10.0,0.0,0.0)",
+        "attack:EID:G1",
+        "attack:EID:G1",
+        "move:(0.0,0.0,0.0)",
+        "move:(10.0,0.0,0.0)",
+        "move:(0.0,0.0,0.0)",
+        "move:(10.0,0.0,0.0)",
+        "move:(0.0,0.0,0.0)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,976 @@
+{
+  "cmd": "probe_v4",
+  "targetingFuncs": [
+    {
+      "f": "GetTargetParts",
+      "nat": true,
+      "sta": false,
+      "pcount": 3,
+      "params": [
+        {
+          "name": "instigator",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        },
+        {
+          "name": "query",
+          "type": "gameTargetSearchQuery",
+          "kind": "class"
+        },
+        {
+          "name": "parts",
+          "type": "array:gametargetingTargetPartInfo",
+          "kind": "other"
+        }
+      ],
+      "ret": "Bool",
+      "retKind": "other"
+    },
+    {
+      "f": "GetObjectClosestToCrosshair",
+      "nat": true,
+      "sta": false,
+      "pcount": 3,
+      "params": [
+        {
+          "name": "instigator",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        },
+        {
+          "name": "angleDistance",
+          "type": "EulerAngles",
+          "kind": "class"
+        },
+        {
+          "name": "query",
+          "type": "gameTargetSearchQuery",
+          "kind": "class"
+        }
+      ],
+      "ret": "handle:gameObject",
+      "retKind": "other"
+    },
+    {
+      "f": "GetComponentClosestToCrosshair",
+      "nat": true,
+      "sta": false,
+      "pcount": 3,
+      "params": [
+        {
+          "name": "instigator",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        },
+        {
+          "name": "angleDistance",
+          "type": "EulerAngles",
+          "kind": "class"
+        },
+        {
+          "name": "query",
+          "type": "gameTargetSearchQuery",
+          "kind": "class"
+        }
+      ],
+      "ret": "handle:entIPlacedComponent",
+      "retKind": "other"
+    },
+    {
+      "f": "GetTargetClosestByDistance",
+      "nat": true,
+      "sta": false,
+      "pcount": 4,
+      "params": [
+        {
+          "name": "instigator",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        },
+        {
+          "name": "query",
+          "type": "gameTargetSearchQuery",
+          "kind": "class"
+        },
+        {
+          "name": "position",
+          "type": "Vector4",
+          "kind": "class"
+        },
+        {
+          "name": "targetPartInfo",
+          "type": "gametargetingTargetPartInfo",
+          "kind": "class"
+        }
+      ],
+      "ret": "handle:gameObject",
+      "retKind": "other"
+    },
+    {
+      "f": "GetCrosshairData",
+      "nat": true,
+      "sta": false,
+      "pcount": 3,
+      "params": [
+        {
+          "name": "instigator",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        },
+        {
+          "name": "crosshairPosition",
+          "type": "Vector4",
+          "kind": "class"
+        },
+        {
+          "name": "crosshairForward",
+          "type": "Vector4",
+          "kind": "class"
+        }
+      ]
+    },
+    {
+      "f": "GetDefaultCrosshairData",
+      "nat": true,
+      "sta": false,
+      "pcount": 3,
+      "params": [
+        {
+          "name": "instigator",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        },
+        {
+          "name": "crosshairPosition",
+          "type": "Vector4",
+          "kind": "class"
+        },
+        {
+          "name": "crosshairForward",
+          "type": "Vector4",
+          "kind": "class"
+        }
+      ]
+    },
+    {
+      "f": "GetDefaultCrosshairPositionProvider",
+      "nat": true,
+      "sta": false,
+      "pcount": 2,
+      "params": [
+        {
+          "name": "instigator",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        },
+        {
+          "name": "offsetEntitySpace",
+          "type": "Vector3",
+          "kind": "class"
+        }
+      ],
+      "ret": "handle:entIPositionProvider",
+      "retKind": "other"
+    },
+    {
+      "f": "GetDefaultCrosshairOrientationProvider",
+      "nat": true,
+      "sta": false,
+      "pcount": 2,
+      "params": [
+        {
+          "name": "instigator",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        },
+        {
+          "name": "orientationEntitySpace",
+          "type": "Quaternion",
+          "kind": "class"
+        }
+      ],
+      "ret": "handle:entIOrientationProvider",
+      "retKind": "other"
+    },
+    {
+      "f": "GetOrientationFromCrosshairToTargetOrientationProvider",
+      "nat": true,
+      "sta": false,
+      "pcount": 3,
+      "params": [
+        {
+          "name": "instigator",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        },
+        {
+          "name": "targetComponent",
+          "type": "whandle:entIPlacedComponent",
+          "kind": "other"
+        },
+        {
+          "name": "orientationEntitySpace",
+          "type": "Quaternion",
+          "kind": "class"
+        }
+      ],
+      "ret": "handle:entIOrientationProvider",
+      "retKind": "other"
+    },
+    {
+      "f": "GetLookAtObject",
+      "nat": true,
+      "sta": false,
+      "pcount": 3,
+      "params": [
+        {
+          "name": "instigator",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        },
+        {
+          "name": "withLOS",
+          "type": "Bool",
+          "kind": "other"
+        },
+        {
+          "name": "ignoreTranparent",
+          "type": "Bool",
+          "kind": "other"
+        }
+      ],
+      "ret": "handle:gameObject",
+      "retKind": "other"
+    },
+    {
+      "f": "GetLookAtComponent",
+      "nat": true,
+      "sta": false,
+      "pcount": 3,
+      "params": [
+        {
+          "name": "instigator",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        },
+        {
+          "name": "withLOS",
+          "type": "Bool",
+          "kind": "other"
+        },
+        {
+          "name": "ignoreTranparent",
+          "type": "Bool",
+          "kind": "other"
+        }
+      ],
+      "ret": "whandle:entIComponent",
+      "retKind": "other"
+    },
+    {
+      "f": "GetLookAtPosition",
+      "nat": true,
+      "sta": false,
+      "pcount": 3,
+      "params": [
+        {
+          "name": "instigator",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        },
+        {
+          "name": "withLOS",
+          "type": "Bool",
+          "kind": "other"
+        },
+        {
+          "name": "ignoreTranparent",
+          "type": "Bool",
+          "kind": "other"
+        }
+      ],
+      "ret": "Vector4",
+      "retKind": "class"
+    },
+    {
+      "f": "GetCurrentSpread",
+      "nat": true,
+      "sta": false,
+      "pcount": 1,
+      "params": [
+        {
+          "name": "instigator",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        }
+      ],
+      "ret": "Vector4",
+      "retKind": "class"
+    },
+    {
+      "f": "GetPuppetBlackboardUpdater",
+      "nat": true,
+      "sta": false,
+      "pcount": 0,
+      "params": [],
+      "ret": "handle:gamePuppetBlackboardUpdater",
+      "retKind": "other"
+    },
+    {
+      "f": "AimSnap",
+      "nat": true,
+      "sta": false,
+      "pcount": 1,
+      "params": [
+        {
+          "name": "instigator",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        }
+      ]
+    },
+    {
+      "f": "LookAt",
+      "nat": true,
+      "sta": false,
+      "pcount": 2,
+      "params": [
+        {
+          "name": "instigator",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        },
+        {
+          "name": "params",
+          "type": "gameaimAssistAimRequest",
+          "kind": "class"
+        }
+      ]
+    },
+    {
+      "f": "BreakAimSnap",
+      "nat": true,
+      "sta": false,
+      "pcount": 1,
+      "params": [
+        {
+          "name": "instigator",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        }
+      ]
+    },
+    {
+      "f": "BreakLookAt",
+      "nat": true,
+      "sta": false,
+      "pcount": 1,
+      "params": [
+        {
+          "name": "instigator",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        }
+      ]
+    },
+    {
+      "f": "HasAimSnapActive",
+      "nat": true,
+      "sta": false,
+      "pcount": 1,
+      "params": [
+        {
+          "name": "instigator",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        }
+      ],
+      "ret": "Bool",
+      "retKind": "other"
+    },
+    {
+      "f": "OnAimStartBegin",
+      "nat": true,
+      "sta": false,
+      "pcount": 1,
+      "params": [
+        {
+          "name": "instigator",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        }
+      ]
+    },
+    {
+      "f": "OnAimStartEnd",
+      "nat": true,
+      "sta": false,
+      "pcount": 1,
+      "params": [
+        {
+          "name": "instigator",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        }
+      ]
+    },
+    {
+      "f": "OnAimStop",
+      "nat": true,
+      "sta": false,
+      "pcount": 1,
+      "params": [
+        {
+          "name": "instigator",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        }
+      ]
+    },
+    {
+      "f": "SetPlayerAimWeaponPositionProvider",
+      "nat": true,
+      "sta": false,
+      "pcount": 2,
+      "params": [
+        {
+          "name": "instigator",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        },
+        {
+          "name": "positionProvider",
+          "type": "handle:entIPositionProvider",
+          "kind": "other"
+        }
+      ]
+    },
+    {
+      "f": "SetIsMovingFast",
+      "nat": true,
+      "sta": false,
+      "pcount": 2,
+      "params": [
+        {
+          "name": "instigator",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        },
+        {
+          "name": "isFast",
+          "type": "Bool",
+          "kind": "other"
+        }
+      ]
+    },
+    {
+      "f": "SetAimAssistConfig",
+      "nat": true,
+      "sta": false,
+      "pcount": 2,
+      "params": [
+        {
+          "name": "owner",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        },
+        {
+          "name": "presetId",
+          "type": "TweakDBID",
+          "kind": "other"
+        }
+      ]
+    },
+    {
+      "f": "GetAimAssistConfig",
+      "nat": true,
+      "sta": false,
+      "pcount": 1,
+      "params": [
+        {
+          "name": "owner",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        }
+      ],
+      "ret": "TweakDBID",
+      "retKind": "other"
+    },
+    {
+      "f": "GetTrackedTargetObject",
+      "nat": true,
+      "sta": false,
+      "pcount": 1,
+      "params": [
+        {
+          "name": "instigator",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        }
+      ],
+      "ret": "handle:gameObject",
+      "retKind": "other"
+    },
+    {
+      "f": "GetTrackedTargetComponent",
+      "nat": true,
+      "sta": false,
+      "pcount": 1,
+      "params": [
+        {
+          "name": "instigator",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        }
+      ],
+      "ret": "whandle:gameTargetingComponent",
+      "retKind": "other"
+    },
+    {
+      "f": "ProcessLookAtFilter",
+      "nat": true,
+      "sta": false,
+      "pcount": 2,
+      "params": [
+        {
+          "name": "instigator",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        },
+        {
+          "name": "filter",
+          "type": "handle:gametargetingSystemTargetFilter",
+          "kind": "other"
+        }
+      ]
+    },
+    {
+      "f": "RegisterLookAtFilter",
+      "nat": true,
+      "sta": false,
+      "pcount": 2,
+      "params": [
+        {
+          "name": "instigator",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        },
+        {
+          "name": "filter",
+          "type": "handle:gametargetingSystemTargetFilter",
+          "kind": "other"
+        }
+      ],
+      "ret": "gametargetingSystemTargetFilterTicket",
+      "retKind": "class"
+    },
+    {
+      "f": "UnregisterLookAtFilter",
+      "nat": true,
+      "sta": false,
+      "pcount": 2,
+      "params": [
+        {
+          "name": "instigator",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        },
+        {
+          "name": "filterTicket",
+          "type": "gametargetingSystemTargetFilterTicket",
+          "kind": "class"
+        }
+      ]
+    },
+    {
+      "f": "AddIgnoredLookAtEntity",
+      "nat": true,
+      "sta": false,
+      "pcount": 2,
+      "params": [
+        {
+          "name": "instigator",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        },
+        {
+          "name": "ignoredEntityId",
+          "type": "entEntityID",
+          "kind": "class"
+        }
+      ]
+    },
+    {
+      "f": "RemoveIgnoredLookAtEntity",
+      "nat": true,
+      "sta": false,
+      "pcount": 2,
+      "params": [
+        {
+          "name": "instigator",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        },
+        {
+          "name": "ignoredEntityId",
+          "type": "entEntityID",
+          "kind": "class"
+        }
+      ]
+    },
+    {
+      "f": "AddIgnoredCollisionEntities",
+      "nat": true,
+      "sta": false,
+      "pcount": 1,
+      "params": [
+        {
+          "name": "entity",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        }
+      ]
+    },
+    {
+      "f": "RemoveIgnoredCollisionEntities",
+      "nat": true,
+      "sta": false,
+      "pcount": 1,
+      "params": [
+        {
+          "name": "entity",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        }
+      ]
+    },
+    {
+      "f": "IsVisibleTarget",
+      "nat": true,
+      "sta": false,
+      "pcount": 2,
+      "params": [
+        {
+          "name": "instigator",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        },
+        {
+          "name": "target",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        }
+      ],
+      "ret": "Bool",
+      "retKind": "other"
+    },
+    {
+      "f": "GetTargetingSet",
+      "nat": true,
+      "sta": false,
+      "pcount": 2,
+      "params": [
+        {
+          "name": "instigator",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        },
+        {
+          "name": "object",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        }
+      ],
+      "ret": "gameTargetingSet",
+      "retKind": "enum"
+    },
+    {
+      "f": "GetBestComponentOnTargetObject",
+      "nat": true,
+      "sta": false,
+      "pcount": 4,
+      "params": [
+        {
+          "name": "shootStartPosition",
+          "type": "Vector4",
+          "kind": "class"
+        },
+        {
+          "name": "shootStartForward",
+          "type": "Vector4",
+          "kind": "class"
+        },
+        {
+          "name": "target",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        },
+        {
+          "name": "componentFilter",
+          "type": "gametargetingSystemScriptFilter",
+          "kind": "enum"
+        }
+      ],
+      "ret": "whandle:gameTargetingComponent",
+      "retKind": "other"
+    },
+    {
+      "f": "IsAnyEnemyVisible",
+      "nat": true,
+      "sta": false,
+      "pcount": 2,
+      "params": [
+        {
+          "name": "instigator",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        },
+        {
+          "name": "distance",
+          "type": "Float",
+          "kind": "other"
+        }
+      ],
+      "ret": "Bool",
+      "retKind": "other"
+    },
+    {
+      "f": "IsAnyEnemyOrSensorVisible",
+      "nat": true,
+      "sta": false,
+      "pcount": 2,
+      "params": [
+        {
+          "name": "instigator",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        },
+        {
+          "name": "distance",
+          "type": "Float",
+          "kind": "other"
+        }
+      ],
+      "ret": "Bool",
+      "retKind": "other"
+    },
+    {
+      "f": "IsAnyActiveVehicleVisible",
+      "nat": true,
+      "sta": false,
+      "pcount": 2,
+      "params": [
+        {
+          "name": "instigator",
+          "type": "whandle:gameObject",
+          "kind": "other"
+        },
+        {
+          "name": "distance",
+          "type": "Float",
+          "kind": "other"
+        }
+      ],
+      "ret": "Bool",
+      "retKind": "other"
+    }
+  ],
+  "targetingFuncCount": 41,
+  "entEntityProps": [
+    {
+      "n": "customCameraTarget",
+      "t": "ECustomCameraTarget",
+      "o": 340
+    },
+    {
+      "n": "renderSceneLayerMask",
+      "t": "RenderSceneLayerMask",
+      "o": 347
+    }
+  ],
+  "entEntitySize": 352,
+  "searchFilter": {
+    "name": "gameTargetSearchFilter",
+    "size": 24,
+    "props": [],
+    "propCount": 0,
+    "funcs": []
+  },
+  "detectFuncs": [
+    {
+      "class": "gameObject",
+      "func": "CanPlayerScanThroughWalls",
+      "pcount": 0,
+      "nat": false,
+      "pt": [],
+      "ret": "Bool"
+    },
+    {
+      "class": "gameObject",
+      "func": "IsScannerDataDirty",
+      "pcount": 0,
+      "nat": false,
+      "pt": [],
+      "ret": "Bool"
+    },
+    {
+      "class": "gameObject",
+      "func": "SetScannerDirty",
+      "pcount": 1,
+      "nat": false,
+      "pt": [
+        "Bool"
+      ]
+    },
+    {
+      "class": "gameObject",
+      "func": "GetSensesComponent",
+      "pcount": 0,
+      "nat": false,
+      "pt": [],
+      "ret": "handle:senseComponent"
+    },
+    {
+      "class": "gameObject",
+      "func": "GetScannerAttitudeTweak",
+      "pcount": 0,
+      "nat": false,
+      "pt": [],
+      "ret": "TweakDBID"
+    },
+    {
+      "class": "gameObject",
+      "func": "GetTargetTrackerComponent",
+      "pcount": 0,
+      "nat": false,
+      "pt": [],
+      "ret": "handle:AITargetTrackerComponent"
+    },
+    {
+      "class": "gameObject",
+      "func": "GetNPCsAroundObject",
+      "pcount": 1,
+      "nat": false,
+      "pt": [
+        "Float"
+      ],
+      "ret": "array:handle:NPCPuppet"
+    },
+    {
+      "class": "gameObject",
+      "func": "UpdateAdditionalScanningData",
+      "pcount": 0,
+      "nat": false,
+      "pt": []
+    },
+    {
+      "class": "gameObject",
+      "func": "OnScanningModeChanged",
+      "pcount": 1,
+      "nat": false,
+      "pt": [
+        "handle:gameScanningModeEvent"
+      ],
+      "ret": "Bool"
+    },
+    {
+      "class": "gameObject",
+      "func": "OnScanningLookedAt",
+      "pcount": 1,
+      "nat": false,
+      "pt": [
+        "handle:gameScanningLookAtEvent"
+      ],
+      "ret": "Bool"
+    },
+    {
+      "class": "gameObject",
+      "func": "GetObjectToForwardHighlight",
+      "pcount": 0,
+      "nat": false,
+      "pt": [],
+      "ret": "array:whandle:gameObject"
+    },
+    {
+      "class": "gameObject",
+      "func": "IsScanned",
+      "pcount": 0,
+      "nat": false,
+      "pt": [],
+      "ret": "Bool"
+    },
+    {
+      "class": "gameObject",
+      "func": "PurgeScannerBlackboard",
+      "pcount": 0,
+      "nat": false,
+      "pt": []
+    },
+    {
+      "class": "gameObject",
+      "func": "CompileScannerChunks",
+      "pcount": 0,
+      "nat": false,
+      "pt": [],
+      "ret": "Bool"
+    },
+    {
+      "class": "gameObject",
+      "func": "GetScannableObjects",
+      "pcount": 0,
+      "nat": false,
+      "pt": [],
+      "ret": "array:gameScanningTooltipElementDef"
+    },
+    {
+      "class": "gameObject",
+      "func": "ShouldShowScanner",
+      "pcount": 0,
+      "nat": false,
+      "pt": [],
+      "ret": "Bool"
+    },
+    {
+      "class": "gameObject",
+      "func": "IsScaningCluesBlocked",
+      "pcount": 0,
+      "nat": false,
+      "pt": [],
+      "ret": "Bool"
+    },
+    {
+      "class": "gameObject",
+      "func": "IsCurrentlyScanned",
+      "pcount": 0,
+      "nat": false,
+      "pt": [],
+      "ret": "Bool"
+    },
+    {
+      "class": "gameObject",
+      "func": "GetTargetShootComponent",
+      "pcount": 0,
+      "nat": false,
+      "pt": [],
+      "ret": "handle:gameTargetShootComponent"
+    },
+    {
+      "class": "entEntity",
+      "func": "GetEntity",
+      "pcount": 0,
+      "nat": true,
+      "pt": [],
+      "ret": "entEntityGameInterface"
+    },
+    {
+      "class": "entEntity",
+      "func": "GetEntityID",
+      "pcount": 0,
+      "nat": true,
+      "pt": [],
+      "ret": "entEntityID"
+    }
+  ],
+  "detectFuncCount": 21,
+  "playerEntityHash": 1
+}
