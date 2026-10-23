@@ -1,0 +1,56 @@
+{
+  "baseline": {
+    "sh_pips": 16,
+    "hp_pips": 22
+  },
+  "step_walk_s": 0.3,
+  "drop_threshold": 1,
+  "unit": "pips（原始分辨率离散格，非像素）",
+  "first_hit_walk_s": 0.9,
+  "trials": [
+    {
+      "trial": 0,
+      "walked_s": 0.0,
+      "sh_px": 131,
+      "hp_px": 178,
+      "hit": false,
+      "frame": "reach_base.png"
+    },
+    {
+      "trial": 1,
+      "walked_s": 0.0,
+      "frame": "reach_01.png",
+      "sh_px": 136,
+      "hp_px": 178,
+      "shield_drop": -1,
+      "hit": false
+    },
+    {
+      "trial": 2,
+      "walked_s": 0.3,
+      "frame": "reach_02.png",
+      "sh_px": 130,
+      "hp_px": 170,
+      "shield_drop": 0,
+      "hit": false
+    },
+    {
+      "trial": 3,
+      "walked_s": 0.6,
+      "frame": "reach_03.png",
+      "sh_px": 138,
+      "hp_px": 178,
+      "shield_drop": 0,
+      "hit": false
+    },
+    {
+      "trial": 4,
+      "walked_s": 0.9,
+      "frame": "reach_04.png",
+      "sh_px": 145,
+      "hp_px": 184,
+      "shield_drop": 5,
+      "hit": true
+    }
+  ]
+}

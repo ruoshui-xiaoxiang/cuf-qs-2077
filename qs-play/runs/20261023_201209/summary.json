@@ -1,0 +1,44 @@
+{
+  "run": "20261023_201209",
+  "rounds": 2,
+  "scenario": "normal",
+  "repo": "D:\\AIWorkflow\\publish\\cuf-qs-2077",
+  "decision_counts": {
+    "accepted": 0,
+    "rejected_parse": 2,
+    "rejected_validate": 0,
+    "rejected_gate": 0
+  },
+  "action_distribution": {
+    "attack": 0,
+    "move": 0,
+    "pickup": 0,
+    "kill": 0
+  },
+  "max_same_action_streak": 2,
+  "distinct_accepted_targets": 0,
+  "world_changed_rounds": 1,
+  "gate": {
+    "quota_config": {
+      "move": null,
+      "pickup": 2,
+      "attack": 3,
+      "kill": 0
+    },
+    "used": {
+      "move": 0,
+      "pickup": 0,
+      "attack": 0,
+      "kill": 0
+    }
+  },
+  "token_usage": {
+    "calls": 2,
+    "prompt_tokens": 1520,
+    "completion_tokens": 440,
+    "cached_tokens": 128
+  },
+  "cost_cny_estimate": 0.0032,
+  "price_assumption": "deepseek-flash 短档位：输入 1 / 命中缓存 0.15 / 输出 4 CNY 每百万 token",
+  "limitation": "mock 无后果模拟：executed=false，本轮任何 accepted 都不构成“它真做到了”的证据；只测决策连贯性与闸门行为。"
+}

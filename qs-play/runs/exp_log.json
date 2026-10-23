@@ -1,0 +1,30 @@
+[
+ {
+  "step": 1,
+  "walked_s": 0.0,
+  "cells": 0.4861,
+  "mean": 10.36,
+  "frame": "exp_1_after_walk0.0s"
+ },
+ {
+  "step": 2,
+  "walked_s": 0.5,
+  "cells": 0.4653,
+  "mean": 9.18,
+  "frame": "exp_2_after_walk0.5s"
+ },
+ {
+  "step": 3,
+  "walked_s": 0.5,
+  "cells": 0.5,
+  "mean": 10.58,
+  "frame": "exp_3_after_walk0.5s"
+ },
+ {
+  "step": 4,
+  "walked_s": 0.5,
+  "cells": 0.5069,
+  "mean": 16.95,
+  "frame": "exp_4_after_walk0.5s"
+ }
+]
