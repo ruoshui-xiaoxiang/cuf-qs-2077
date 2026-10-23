@@ -13,7 +13,10 @@ def main(path):
     src = open(path, encoding="utf-8").read()
     rt = lupa.LuaRuntime()
     try:
-        rt.compile(src, chunk_name=path)
+        try:
+            rt.compile(src, name=path)
+        except TypeError:
+            rt.compile(src)
     except Exception as e:
         print("SYNTAX ERROR:", e)
         return 1
