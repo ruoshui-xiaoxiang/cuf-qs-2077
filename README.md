@@ -33,6 +33,7 @@
 | `docs/public_project_inventory_and_disposition.md` | 资产盘点与公开处置结论（本仓范围的裁定依据） |
 | `provenance/version_lock_evidence.json` | 实验环境证据锚点：游戏与模组栈版本、硬件、12 条 SHA256 |
 | `paper/` `reports/` | 历史阶段报告，**已冻结**，不作为当前事实源 |
+| `qs-play/` | 剑星（Stellar Blade）侧的独立实验线：模型进环、连段优先策略、HUD 读数与键位实测（自带 README，不属于 2077 证据链） |
 
 ## 结果语义（对外表述一律遵守）
 
