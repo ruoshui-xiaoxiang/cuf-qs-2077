@@ -97,6 +97,7 @@ C_H（struct / adapt / extend 三子维度），C_H ≤ B_entropy，超预算触
 <ul>
   <li>验收通过：游戏正常启动，CET 控制台可用，<code>print</code> 正常输出。</li>
   <li>完整备份 11 个模组文件（含 SHA256 指纹）与版本锁定记录，存于 <code>s1_backup/version_lock.json</code>。</li>
+<li class="mono">〔2026-10-23 公开版补注〕原件 <code>s1_backup/version_lock.json</code> 未随本仓公开：它的 <code>ops_notes</code> 段是逐版模组实现与底层接入操作笔记，按 <code>docs/public_project_inventory_and_disposition.md</code> §D 保留在私有仓。其中可作证据锚点的部分——游戏版本、模组栈版本、硬件与 12 条 SHA256 指纹——已原样抽取为 <code>provenance/version_lock_evidence.json</code>，该文件登记了原件 SHA256 <code>a0cbf0de82133a5a3fd6597333ad513c4911ca98913504e517109bfb533fcbe4</code>，持有原件者可自验摘要未改动作证字段。以上补注不改动本记录的原始结论。</li>
   <li>运维经验：退出游戏后若 Steam 仍显示运行中，清理残留 <code>REDlauncher</code> 进程即可；CET 按键绑定仅可在游戏关闭时修改；<code>scripting.log</code> 为可靠观测通道（主日志异步缓冲）。</li>
 </ul>
 

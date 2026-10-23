@@ -210,10 +210,20 @@ story.append(P("3 种子规模（n=9）下 P_W2_5 判定为 inconclusive（p=0.4
                "（18 种子 0.0083/0.0079/0.0064；36 种子 0.0003/0.0002/0.0002，diff 稳定在 +0.094~+0.100），"
                "<b>6 组全部判 supported</b>。判定逻辑修正（用户批准）：重排检验已含方向与显著性，"
                "observed_diff&gt;0 且 p≤0.05 即 supported。", st_body))
-story.append(P("诚实记录：v3 原始归档当前不在本地（logs/formal_batch_7b_v3 目录不存在，缺失原因未考），"
-               "本段数字引自项目记录"
-               "（.trae/rules/project_rules.md S27/S29.16 条目，均经当时实跑核验）；"
-               "v1/v2/v4/v5/v6 原始数据全部在盘可复核。", st_note))
+story.append(P("数据可复核性更正：本段全部数字都能在本仓归档里逐字段对上，不需要引外部记录。"
+               "9 种子 A_M1（exp_means 0.7804769834391629 / baseline_means 0.3333333333333333 / "
+               "observed_mean_diff 0.4471436501058296 / p_value 0.00390625 即 2/512，enumerated 512）"
+               "见 logs/formal_batch_7b_v2/stats/stats_summary.json。"
+               "18/36 种子六批次的 permutation_p（0.0082991700829917 / 0.007899210078992101 / "
+               "0.006399360063993601 / 0.00029997000299970003 / 0.00019998000199980003 / "
+               "0.00019998000199980003，enumerated 10000）见 "
+               "logs/formal_batch_7b_v3/seed18_run1|2|3 与 seed36_run1|2|3 下的 "
+               "stats/stats_summary.json，字段位置为 anchors.P_W2_5.evidence，六组 verdict 均为 supported；"
+               "正文按四位小数舍入引用。", st_note))
+story.append(P("更正文注：本节早前版本写的是「v3 原始归档当前不在本地，缺失原因未考，数字引自项目记录"
+               "（.trae/rules/project_rules.md S27/S29.16 条目）」。该陈述不成立——v3 归档始终在盘（1992 文件），"
+               "现已随本仓全量公开，读者可直接复核，不必再依赖不可见的项目记录。"
+               "本次更正只改引用出处与这段失效说明，未改动任何统计数值。", st_note))
 
 story.append(P("3.5　生态有效性：真实游戏闭环（20 轮）", st_h3))
 story.append(P("批次 live_7b_v3（真实 Cyberpunk 2077，CufBridge 0.6.7，7B 驻留远程双路）："

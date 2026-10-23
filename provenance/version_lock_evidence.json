@@ -1,0 +1,57 @@
+{
+    "lock_date":  "2026-08-27",
+    "project":  "CUF-QS virtual embodied experiment",
+    "game":  {
+                 "title":  "Cyberpunk 2077",
+                 "version":  "2.31",
+                 "internal_build":  "3.0.80.51928",
+                 "platform":  "Steam",
+                 "install_path":  "E:\\steam\\steamapps\\common\\Cyberpunk 2077",
+                 "auto_update":  "disabled",
+                 "network_mode":  "Steam offline mode recommended"
+             },
+    "mod_stack":  {
+                      "red4ext":  {
+                                      "version":  "1.30.0",
+                                      "injector":  "bin\\x64\\winmm.dll"
+                                  },
+                      "cet":  {
+                                  "version":  "1.37.1",
+                                  "injector":  "bin\\x64\\version.dll"
+                              },
+                      "redsocket":  {
+                                        "version":  "0.5.0",
+                                        "components":  [
+                                                           "red4ext\\plugins\\RedSocket\\RedSocket.dll",
+                                                           "cyber_engine_tweaks\\mods\\RedSocket"
+                                                       ]
+                                    }
+                  },
+    "hardware":  {
+                     "cpu":  "i5-14600KF",
+                     "gpu":  "RTX 5060 Ti 16GB (Blackwell sm_120)",
+                     "ram":  "32GB"
+                 },
+    "fingerprints_sha256":  {
+                                "bin_x64\\version.dll":  "67565DD7F899C0E4EE3903B1CC8078FF20CA80B8100497C6AC813392E431D443",
+                                "bin_x64\\winmm.dll":  "22690F3AC5EFBFA825B758028F114D0E7D83833160716F199C56056DB01FC8BE",
+                                "cet\\bindings.json":  "E19828FBC52B15DFF7F224A9F49576F2B341582B877984DFF60C4772F8DCABD2",
+                                "cet\\config.json":  "C0B3F7598660C3F95C6A052B8BBF249C01F896AEDB17A0020EAF12268F342029",
+                                "cet\\layout.ini":  "6ABCD2756A5A5C5A19A64F953F46005E30494DB510C65C31D923A1245399A0E6",
+                                "cet\\mods\\CufBridge\\init.lua":  "9EC5D34827E6AAB7588D7197C4075790373FA7309F89B8EC9646DAF2C19F5DA7",
+                                "cet\\mods\\RedSocket\\init.lua":  "40589A89BB6C4811F6EEEF79F642F704D214091A098B096DEB6C0DAD669E193A",
+                                "cet\\mods\\RedSocket\\RedSocket.lua":  "356EAC27454807EC67312B7098B295879FEEBCDB890F6144B16BEFCEBE6D9C00",
+                                "cet\\persistent.json":  "2B52EC6FFB7162F5735EBAA919F26A879D2EBC18EE6F4AD90AA9A8697B99B43E",
+                                "red4ext\\config.ini":  "06478D643528FA9D4DD9C047322AFF4C2AEE668BE2F202B181F3DB86AD1EA865",
+                                "red4ext\\plugins\\RedSocket\\RedSocket.dll":  "9DD41FC8A571170A570014603DDDF042D0B08F771FFC602FB11E9E35979502E5",
+                                "red4ext\\RED4ext.dll":  "59309A78A9606481D13F87E8FBF9EA9C0B735115389DED0295537180C9E52511"
+                            },
+    "cuf_bridge_version":  "0.6.17",
+    "_derivation": {
+        "derived_from":  "s1_backup/version_lock.json",
+        "source_sha256":  "a0cbf0de82133a5a3fd6597333ad513c4911ca98913504e517109bfb533fcbe4",
+        "kept_fields":  ["lock_date", "project", "game", "mod_stack", "hardware", "fingerprints_sha256", "cuf_bridge_version"],
+        "withheld_fields":  ["overlay_binding", "ops_notes"],
+        "withheld_reason":  "ops_notes 为逐版模组实现与底层接入操作笔记，按 docs/public_project_inventory_and_disposition.md §D 不公开；本件仅保留可作证据锚点的版本、硬件与 SHA256 指纹。原件 SHA256 已登记，持有原件者可自验本摘要未改动作证字段。"
+    }
+}

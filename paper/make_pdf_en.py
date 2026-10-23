@@ -270,11 +270,24 @@ story.append(P("At the 3-seed scale (n=9), P_W2_5 is inconclusive (p=0.484). Ext
                "were judged supported</b>. Verdict logic was revised (user-approved): the "
                "permutation test already encodes direction and significance, so observed_diff&gt;0 "
                "with p≤0.05 yields supported.", st_body))
-story.append(P("Honest record: the v3 raw archive is currently absent locally "
-               "(logs/formal_batch_7b_v3 does not exist; cause of absence unverified); the "
-               "numbers above are cited from the project record (.trae/rules/project_rules.md, "
-               "entries S27/S29.16, all verified by live runs at the time). Raw data of "
-               "v1/v2/v4/v5/v6 remain on disk and are auditable.", st_note))
+story.append(P("Data verifiability: every number in this section maps field-for-field onto archives "
+               "shipped with this repository; no external project record is required. The 9-seed A_M1 "
+               "result (exp_means 0.7804769834391629 / baseline_means 0.3333333333333333 / "
+               "observed_mean_diff 0.4471436501058296 / p_value 0.00390625 = 2/512, enumerated 512) "
+               "is in logs/formal_batch_7b_v2/stats/stats_summary.json. The permutation_p of the six "
+               "18/36-seed batches (0.0082991700829917 / 0.007899210078992101 / 0.006399360063993601 / "
+               "0.00029997000299970003 / 0.00019998000199980003 / 0.00019998000199980003, "
+               "enumerated 10000) are in "
+               "logs/formal_batch_7b_v3/seed18_run1|2|3 and seed36_run1|2|3 under stats/stats_summary.json "
+               "at anchors.P_W2_5.evidence, with verdict = supported in all six groups; the body text "
+               "quotes them rounded to four decimals.", st_note))
+story.append(P("Correction note: an earlier version of this section stated that the v3 raw archive was "
+               "absent locally (cause unverified) and that the numbers were cited from the project record "
+               "(.trae/rules/project_rules.md, entries S27/S29.16). That statement was wrong: the v3 "
+               "archive has been on disk throughout (1992 files) and is now published in full in this "
+               "repository, so readers can recompute directly instead of relying on an invisible record. "
+               "This correction changes only the citations and that obsolete disclaimer; no statistical "
+               "value was altered.", st_note))
 
 story.append(P("3.5　Ecological validity: real-game closed loop (20 rounds)", st_h3))
 story.append(P("Batch live_7b_v3 (real Cyberpunk 2077, CufBridge 0.6.7, 7B resident remote "

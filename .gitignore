@@ -7,8 +7,8 @@ s1_backup/
 s1_installer/
 .trae/
 
-# ===== 超大原始归档（库外，见 README「数据可得性」）=====
-logs/formal_batch_7b_v3/
+# ===== 超大原始归档 =====
+# （原 2026-10-23 排除的 logs/formal_batch_7b_v3/ 已按「证据完整性优先」全量入库）
 
 # ===== 媒体（实机截图不入仓）=====
 *.png

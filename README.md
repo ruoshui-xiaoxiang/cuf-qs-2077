@@ -31,6 +31,7 @@
 | `logs/` | 逐轮原始归档，本仓的证据主体 |
 | `tests/` | 离线自测套件与实机取证入口 |
 | `docs/public_project_inventory_and_disposition.md` | 资产盘点与公开处置结论（本仓范围的裁定依据） |
+| `provenance/version_lock_evidence.json` | 实验环境证据锚点：游戏与模组栈版本、硬件、12 条 SHA256 |
 | `paper/` `reports/` | 历史阶段报告，**已冻结**，不作为当前事实源 |
 
 ## 结果语义（对外表述一律遵守）
@@ -61,11 +62,27 @@
 
 ## 数据可得性
 
-- `logs/` 下 40 个批次目录、逐轮 `rounds.jsonl` 与统计产物全部随仓公开。
-- **一处例外**：`logs/formal_batch_7b_v3/`（约 547 MB 原始数据）体积超出代码仓承载，
-  按 `.gitignore` 规则留在库外归档。引用该批结论处应以文字说明其归档位置，
-  不得在没有原始归档支撑的情况下放大结论。
+- `logs/` 下 41 个批次目录共 2615 个文件，逐轮 `rounds.jsonl`、`report.json` 与统计产物全部随仓公开，
+  含此前被体积理由挡在库外的 `logs/formal_batch_7b_v3/`（1992 个文件，最大单文件 0.9 MB）。
+  判据改为**证据完整性优先**：凡结论引用的原始归档，就必须在仓内可查。
 - 实机截图（`*.png`）不入本仓，仓库内只有结构化数据与文本。
+- `provenance/version_lock_evidence.json` 是实验环境的证据锚点：游戏版本、模组栈版本、
+  硬件与 12 条 SHA256 指纹。它从私有仓的 `s1_backup/version_lock.json` 原样抽取，
+  只剥掉 `ops_notes`（逐版模组实现与底层接入操作笔记，§D 保留私有）与 `overlay_binding`，
+  并在件内登记了原件 SHA256，持有原件者可自验抽取未改动作证字段。
+
+## 结论 → 归档对应（可当场复核）
+
+论文 3.4 节的每个数字都落在仓内文件的具体字段上，不依赖任何不可见的内部记录：
+
+| 正文数字 | 仓内落点 |
+|---|---|
+| 9 种子 A_M1：exp 0.7804769834391629 / base 0.3333333333333333 / diff 0.4471436501058296 / p 0.00390625（= 2/512，enumerated 512） | `logs/formal_batch_7b_v2/stats/stats_summary.json` |
+| 18 种子三批 permutation_p：0.0082991700829917 / 0.007899210078992101 / 0.006399360063993601 | `logs/formal_batch_7b_v3/seed18_run{1,2,3}/stats/stats_summary.json` 的 `anchors.P_W2_5.evidence` |
+| 36 种子三批 permutation_p：0.00029997000299970003 / 0.00019998000199980003 / 0.00019998000199980003 | `logs/formal_batch_7b_v3/seed36_run{1,2,3}/stats/stats_summary.json` 同上字段 |
+| 「6 组全部判 supported」 | 上述六个文件的 `anchors.P_W2_5.verdict` |
+
+上述批次的置换检验 `enumerated` 为 10000（近似枚举），与 9 种子那组的 512 全枚举不同；正文按四位小数舍入引用。
 
 ## 许可与声明
 
